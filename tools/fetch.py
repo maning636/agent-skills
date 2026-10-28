@@ -157,7 +157,10 @@ def score(text, toks, grams):
 
 # ----------------------------------------------------------------- 动作
 def _tree(offline=False, force=False):
-    """取全仓文件树（GitHub tree API），本地缓存一次即可复用。"""
+    """取全仓文件树（GitHub tree API），本地缓存一次即可复用。
+
+    只缓存用得到的字段（path/type/size），原始响应约 1.5 MB，精简后约 250 KB。
+    """
     p = os.path.join(CACHE, "_tree.json")
     if os.path.isfile(p) and not force:
         try:
@@ -171,11 +174,16 @@ def _tree(offline=False, force=False):
         "Accept": "application/vnd.github+json",
     })
     with urllib.request.urlopen(req, timeout=40) as r:
-        data = json.loads(r.read().decode("utf-8"))
+        raw = json.loads(r.read().decode("utf-8"))
+    slim = {
+        "truncated": bool(raw.get("truncated")),
+        "tree": [{"path": it.get("path", ""), "type": it.get("type", ""),
+                  "size": it.get("size", 0)} for it in raw.get("tree", [])],
+    }
     os.makedirs(CACHE, exist_ok=True)
     with open(p, "w", encoding="utf-8") as f:
-        json.dump(data, f)
-    return data
+        json.dump(slim, f, separators=(",", ":"))
+    return slim
 
 
 def do_ls(dirpath, offline=False, force=False):
@@ -189,21 +197,31 @@ def do_ls(dirpath, offline=False, force=False):
     if data.get("truncated"):
         print("注意: 文件树被 GitHub 截断，列表可能不完整", file=sys.stderr)
     pref = (d + "/") if d else ""
-    rows = []
+    files, dirs = [], set()
     for it in data.get("tree", []):
-        if not it.get("path", "").startswith(pref):
+        p = it.get("path", "")
+        if not p.startswith(pref):
             continue
-        rel = it["path"][len(pref):]
-        if not rel or "/" in rel:
+        rel = p[len(pref):]
+        if not rel:
             continue
-        rows.append((rel, it.get("size", 0), it.get("type", "")))
-    if not rows:
+        if "/" in rel:
+            dirs.add(rel.split("/", 1)[0] + "/")   # 只显示第一层子目录
+        elif it.get("type") == "tree":
+            dirs.add(rel + "/")
+        else:
+            files.append((rel, it.get("size", 0)))
+    if not files and not dirs:
         print("空目录或不存在: %s" % (d or "/"), file=sys.stderr)
         return 1
     print("# 目录内容: %s" % (d or "/"))
-    for rel, size, typ in sorted(rows):
-        print("  %-46s %8s" % (rel, ("%dB" % size) if typ == "blob" else typ))
+    for name in sorted(dirs):
+        print("  %-46s %8s" % (name, "<dir>"))
+    for rel, size in sorted(files):
+        print("  %-46s %8s" % (rel, "%dB" % size))
     print("\n取用: python fetch.py --raw <路径>")
+    if dirs:
+        print("进子目录: python fetch.py --ls %s%s" % (pref, sorted(dirs)[0]))
     return 0
 
 
