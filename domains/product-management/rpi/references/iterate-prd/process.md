@@ -20,7 +20,7 @@ Check factual claims against relevant code and docs. Use the research agents whe
 
 ## 4. Read the Templates and Visual Guidance
 
-Read `domains/product-management/rpi/references/iterate-prd/references/iterate-prd/references/prd_template.md` and `domains/product-management/rpi/references/iterate-prd/references/show-me.md`.
+Read `domains/product-management/rpi/references/iterate-prd/references/prd_template.md` and `domains/product-management/rpi/references/show-me.md`.
 
 ## 5. Settle the Decision and Rework the PRD
 
@@ -36,4 +36,4 @@ If the user asked to continue the interview, present the next unsettled choice. 
 
 Offer to open the document for review in VS Code, Cursor, or the user's preferred editor or browser.
 
-When the solution is ready, ask the user to review **Solution Details** as a whole and approve it. After approval, read `domains/product-management/rpi/references/iterate-prd/references/iterate-prd/references/prd_final_answer_resolved.md` and use it for the handoff to TDD, an outline, or direct implementation.
+When the solution is ready, ask the user to review **Solution Details** as a whole and approve it. After approval, read `domains/product-management/rpi/references/iterate-prd/references/prd_final_answer_resolved.md` and use it for the handoff to TDD, an outline, or direct implementation.

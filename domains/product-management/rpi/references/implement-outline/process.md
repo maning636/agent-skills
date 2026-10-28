@@ -36,4 +36,4 @@ Make commits when requested, following repository rules. Keep artifact progress 
 
 ## 5. Continue the Requested Scope
 
-For each next outline phase within the requested scope, launch the implementer with its document paths and verify the result. When all requested work is done, read `domains/product-management/rpi/references/implement-outline/references/implement-outline/references/implement_outline_final_answer.md` and use it to report completion or pending validation.
+For each next outline phase within the requested scope, launch the implementer with its document paths and verify the result. When all requested work is done, read `domains/product-management/rpi/references/implement-outline/references/implement_outline_final_answer.md` and use it to report completion or pending validation.

@@ -16,7 +16,7 @@ When a choice depends on facts that the research has not established, use `codeb
 
 ## 3. Read the Templates and Visual Guidance
 
-Read `domains/product-management/rpi/references/create-design-discussion/references/create-design-discussion/references/design_discussion_template.md` and `domains/product-management/rpi/references/create-design-discussion/references/show-me.md`.
+Read `domains/product-management/rpi/references/create-design-discussion/references/design_discussion_template.md` and `domains/product-management/rpi/references/show-me.md`.
 
 Use focused before-and-after diagrams, trees, contracts, or pseudocode to explain the current system, proposed result, and choices. Place each view beside the short explanation it supports.
 
@@ -46,8 +46,8 @@ For visual choices, save a focused HTML mockup or diagram beside the document an
 
 Offer to open the document for review in VS Code, Cursor, or the user's preferred editor or browser.
 
-While choices remain open, read `domains/product-management/rpi/references/create-design-discussion/references/create-design-discussion/references/design_discussion_final_answer.md` and fill it with the document path and next question.
+While choices remain open, read `domains/product-management/rpi/references/create-design-discussion/references/design_discussion_final_answer.md` and fill it with the document path and next question.
 
-When the user has settled every design choice, read `domains/product-management/rpi/references/create-design-discussion/references/create-design-discussion/references/design_discussion_final_answer_resolved.md`. Use `domains/product-management/rpi/references/create-design-discussion/references/workflow.md` for the next command. Offer an outline or direct implementation.
+When the user has settled every design choice, read `domains/product-management/rpi/references/create-design-discussion/references/design_discussion_final_answer_resolved.md`. Use `domains/product-management/rpi/references/workflow.md` for the next command. Offer an outline or direct implementation.
 
 For a requested early handoff, save agreed decisions and remaining open choices, then follow the requested step.

@@ -14,7 +14,7 @@ For UI work, use the research's design-system findings. Investigate components, 
 
 ## 2. Read the Templates and Write a Small Starting Document
 
-Read `domains/product-management/rpi/references/create-prd/references/create-prd/references/prd_template.md` and `domains/product-management/rpi/references/create-prd/references/show-me.md`.
+Read `domains/product-management/rpi/references/create-prd/references/prd_template.md` and `domains/product-management/rpi/references/show-me.md`.
 
 Write `NN-prd-<description>.md` using the next available number. Start with frontmatter, the title, a first-draft **Problem to Solve**, and empty **Success**, **Proposed Solution**, and **Solution Details** sections. Fill `repos` with the relevant identifiers and SHAs, or use `repos: []`.
 
@@ -46,4 +46,4 @@ Offer to open the document for review in VS Code, Cursor, or the user's preferre
 
 ## 6. Read the Final-Answer Template and Respond
 
-After approval, read `domains/product-management/rpi/references/create-prd/references/create-prd/references/prd_final_answer_resolved.md` and use it for the handoff. TDD is the usual next step; the user can also choose an outline or direct implementation.
+After approval, read `domains/product-management/rpi/references/create-prd/references/prd_final_answer_resolved.md` and use it for the handoff. TDD is the usual next step; the user can also choose an outline or direct implementation.

@@ -20,7 +20,7 @@ Read relevant code and use `codebase-locator`, `codebase-analyzer`, and `codebas
 
 ## 4. Read the Templates and Visual Guidance
 
-Read `domains/product-management/rpi/references/iterate-tdd/references/iterate-tdd/references/tdd_template.md` and `domains/product-management/rpi/references/iterate-tdd/references/show-me.md`.
+Read `domains/product-management/rpi/references/iterate-tdd/references/tdd_template.md` and `domains/product-management/rpi/references/show-me.md`.
 
 ## 5. Settle the Choice and Update the TDD
 
@@ -38,4 +38,4 @@ For a continuing interview, ask the next unresolved question. After a specific f
 
 ## 7. Read the Final-Answer Template and Respond
 
-After the design is approved, read `domains/product-management/rpi/references/iterate-tdd/references/iterate-tdd/references/tdd_final_answer_resolved.md` and offer an outline or direct implementation.
+After the design is approved, read `domains/product-management/rpi/references/iterate-tdd/references/tdd_final_answer_resolved.md` and offer an outline or direct implementation.

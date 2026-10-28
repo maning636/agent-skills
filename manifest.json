@@ -71,13 +71,17 @@
   }
  },
  "total_skills": 178,
- "total_files": 444,
- "total_bytes": 2815290,
+ "total_files": 443,
+ "total_bytes": 2779349,
  "raw_base": "https://raw.githubusercontent.com/maning636/agent-skills/main/",
  "files": [
   {
+   "path": ".gitignore",
+   "bytes": 39
+  },
+  {
    "path": "FETCH.md",
-   "bytes": 5739
+   "bytes": 6511
   },
   {
    "path": "INDEX.md",
@@ -93,7 +97,7 @@
   },
   {
    "path": "README.md",
-   "bytes": 4923
+   "bytes": 5572
   },
   {
    "path": "domains/cowork-plugin-management/INDEX.md",
@@ -545,7 +549,7 @@
   },
   {
    "path": "domains/product-management/rpi/SKILL.md",
-   "bytes": 5200
+   "bytes": 5189
   },
   {
    "path": "domains/product-management/rpi/agents/codebase-analyzer.md",
@@ -569,7 +573,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/create-design-discussion/process.md",
-   "bytes": 4340
+   "bytes": 4160
   },
   {
    "path": "domains/product-management/rpi/references/create-design-discussion/references/design_discussion_final_answer.md",
@@ -585,7 +589,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/create-prd/process.md",
-   "bytes": 3705
+   "bytes": 3639
   },
   {
    "path": "domains/product-management/rpi/references/create-prd/references/prd_final_answer_resolved.md",
@@ -597,7 +601,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/create-research-questions/process.md",
-   "bytes": 3584
+   "bytes": 3473
   },
   {
    "path": "domains/product-management/rpi/references/create-research-questions/references/request_template.md",
@@ -613,7 +617,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/create-research/process.md",
-   "bytes": 5732
+   "bytes": 5624
   },
   {
    "path": "domains/product-management/rpi/references/create-research/references/research_final_answer.md",
@@ -625,7 +629,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/create-structure-outline/process.md",
-   "bytes": 3465
+   "bytes": 3357
   },
   {
    "path": "domains/product-management/rpi/references/create-structure-outline/references/structure_outline_final_answer.md",
@@ -637,7 +641,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/create-tdd/process.md",
-   "bytes": 3763
+   "bytes": 3697
   },
   {
    "path": "domains/product-management/rpi/references/create-tdd/references/tdd_final_answer_resolved.md",
@@ -649,7 +653,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/implement-outline/process.md",
-   "bytes": 3058
+   "bytes": 3029
   },
   {
    "path": "domains/product-management/rpi/references/implement-outline/references/implement_outline_final_answer.md",
@@ -657,7 +661,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/iterate-design-discussion/process.md",
-   "bytes": 2868
+   "bytes": 2720
   },
   {
    "path": "domains/product-management/rpi/references/iterate-design-discussion/references/design_discussion_final_answer.md",
@@ -673,7 +677,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/iterate-implementation/process.md",
-   "bytes": 1715
+   "bytes": 1613
   },
   {
    "path": "domains/product-management/rpi/references/iterate-implementation/references/iterate_implementation_final_answer.md",
@@ -681,7 +685,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/iterate-prd/process.md",
-   "bytes": 2613
+   "bytes": 2544
   },
   {
    "path": "domains/product-management/rpi/references/iterate-prd/references/prd_final_answer_resolved.md",
@@ -693,7 +697,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/iterate-research-questions/process.md",
-   "bytes": 2704
+   "bytes": 2590
   },
   {
    "path": "domains/product-management/rpi/references/iterate-research-questions/references/research_questions_final_answer.md",
@@ -705,7 +709,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/iterate-research/process.md",
-   "bytes": 4684
+   "bytes": 4572
   },
   {
    "path": "domains/product-management/rpi/references/iterate-research/references/research_final_answer.md",
@@ -717,7 +721,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/iterate-structure-outline/process.md",
-   "bytes": 2399
+   "bytes": 2288
   },
   {
    "path": "domains/product-management/rpi/references/iterate-structure-outline/references/structure_outline_final_answer.md",
@@ -729,7 +733,7 @@
   },
   {
    "path": "domains/product-management/rpi/references/iterate-tdd/process.md",
-   "bytes": 2846
+   "bytes": 2777
   },
   {
    "path": "domains/product-management/rpi/references/iterate-tdd/references/tdd_final_answer_resolved.md",
@@ -777,7 +781,7 @@
   },
   {
    "path": "domains/product-management/show-me/SKILL.md",
-   "bytes": 3557
+   "bytes": 3424
   },
   {
    "path": "domains/product-management/show-me/agents/openai.yaml",
@@ -1836,16 +1840,8 @@
    "bytes": 2439
   },
   {
-   "path": "tools/__pycache__/fetch.cpython-311.pyc",
-   "bytes": 14565
-  },
-  {
-   "path": "tools/__pycache__/zh_keys.cpython-311.pyc",
-   "bytes": 22513
-  },
-  {
    "path": "tools/fetch.py",
-   "bytes": 7350
+   "bytes": 8564
   },
   {
    "path": "tools/zh_keys.py",

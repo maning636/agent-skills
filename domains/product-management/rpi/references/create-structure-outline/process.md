@@ -14,7 +14,7 @@ Read the source files cited by the documents and check the project's test and ve
 
 ## 3. Read the Visual Guidance and Document Template
 
-Read `domains/product-management/rpi/references/create-structure-outline/references/show-me.md` and `domains/product-management/rpi/references/create-structure-outline/references/create-structure-outline/references/structure_outline_template.md`.
+Read `domains/product-management/rpi/references/show-me.md` and `domains/product-management/rpi/references/create-structure-outline/references/structure_outline_template.md`.
 
 ## 4. Divide the Work into Testable Phases
 
@@ -45,6 +45,6 @@ Verify any factual corrections, then revise the outline in place. Treat scope, o
 
 ## 7. Read the Final-Answer Template and Respond
 
-Read `domains/product-management/rpi/references/create-structure-outline/references/create-structure-outline/references/structure_outline_final_answer.md` and provide the document path and suggested implementation command for the user's next session.
+Read `domains/product-management/rpi/references/create-structure-outline/references/structure_outline_final_answer.md` and provide the document path and suggested implementation command for the user's next session.
 
 Offer to open the document for review in VS Code, Cursor, or the user's preferred editor or browser.

@@ -16,7 +16,7 @@ Check the feedback against source files and existing tests. Use the research age
 
 ## 3. Read the Templates and Visual Guidance
 
-Read `domains/product-management/rpi/references/iterate-structure-outline/references/iterate-structure-outline/references/structure_outline_template.md` and `domains/product-management/rpi/references/iterate-structure-outline/references/show-me.md`.
+Read `domains/product-management/rpi/references/iterate-structure-outline/references/structure_outline_template.md` and `domains/product-management/rpi/references/show-me.md`.
 
 ## 4. Rework the Phases
 
@@ -32,6 +32,6 @@ Treat outline feedback as a request to update the outline. A request to implemen
 
 ## 6. Read the Final-Answer Template and Respond
 
-Read `domains/product-management/rpi/references/iterate-structure-outline/references/iterate-structure-outline/references/structure_outline_final_answer.md` and provide the updated file path and next command.
+Read `domains/product-management/rpi/references/iterate-structure-outline/references/structure_outline_final_answer.md` and provide the updated file path and next command.
 
 Offer to open the document for review in VS Code, Cursor, or the user's preferred editor or browser.

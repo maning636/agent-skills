@@ -12,7 +12,7 @@ Use the research agents to establish facts or find code patterns that affect a d
 
 ## 2. Read the Templates and Write a Small Starting Document
 
-Read `domains/product-management/rpi/references/create-tdd/references/create-tdd/references/tdd_template.md` and `domains/product-management/rpi/references/create-tdd/references/show-me.md`.
+Read `domains/product-management/rpi/references/create-tdd/references/tdd_template.md` and `domains/product-management/rpi/references/show-me.md`.
 
 Write `NN-tdd-<description>.md` using the next available number. Start with frontmatter, title, empty **System Design** and **Program Design** sections, and **Patterns to Follow**. Fill `repos` with relevant identifiers and SHAs, or use `repos: []`.
 
@@ -50,4 +50,4 @@ Ask the user to review **Program Design** and approve the code shape. Incorporat
 
 ## 7. Read the Final-Answer Template and Respond
 
-After both sections are approved, read `domains/product-management/rpi/references/create-tdd/references/create-tdd/references/tdd_final_answer_resolved.md`. Offer an outline or direct implementation.
+After both sections are approved, read `domains/product-management/rpi/references/create-tdd/references/tdd_final_answer_resolved.md`. Offer an outline or direct implementation.

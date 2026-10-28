@@ -37,9 +37,9 @@ Wait for all investigations to finish before synthesizing. Check the evidence, r
 
 Gather the current date and an identifier and commit SHA for each repository researched. Use `repos: []` when none apply. Select the next available `NN-` number in the task directory and a short description for `NN-research-<description>.md`.
 
-Now that the research is complete, read `domains/product-management/rpi/references/create-research/references/create-research/references/research_template.md`.
+Now that the research is complete, read `domains/product-management/rpi/references/create-research/references/research_template.md`.
 
-Read the vendored `/show-me` instructions at `domains/product-management/rpi/references/create-research/references/show-me.md` for the visual explanations in the document. Use its current-state views to show the system as it exists today.
+Read the vendored `/show-me` instructions at `domains/product-management/rpi/references/show-me.md` for the visual explanations in the document. Use its current-state views to show the system as it exists today.
 
 ## 6. Write the Research Document
 
@@ -61,7 +61,7 @@ If questions remain, do one targeted follow-up investigation and weave its findi
 
 ## 8. Read the Final-Answer Template and Respond
 
-Read `domains/product-management/rpi/references/create-research/references/workflow.md` to select the next step, then read `domains/product-management/rpi/references/create-research/references/create-research/references/research_final_answer.md` and respond using that template. Fill in the research path, next step, task directory, and chosen flow. Mention remaining open questions when present.
+Read `domains/product-management/rpi/references/workflow.md` to select the next step, then read `domains/product-management/rpi/references/create-research/references/research_final_answer.md` and respond using that template. Fill in the research path, next step, task directory, and chosen flow. Mention remaining open questions when present.
 
 Offer to open the document for review in VS Code, Cursor, or the user's preferred editor or browser.
 

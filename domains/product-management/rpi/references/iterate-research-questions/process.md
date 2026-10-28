@@ -12,7 +12,7 @@ If the document is complete and the user supplied no feedback, ask what they wan
 
 ## 2. Refine the Questions
 
-Check the feedback against the relevant source files and use lightweight research when needed. Use the research agents described in `domains/product-management/rpi/references/iterate-research-questions/references/create-research-questions/process.md` as useful.
+Check the feedback against the relevant source files and use lightweight research when needed. Use the research agents described in `domains/product-management/rpi/references/create-research-questions/process.md` as useful.
 
 Keep questions descriptive and focused on the current system: what exists, where it lives, how it behaves, and how its parts interact. Give the research agent concrete starting points and enough context to investigate objectively. Keep future design choices in the design phase.
 
@@ -27,13 +27,13 @@ Match the number and depth of questions to the task, usually two to seven. For f
 
 ## 3. Read the Template and Update the Document
 
-Read `domains/product-management/rpi/references/iterate-research-questions/references/iterate-research-questions/references/research_questions_template.md` before updating the questions.
+Read `domains/product-management/rpi/references/iterate-research-questions/references/research_questions_template.md` before updating the questions.
 
 Edit the existing document in place, weaving feedback into the questions and context pointers. Preserve its path, format, and frontmatter, updating the chosen flow when the user requests it. Keep exact paths, package names, repository names, and URLs intact, and add relevant pointers from the feedback.
 
 ## 4. Read the Final-Answer Template and Respond
 
-Read `domains/product-management/rpi/references/iterate-research-questions/references/iterate-research-questions/references/research_questions_final_answer.md` and respond using that template, filling in the saved file path, task directory, and chosen flow.
+Read `domains/product-management/rpi/references/iterate-research-questions/references/research_questions_final_answer.md` and respond using that template, filling in the saved file path, task directory, and chosen flow.
 
 Offer to open the document for review in VS Code, Cursor, or the user's preferred editor or browser.
 

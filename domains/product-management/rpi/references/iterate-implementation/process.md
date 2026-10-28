@@ -6,11 +6,11 @@ Follow these steps in order.
 
 ## 1. Read the Feedback and Workflow Context
 
-Read the available outline, design, and research documents and the user's named sources in full. Read `domains/product-management/rpi/references/iterate-implementation/references/implement-outline/process.md` for document precedence. Read supporting resources as needed.
+Read the available outline, design, and research documents and the user's named sources in full. Read `domains/product-management/rpi/references/implement-outline/process.md` for document precedence. Read supporting resources as needed.
 
 ## 2. Understand the Implemented Work
 
-Inspect the current diff and relevant commits. Compare the agreed behavior with the current code and tests. For an unstarted outline phase, read `domains/product-management/rpi/references/iterate-implementation/references/implement-outline/process.md` and use its normal implementation process.
+Inspect the current diff and relevant commits. Compare the agreed behavior with the current code and tests. For an unstarted outline phase, read `domains/product-management/rpi/references/implement-outline/process.md` and use its normal implementation process.
 
 ## 3. Verify the Reported Behavior
 
@@ -22,6 +22,6 @@ Implement the confirmed fix following existing patterns. Add a regression test w
 
 ## 5. Read the Final-Answer Template and Respond
 
-Read `domains/product-management/rpi/references/iterate-implementation/references/iterate-implementation/references/iterate_implementation_final_answer.md` and report the change, evidence, and remaining review steps.
+Read `domains/product-management/rpi/references/iterate-implementation/references/iterate_implementation_final_answer.md` and report the change, evidence, and remaining review steps.
 
 When a workflow document was updated, offer to open it for review in VS Code, Cursor, or the user's preferred editor or browser.

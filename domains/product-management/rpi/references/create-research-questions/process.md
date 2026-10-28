@@ -37,7 +37,7 @@ For frontend work, include the existing design system: components, colors and he
 
 ## 4. Read the Template and Save the Questions
 
-After reading the request and checking the context, read `domains/product-management/rpi/references/create-research-questions/references/create-research-questions/references/research_questions_template.md`. When starting a change, also read `domains/product-management/rpi/references/create-research-questions/references/create-research-questions/references/request_template.md` and save the original request in `NN-request-<description>.md` for later design and implementation sessions. Keep the user's desired result and exact source pointers there.
+After reading the request and checking the context, read `domains/product-management/rpi/references/create-research-questions/references/research_questions_template.md`. When starting a change, also read `domains/product-management/rpi/references/create-research-questions/references/request_template.md` and save the original request in `NN-request-<description>.md` for later design and implementation sessions. Keep the user's desired result and exact source pointers there.
 
 Write `NN-research-questions-<description>.md` in the selected task directory, using the next available number and a short kebab-case description.
 
@@ -45,7 +45,7 @@ Include context pointers when the request supplies them. Give the research sessi
 
 ## 5. Read the Final-Answer Template and Respond
 
-Read `domains/product-management/rpi/references/create-research-questions/references/create-research-questions/references/research_questions_final_answer.md` and respond using that template, filling in the saved file path, task directory, and chosen flow.
+Read `domains/product-management/rpi/references/create-research-questions/references/research_questions_final_answer.md` and respond using that template, filling in the saved file path, task directory, and chosen flow.
 
 Offer to open the document for review in VS Code, Cursor, or the user's preferred editor or browser.
 

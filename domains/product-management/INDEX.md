@@ -10,7 +10,7 @@
 | `product-brainstorming` | 产品头脑风暴 | 头脑风暴,创意发散,问题定义,假设挑战,灵感,点子 | `domains/product-management/product-brainstorming/SKILL.md` | 16.0K |
 | `roadmap-update` | 路线图维护 | 路线图,roadmap,排期,优先级,版本规划,迭代规划 | `domains/product-management/roadmap-update/SKILL.md` | 12.5K |
 | `rpi` | PRD 全流程研发流水线 | prd,需求文档,全流程,研究,设计讨论,技术设计,tdd,实现,流水线,需求到代码 | `domains/product-management/rpi/SKILL.md` | 5.1K |
-| `show-me` | 可视化讲解产物 | 可视化,图示,演示,可视化讲解,图表,示意,可视化预览 | `domains/product-management/show-me/SKILL.md` | 3.5K |
+| `show-me` | 可视化讲解产物 | 可视化,图示,演示,可视化讲解,图表,示意,可视化预览 | `domains/product-management/show-me/SKILL.md` | 3.3K |
 | `sprint-planning` | 迭代计划 | sprint,迭代计划,冲刺,工作拆分,容量估算 | `domains/product-management/sprint-planning/SKILL.md` | 4.3K |
 | `stakeholder-update` | 干系人同步 | 周报,汇报,向上汇报,同步进展,干系人,状态同步 | `domains/product-management/stakeholder-update/SKILL.md` | 14.8K |
 | `synthesize-research` | 用户研究综合 | 用户研究,访谈,问卷,调研,洞察,综合分析 | `domains/product-management/synthesize-research/SKILL.md` | 16.2K |

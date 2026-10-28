@@ -13,7 +13,7 @@ license: MIT
 
 Help the user research a change, work through its design, and implement it. Follow their requested step, using the phase instructions below.
 
-`domains/product-management/rpi/skills/rpi` means the directory containing this `SKILL.md`.
+`domains/product-management/rpi` means the directory containing this `SKILL.md`.
 
 `<rpi-invocation>` in templates means the host's skill command: `$rpi` in Codex, `/rpi` in Claude Code, or its plugin-qualified name when the host exposes one. Render next commands with that native invocation.
 

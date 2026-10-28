@@ -33,7 +33,7 @@ Wait for every investigation to finish. Check the evidence against live code, re
 
 ## 5. Read the Document Template and Visual Guidance
 
-Read `domains/product-management/rpi/references/iterate-research/references/iterate-research/references/research_template.md` for the document structure, then read `domains/product-management/rpi/references/iterate-research/references/show-me.md` for visual explanations. Use current-state views to show how the system works today.
+Read `domains/product-management/rpi/references/iterate-research/references/research_template.md` for the document structure, then read `domains/product-management/rpi/references/show-me.md` for visual explanations. Use current-state views to show how the system works today.
 
 ## 6. Update the Document in Place
 
@@ -49,6 +49,6 @@ Distinguish tests read from checks run. Support claims that a check passed with 
 
 ## 7. Read the Final-Answer Template and Respond
 
-Read `domains/product-management/rpi/references/iterate-research/references/iterate-research/references/research_final_answer.md` and respond using that template. For a chosen workflow, use `domains/product-management/rpi/references/iterate-research/references/workflow.md` to suggest the next step with the task directory and flow. For standalone research, use the saved-document and review portions as the complete response.
+Read `domains/product-management/rpi/references/iterate-research/references/research_final_answer.md` and respond using that template. For a chosen workflow, use `domains/product-management/rpi/references/workflow.md` to suggest the next step with the task directory and flow. For standalone research, use the saved-document and review portions as the complete response.
 
 Offer to open the document for review in VS Code, Cursor, or the user's preferred editor or browser.

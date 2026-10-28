@@ -18,7 +18,7 @@ Read the relevant source and use the research agents when useful to check curren
 
 ## 4. Read the Document Template and Visual Guidance
 
-Read `domains/product-management/rpi/references/iterate-design-discussion/references/iterate-design-discussion/references/design_discussion_template.md` and `domains/product-management/rpi/references/iterate-design-discussion/references/show-me.md` before revising the discussion.
+Read `domains/product-management/rpi/references/iterate-design-discussion/references/design_discussion_template.md` and `domains/product-management/rpi/references/show-me.md` before revising the discussion.
 
 ## 5. Settle One Choice and Update the Document
 
@@ -32,8 +32,8 @@ Use headers that state the section's main point. Update diagrams and any linked 
 
 Offer to open the document for review in VS Code, Cursor, or the user's preferred editor or browser.
 
-While choices remain, read `domains/product-management/rpi/references/iterate-design-discussion/references/iterate-design-discussion/references/design_discussion_final_answer.md` and present the next question when the user wants to continue.
+While choices remain, read `domains/product-management/rpi/references/iterate-design-discussion/references/design_discussion_final_answer.md` and present the next question when the user wants to continue.
 
-When the user has settled every design choice, read `domains/product-management/rpi/references/iterate-design-discussion/references/iterate-design-discussion/references/design_discussion_final_answer_resolved.md` and suggest an outline or direct implementation.
+When the user has settled every design choice, read `domains/product-management/rpi/references/iterate-design-discussion/references/design_discussion_final_answer_resolved.md` and suggest an outline or direct implementation.
 
 For a requested early handoff, save agreed decisions and remaining open choices, then follow the requested step.

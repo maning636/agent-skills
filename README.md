@@ -74,7 +74,7 @@ python tools/fetch.py --cache-dir                    # 缓存位置
 | `cowork-plugin-management` | 2 | 插件创建与定制 |
 | `pdf-viewer` | 1 | PDF 批注、填表、签名 |
 
-**共 178 个技能 / 444 个文件 / 2.7 MB。**
+**共 178 个技能 / 443 个文件 / 2.65 MB。**
 
 ---
 
