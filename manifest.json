@@ -1,0 +1,1855 @@
+{
+ "name": "agent-skills",
+ "version": "1.0.0",
+ "layout": "three-tier-progressive-disclosure",
+ "l0": "INDEX.md",
+ "l0_bytes": 3571,
+ "domains": {
+  "human-resources": {
+   "index": "domains/human-resources/INDEX.md",
+   "skills": 9
+  },
+  "product-management": {
+   "index": "domains/product-management/INDEX.md",
+   "skills": 11
+  },
+  "engineering": {
+   "index": "domains/engineering/INDEX.md",
+   "skills": 10
+  },
+  "design": {
+   "index": "domains/design/INDEX.md",
+   "skills": 7
+  },
+  "marketing": {
+   "index": "domains/marketing/INDEX.md",
+   "skills": 8
+  },
+  "sales": {
+   "index": "domains/sales/INDEX.md",
+   "skills": 36
+  },
+  "legal": {
+   "index": "domains/legal/INDEX.md",
+   "skills": 9
+  },
+  "finance": {
+   "index": "domains/finance/INDEX.md",
+   "skills": 8
+  },
+  "operations": {
+   "index": "domains/operations/INDEX.md",
+   "skills": 9
+  },
+  "customer-support": {
+   "index": "domains/customer-support/INDEX.md",
+   "skills": 5
+  },
+  "data": {
+   "index": "domains/data/INDEX.md",
+   "skills": 10
+  },
+  "enterprise-search": {
+   "index": "domains/enterprise-search/INDEX.md",
+   "skills": 5
+  },
+  "productivity": {
+   "index": "domains/productivity/INDEX.md",
+   "skills": 4
+  },
+  "small-business": {
+   "index": "domains/small-business/INDEX.md",
+   "skills": 44
+  },
+  "cowork-plugin-management": {
+   "index": "domains/cowork-plugin-management/INDEX.md",
+   "skills": 2
+  },
+  "pdf-viewer": {
+   "index": "domains/pdf-viewer/INDEX.md",
+   "skills": 1
+  }
+ },
+ "total_skills": 178,
+ "total_files": 444,
+ "total_bytes": 2815290,
+ "raw_base": "https://raw.githubusercontent.com/maning636/agent-skills/main/",
+ "files": [
+  {
+   "path": "FETCH.md",
+   "bytes": 5739
+  },
+  {
+   "path": "INDEX.md",
+   "bytes": 3571
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1146
+  },
+  {
+   "path": "NOTICE",
+   "bytes": 2513
+  },
+  {
+   "path": "README.md",
+   "bytes": 4923
+  },
+  {
+   "path": "domains/cowork-plugin-management/INDEX.md",
+   "bytes": 778
+  },
+  {
+   "path": "domains/cowork-plugin-management/cowork-plugin-customizer/LICENSE.txt",
+   "bytes": 11558
+  },
+  {
+   "path": "domains/cowork-plugin-management/cowork-plugin-customizer/SKILL.md",
+   "bytes": 9941
+  },
+  {
+   "path": "domains/cowork-plugin-management/cowork-plugin-customizer/examples/customized-mcp.json",
+   "bytes": 893
+  },
+  {
+   "path": "domains/cowork-plugin-management/cowork-plugin-customizer/references/mcp-servers.md",
+   "bytes": 3314
+  },
+  {
+   "path": "domains/cowork-plugin-management/cowork-plugin-customizer/references/search-strategies.md",
+   "bytes": 1680
+  },
+  {
+   "path": "domains/cowork-plugin-management/create-cowork-plugin/SKILL.md",
+   "bytes": 13717
+  },
+  {
+   "path": "domains/cowork-plugin-management/create-cowork-plugin/references/component-schemas.md",
+   "bytes": 12070
+  },
+  {
+   "path": "domains/cowork-plugin-management/create-cowork-plugin/references/example-plugins.md",
+   "bytes": 8624
+  },
+  {
+   "path": "domains/customer-support/INDEX.md",
+   "bytes": 1150
+  },
+  {
+   "path": "domains/customer-support/customer-escalation/SKILL.md",
+   "bytes": 11604
+  },
+  {
+   "path": "domains/customer-support/customer-research/SKILL.md",
+   "bytes": 10643
+  },
+  {
+   "path": "domains/customer-support/draft-response/SKILL.md",
+   "bytes": 15148
+  },
+  {
+   "path": "domains/customer-support/kb-article/SKILL.md",
+   "bytes": 12763
+  },
+  {
+   "path": "domains/customer-support/ticket-triage/SKILL.md",
+   "bytes": 11692
+  },
+  {
+   "path": "domains/data/INDEX.md",
+   "bytes": 1804
+  },
+  {
+   "path": "domains/data/analyze/SKILL.md",
+   "bytes": 4663
+  },
+  {
+   "path": "domains/data/build-dashboard/SKILL.md",
+   "bytes": 27037
+  },
+  {
+   "path": "domains/data/create-viz/SKILL.md",
+   "bytes": 5407
+  },
+  {
+   "path": "domains/data/data-context-extractor/SKILL.md",
+   "bytes": 7596
+  },
+  {
+   "path": "domains/data/data-context-extractor/references/domain-template.md",
+   "bytes": 3637
+  },
+  {
+   "path": "domains/data/data-context-extractor/references/example-output.md",
+   "bytes": 6445
+  },
+  {
+   "path": "domains/data/data-context-extractor/references/skill-template.md",
+   "bytes": 3968
+  },
+  {
+   "path": "domains/data/data-context-extractor/references/sql-dialects.md",
+   "bytes": 4678
+  },
+  {
+   "path": "domains/data/data-context-extractor/scripts/package_data_skill.py",
+   "bytes": 3891
+  },
+  {
+   "path": "domains/data/data-visualization/SKILL.md",
+   "bytes": 11496
+  },
+  {
+   "path": "domains/data/explore-data/SKILL.md",
+   "bytes": 11962
+  },
+  {
+   "path": "domains/data/sql-queries/SKILL.md",
+   "bytes": 11680
+  },
+  {
+   "path": "domains/data/statistical-analysis/SKILL.md",
+   "bytes": 10823
+  },
+  {
+   "path": "domains/data/validate-data/SKILL.md",
+   "bytes": 15413
+  },
+  {
+   "path": "domains/data/write-query/SKILL.md",
+   "bytes": 4970
+  },
+  {
+   "path": "domains/design/INDEX.md",
+   "bytes": 1932
+  },
+  {
+   "path": "domains/design/accessibility-review/SKILL.md",
+   "bytes": 4528
+  },
+  {
+   "path": "domains/design/design-critique/SKILL.md",
+   "bytes": 4146
+  },
+  {
+   "path": "domains/design/design-handoff/SKILL.md",
+   "bytes": 4193
+  },
+  {
+   "path": "domains/design/design-system/SKILL.md",
+   "bytes": 5881
+  },
+  {
+   "path": "domains/design/research-synthesis/SKILL.md",
+   "bytes": 3209
+  },
+  {
+   "path": "domains/design/user-research/SKILL.md",
+   "bytes": 1951
+  },
+  {
+   "path": "domains/design/ux-copy/SKILL.md",
+   "bytes": 3644
+  },
+  {
+   "path": "domains/engineering/INDEX.md",
+   "bytes": 2749
+  },
+  {
+   "path": "domains/engineering/architecture/SKILL.md",
+   "bytes": 2618
+  },
+  {
+   "path": "domains/engineering/code-review/SKILL.md",
+   "bytes": 4526
+  },
+  {
+   "path": "domains/engineering/debug/SKILL.md",
+   "bytes": 4270
+  },
+  {
+   "path": "domains/engineering/deploy-checklist/SKILL.md",
+   "bytes": 2603
+  },
+  {
+   "path": "domains/engineering/documentation/SKILL.md",
+   "bytes": 1730
+  },
+  {
+   "path": "domains/engineering/incident-response/SKILL.md",
+   "bytes": 5959
+  },
+  {
+   "path": "domains/engineering/standup/SKILL.md",
+   "bytes": 3503
+  },
+  {
+   "path": "domains/engineering/system-design/SKILL.md",
+   "bytes": 1526
+  },
+  {
+   "path": "domains/engineering/tech-debt/SKILL.md",
+   "bytes": 1656
+  },
+  {
+   "path": "domains/engineering/testing-strategy/SKILL.md",
+   "bytes": 1492
+  },
+  {
+   "path": "domains/enterprise-search/INDEX.md",
+   "bytes": 1169
+  },
+  {
+   "path": "domains/enterprise-search/digest/SKILL.md",
+   "bytes": 5882
+  },
+  {
+   "path": "domains/enterprise-search/knowledge-synthesis/SKILL.md",
+   "bytes": 8965
+  },
+  {
+   "path": "domains/enterprise-search/search-strategy/SKILL.md",
+   "bytes": 7593
+  },
+  {
+   "path": "domains/enterprise-search/search/SKILL.md",
+   "bytes": 6911
+  },
+  {
+   "path": "domains/enterprise-search/source-management/SKILL.md",
+   "bytes": 6084
+  },
+  {
+   "path": "domains/finance/INDEX.md",
+   "bytes": 1558
+  },
+  {
+   "path": "domains/finance/audit-support/SKILL.md",
+   "bytes": 17314
+  },
+  {
+   "path": "domains/finance/close-management/SKILL.md",
+   "bytes": 10644
+  },
+  {
+   "path": "domains/finance/financial-statements/SKILL.md",
+   "bytes": 15171
+  },
+  {
+   "path": "domains/finance/journal-entry-prep/SKILL.md",
+   "bytes": 8176
+  },
+  {
+   "path": "domains/finance/journal-entry/SKILL.md",
+   "bytes": 5397
+  },
+  {
+   "path": "domains/finance/reconciliation/SKILL.md",
+   "bytes": 8446
+  },
+  {
+   "path": "domains/finance/sox-testing/SKILL.md",
+   "bytes": 9640
+  },
+  {
+   "path": "domains/finance/variance-analysis/SKILL.md",
+   "bytes": 11613
+  },
+  {
+   "path": "domains/human-resources/INDEX.md",
+   "bytes": 2337
+  },
+  {
+   "path": "domains/human-resources/comp-analysis/SKILL.md",
+   "bytes": 3497
+  },
+  {
+   "path": "domains/human-resources/draft-offer/SKILL.md",
+   "bytes": 2588
+  },
+  {
+   "path": "domains/human-resources/interview-prep/SKILL.md",
+   "bytes": 1661
+  },
+  {
+   "path": "domains/human-resources/onboarding/SKILL.md",
+   "bytes": 3436
+  },
+  {
+   "path": "domains/human-resources/org-planning/SKILL.md",
+   "bytes": 1439
+  },
+  {
+   "path": "domains/human-resources/people-report/SKILL.md",
+   "bytes": 2987
+  },
+  {
+   "path": "domains/human-resources/performance-review/SKILL.md",
+   "bytes": 5205
+  },
+  {
+   "path": "domains/human-resources/policy-lookup/SKILL.md",
+   "bytes": 4404
+  },
+  {
+   "path": "domains/human-resources/recruiting-pipeline/SKILL.md",
+   "bytes": 1442
+  },
+  {
+   "path": "domains/legal/INDEX.md",
+   "bytes": 1709
+  },
+  {
+   "path": "domains/legal/brief/SKILL.md",
+   "bytes": 7309
+  },
+  {
+   "path": "domains/legal/compliance-check/SKILL.md",
+   "bytes": 15080
+  },
+  {
+   "path": "domains/legal/legal-response/SKILL.md",
+   "bytes": 16756
+  },
+  {
+   "path": "domains/legal/legal-risk-assessment/SKILL.md",
+   "bytes": 13018
+  },
+  {
+   "path": "domains/legal/meeting-briefing/SKILL.md",
+   "bytes": 9372
+  },
+  {
+   "path": "domains/legal/review-contract/SKILL.md",
+   "bytes": 17184
+  },
+  {
+   "path": "domains/legal/signature-request/SKILL.md",
+   "bytes": 3640
+  },
+  {
+   "path": "domains/legal/triage-nda/SKILL.md",
+   "bytes": 14958
+  },
+  {
+   "path": "domains/legal/vendor-check/SKILL.md",
+   "bytes": 5876
+  },
+  {
+   "path": "domains/marketing/INDEX.md",
+   "bytes": 1698
+  },
+  {
+   "path": "domains/marketing/brand-review/SKILL.md",
+   "bytes": 13340
+  },
+  {
+   "path": "domains/marketing/campaign-plan/SKILL.md",
+   "bytes": 14579
+  },
+  {
+   "path": "domains/marketing/content-creation/SKILL.md",
+   "bytes": 9138
+  },
+  {
+   "path": "domains/marketing/draft-content/SKILL.md",
+   "bytes": 4854
+  },
+  {
+   "path": "domains/marketing/email-sequence/SKILL.md",
+   "bytes": 10983
+  },
+  {
+   "path": "domains/marketing/mkt-competitive-brief/SKILL.md",
+   "bytes": 13616
+  },
+  {
+   "path": "domains/marketing/performance-report/SKILL.md",
+   "bytes": 19739
+  },
+  {
+   "path": "domains/marketing/seo-audit/SKILL.md",
+   "bytes": 9830
+  },
+  {
+   "path": "domains/operations/INDEX.md",
+   "bytes": 1972
+  },
+  {
+   "path": "domains/operations/capacity-plan/SKILL.md",
+   "bytes": 3729
+  },
+  {
+   "path": "domains/operations/change-request/SKILL.md",
+   "bytes": 4019
+  },
+  {
+   "path": "domains/operations/compliance-tracking/SKILL.md",
+   "bytes": 1819
+  },
+  {
+   "path": "domains/operations/process-doc/SKILL.md",
+   "bytes": 2704
+  },
+  {
+   "path": "domains/operations/process-optimization/SKILL.md",
+   "bytes": 1512
+  },
+  {
+   "path": "domains/operations/risk-assessment/SKILL.md",
+   "bytes": 1845
+  },
+  {
+   "path": "domains/operations/runbook/SKILL.md",
+   "bytes": 2724
+  },
+  {
+   "path": "domains/operations/status-report/SKILL.md",
+   "bytes": 2752
+  },
+  {
+   "path": "domains/operations/vendor-review/SKILL.md",
+   "bytes": 3401
+  },
+  {
+   "path": "domains/pdf-viewer/INDEX.md",
+   "bytes": 509
+  },
+  {
+   "path": "domains/pdf-viewer/view-pdf/SKILL.md",
+   "bytes": 6549
+  },
+  {
+   "path": "domains/product-management/INDEX.md",
+   "bytes": 2621
+  },
+  {
+   "path": "domains/product-management/metrics-review/SKILL.md",
+   "bytes": 18575
+  },
+  {
+   "path": "domains/product-management/pm-competitive-brief/SKILL.md",
+   "bytes": 15238
+  },
+  {
+   "path": "domains/product-management/product-brainstorming/SKILL.md",
+   "bytes": 16428
+  },
+  {
+   "path": "domains/product-management/roadmap-update/SKILL.md",
+   "bytes": 12796
+  },
+  {
+   "path": "domains/product-management/rpi/.claude-plugin/plugin.json",
+   "bytes": 645
+  },
+  {
+   "path": "domains/product-management/rpi/SKILL.md",
+   "bytes": 5200
+  },
+  {
+   "path": "domains/product-management/rpi/agents/codebase-analyzer.md",
+   "bytes": 5813
+  },
+  {
+   "path": "domains/product-management/rpi/agents/codebase-locator.md",
+   "bytes": 4956
+  },
+  {
+   "path": "domains/product-management/rpi/agents/codebase-pattern-finder.md",
+   "bytes": 7177
+  },
+  {
+   "path": "domains/product-management/rpi/agents/outline-implementer-agent.md",
+   "bytes": 4543
+  },
+  {
+   "path": "domains/product-management/rpi/agents/web-search-researcher.md",
+   "bytes": 6086
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-design-discussion/process.md",
+   "bytes": 4340
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-design-discussion/references/design_discussion_final_answer.md",
+   "bytes": 263
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-design-discussion/references/design_discussion_final_answer_resolved.md",
+   "bytes": 476
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-design-discussion/references/design_discussion_template.md",
+   "bytes": 1084
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-prd/process.md",
+   "bytes": 3705
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-prd/references/prd_final_answer_resolved.md",
+   "bytes": 451
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-prd/references/prd_template.md",
+   "bytes": 889
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-research-questions/process.md",
+   "bytes": 3584
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-research-questions/references/request_template.md",
+   "bytes": 326
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-research-questions/references/research_questions_final_answer.md",
+   "bytes": 484
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-research-questions/references/research_questions_template.md",
+   "bytes": 480
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-research/process.md",
+   "bytes": 5732
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-research/references/research_final_answer.md",
+   "bytes": 670
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-research/references/research_template.md",
+   "bytes": 1691
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-structure-outline/process.md",
+   "bytes": 3465
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-structure-outline/references/structure_outline_final_answer.md",
+   "bytes": 353
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-structure-outline/references/structure_outline_template.md",
+   "bytes": 1119
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-tdd/process.md",
+   "bytes": 3763
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-tdd/references/tdd_final_answer_resolved.md",
+   "bytes": 466
+  },
+  {
+   "path": "domains/product-management/rpi/references/create-tdd/references/tdd_template.md",
+   "bytes": 800
+  },
+  {
+   "path": "domains/product-management/rpi/references/implement-outline/process.md",
+   "bytes": 3058
+  },
+  {
+   "path": "domains/product-management/rpi/references/implement-outline/references/implement_outline_final_answer.md",
+   "bytes": 519
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-design-discussion/process.md",
+   "bytes": 2868
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-design-discussion/references/design_discussion_final_answer.md",
+   "bytes": 263
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-design-discussion/references/design_discussion_final_answer_resolved.md",
+   "bytes": 476
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-design-discussion/references/design_discussion_template.md",
+   "bytes": 957
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-implementation/process.md",
+   "bytes": 1715
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-implementation/references/iterate_implementation_final_answer.md",
+   "bytes": 395
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-prd/process.md",
+   "bytes": 2613
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-prd/references/prd_final_answer_resolved.md",
+   "bytes": 451
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-prd/references/prd_template.md",
+   "bytes": 889
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-research-questions/process.md",
+   "bytes": 2704
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-research-questions/references/research_questions_final_answer.md",
+   "bytes": 486
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-research-questions/references/research_questions_template.md",
+   "bytes": 480
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-research/process.md",
+   "bytes": 4684
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-research/references/research_final_answer.md",
+   "bytes": 731
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-research/references/research_template.md",
+   "bytes": 1525
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-structure-outline/process.md",
+   "bytes": 2399
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-structure-outline/references/structure_outline_final_answer.md",
+   "bytes": 355
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-structure-outline/references/structure_outline_template.md",
+   "bytes": 1119
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-tdd/process.md",
+   "bytes": 2846
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-tdd/references/tdd_final_answer_resolved.md",
+   "bytes": 466
+  },
+  {
+   "path": "domains/product-management/rpi/references/iterate-tdd/references/tdd_template.md",
+   "bytes": 800
+  },
+  {
+   "path": "domains/product-management/rpi/references/show-me.md",
+   "bytes": 3424
+  },
+  {
+   "path": "domains/product-management/rpi/references/subagents/codebase-analyzer.md",
+   "bytes": 5813
+  },
+  {
+   "path": "domains/product-management/rpi/references/subagents/codebase-locator.md",
+   "bytes": 4956
+  },
+  {
+   "path": "domains/product-management/rpi/references/subagents/codebase-pattern-finder.md",
+   "bytes": 7177
+  },
+  {
+   "path": "domains/product-management/rpi/references/subagents/outline-implementer-agent.md",
+   "bytes": 4543
+  },
+  {
+   "path": "domains/product-management/rpi/references/subagents/web-search-researcher.md",
+   "bytes": 6086
+  },
+  {
+   "path": "domains/product-management/rpi/references/workflow-choice.md",
+   "bytes": 2634
+  },
+  {
+   "path": "domains/product-management/rpi/references/workflow.md",
+   "bytes": 3878
+  },
+  {
+   "path": "domains/product-management/show-me/.claude-plugin/plugin.json",
+   "bytes": 406
+  },
+  {
+   "path": "domains/product-management/show-me/SKILL.md",
+   "bytes": 3557
+  },
+  {
+   "path": "domains/product-management/show-me/agents/openai.yaml",
+   "bytes": 45
+  },
+  {
+   "path": "domains/product-management/sprint-planning/SKILL.md",
+   "bytes": 4391
+  },
+  {
+   "path": "domains/product-management/stakeholder-update/SKILL.md",
+   "bytes": 15189
+  },
+  {
+   "path": "domains/product-management/synthesize-research/SKILL.md",
+   "bytes": 16607
+  },
+  {
+   "path": "domains/product-management/visual-pr/.claude-plugin/plugin.json",
+   "bytes": 404
+  },
+  {
+   "path": "domains/product-management/visual-pr/SKILL.md",
+   "bytes": 3608
+  },
+  {
+   "path": "domains/product-management/visual-pr/references/describe_pr_final_answer.md",
+   "bytes": 439
+  },
+  {
+   "path": "domains/product-management/visual-pr/references/pr_description_template.md",
+   "bytes": 2032
+  },
+  {
+   "path": "domains/product-management/visual-pr/references/show-me.md",
+   "bytes": 3162
+  },
+  {
+   "path": "domains/product-management/write-spec/SKILL.md",
+   "bytes": 12716
+  },
+  {
+   "path": "domains/productivity/INDEX.md",
+   "bytes": 967
+  },
+  {
+   "path": "domains/productivity/memory-management/SKILL.md",
+   "bytes": 9227
+  },
+  {
+   "path": "domains/productivity/start/SKILL.md",
+   "bytes": 5238
+  },
+  {
+   "path": "domains/productivity/task-management/SKILL.md",
+   "bytes": 2853
+  },
+  {
+   "path": "domains/productivity/update/SKILL.md",
+   "bytes": 5356
+  },
+  {
+   "path": "domains/sales/INDEX.md",
+   "bytes": 5521
+  },
+  {
+   "path": "domains/sales/account-context/SKILL.md",
+   "bytes": 9756
+  },
+  {
+   "path": "domains/sales/account-plan/SKILL.md",
+   "bytes": 10250
+  },
+  {
+   "path": "domains/sales/account-research/SKILL.md",
+   "bytes": 9849
+  },
+  {
+   "path": "domains/sales/account-tiering/SKILL.md",
+   "bytes": 9491
+  },
+  {
+   "path": "domains/sales/call-prep/SKILL.md",
+   "bytes": 11457
+  },
+  {
+   "path": "domains/sales/call-summary/SKILL.md",
+   "bytes": 11841
+  },
+  {
+   "path": "domains/sales/close-plan/SKILL.md",
+   "bytes": 10456
+  },
+  {
+   "path": "domains/sales/competitive-intelligence/SKILL.md",
+   "bytes": 10561
+  },
+  {
+   "path": "domains/sales/create-an-asset/SKILL.md",
+   "bytes": 10465
+  },
+  {
+   "path": "domains/sales/crm-hygiene-check/SKILL.md",
+   "bytes": 9611
+  },
+  {
+   "path": "domains/sales/customer-health/SKILL.md",
+   "bytes": 10421
+  },
+  {
+   "path": "domains/sales/customer-voice/SKILL.md",
+   "bytes": 9237
+  },
+  {
+   "path": "domains/sales/daily-briefing/SKILL.md",
+   "bytes": 9244
+  },
+  {
+   "path": "domains/sales/deal-advance-gap/SKILL.md",
+   "bytes": 9940
+  },
+  {
+   "path": "domains/sales/deal-review/SKILL.md",
+   "bytes": 9934
+  },
+  {
+   "path": "domains/sales/deal-signals/SKILL.md",
+   "bytes": 9927
+  },
+  {
+   "path": "domains/sales/deal-slip-scenario/SKILL.md",
+   "bytes": 9499
+  },
+  {
+   "path": "domains/sales/draft-outreach/SKILL.md",
+   "bytes": 11766
+  },
+  {
+   "path": "domains/sales/end-of-day/SKILL.md",
+   "bytes": 11301
+  },
+  {
+   "path": "domains/sales/expansion-whitespace/SKILL.md",
+   "bytes": 10047
+  },
+  {
+   "path": "domains/sales/forecast/SKILL.md",
+   "bytes": 10052
+  },
+  {
+   "path": "domains/sales/handle-objection/SKILL.md",
+   "bytes": 9757
+  },
+  {
+   "path": "domains/sales/inbox-sweep/SKILL.md",
+   "bytes": 12053
+  },
+  {
+   "path": "domains/sales/log-activity/SKILL.md",
+   "bytes": 10355
+  },
+  {
+   "path": "domains/sales/pipeline-review/SKILL.md",
+   "bytes": 9575
+  },
+  {
+   "path": "domains/sales/renewal-radar/SKILL.md",
+   "bytes": 9937
+  },
+  {
+   "path": "domains/sales/rep-context/SKILL.md",
+   "bytes": 8908
+  },
+  {
+   "path": "domains/sales/route-lead/SKILL.md",
+   "bytes": 10487
+  },
+  {
+   "path": "domains/sales/sales-lead-triage/SKILL.md",
+   "bytes": 10697
+  },
+  {
+   "path": "domains/sales/schedule-meeting/SKILL.md",
+   "bytes": 11936
+  },
+  {
+   "path": "domains/sales/setup/SKILL.md",
+   "bytes": 16225
+  },
+  {
+   "path": "domains/sales/stakeholder-map/SKILL.md",
+   "bytes": 10478
+  },
+  {
+   "path": "domains/sales/team-pipeline/SKILL.md",
+   "bytes": 9634
+  },
+  {
+   "path": "domains/sales/update-opportunity/SKILL.md",
+   "bytes": 10007
+  },
+  {
+   "path": "domains/sales/weekly-wrap/SKILL.md",
+   "bytes": 9564
+  },
+  {
+   "path": "domains/sales/win-loss-review/SKILL.md",
+   "bytes": 9239
+  },
+  {
+   "path": "domains/small-business/INDEX.md",
+   "bytes": 6566
+  },
+  {
+   "path": "domains/small-business/ad-manager/SKILL.md",
+   "bytes": 10049
+  },
+  {
+   "path": "domains/small-business/ad-manager/reference/ad_copy.md",
+   "bytes": 4914
+  },
+  {
+   "path": "domains/small-business/ad-manager/reference/change_playbook.md",
+   "bytes": 5556
+  },
+  {
+   "path": "domains/small-business/ad-manager/reference/data_sources.md",
+   "bytes": 5078
+  },
+  {
+   "path": "domains/small-business/ad-manager/reference/diagnostics.md",
+   "bytes": 4733
+  },
+  {
+   "path": "domains/small-business/ad-manager/reference/gotchas.md",
+   "bytes": 6062
+  },
+  {
+   "path": "domains/small-business/ap-processor/SKILL.md",
+   "bytes": 15190
+  },
+  {
+   "path": "domains/small-business/ap-processor/reference/coding_rules.md",
+   "bytes": 3863
+  },
+  {
+   "path": "domains/small-business/ap-processor/reference/gotchas.md",
+   "bytes": 4221
+  },
+  {
+   "path": "domains/small-business/ap-processor/reference/intake_and_extraction.md",
+   "bytes": 4290
+  },
+  {
+   "path": "domains/small-business/ap-processor/reference/matching_and_exceptions.md",
+   "bytes": 3447
+  },
+  {
+   "path": "domains/small-business/ap-processor/reference/payment_run.md",
+   "bytes": 3317
+  },
+  {
+   "path": "domains/small-business/brand-style/SKILL.md",
+   "bytes": 5356
+  },
+  {
+   "path": "domains/small-business/build-agent/SKILL.md",
+   "bytes": 6790
+  },
+  {
+   "path": "domains/small-business/build-agent/reference/capture.md",
+   "bytes": 4596
+  },
+  {
+   "path": "domains/small-business/build-agent/reference/gotchas.md",
+   "bytes": 5347
+  },
+  {
+   "path": "domains/small-business/build-agent/reference/skill_authoring.md",
+   "bytes": 5999
+  },
+  {
+   "path": "domains/small-business/build-connector/SKILL.md",
+   "bytes": 9315
+  },
+  {
+   "path": "domains/small-business/build-connector/reference/discovery.md",
+   "bytes": 7603
+  },
+  {
+   "path": "domains/small-business/build-connector/reference/gotchas.md",
+   "bytes": 6945
+  },
+  {
+   "path": "domains/small-business/build-connector/reference/paths.md",
+   "bytes": 4325
+  },
+  {
+   "path": "domains/small-business/build-connector/reference/use-zapier.md",
+   "bytes": 10796
+  },
+  {
+   "path": "domains/small-business/business-pulse/SKILL.md",
+   "bytes": 12414
+  },
+  {
+   "path": "domains/small-business/business-pulse/reference/data_sources.md",
+   "bytes": 9803
+  },
+  {
+   "path": "domains/small-business/business-pulse/reference/gotchas.md",
+   "bytes": 3296
+  },
+  {
+   "path": "domains/small-business/business-pulse/reference/output_template.md",
+   "bytes": 4171
+  },
+  {
+   "path": "domains/small-business/business-pulse/reference/thresholds.md",
+   "bytes": 2281
+  },
+  {
+   "path": "domains/small-business/business-pulse/reference/v2_sources.md",
+   "bytes": 3430
+  },
+  {
+   "path": "domains/small-business/call-list/SKILL.md",
+   "bytes": 5241
+  },
+  {
+   "path": "domains/small-business/canva-creator/SKILL.md",
+   "bytes": 20356
+  },
+  {
+   "path": "domains/small-business/canva-creator/reference/canva-api.md",
+   "bytes": 6971
+  },
+  {
+   "path": "domains/small-business/canva-creator/reference/examples/boutique-brief-campaign.md",
+   "bytes": 6075
+  },
+  {
+   "path": "domains/small-business/canva-creator/reference/gotchas.md",
+   "bytes": 13222
+  },
+  {
+   "path": "domains/small-business/canva-creator/reference/hubspot-staging.md",
+   "bytes": 3767
+  },
+  {
+   "path": "domains/small-business/cash-flow-snapshot/SKILL.md",
+   "bytes": 12894
+  },
+  {
+   "path": "domains/small-business/cash-flow-snapshot/reference/examples/worked-example.md",
+   "bytes": 3782
+  },
+  {
+   "path": "domains/small-business/cash-flow-snapshot/reference/gotchas.md",
+   "bytes": 2468
+  },
+  {
+   "path": "domains/small-business/cash-flow-snapshot/reference/v2_sources.md",
+   "bytes": 5442
+  },
+  {
+   "path": "domains/small-business/close-month/SKILL.md",
+   "bytes": 7109
+  },
+  {
+   "path": "domains/small-business/content-strategy/SKILL.md",
+   "bytes": 8562
+  },
+  {
+   "path": "domains/small-business/content-strategy/reference/examples/retail-boutique-example.md",
+   "bytes": 2943
+  },
+  {
+   "path": "domains/small-business/content-strategy/reference/gotchas.md",
+   "bytes": 4493
+  },
+  {
+   "path": "domains/small-business/content-strategy/reference/v2_sources.md",
+   "bytes": 1553
+  },
+  {
+   "path": "domains/small-business/contract-review/SKILL.md",
+   "bytes": 11892
+  },
+  {
+   "path": "domains/small-business/contract-review/reference/docusign-fetch.md",
+   "bytes": 1006
+  },
+  {
+   "path": "domains/small-business/contract-review/reference/examples/flagged-summary-saas.md",
+   "bytes": 4502
+  },
+  {
+   "path": "domains/small-business/contract-review/reference/gmail-fetch.md",
+   "bytes": 942
+  },
+  {
+   "path": "domains/small-business/contract-review/reference/gotchas.md",
+   "bytes": 3682
+  },
+  {
+   "path": "domains/small-business/contract-review/reference/m365-fetch.md",
+   "bytes": 2671
+  },
+  {
+   "path": "domains/small-business/crm-autopilot/SKILL.md",
+   "bytes": 15484
+  },
+  {
+   "path": "domains/small-business/crm-autopilot/reference/cleanup-checklist.md",
+   "bytes": 4582
+  },
+  {
+   "path": "domains/small-business/crm-autopilot/reference/examples/cleanup-deal.md",
+   "bytes": 4067
+  },
+  {
+   "path": "domains/small-business/crm-autopilot/reference/examples/log-call-happy-path.md",
+   "bytes": 2964
+  },
+  {
+   "path": "domains/small-business/crm-autopilot/reference/examples/log-email-happy-path.md",
+   "bytes": 2221
+  },
+  {
+   "path": "domains/small-business/crm-autopilot/reference/gotchas.md",
+   "bytes": 5275
+  },
+  {
+   "path": "domains/small-business/crm-autopilot/reference/hubspot-fields.md",
+   "bytes": 4737
+  },
+  {
+   "path": "domains/small-business/crm-autopilot/reference/lightweight_crm.md",
+   "bytes": 4278
+  },
+  {
+   "path": "domains/small-business/crm-autopilot/reference/salesforce-fields.md",
+   "bytes": 6174
+  },
+  {
+   "path": "domains/small-business/crm-autopilot/reference/standing_mode.md",
+   "bytes": 5324
+  },
+  {
+   "path": "domains/small-business/grant-rfp-writer/SKILL.md",
+   "bytes": 13740
+  },
+  {
+   "path": "domains/small-business/grant-rfp-writer/reference/drafting.md",
+   "bytes": 6393
+  },
+  {
+   "path": "domains/small-business/grant-rfp-writer/reference/go_no_go.md",
+   "bytes": 6265
+  },
+  {
+   "path": "domains/small-business/grant-rfp-writer/reference/gotchas.md",
+   "bytes": 6597
+  },
+  {
+   "path": "domains/small-business/grant-rfp-writer/reference/opportunity_sources.md",
+   "bytes": 4543
+  },
+  {
+   "path": "domains/small-business/grant-rfp-writer/reference/org_profile.md",
+   "bytes": 4269
+  },
+  {
+   "path": "domains/small-business/grow-pipeline/SKILL.md",
+   "bytes": 9130
+  },
+  {
+   "path": "domains/small-business/growth-pulse/SKILL.md",
+   "bytes": 10045
+  },
+  {
+   "path": "domains/small-business/growth-pulse/reference/data_sources.md",
+   "bytes": 5883
+  },
+  {
+   "path": "domains/small-business/growth-pulse/reference/gotchas.md",
+   "bytes": 5174
+  },
+  {
+   "path": "domains/small-business/growth-pulse/reference/output_template.md",
+   "bytes": 3911
+  },
+  {
+   "path": "domains/small-business/growth-pulse/reference/thresholds.md",
+   "bytes": 3055
+  },
+  {
+   "path": "domains/small-business/hiring-screener/SKILL.md",
+   "bytes": 10519
+  },
+  {
+   "path": "domains/small-business/hiring-screener/reference/candidate_comms.md",
+   "bytes": 5038
+  },
+  {
+   "path": "domains/small-business/hiring-screener/reference/fair_screening.md",
+   "bytes": 5617
+  },
+  {
+   "path": "domains/small-business/hiring-screener/reference/gotchas.md",
+   "bytes": 5802
+  },
+  {
+   "path": "domains/small-business/hiring-screener/reference/onboarding.md",
+   "bytes": 4507
+  },
+  {
+   "path": "domains/small-business/hiring-screener/reference/rubric.md",
+   "bytes": 5535
+  },
+  {
+   "path": "domains/small-business/inbox-manager/SKILL.md",
+   "bytes": 11027
+  },
+  {
+   "path": "domains/small-business/inbox-manager/reference/digest_format.md",
+   "bytes": 4683
+  },
+  {
+   "path": "domains/small-business/inbox-manager/reference/gotchas.md",
+   "bytes": 7213
+  },
+  {
+   "path": "domains/small-business/inbox-manager/reference/handoffs.md",
+   "bytes": 4621
+  },
+  {
+   "path": "domains/small-business/inbox-manager/reference/reply_drafting.md",
+   "bytes": 3888
+  },
+  {
+   "path": "domains/small-business/inbox-manager/reference/triage_rules.md",
+   "bytes": 3977
+  },
+  {
+   "path": "domains/small-business/inventory-planner/SKILL.md",
+   "bytes": 10199
+  },
+  {
+   "path": "domains/small-business/inventory-planner/reference/data_sources.md",
+   "bytes": 4482
+  },
+  {
+   "path": "domains/small-business/inventory-planner/reference/gotchas.md",
+   "bytes": 4703
+  },
+  {
+   "path": "domains/small-business/inventory-planner/reference/po_drafting.md",
+   "bytes": 4031
+  },
+  {
+   "path": "domains/small-business/inventory-planner/reference/seasonality.md",
+   "bytes": 5526
+  },
+  {
+   "path": "domains/small-business/inventory-planner/reference/velocity_and_reorder.md",
+   "bytes": 8760
+  },
+  {
+   "path": "domains/small-business/invoice-chase/SKILL.md",
+   "bytes": 12081
+  },
+  {
+   "path": "domains/small-business/invoice-chase/reference/examples/firm-reminder.md",
+   "bytes": 903
+  },
+  {
+   "path": "domains/small-business/invoice-chase/reference/examples/gentle-reminder.md",
+   "bytes": 856
+  },
+  {
+   "path": "domains/small-business/invoice-chase/reference/gotchas.md",
+   "bytes": 5233
+  },
+  {
+   "path": "domains/small-business/invoice-chase/reference/tone-matching.md",
+   "bytes": 1747
+  },
+  {
+   "path": "domains/small-business/invoice-chase/reference/v2_sources.md",
+   "bytes": 5850
+  },
+  {
+   "path": "domains/small-business/job-post-builder/SKILL.md",
+   "bytes": 10868
+  },
+  {
+   "path": "domains/small-business/job-post-builder/reference/docusign-routing.md",
+   "bytes": 2849
+  },
+  {
+   "path": "domains/small-business/job-post-builder/reference/examples/worked-example.md",
+   "bytes": 4771
+  },
+  {
+   "path": "domains/small-business/job-post-builder/reference/existing-document-merge.md",
+   "bytes": 2019
+  },
+  {
+   "path": "domains/small-business/job-post-builder/reference/gotchas.md",
+   "bytes": 2831
+  },
+  {
+   "path": "domains/small-business/job-post-builder/reference/interview-guide-structure.md",
+   "bytes": 4010
+  },
+  {
+   "path": "domains/small-business/job-post-builder/reference/job-post-structure.md",
+   "bytes": 2594
+  },
+  {
+   "path": "domains/small-business/job-post-builder/reference/offer-letter-template.md",
+   "bytes": 5364
+  },
+  {
+   "path": "domains/small-business/job-post-builder/reference/role-intake.md",
+   "bytes": 3033
+  },
+  {
+   "path": "domains/small-business/lead-finder/SKILL.md",
+   "bytes": 9148
+  },
+  {
+   "path": "domains/small-business/lead-finder/reference/gotchas.md",
+   "bytes": 4463
+  },
+  {
+   "path": "domains/small-business/lead-finder/reference/icp_method.md",
+   "bytes": 3863
+  },
+  {
+   "path": "domains/small-business/lead-finder/reference/output_template.md",
+   "bytes": 4090
+  },
+  {
+   "path": "domains/small-business/lead-finder/reference/scoring.md",
+   "bytes": 3780
+  },
+  {
+   "path": "domains/small-business/lead-finder/reference/sourcing.md",
+   "bytes": 3901
+  },
+  {
+   "path": "domains/small-business/marketing-monday/SKILL.md",
+   "bytes": 10348
+  },
+  {
+   "path": "domains/small-business/monday-brief/SKILL.md",
+   "bytes": 9103
+  },
+  {
+   "path": "domains/small-business/month-end-prep/SKILL.md",
+   "bytes": 19472
+  },
+  {
+   "path": "domains/small-business/month-end-prep/reference/close-packet-format.md",
+   "bytes": 4745
+  },
+  {
+   "path": "domains/small-business/month-end-prep/reference/examples/pl-narrative.md",
+   "bytes": 2141
+  },
+  {
+   "path": "domains/small-business/month-end-prep/reference/gotchas.md",
+   "bytes": 4117
+  },
+  {
+   "path": "domains/small-business/month-end-prep/reference/paypal-settlements.md",
+   "bytes": 3932
+  },
+  {
+   "path": "domains/small-business/month-end-prep/reference/quickbooks-reconcile.md",
+   "bytes": 2892
+  },
+  {
+   "path": "domains/small-business/month-end-prep/reference/v2_sources.md",
+   "bytes": 6332
+  },
+  {
+   "path": "domains/small-business/month-end-prep/reference/xero-reconcile.md",
+   "bytes": 7434
+  },
+  {
+   "path": "domains/small-business/month-end-prep/reference/zoho-books-reconcile.md",
+   "bytes": 7014
+  },
+  {
+   "path": "domains/small-business/outreach-composer/SKILL.md",
+   "bytes": 10728
+  },
+  {
+   "path": "domains/small-business/outreach-composer/reference/gotchas.md",
+   "bytes": 6086
+  },
+  {
+   "path": "domains/small-business/outreach-composer/reference/output_template.md",
+   "bytes": 4274
+  },
+  {
+   "path": "domains/small-business/outreach-composer/reference/sequence_patterns.md",
+   "bytes": 4472
+  },
+  {
+   "path": "domains/small-business/outreach-composer/reference/slop_test.md",
+   "bytes": 5657
+  },
+  {
+   "path": "domains/small-business/pay-the-bills/SKILL.md",
+   "bytes": 8964
+  },
+  {
+   "path": "domains/small-business/payroll-prep/SKILL.md",
+   "bytes": 16538
+  },
+  {
+   "path": "domains/small-business/payroll-prep/reference/anomaly_rules.md",
+   "bytes": 5312
+  },
+  {
+   "path": "domains/small-business/payroll-prep/reference/books_sync.md",
+   "bytes": 3296
+  },
+  {
+   "path": "domains/small-business/payroll-prep/reference/gotchas.md",
+   "bytes": 4852
+  },
+  {
+   "path": "domains/small-business/payroll-prep/reference/run_sheet_format.md",
+   "bytes": 3268
+  },
+  {
+   "path": "domains/small-business/payroll-prep/reference/timesheet_intake.md",
+   "bytes": 6422
+  },
+  {
+   "path": "domains/small-business/plan-payroll/SKILL.md",
+   "bytes": 8926
+  },
+  {
+   "path": "domains/small-business/proposal-builder/SKILL.md",
+   "bytes": 15556
+  },
+  {
+   "path": "domains/small-business/proposal-builder/reference/discovery_extraction.md",
+   "bytes": 6352
+  },
+  {
+   "path": "domains/small-business/proposal-builder/reference/gotchas.md",
+   "bytes": 5495
+  },
+  {
+   "path": "domains/small-business/proposal-builder/reference/output_template.md",
+   "bytes": 4161
+  },
+  {
+   "path": "domains/small-business/proposal-builder/reference/pricing_method.md",
+   "bytes": 5347
+  },
+  {
+   "path": "domains/small-business/proposal-builder/reference/proposal_structure.md",
+   "bytes": 4880
+  },
+  {
+   "path": "domains/small-business/reactivate/SKILL.md",
+   "bytes": 11597
+  },
+  {
+   "path": "domains/small-business/report-builder/SKILL.md",
+   "bytes": 10527
+  },
+  {
+   "path": "domains/small-business/report-builder/reference/data_sources.md",
+   "bytes": 10294
+  },
+  {
+   "path": "domains/small-business/report-builder/reference/gotchas.md",
+   "bytes": 4192
+  },
+  {
+   "path": "domains/small-business/report-builder/reference/output_template.md",
+   "bytes": 3523
+  },
+  {
+   "path": "domains/small-business/report-builder/reference/report_spec.md",
+   "bytes": 4005
+  },
+  {
+   "path": "domains/small-business/report-builder/reference/saved_reports.md",
+   "bytes": 2043
+  },
+  {
+   "path": "domains/small-business/report-pack/SKILL.md",
+   "bytes": 6429
+  },
+  {
+   "path": "domains/small-business/restock/SKILL.md",
+   "bytes": 8343
+  },
+  {
+   "path": "domains/small-business/review-reputation/SKILL.md",
+   "bytes": 10921
+  },
+  {
+   "path": "domains/small-business/review-reputation/reference/churn-signals.md",
+   "bytes": 4200
+  },
+  {
+   "path": "domains/small-business/review-reputation/reference/examples/example-report.md",
+   "bytes": 5033
+  },
+  {
+   "path": "domains/small-business/review-reputation/reference/gotchas.md",
+   "bytes": 5726
+  },
+  {
+   "path": "domains/small-business/review-reputation/reference/response-patterns.md",
+   "bytes": 4174
+  },
+  {
+   "path": "domains/small-business/review-reputation/reference/sources.md",
+   "bytes": 5026
+  },
+  {
+   "path": "domains/small-business/seo-ai-visibility/SKILL.md",
+   "bytes": 11339
+  },
+  {
+   "path": "domains/small-business/seo-ai-visibility/reference/ai_visibility.md",
+   "bytes": 7285
+  },
+  {
+   "path": "domains/small-business/seo-ai-visibility/reference/audit_checklist.md",
+   "bytes": 5670
+  },
+  {
+   "path": "domains/small-business/seo-ai-visibility/reference/catalog_refresh.md",
+   "bytes": 5801
+  },
+  {
+   "path": "domains/small-business/seo-ai-visibility/reference/content_rewrite.md",
+   "bytes": 4992
+  },
+  {
+   "path": "domains/small-business/seo-ai-visibility/reference/gotchas.md",
+   "bytes": 6574
+  },
+  {
+   "path": "domains/small-business/shared/absent-is-not-zero.md",
+   "bytes": 5199
+  },
+  {
+   "path": "domains/small-business/shared/artifact-style.md",
+   "bytes": 15720
+  },
+  {
+   "path": "domains/small-business/shared/chain-seams.md",
+   "bytes": 6805
+  },
+  {
+   "path": "domains/small-business/shared/connector-call-shapes.md",
+   "bytes": 6833
+  },
+  {
+   "path": "domains/small-business/shared/connector-neutrality.md",
+   "bytes": 7688
+  },
+  {
+   "path": "domains/small-business/shared/crm-of-record.md",
+   "bytes": 5666
+  },
+  {
+   "path": "domains/small-business/shared/currency-and-locale.md",
+   "bytes": 5577
+  },
+  {
+   "path": "domains/small-business/shared/document-format.md",
+   "bytes": 4873
+  },
+  {
+   "path": "domains/small-business/shared/gmail-inbox-traps.md",
+   "bytes": 4105
+  },
+  {
+   "path": "domains/small-business/shared/personal-data.md",
+   "bytes": 2629
+  },
+  {
+   "path": "domains/small-business/shared/quickbooks-report-traps.md",
+   "bytes": 9652
+  },
+  {
+   "path": "domains/small-business/shared/reference/artifact-example.html",
+   "bytes": 10254
+  },
+  {
+   "path": "domains/small-business/shared/tenant-scope.md",
+   "bytes": 2284
+  },
+  {
+   "path": "domains/small-business/shared/untrusted-content.md",
+   "bytes": 4673
+  },
+  {
+   "path": "domains/small-business/shared/voice-profile.md",
+   "bytes": 5585
+  },
+  {
+   "path": "domains/small-business/smb-lead-triage/SKILL.md",
+   "bytes": 7937
+  },
+  {
+   "path": "domains/small-business/smb-lead-triage/reference/examples/happy-path-triage.md",
+   "bytes": 1965
+  },
+  {
+   "path": "domains/small-business/smb-lead-triage/reference/gotchas.md",
+   "bytes": 2095
+  },
+  {
+   "path": "domains/small-business/smb-lead-triage/reference/hubspot-scoring.md",
+   "bytes": 7261
+  },
+  {
+   "path": "domains/small-business/smb-onboard/SKILL.md",
+   "bytes": 10967
+  },
+  {
+   "path": "domains/small-business/smb-onboard/reference/examples/happy-path.md",
+   "bytes": 8383
+  },
+  {
+   "path": "domains/small-business/smb-onboard/reference/gotchas.md",
+   "bytes": 5359
+  },
+  {
+   "path": "domains/small-business/smb-onboard/reference/onboard-checklist.md",
+   "bytes": 9761
+  },
+  {
+   "path": "domains/small-business/smb-onboard/reference/website-research.md",
+   "bytes": 3697
+  },
+  {
+   "path": "domains/small-business/smb-router/SKILL.md",
+   "bytes": 15326
+  },
+  {
+   "path": "domains/small-business/smb-router/reference/connector-map.md",
+   "bytes": 10697
+  },
+  {
+   "path": "domains/small-business/social-content-engine/SKILL.md",
+   "bytes": 13686
+  },
+  {
+   "path": "domains/small-business/social-content-engine/reference/calendar.md",
+   "bytes": 4864
+  },
+  {
+   "path": "domains/small-business/social-content-engine/reference/canva-api.md",
+   "bytes": 6971
+  },
+  {
+   "path": "domains/small-business/social-content-engine/reference/examples/okonkwo-campaign.md",
+   "bytes": 6236
+  },
+  {
+   "path": "domains/small-business/social-content-engine/reference/gotchas.md",
+   "bytes": 15466
+  },
+  {
+   "path": "domains/small-business/social-content-engine/reference/publishing.md",
+   "bytes": 4828
+  },
+  {
+   "path": "domains/small-business/social-content-engine/reference/shopify-assets.md",
+   "bytes": 3082
+  },
+  {
+   "path": "domains/small-business/speed-to-lead/SKILL.md",
+   "bytes": 14012
+  },
+  {
+   "path": "domains/small-business/speed-to-lead/reference/approval.md",
+   "bytes": 3866
+  },
+  {
+   "path": "domains/small-business/speed-to-lead/reference/gotchas.md",
+   "bytes": 5253
+  },
+  {
+   "path": "domains/small-business/speed-to-lead/reference/qualification.md",
+   "bytes": 5590
+  },
+  {
+   "path": "domains/small-business/speed-to-lead/reference/response_patterns.md",
+   "bytes": 5957
+  },
+  {
+   "path": "domains/small-business/tax-prep/SKILL.md",
+   "bytes": 8165
+  },
+  {
+   "path": "domains/small-business/tax-season-organizer/SKILL.md",
+   "bytes": 14927
+  },
+  {
+   "path": "domains/small-business/tax-season-organizer/reference/calculation-assumptions.md",
+   "bytes": 7310
+  },
+  {
+   "path": "domains/small-business/tax-season-organizer/reference/connector-queries.md",
+   "bytes": 12245
+  },
+  {
+   "path": "domains/small-business/tax-season-organizer/reference/examples/quarterly-estimate.md",
+   "bytes": 3007
+  },
+  {
+   "path": "domains/small-business/tax-season-organizer/reference/examples/year-end-1099.md",
+   "bytes": 4642
+  },
+  {
+   "path": "domains/small-business/tax-season-organizer/reference/gotchas.md",
+   "bytes": 3346
+  },
+  {
+   "path": "domains/small-business/tax-season-organizer/reference/output-formats.md",
+   "bytes": 3173
+  },
+  {
+   "path": "domains/small-business/ticket-deflector/SKILL.md",
+   "bytes": 17909
+  },
+  {
+   "path": "domains/small-business/ticket-deflector/reference/examples/deny-refund-request.md",
+   "bytes": 4436
+  },
+  {
+   "path": "domains/small-business/ticket-deflector/reference/examples/respond-refund-request.md",
+   "bytes": 2074
+  },
+  {
+   "path": "domains/small-business/ticket-deflector/reference/gotchas.md",
+   "bytes": 2439
+  },
+  {
+   "path": "tools/__pycache__/fetch.cpython-311.pyc",
+   "bytes": 14565
+  },
+  {
+   "path": "tools/__pycache__/zh_keys.cpython-311.pyc",
+   "bytes": 22513
+  },
+  {
+   "path": "tools/fetch.py",
+   "bytes": 7350
+  },
+  {
+   "path": "tools/zh_keys.py",
+   "bytes": 20728
+  }
+ ]
+}

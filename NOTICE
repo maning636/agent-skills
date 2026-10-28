@@ -1,0 +1,46 @@
+agent-skills
+Copyright (c) 2026 maning636
+
+本仓库包含来自以下第三方上游项目的技能内容：
+
+--------------------------------------------------------------------------
+1. anthropics/knowledge-work-plugins
+   https://github.com/anthropics/knowledge-work-plugins
+   License: Apache License 2.0
+   收录内容: domains/ 下的 16 个插件目录（human-resources, product-management,
+             engineering, design, marketing, sales, legal, finance, operations,
+             customer-support, data, enterprise-search, productivity,
+             small-business, cowork-plugin-management, pdf-viewer）
+   未收录:   bio-research（含可执行 Python 与模型数据，出于体积与依赖原因排除）
+   各文件 frontmatter 的 origin 字段记录了精确来源与上游 commit。
+
+   Copyright 2026 Anthropic, PBC.
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+       http://www.apache.org/licenses/LICENSE-2.0
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+--------------------------------------------------------------------------
+2. humanlayer/skills
+   https://github.com/humanlayer/skills
+   License: MIT
+   收录内容: domains/product-management/{rpi,show-me,visual-pr}
+   修改内容: frontmatter 增加 id/domain/origin/license 字段；
+             所有 $SKILLBASE 变量替换为仓库内相对路径。
+
+   Copyright (c) 2026 HumanLayer
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to deal
+   in the Software without restriction, including without limitation the rights
+   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+   The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+--------------------------------------------------------------------------
+本仓库自身的原创部分（三级索引结构、INDEX.md / FETCH.md 协议、
+tools/fetch.py、manifest.json 生成逻辑）以 MIT 许可发布，见 LICENSE。
