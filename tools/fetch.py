@@ -5,6 +5,7 @@ agent-skills 取用工具（零依赖，仅标准库）
 
 用法:
   python fetch.py <domain>/<skill>            # 取单个技能，命中缓存不发请求；打印正文
+  python fetch.py --fetch <domain>/<skill>     # 同上（位置参数与 --fetch 等价）
   python fetch.py --path <domain>/<skill>      # 同上，但只打印本地路径
   python fetch.py --search "招聘 面试"          # 在 L0+L1 中搜索，返回候选（带直链）
   python fetch.py --search "面试" --domain human-resources
@@ -17,17 +18,43 @@ agent-skills 取用工具（零依赖，仅标准库）
   * 网络失败自动降级到本地缓存
   * 取不到就报错退出，绝不返回编造内容
 """
-import argparse, os, re, sys, urllib.request
+import argparse, os, re, sys, time, urllib.request
 
 RAW_BASE = "https://raw.githubusercontent.com/maning636/agent-skills/main/"
+# raw 主站失败时的备用通道（同一份内容）
+ALT_BASE = "https://github.com/maning636/agent-skills/raw/main/"
 CACHE = os.path.join(os.path.expanduser("~"), ".cache", "agent-skills")
+
+try:  # Windows 控制台默认 GBK，强制 UTF-8 输出避免中文乱码
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
 
 
 # ----------------------------------------------------------------- 网络
-def _get(url, timeout=20):
-    req = urllib.request.Request(url, headers={"User-Agent": "agent-skills-fetch/1.0"})
+def _get(url, timeout=25):
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "agent-skills-fetch/1.0 (+https://github.com/maning636/agent-skills)",
+        "Accept": "text/plain, */*",
+    })
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
+
+
+def _get_retry(rel, tries=3):
+    """依次尝试 raw 主站 / 备用通道 / 重试。返回 bytes。全部失败抛最后一个异常。"""
+    err = None
+    for base in (RAW_BASE, ALT_BASE):
+        url = base + rel
+        for i in range(tries if base == RAW_BASE else 1):
+            try:
+                return _get(url)
+            except Exception as e:
+                err = e
+                if i + 1 < tries:
+                    time.sleep(0.6 * (i + 1))
+    raise err
 
 
 def cache_path(rel):
@@ -44,11 +71,12 @@ def fetch(rel, offline=False, force=False):
         raise FileNotFoundError("离线且无缓存: %s" % rel)
     url = RAW_BASE + rel
     try:
-        data = _get(url)
+        data = _get_retry(rel)
     except Exception as e:
         if os.path.isfile(local):
             return open(local, encoding="utf-8", errors="replace").read(), True
-        raise RuntimeError("拉取失败 %s (%s)；本地缓存也没有: %s" % (url, e, local))
+        raise RuntimeError("拉取失败 %s (%s: %s)；本地缓存也没有: %s"
+                           % (url, type(e).__name__, e, local))
     os.makedirs(os.path.dirname(local), exist_ok=True)
     with open(local, "wb") as f:
         f.write(data)
@@ -173,6 +201,7 @@ def do_fetch(spec, offline=False, force=False, path_only=False):
 def main():
     ap = argparse.ArgumentParser(description="agent-skills 按需取用")
     ap.add_argument("spec", nargs="?", help="domain/skill")
+    ap.add_argument("--fetch", dest="fetch_spec", help="domain/skill（与位置参数等价）")
     ap.add_argument("--search", help="搜索关键词")
     ap.add_argument("--domain", help="限定领域")
     ap.add_argument("--path", action="store_true", help="只打印本地路径")
@@ -186,8 +215,9 @@ def main():
         return 0
     if a.search:
         return do_search(a.search, a.domain)
-    if a.spec:
-        return do_fetch(a.spec, a.offline, a.update, a.path)
+    spec = a.fetch_spec or a.spec
+    if spec:
+        return do_fetch(spec, a.offline, a.update, a.path)
     ap.print_help()
     return 2
 
