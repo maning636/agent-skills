@@ -1,0 +1,267 @@
+{
+  "scenarios": [
+    {
+      "id": "cold-email",
+      "name": "撰写个性化陌生开发邮件",
+      "category": "outreach",
+      "location": "SKILL.md",
+      "priority": "high",
+      "keywords": ["陌生", "开发", "邮件", "冷邮件", "新客户", "介绍产品", "首次联系"],
+      "action_words": ["撰写", "写", "发送", "发", "准备"],
+      "context_hints": ["给", "向", "发给", "联系"]
+    },
+    {
+      "id": "demo-followup",
+      "name": "演示后续邮件",
+      "category": "outreach",
+      "location": "SKILL.md",
+      "priority": "high",
+      "keywords": ["演示", "demo", "跟进", "后续", "产品展示"],
+      "action_words": ["写", "发", "跟进", "准备"],
+      "context_hints": ["演示后", "演示完", "demo后", "展示后"]
+    },
+    {
+      "id": "account-plan",
+      "name": "制定战略客户计划",
+      "category": "strategy",
+      "location": "SKILL.md",
+      "priority": "high",
+      "keywords": ["客户计划", "账户计划", "战略客户", "重点客户", "account plan"],
+      "action_words": ["制定", "创建", "准备", "做"],
+      "context_hints": ["计划", "策略"]
+    },
+    {
+      "id": "objection-handling",
+      "name": "准备销售异议反驳",
+      "category": "competitive",
+      "location": "SKILL.md",
+      "priority": "high",
+      "keywords": ["异议", "反对", "质疑", "太贵", "不需要", "objection"],
+      "action_words": ["准备", "应对", "回应", "处理"],
+      "context_hints": ["客户说", "怎么回", "如何处理"]
+    },
+    {
+      "id": "battle-card",
+      "name": "为竞争对手制作对战卡",
+      "category": "competitive",
+      "location": "SKILL.md",
+      "priority": "high",
+      "keywords": ["竞争对手", "对战卡", "竞品", "battle card", "vs"],
+      "action_words": ["制作", "创建", "准备", "做"],
+      "context_hints": ["对比", "竞争"]
+    },
+    {
+      "id": "pipeline-conversion",
+      "name": "分析管道转化率",
+      "category": "analytics",
+      "location": "SKILL.md",
+      "priority": "high",
+      "keywords": ["转化率", "管道", "销售漏斗", "流失", "conversion"],
+      "action_words": ["分析", "计算", "查看", "看"],
+      "context_hints": ["各阶段", "漏斗", "数据"]
+    },
+    {
+      "id": "renewal-proposal",
+      "name": "为重要客户拟定续约方案",
+      "category": "outreach",
+      "location": "references/outreach.md",
+      "priority": "medium",
+      "keywords": ["续约", "续签", "续费", "renewal", "合同"],
+      "action_words": ["准备", "拟定", "做"],
+      "context_hints": ["到期", "合同"]
+    },
+    {
+      "id": "activity-summary",
+      "name": "创建代表活动摘要",
+      "category": "outreach",
+      "location": "references/outreach.md",
+      "priority": "medium",
+      "keywords": ["活动摘要", "工作总结", "日报", "周报", "汇报"],
+      "action_words": ["写", "创建", "总结"],
+      "context_hints": ["今天", "本周", "本月"]
+    },
+    {
+      "id": "pipeline-report",
+      "name": "关于管道状态的执行官最新进展草案",
+      "category": "outreach",
+      "location": "references/outreach.md",
+      "priority": "medium",
+      "keywords": ["高管汇报", "管道汇报", "项目储备", "pipeline update", "执行官"],
+      "action_words": ["汇报", "总结", "准备"],
+      "context_hints": ["CEO", "高管", "管理层"]
+    },
+    {
+      "id": "territory-planning",
+      "name": "设计区域规划框架",
+      "category": "strategy",
+      "location": "references/strategy.md",
+      "priority": "medium",
+      "keywords": ["区域规划", "地区分配", "territory", "销售区域", "覆盖"],
+      "action_words": ["设计", "制定", "规划"],
+      "context_hints": ["分配", "团队"]
+    },
+    {
+      "id": "account-prioritization",
+      "name": "利用公司概况数据确定账户优先级",
+      "category": "strategy",
+      "location": "references/strategy.md",
+      "priority": "medium",
+      "keywords": ["账户优先级", "客户排序", "prioritization", "潜在客户", "筛选"],
+      "action_words": ["确定", "排序", "筛选"],
+      "context_hints": ["先联系", "重点"]
+    },
+    {
+      "id": "lead-scoring",
+      "name": "利用加权评分发现高潜力账户",
+      "category": "strategy",
+      "location": "references/strategy.md",
+      "priority": "medium",
+      "keywords": ["加权评分", "lead scoring", "潜力评估", "客户评分", "打分"],
+      "action_words": ["评分", "评估", "发现"],
+      "context_hints": ["高潜力", "评估"]
+    },
+    {
+      "id": "market-entry",
+      "name": "区域市场进入规划",
+      "category": "strategy",
+      "location": "references/strategy.md",
+      "priority": "medium",
+      "keywords": ["市场进入", "新市场", "market entry", "扩张", "国际化"],
+      "action_words": ["评估", "规划", "进入"],
+      "context_hints": ["可行性", "新区域"]
+    },
+    {
+      "id": "competitive-analysis",
+      "name": "竞争定位分析",
+      "category": "competitive",
+      "location": "references/competitive.md",
+      "priority": "medium",
+      "keywords": ["竞争分析", "竞品研究", "competitor analysis", "定位", "对比"],
+      "action_words": ["分析", "研究", "对比"],
+      "context_hints": ["竞争对手", "市场"]
+    },
+    {
+      "id": "one-pager",
+      "name": "创建一份销售赋能单页文件",
+      "category": "competitive",
+      "location": "references/competitive.md",
+      "priority": "medium",
+      "keywords": ["单页", "one-pager", "宣传资料", "产品介绍", "销售资料"],
+      "action_words": ["创建", "制作", "做"],
+      "context_hints": ["单页", "宣传"]
+    },
+    {
+      "id": "social-proof",
+      "name": "在公共领域寻找客户证明点",
+      "category": "competitive",
+      "location": "references/competitive.md",
+      "priority": "medium",
+      "keywords": ["客户评价", "用户反馈", "testimonial", "口碑", "评论"],
+      "action_words": ["寻找", "查找", "调研"],
+      "context_hints": ["评价", "反馈", "怎么说"]
+    },
+    {
+      "id": "rep-performance",
+      "name": "按成交率识别业绩最佳的销售代表",
+      "category": "analytics",
+      "location": "references/analytics.md",
+      "priority": "medium",
+      "keywords": ["成交率", "win rate", "业绩", "代表排名", "表现"],
+      "action_words": ["分析", "识别", "排名"],
+      "context_hints": ["谁最好", "业绩", "排名"]
+    },
+    {
+      "id": "deal-velocity",
+      "name": "可视化各季度的交易速度",
+      "category": "analytics",
+      "location": "references/analytics.md",
+      "priority": "medium",
+      "keywords": ["交易速度", "sales cycle", "成交周期", "deal velocity", "销售周期"],
+      "action_words": ["可视化", "分析", "看"],
+      "context_hints": ["多久", "周期", "速度"]
+    },
+    {
+      "id": "campaign-attribution",
+      "name": "总结营销活动对已成交交易的归因",
+      "category": "analytics",
+      "location": "references/analytics.md",
+      "priority": "medium",
+      "keywords": ["营销归因", "campaign", "营销效果", "活动ROI", "来源"],
+      "action_words": ["总结", "分析", "归因"],
+      "context_hints": ["营销", "活动", "来源"]
+    },
+    {
+      "id": "performance-comparison",
+      "name": "生成性能对比图表",
+      "category": "analytics",
+      "location": "references/analytics.md",
+      "priority": "medium",
+      "keywords": ["性能对比", "业绩对比", "performance", "对比分析", "比较"],
+      "action_words": ["对比", "比较", "生成"],
+      "context_hints": ["对比", "vs", "比较"]
+    },
+    {
+      "id": "funnel-visualization",
+      "name": "在漏斗视图中可视化销售流程",
+      "category": "visuals",
+      "location": "references/visuals.md",
+      "priority": "low",
+      "keywords": ["销售漏斗", "funnel", "流程图", "漏斗图", "可视化"],
+      "action_words": ["可视化", "画", "创建", "做"],
+      "context_hints": ["漏斗", "图"]
+    },
+    {
+      "id": "b2b-funnel",
+      "name": "可视化B2B销售漏斗",
+      "category": "visuals",
+      "location": "references/visuals.md",
+      "priority": "low",
+      "keywords": ["B2B", "企业销售", "标准流程", "SaaS"],
+      "action_words": ["画", "创建", "做"],
+      "context_hints": ["B2B", "标准"]
+    },
+    {
+      "id": "persona-illustration",
+      "name": "绘制关键销售人物图",
+      "category": "visuals",
+      "location": "references/visuals.md",
+      "priority": "low",
+      "keywords": ["人物角色", "buyer persona", "客户画像", "角色", "插图"],
+      "action_words": ["绘制", "画", "创建"],
+      "context_hints": ["角色", "画像", "人物"]
+    },
+    {
+      "id": "coverage-map",
+      "name": "创建区域覆盖范围图",
+      "category": "visuals",
+      "location": "references/visuals.md",
+      "priority": "low",
+      "keywords": ["区域地图", "coverage", "销售区域", "地理分布", "地图"],
+      "action_words": ["创建", "做", "画"],
+      "context_hints": ["地图", "区域", "分布"]
+    },
+    {
+      "id": "celebration-graphic",
+      "name": "设计一个团队庆祝图形",
+      "category": "visuals",
+      "location": "references/visuals.md",
+      "priority": "low",
+      "keywords": ["庆祝", "表彰", "员工奖励", "月度最佳", "celebration"],
+      "action_words": ["设计", "做", "创建"],
+      "context_hints": ["庆祝", "表彰", "最佳"]
+    }
+  ],
+  "matching_rules": {
+    "keyword_weight": 0.4,
+    "action_word_weight": 0.3,
+    "context_weight": 0.3,
+    "high_confidence_threshold": 80,
+    "medium_confidence_threshold": 50,
+    "priority_boost": {
+      "high": 10,
+      "medium": 5,
+      "low": 0
+    }
+  },
+  "usage_notes": "此配置文件用于场景匹配算法。当用户输入时，系统会根据关键词、动作词和上下文提示进行评分，结合优先级加成，确定最匹配的场景。"
+}

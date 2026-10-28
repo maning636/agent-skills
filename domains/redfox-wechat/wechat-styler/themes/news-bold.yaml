@@ -1,0 +1,53 @@
+name: "news-bold"
+description: "新闻时讯 - 红黑强对比 + 快节奏,信息密度高,适合资讯 / 热点 / 速读类短文"
+renderer_preset: "modern-technical"
+migrated_from: "wechat-publisher"
+migrated_version: "v2026"
+accent_color: "#d4231c"
+accent_secondary: "#1a4ed8"
+background_color: "#ffffff"
+surface_color: "#1a1a1a"
+text_color: "#1a1a1a"
+secondary_color: "#1a4ed8"
+tertiary_color: "#999999"
+heading_font: "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif"
+ui_font: "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif"
+code_font: "'JetBrains Mono', 'Menlo', 'Consolas', monospace"
+code_bg: "#1a1a1a"
+code_color: "#f5f5f5"
+quote_border: "#d4231c"
+quote_bg: "#1a1a1a"
+divider_color: "#e5e5e5"
+border_color: "#e8e8e8"
+tag_bg: "#dde4ef"
+max_width: 706
+type_scale:
+  h1: 22
+  h2: 17
+  h3: 15.5
+  body: 15.5
+  caption: 12
+  code: 12.5
+rhythm:
+  body_line_height: 1.8
+  heading_line_height: 1.4
+  paragraph_margin: 16
+  section_padding_first: 20
+  section_padding: 28
+  list_item_margin: 8
+block_style:
+  heading_style: "technical"
+  quote_style: "note-card"
+  list_style: "checklist"
+  code_style: "technical"
+  image_style: "doc-frame"
+highlights:
+  hl_yellow: "#fff27a"
+  hl_blue: "#dde4ef"
+  hl_pink: "#f7d8de"
+  hl_green: "#dfeedb"
+  em_red: "#d4231c"
+  em_blue: "#1a4ed8"
+  em_orange: "#d46b08"
+section_divider_text: "/ / NEWS / /"
+bullet_char: "▍"

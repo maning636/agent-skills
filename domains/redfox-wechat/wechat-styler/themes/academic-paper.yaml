@@ -1,0 +1,53 @@
+name: "academic-paper"
+description: "学术严谨 - 论文格式 + 衬线正字,章节编号式层级,适合研究 / 论述 / 严肃长文"
+renderer_preset: "minimal-notes"
+migrated_from: "wechat-publisher"
+migrated_version: "v2026"
+accent_color: "#1a1a1a"
+accent_secondary: "#1a1a1a"
+background_color: "#ffffff"
+surface_color: "#f5f5f5"
+text_color: "#1a1a1a"
+secondary_color: "#1a1a1a"
+tertiary_color: "#999999"
+heading_font: "'Noto Serif SC', 'Source Han Serif SC', 'Times New Roman', 'Songti SC', serif"
+ui_font: "'Noto Serif SC', 'Source Han Serif SC', 'Times New Roman', 'Songti SC', serif"
+code_font: "'JetBrains Mono', 'Menlo', 'Consolas', monospace"
+code_bg: "#f7f7f7"
+code_color: "#1a1a1a"
+quote_border: "#1a1a1a"
+quote_bg: "#f5f5f5"
+divider_color: "#e5e5e5"
+border_color: "#e8e8e8"
+tag_bg: "#dde4ef"
+max_width: 706
+type_scale:
+  h1: 24
+  h2: 18
+  h3: 15.5
+  body: 15.5
+  caption: 12.5
+  code: 12.5
+rhythm:
+  body_line_height: 1.95
+  heading_line_height: 1.5499999999999998
+  paragraph_margin: 16
+  section_padding_first: 20
+  section_padding: 28
+  list_item_margin: 8
+block_style:
+  heading_style: "whitespace"
+  quote_style: "hairline"
+  list_style: "minimal"
+  code_style: "quiet"
+  image_style: "bare"
+highlights:
+  hl_yellow: "#fbeaa8"
+  hl_blue: "#dde4ef"
+  hl_pink: "#f5dcd4"
+  hl_green: "#dde4cf"
+  em_red: "#1a1a1a"
+  em_blue: "#1a1a1a"
+  em_orange: "#1a1a1a"
+section_divider_text: "§  §  §"
+bullet_char: "—"

@@ -1,7 +1,7 @@
 # 技能库取用协议（Agent 读这份）
 
-> 这份文档描述**如何以最小上下文代价**用到 235 个岗位技能。
-> 核心原则：**永远不要整包读。** 本仓库 2.7 MB，按需拉取单次只需 3~15 KB。
+> 这份文档描述**如何以最小上下文代价**用到 453 个岗位技能。
+> 核心原则：**永远不要整包读。** 本仓库 58 MB，按需拉取单次只需 3~15 KB。
 
 ---
 
@@ -11,7 +11,7 @@
 https://raw.githubusercontent.com/maning636/agent-skills/main/INDEX.md
 ```
 
-它是 **L0 索引**，50 行 / ~1,180 tokens。里面是一张领域路由表 + 取用三步 + 硬规则。
+它是 **L0 索引**，60 行 / ~1,670 tokens。里面是一张领域路由表 + 取用三步 + 硬规则。
 
 **其余所有内容都不进上下文，直到你决定去取。**
 
@@ -65,11 +65,11 @@ python tools/fetch.py --search "面试 评分卡"      # 自动搜 L0+L1，返�
 
 | 动作 | 拉取量 | tokens |
 |---|---|---:|
-| 常驻 L0 | 4.5 KB | ~1,180 |
-| 读 L1（一个领域） | 0.3~4.8 KB | ~110~1,610 |
+| 常驻 L0 | 6.4 KB | ~1,670 |
+| 读 L1（一个领域） | 0.6~9.7 KB | ~170~2,700 |
 | 拉 1 个技能（典型） | 3~15 KB | ~900~4,200 |
-| **合计（典型任务）** | **~10 KB** | **~2,100~6,400** |
-| ~~整包读入~~ | ~~2.7 MB~~ | ~~700,000~~ ❌ |
+| **合计（典型任务）** | **~12 KB** | **~2,700~7,100** |
+| ~~整包读入~~ | ~~58 MB~~ | ~~14,000,000~~ ❌ |
 
 ---
 
@@ -132,6 +132,16 @@ python tools/fetch.py --cache-dir
 | `understand` | 语义分析、差异理解、知识抽取、通俗解释、领域建模、上手引导 |
 | `content-writing` | 人味写作、去 AI 味、大字海报、内容图谱、知识星球、Prism 内容、创作工具 |
 | `local-tooling` | 离线 OCR、截图识文、发票识别、Skill 调优 |
+| `lark-suite` | 飞书：发消息、日历、文档、多维表格、电子表格、任务、知识库、审批、妙记、OKR |
+| `wecom-suite` | 企业微信：企微消息、日程、邮件、文档、表格、待办、通讯录、微盘、在线会议 |
+| `baoyu-content` | 文章配图、封面图、信息图、漫画、演示稿、翻译、网页转Markdown、发布到公众号/微博/X |
+| `redfox-xiaohongshu` | 小红书：搜笔记、笔记分析、账号诊断、选题、标题、封面、违禁词、榜单 |
+| `redfox-douyin` | 抖音：搜索、热榜、涨粉榜、账号诊断、订阅、违禁词、作品抓取 |
+| `redfox-bilibili` | B站：搜索、UP主作品、评论、关键词账号 |
+| `redfox-wechat` | 公众号：搜索、10w热文、涨粉最快、原创榜、标题、封面、排版、违禁词 |
+| `redfox-multi` | 多平台聚合、AI搜索、热点榜、股票研报、视频下载、生图生视频 |
+| `growth-ops` | 竞品分析、客户情报、KPI看板、销售漏斗、决策评分、市场情报、线索编排、报告自动化 |
+| `agent-toolkit` | 网页动画、HTML生成、前端设计、Office文档、电脑操作、技能发现、CLI工具 |
 
 > 记不住就直接读 `INDEX.md`，那是设计给你用的。
 
@@ -144,7 +154,7 @@ agent-skills/
 ├── INDEX.md                    L0：领域路由表（常驻）
 ├── FETCH.md                    本文件：完整协议
 ├── manifest.json               文件清单 + 大小（机器读）
-├── domains/                 22 个领域，共 235 个技能
+├── domains/                 32 个领域，共 453 个技能
 │   ├── <domain>/
 │   │   ├── INDEX.md            L1：该领域的技能清单
 │   │   └── <skill>/
@@ -152,7 +162,8 @@ agent-skills/
 │   │       └── references/…    按需的附属参考文件
 └── tools/
     ├── fetch.py                带缓存的取用脚本
-    └── zh_keys.py              235 个技能的中文标签 / 中文关键词（维护用）
+    ├── curated_zh.py           手工维护的中文标签 / 关键词表
+    └── gen_zh_keys.py          生成 zh_keys.py（由 curated_zh + 技能描述）
 ```
 
 ---
@@ -166,6 +177,10 @@ agent-skills/
 | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | `domains/cad-3d/` 的 CAD/机器人描述系列 |
 | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Apache-2.0 | `domains/hyperframes/` |
 | [unnoo/zsxq-skill](https://github.com/unnoo/zsxq-skill) | MIT | `domains/content-writing/zsxq` |
-| 本机自研 | 见各技能 `license` | `domains/{dbs-toolkit,understand,content-writing,local-tooling}/` 等 |
+| 飞书官方 `open.feishu.cn` | MIT | `domains/lark-suite/` |
+| [WeComTeam/wecom-cli](https://github.com/WeComTeam/wecom-cli) | MIT | `domains/wecom-suite/` |
+| [baoyu-skills](https://github.com/baoyu-skills) | MIT | `domains/baoyu-content/` |
+| [redfox-data/redfox-community](https://github.com/redfox-data/redfox-community) | 见各技能 | `domains/redfox-*/` |
+| 本机自研 | 见各技能 `license` | `domains/{dbs-toolkit,understand,content-writing,growth-ops,agent-toolkit,local-tooling}/` 等 |
 
 各文件的 `origin` frontmatter 字段记录了精确来源路径与上游 commit。

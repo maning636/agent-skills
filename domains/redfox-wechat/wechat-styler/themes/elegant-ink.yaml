@@ -1,0 +1,53 @@
+name: "elegant-ink"
+description: "水墨雅韵 - 墨黑 + 朱砂红,衬线字体,克制雅致的现代宋体,适合观点 / 人文 / 深度长文"
+renderer_preset: "elegant-essay"
+migrated_from: "wechat-publisher"
+migrated_version: "v2026"
+accent_color: "#6a2828"
+accent_secondary: "#2a4a6a"
+background_color: "#fafaf7"
+surface_color: "#f2efe8"
+text_color: "#1d1a17"
+secondary_color: "#2a4a6a"
+tertiary_color: "#999999"
+heading_font: "'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'STSong', 'PingFang SC', serif"
+ui_font: "'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'STSong', 'PingFang SC', serif"
+code_font: "'JetBrains Mono', 'Menlo', 'Consolas', monospace"
+code_bg: "#1a1a1a"
+code_color: "#f2efe8"
+quote_border: "#6a2828"
+quote_bg: "#f2efe8"
+divider_color: "#e5e5e5"
+border_color: "#e8e8e8"
+tag_bg: "#e6e9ef"
+max_width: 706
+type_scale:
+  h1: 24
+  h2: 19
+  h3: 16
+  body: 16
+  caption: 13
+  code: 12.5
+rhythm:
+  body_line_height: 1.95
+  heading_line_height: 1.5499999999999998
+  paragraph_margin: 16
+  section_padding_first: 20
+  section_padding: 28
+  list_item_margin: 8
+block_style:
+  heading_style: "centered"
+  quote_style: "lifted"
+  list_style: "standard"
+  code_style: "document"
+  image_style: "bare"
+highlights:
+  hl_yellow: "#fbf0c2"
+  hl_blue: "#e6e9ef"
+  hl_pink: "#f5dcd4"
+  hl_green: "#dde4cf"
+  em_red: "#a82c2c"
+  em_blue: "#2a4a6a"
+  em_orange: "#b5601c"
+section_divider_text: "· · ·"
+bullet_char: "◆"

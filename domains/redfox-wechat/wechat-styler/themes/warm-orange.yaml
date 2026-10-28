@@ -1,0 +1,53 @@
+name: "warm-orange"
+description: "温暖橙调 - 暖橙 · 生活 · 美食号,亲切日常感,适合生活方式 / 美食 / 旅行 / 记录类"
+renderer_preset: "kami-document"
+migrated_from: "wechat-publisher"
+migrated_version: "v2026"
+accent_color: "#b5601c"
+accent_secondary: "#3a6a8a"
+background_color: "#fdf8f2"
+surface_color: "#fbe8d0"
+text_color: "#3a2a1e"
+secondary_color: "#3a6a8a"
+tertiary_color: "#999999"
+heading_font: "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif"
+ui_font: "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif"
+code_font: "'JetBrains Mono', 'Menlo', 'Consolas', monospace"
+code_bg: "#2d1f10"
+code_color: "#fbe8d0"
+quote_border: "#b5601c"
+quote_bg: "#fbe8d0"
+divider_color: "#e5e5e5"
+border_color: "#e8e8e8"
+tag_bg: "#dde8f0"
+max_width: 706
+type_scale:
+  h1: 22
+  h2: 17.5
+  h3: 15.5
+  body: 15.5
+  caption: 12.5
+  code: 12.5
+rhythm:
+  body_line_height: 1.85
+  heading_line_height: 1.4500000000000002
+  paragraph_margin: 16
+  section_padding_first: 20
+  section_padding: 28
+  list_item_margin: 8
+block_style:
+  heading_style: "left-bar"
+  quote_style: "lifted"
+  list_style: "standard"
+  code_style: "document"
+  image_style: "soft-frame"
+highlights:
+  hl_yellow: "#fff18a"
+  hl_blue: "#dde8f0"
+  hl_pink: "#fbd8d0"
+  hl_green: "#dfeac8"
+  em_red: "#c4431a"
+  em_blue: "#3a6a8a"
+  em_orange: "#b5601c"
+section_divider_text: "◉ ◉ ◉"
+bullet_char: "●"

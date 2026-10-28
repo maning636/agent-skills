@@ -1,0 +1,53 @@
+name: "sage-premium"
+description: "鼠尾草墨绿 - 深绿 + 象牙白,克制专业的自然色,适合数据分析 / 研究报告 / 长篇深度内容"
+renderer_preset: "modern-technical"
+migrated_from: "wechat-publisher"
+migrated_version: "v2026"
+accent_color: "#1e2a21"
+accent_secondary: "#2a4a6a"
+background_color: "#f7f5ee"
+surface_color: "#eef1ea"
+text_color: "#1e2a21"
+secondary_color: "#2a4a6a"
+tertiary_color: "#999999"
+heading_font: "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif"
+ui_font: "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif"
+code_font: "'JetBrains Mono', 'Menlo', 'Consolas', monospace"
+code_bg: "#1e2a21"
+code_color: "#e8ede3"
+quote_border: "#1e2a21"
+quote_bg: "#eef1ea"
+divider_color: "#e5e5e5"
+border_color: "#e8e8e8"
+tag_bg: "#dce4ed"
+max_width: 706
+type_scale:
+  h1: 23
+  h2: 18
+  h3: 16
+  body: 15.5
+  caption: 12.5
+  code: 12.5
+rhythm:
+  body_line_height: 1.85
+  heading_line_height: 1.4500000000000002
+  paragraph_margin: 16
+  section_padding_first: 20
+  section_padding: 28
+  list_item_margin: 8
+block_style:
+  heading_style: "technical"
+  quote_style: "note-card"
+  list_style: "checklist"
+  code_style: "technical"
+  image_style: "doc-frame"
+highlights:
+  hl_yellow: "#fff18a"
+  hl_blue: "#dce4ed"
+  hl_pink: "#f0dcd8"
+  hl_green: "#d4deaa"
+  em_red: "#8a3a3a"
+  em_blue: "#2a4a6a"
+  em_orange: "#b5601c"
+section_divider_text: "◆  ◆  ◆"
+bullet_char: "▪"

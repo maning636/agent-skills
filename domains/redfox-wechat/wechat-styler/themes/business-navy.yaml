@@ -1,0 +1,53 @@
+name: "business-navy"
+description: "商务蓝金 - 深蓝主色 + 金色点缀,权威克制的金融感,适合商业 / 投研 / 行业分析"
+renderer_preset: "modern-technical"
+migrated_from: "wechat-publisher"
+migrated_version: "v2026"
+accent_color: "#0b2445"
+accent_secondary: "#1a4480"
+background_color: "#ffffff"
+surface_color: "#f4f6fb"
+text_color: "#0f1a33"
+secondary_color: "#1a4480"
+tertiary_color: "#999999"
+heading_font: "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif"
+ui_font: "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif"
+code_font: "'JetBrains Mono', 'Menlo', 'Consolas', monospace"
+code_bg: "#0b2445"
+code_color: "#e7ecf5"
+quote_border: "#0b2445"
+quote_bg: "#f4f6fb"
+divider_color: "#e5e5e5"
+border_color: "#e8e8e8"
+tag_bg: "#dee7f5"
+max_width: 706
+type_scale:
+  h1: 23
+  h2: 18
+  h3: 15.5
+  body: 15.5
+  caption: 12.5
+  code: 12.5
+rhythm:
+  body_line_height: 1.8
+  heading_line_height: 1.4
+  paragraph_margin: 16
+  section_padding_first: 20
+  section_padding: 28
+  list_item_margin: 8
+block_style:
+  heading_style: "technical"
+  quote_style: "note-card"
+  list_style: "checklist"
+  code_style: "technical"
+  image_style: "doc-frame"
+highlights:
+  hl_yellow: "#fff18a"
+  hl_blue: "#dee7f5"
+  hl_pink: "#f5dfe6"
+  hl_green: "#dfe9dc"
+  em_red: "#a02a2a"
+  em_blue: "#1a4480"
+  em_orange: "#a8800e"
+section_divider_text: "◇  ◇  ◇"
+bullet_char: "◆"
