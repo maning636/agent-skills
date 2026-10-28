@@ -1,7 +1,7 @@
 agent-skills
 Copyright (c) 2026 maning636
 
-本仓库包含来自以下第三方上游项目的技能内容：
+本仓库聚合来自以下第三方上游项目的技能内容：
 
 --------------------------------------------------------------------------
 1. anthropics/knowledge-work-plugins
@@ -10,10 +10,9 @@ Copyright (c) 2026 maning636
    收录内容: domains/ 下的 16 个插件目录（human-resources, product-management,
              engineering, design, marketing, sales, legal, finance, operations,
              customer-support, data, enterprise-search, productivity,
-             small-business, cowork-plugin-management, pdf-viewer）
-   未收录:   bio-research（含可执行 Python 与模型数据，出于体积与依赖原因排除）
+             small-business, cowork-plugin-management, pdf-viewer），
+             未收录: bio-research（含可执行 Python 与模型数据，出于体积与依赖原因排除）
    各文件 frontmatter 的 origin 字段记录了精确来源与上游 commit。
-
    Copyright 2026 Anthropic, PBC.
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -30,7 +29,6 @@ Copyright (c) 2026 maning636
    收录内容: domains/product-management/{rpi,show-me,visual-pr}
    修改内容: frontmatter 增加 id/domain/origin/license 字段；
              所有 $SKILLBASE 变量替换为仓库内相对路径。
-
    Copyright (c) 2026 HumanLayer
    Permission is hereby granted, free of charge, to any person obtaining a copy
    of this software and associated documentation files (the "Software"), to deal
@@ -38,9 +36,53 @@ Copyright (c) 2026 maning636
    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
    copies of the Software, and to permit persons to whom the Software is
    furnished to do so, subject to the following conditions:
+
    The above copyright notice and this permission notice shall be included in
    all copies or substantial portions of the Software.
 
 --------------------------------------------------------------------------
+3. earthtojake/text-to-cad
+   https://github.com/earthtojake/text-to-cad
+   License: MIT
+   收录内容: domains/cad-3d/ 下的 cad, dxf, sdf, srdf, urdf, gcode, step-parts,
+             sendcutsend, engineering-drawing, dfm, dfam-check
+   各技能目录下的 LICENSE 文件原样保留。
+
+--------------------------------------------------------------------------
+4. heygen-com/hyperframes
+   https://github.com/heygen-com/hyperframes
+   License: Apache License 2.0
+   收录内容: domains/hyperframes/ 下的 hyperframes, hyperframes-cli,
+             hyperframes-helper, hyperframes-registry, website-to-hyperframes
+   说明: 该项目本身即为一个完整开源仓库，本库按原样收录其技能载荷与
+         packages/ 引擎源码（不含 .git 历史）。
+
+--------------------------------------------------------------------------
+5. unnoo/zsxq-skill
+   https://github.com/unnoo/zsxq-skill
+   License: MIT
+   收录内容: domains/content-writing/zsxq
+
+--------------------------------------------------------------------------
+6. 本机自研 / 手工安装技能（源自 C:\Users\maning\.agents\skills）
+   License: 见各技能 frontmatter 的 license 字段；未声明者视为作者自研
+   收录内容: dbs-toolkit(21), understand(8), content-writing(7), cad-3d(3),
+             local-tooling(2), hyperframes 之外的自研混合包，共 57 个技能
+
+--------------------------------------------------------------------------
+关于本地依赖
+--------------------------------------------------------------------------
+部分技能在运行时会依赖本机环境（而非随技能分发），已在其 SKILL.md 与
+所属领域的 L1 索引中标注，例如：
+  * local-ocr  -> 需要本机安装 light-ocr (E:\npm-global\light-ocr.cmd)
+  * cad-3d/*  -> 需要本机 Python CAD 内核 (cadquery / build123d / trimesh)
+  * hyperframes/* -> 需要 Node / Bun
+  * prism-* / zsxq / bigtype-poster -> 需要本机浏览器或对应平台登录态
+这些依赖不随本仓库分发，使用前请先读对应 SKILL.md 的前置条件。
+
+--------------------------------------------------------------------------
 本仓库自身的原创部分（三级索引结构、INDEX.md / FETCH.md 协议、
-tools/fetch.py、manifest.json 生成逻辑）以 MIT 许可发布，见 LICENSE。
+tools/fetch.py、tools/zh_keys.py、manifest.json 生成逻辑、以及各技能
+frontmatter 的重写工作）以 MIT 许可发布，见 LICENSE。
+各技能目录内保留的上游 LICENSE / NOTICE 文件，均继续适用其各自许可。
+--------------------------------------------------------------------------

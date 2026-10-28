@@ -1,0 +1,11 @@
+display_name: "Graphify"
+short_description: "代码知识图谱引擎 — 用 tree-sitter 本地解析 40+ 语言，零 LLM 成本，生成可查询、可导出、可接入 MCP 的知识图谱"
+default_prompt: "用 graphify 分析当前项目的代码架构，生成知识图谱。先用 --code-only 模式构建图谱（零成本，不调 LLM），然后查询 god-nodes 找到最复杂的模块，最后导出为 HTML 可视化。如果需要分析文档/PDF，再配置 LLM API key 跑完整提取。"
+capabilities:
+  - code_analysis
+  - knowledge_graph
+  - architecture_visualization
+  - mcp_integration
+  - multi_format_export
+  - file_watching
+  - global_graph

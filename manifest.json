@@ -3,7 +3,7 @@
  "version": "1.0.0",
  "layout": "three-tier-progressive-disclosure",
  "l0": "INDEX.md",
- "l0_bytes": 3571,
+ "l0_bytes": 4551,
  "domains": {
   "human-resources": {
    "index": "domains/human-resources/INDEX.md",
@@ -68,11 +68,35 @@
   "pdf-viewer": {
    "index": "domains/pdf-viewer/INDEX.md",
    "skills": 1
+  },
+  "dbs-toolkit": {
+   "index": "domains/dbs-toolkit/INDEX.md",
+   "skills": 21
+  },
+  "cad-3d": {
+   "index": "domains/cad-3d/INDEX.md",
+   "skills": 14
+  },
+  "hyperframes": {
+   "index": "domains/hyperframes/INDEX.md",
+   "skills": 5
+  },
+  "understand": {
+   "index": "domains/understand/INDEX.md",
+   "skills": 8
+  },
+  "content-writing": {
+   "index": "domains/content-writing/INDEX.md",
+   "skills": 7
+  },
+  "local-tooling": {
+   "index": "domains/local-tooling/INDEX.md",
+   "skills": 2
   }
  },
- "total_skills": 178,
- "total_files": 443,
- "total_bytes": 2779349,
+ "total_skills": 235,
+ "total_files": 1758,
+ "total_bytes": 14175251,
  "raw_base": "https://raw.githubusercontent.com/maning636/agent-skills/main/",
  "files": [
   {
@@ -85,7 +109,7 @@
   },
   {
    "path": "INDEX.md",
-   "bytes": 3571
+   "bytes": 4551
   },
   {
    "path": "LICENSE",
@@ -97,11 +121,987 @@
   },
   {
    "path": "README.md",
-   "bytes": 5572
+   "bytes": 5573
+  },
+  {
+   "path": "domains/cad-3d/3d-product/SKILL.md",
+   "bytes": 49224
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/alive-environments.md",
+   "bytes": 35421
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/animation.md",
+   "bytes": 13010
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/apple-rubric.md",
+   "bytes": 1975
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/approaches.md",
+   "bytes": 8473
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/camera-motion.md",
+   "bytes": 21838
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/camera-post.md",
+   "bytes": 7472
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/changelog.md",
+   "bytes": 5478
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/composition-analysis.md",
+   "bytes": 30797
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/composition-exploration.md",
+   "bytes": 7236
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/cycles-production.md",
+   "bytes": 18198
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/editing.md",
+   "bytes": 15469
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/elements.md",
+   "bytes": 19244
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/environments.md",
+   "bytes": 12371
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/fast-feedback.md",
+   "bytes": 7656
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/figjam-board.md",
+   "bytes": 4413
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/finishing.md",
+   "bytes": 24859
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/fkl-frames.md",
+   "bytes": 19805
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/glass-light.md",
+   "bytes": 13472
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/graphics-labels.md",
+   "bytes": 5998
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/greybox-animation.md",
+   "bytes": 16712
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/greybox-composition.md",
+   "bytes": 6133
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/hard-surface.md",
+   "bytes": 10435
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/lighting.md",
+   "bytes": 32053
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/manufacturing-variation.md",
+   "bytes": 4711
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/octane-production.md",
+   "bytes": 27174
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/orchestration.md",
+   "bytes": 3493
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/patent-to-model.md",
+   "bytes": 17086
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/pipeline-commands.md",
+   "bytes": 10932
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/realism-finishing.md",
+   "bytes": 14257
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/reference-detailing.md",
+   "bytes": 24138
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/render-farm.md",
+   "bytes": 5733
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/render-supervision.md",
+   "bytes": 12509
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/research-protocol.md",
+   "bytes": 11863
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/scene-optimisation.md",
+   "bytes": 30713
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/shots-and-script.md",
+   "bytes": 14506
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/site-profile-example.md",
+   "bytes": 8984
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/sound-design.md",
+   "bytes": 23664
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/transition-shots.md",
+   "bytes": 10032
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/traps.md",
+   "bytes": 53479
+  },
+  {
+   "path": "domains/cad-3d/3d-product/references/wear-materials.md",
+   "bytes": 5520
+  },
+  {
+   "path": "domains/cad-3d/3d-product/scripts/budget.example.json",
+   "bytes": 2096
+  },
+  {
+   "path": "domains/cad-3d/3d-product/scripts/comp_analysis.py",
+   "bytes": 127649
+  },
+  {
+   "path": "domains/cad-3d/3d-product/scripts/figjam_section_builder.js",
+   "bytes": 4706
+  },
+  {
+   "path": "domains/cad-3d/3d-product/scripts/lighting_rules.json",
+   "bytes": 37432
+  },
+  {
+   "path": "domains/cad-3d/3d-product/scripts/loudness_profile.py",
+   "bytes": 18961
+  },
+  {
+   "path": "domains/cad-3d/3d-product/scripts/macro_focus.py",
+   "bytes": 6253
+  },
+  {
+   "path": "domains/cad-3d/3d-product/scripts/motion_qa.py",
+   "bytes": 20692
+  },
+  {
+   "path": "domains/cad-3d/3d-product/scripts/probe_setup.py",
+   "bytes": 24155
+  },
+  {
+   "path": "domains/cad-3d/3d-product/scripts/reads_metric.py",
+   "bytes": 14538
+  },
+  {
+   "path": "domains/cad-3d/3d-product/scripts/render_supervisor_template.sh",
+   "bytes": 12114
+  },
+  {
+   "path": "domains/cad-3d/3d-product/scripts/scene_weight.py",
+   "bytes": 13264
+  },
+  {
+   "path": "domains/cad-3d/3d-product/scripts/site.example.json",
+   "bytes": 580
+  },
+  {
+   "path": "domains/cad-3d/3d-product/scripts/supervisor_hooks.example.sh",
+   "bytes": 5663
+  },
+  {
+   "path": "domains/cad-3d/INDEX.md",
+   "bytes": 3556
+  },
+  {
+   "path": "domains/cad-3d/bambu-labs/LICENSE",
+   "bytes": 1095
+  },
+  {
+   "path": "domains/cad-3d/bambu-labs/SKILL.md",
+   "bytes": 3500
+  },
+  {
+   "path": "domains/cad-3d/bambu-labs/agents/openai.yaml",
+   "bytes": 222
+  },
+  {
+   "path": "domains/cad-3d/cad-ad-pipeline/SKILL.md",
+   "bytes": 18276
+  },
+  {
+   "path": "domains/cad-3d/cad-ad-pipeline/references/model-example.md",
+   "bytes": 2926
+  },
+  {
+   "path": "domains/cad-3d/cad-ad-pipeline/references/pipeline-demo.md",
+   "bytes": 3958
+  },
+  {
+   "path": "domains/cad-3d/cad-ad-pipeline/references/render-script.md",
+   "bytes": 6395
+  },
+  {
+   "path": "domains/cad-3d/cad/LICENSE",
+   "bytes": 1095
+  },
+  {
+   "path": "domains/cad-3d/cad/SKILL.md",
+   "bytes": 11124
+  },
+  {
+   "path": "domains/cad-3d/cad/agents/openai.yaml",
+   "bytes": 291
+  },
+  {
+   "path": "domains/cad-3d/cad/references/animation-deformation.md",
+   "bytes": 3702
+  },
+  {
+   "path": "domains/cad-3d/cad/references/build123d-modeling.md",
+   "bytes": 11342
+  },
+  {
+   "path": "domains/cad-3d/cad/references/cad-brief.md",
+   "bytes": 2122
+  },
+  {
+   "path": "domains/cad-3d/cad/references/inspection-and-validation.md",
+   "bytes": 11791
+  },
+  {
+   "path": "domains/cad-3d/cad/references/kinematics.md",
+   "bytes": 20124
+  },
+  {
+   "path": "domains/cad-3d/cad/references/migrations.md",
+   "bytes": 4538
+  },
+  {
+   "path": "domains/cad-3d/cad/references/positioning.md",
+   "bytes": 5949
+  },
+  {
+   "path": "domains/cad-3d/cad/references/project-layout.md",
+   "bytes": 9189
+  },
+  {
+   "path": "domains/cad-3d/cad/references/project-template.md",
+   "bytes": 4788
+  },
+  {
+   "path": "domains/cad-3d/cad/references/repair-loop.md",
+   "bytes": 3856
+  },
+  {
+   "path": "domains/cad-3d/cad/references/snapshot-review.md",
+   "bytes": 14788
+  },
+  {
+   "path": "domains/cad-3d/cad/references/step-generation.md",
+   "bytes": 27125
+  },
+  {
+   "path": "domains/cad-3d/cad/references/supported-exports.md",
+   "bytes": 10273
+  },
+  {
+   "path": "domains/cad-3d/dfam-check/LICENSE",
+   "bytes": 1095
+  },
+  {
+   "path": "domains/cad-3d/dfam-check/SKILL.md",
+   "bytes": 6049
+  },
+  {
+   "path": "domains/cad-3d/dfam-check/agents/openai.yaml",
+   "bytes": 213
+  },
+  {
+   "path": "domains/cad-3d/dfam-check/references/process-limits.md",
+   "bytes": 3147
+  },
+  {
+   "path": "domains/cad-3d/dfam-check/requirements.txt",
+   "bytes": 378
+  },
+  {
+   "path": "domains/cad-3d/dfam-check/scripts/dfam_tool.py",
+   "bytes": 15676
+  },
+  {
+   "path": "domains/cad-3d/dfm/LICENSE",
+   "bytes": 1095
+  },
+  {
+   "path": "domains/cad-3d/dfm/SKILL.md",
+   "bytes": 5797
+  },
+  {
+   "path": "domains/cad-3d/dfm/agents/openai.yaml",
+   "bytes": 336
+  },
+  {
+   "path": "domains/cad-3d/dfm/references/cnc.md",
+   "bytes": 3193
+  },
+  {
+   "path": "domains/cad-3d/dfm/references/injection-molding.md",
+   "bytes": 10173
+  },
+  {
+   "path": "domains/cad-3d/dfm/references/sheet-metal.md",
+   "bytes": 3006
+  },
+  {
+   "path": "domains/cad-3d/dfm/requirements.txt",
+   "bytes": 279
+  },
+  {
+   "path": "domains/cad-3d/dfm/scripts/mold_tool.py",
+   "bytes": 51482
+  },
+  {
+   "path": "domains/cad-3d/dxf/LICENSE",
+   "bytes": 1095
+  },
+  {
+   "path": "domains/cad-3d/dxf/SKILL.md",
+   "bytes": 17288
+  },
+  {
+   "path": "domains/cad-3d/dxf/agents/openai.yaml",
+   "bytes": 304
+  },
+  {
+   "path": "domains/cad-3d/dxf/references/generator-templates.md",
+   "bytes": 6403
+  },
+  {
+   "path": "domains/cad-3d/engineering-drawing/LICENSE",
+   "bytes": 1095
+  },
+  {
+   "path": "domains/cad-3d/engineering-drawing/SKILL.md",
+   "bytes": 7886
+  },
+  {
+   "path": "domains/cad-3d/engineering-drawing/agents/openai.yaml",
+   "bytes": 301
+  },
+  {
+   "path": "domains/cad-3d/engineering-drawing/references/sheet-api.md",
+   "bytes": 7105
+  },
+  {
+   "path": "domains/cad-3d/gcode/LICENSE",
+   "bytes": 1095
+  },
+  {
+   "path": "domains/cad-3d/gcode/SKILL.md",
+   "bytes": 4018
+  },
+  {
+   "path": "domains/cad-3d/gcode/agents/openai.yaml",
+   "bytes": 187
+  },
+  {
+   "path": "domains/cad-3d/gcode/scripts/orca_presets.py",
+   "bytes": 6438
+  },
+  {
+   "path": "domains/cad-3d/sdf/LICENSE",
+   "bytes": 1095
+  },
+  {
+   "path": "domains/cad-3d/sdf/SKILL.md",
+   "bytes": 10359
+  },
+  {
+   "path": "domains/cad-3d/sdf/agents/openai.yaml",
+   "bytes": 300
+  },
+  {
+   "path": "domains/cad-3d/sdf/references/design-ledger.md",
+   "bytes": 4302
+  },
+  {
+   "path": "domains/cad-3d/sdf/references/examples.md",
+   "bytes": 4546
+  },
+  {
+   "path": "domains/cad-3d/sdf/references/frame-semantics.md",
+   "bytes": 3724
+  },
+  {
+   "path": "domains/cad-3d/sdf/references/interoperability.md",
+   "bytes": 3689
+  },
+  {
+   "path": "domains/cad-3d/sdf/references/llm-guardrails.md",
+   "bytes": 4641
+  },
+  {
+   "path": "domains/cad-3d/sdf/references/sdf-workflow.md",
+   "bytes": 4380
+  },
+  {
+   "path": "domains/cad-3d/sdf/references/smoke-tests.md",
+   "bytes": 3469
+  },
+  {
+   "path": "domains/cad-3d/sdf/references/validation.md",
+   "bytes": 7995
+  },
+  {
+   "path": "domains/cad-3d/sendcutsend/LICENSE",
+   "bytes": 1095
+  },
+  {
+   "path": "domains/cad-3d/sendcutsend/SKILL.md",
+   "bytes": 12923
+  },
+  {
+   "path": "domains/cad-3d/sendcutsend/agents/openai.yaml",
+   "bytes": 214
+  },
+  {
+   "path": "domains/cad-3d/sendcutsend/references/official-sources.md",
+   "bytes": 2252
+  },
+  {
+   "path": "domains/cad-3d/sendcutsend/references/report-template.md",
+   "bytes": 3038
+  },
+  {
+   "path": "domains/cad-3d/srdf/LICENSE",
+   "bytes": 1095
+  },
+  {
+   "path": "domains/cad-3d/srdf/SKILL.md",
+   "bytes": 11422
+  },
+  {
+   "path": "domains/cad-3d/srdf/agents/openai.yaml",
+   "bytes": 321
+  },
+  {
+   "path": "domains/cad-3d/srdf/references/authoring-contract.md",
+   "bytes": 4681
+  },
+  {
+   "path": "domains/cad-3d/srdf/references/disabled-collisions.md",
+   "bytes": 1925
+  },
+  {
+   "path": "domains/cad-3d/srdf/references/end-effectors.md",
+   "bytes": 1643
+  },
+  {
+   "path": "domains/cad-3d/srdf/references/planning-ledger.md",
+   "bytes": 3456
+  },
+  {
+   "path": "domains/cad-3d/srdf/references/srdf-workflow.md",
+   "bytes": 2957
+  },
+  {
+   "path": "domains/cad-3d/srdf/references/validation.md",
+   "bytes": 3982
+  },
+  {
+   "path": "domains/cad-3d/step-parts/LICENSE",
+   "bytes": 1095
+  },
+  {
+   "path": "domains/cad-3d/step-parts/SKILL.md",
+   "bytes": 6107
+  },
+  {
+   "path": "domains/cad-3d/step-parts/agents/openai.yaml",
+   "bytes": 198
+  },
+  {
+   "path": "domains/cad-3d/step-parts/references/step-parts-api.md",
+   "bytes": 3690
+  },
+  {
+   "path": "domains/cad-3d/step-parts/scripts/download_step_part.py",
+   "bytes": 8261
+  },
+  {
+   "path": "domains/cad-3d/urdf/LICENSE",
+   "bytes": 1095
+  },
+  {
+   "path": "domains/cad-3d/urdf/SKILL.md",
+   "bytes": 9426
+  },
+  {
+   "path": "domains/cad-3d/urdf/agents/openai.yaml",
+   "bytes": 289
+  },
+  {
+   "path": "domains/cad-3d/urdf/references/authoring-contract.md",
+   "bytes": 6879
+  },
+  {
+   "path": "domains/cad-3d/urdf/references/design-ledger.md",
+   "bytes": 5510
+  },
+  {
+   "path": "domains/cad-3d/urdf/references/frame-semantics.md",
+   "bytes": 3701
+  },
+  {
+   "path": "domains/cad-3d/urdf/references/inertials.md",
+   "bytes": 5079
+  },
+  {
+   "path": "domains/cad-3d/urdf/references/meshes.md",
+   "bytes": 3950
+  },
+  {
+   "path": "domains/cad-3d/urdf/references/urdf-workflow.md",
+   "bytes": 5858
+  },
+  {
+   "path": "domains/cad-3d/urdf/references/validation.md",
+   "bytes": 4900
+  },
+  {
+   "path": "domains/content-writing/INDEX.md",
+   "bytes": 2972
+  },
+  {
+   "path": "domains/content-writing/bigtype-poster/SKILL.md",
+   "bytes": 2670
+  },
+  {
+   "path": "domains/content-writing/graphify/SKILL.md",
+   "bytes": 10838
+  },
+  {
+   "path": "domains/content-writing/graphify/agents/openai.yaml",
+   "bytes": 667
+  },
+  {
+   "path": "domains/content-writing/graphify/references/command-reference.md",
+   "bytes": 3088
+  },
+  {
+   "path": "domains/content-writing/graphify/references/graph-schema.md",
+   "bytes": 3643
+  },
+  {
+   "path": "domains/content-writing/graphify/scripts/graphify_query.py",
+   "bytes": 9870
+  },
+  {
+   "path": "domains/content-writing/human-writing/LICENSE",
+   "bytes": 1110
+  },
+  {
+   "path": "domains/content-writing/human-writing/SKILL.md",
+   "bytes": 15633
+  },
+  {
+   "path": "domains/content-writing/human-writing/VERSION",
+   "bytes": 7
+  },
+  {
+   "path": "domains/content-writing/human-writing/agents/openai.yaml",
+   "bytes": 310
+  },
+  {
+   "path": "domains/content-writing/human-writing/references/fiction.md",
+   "bytes": 4910
+  },
+  {
+   "path": "domains/content-writing/human-writing/references/formats.md",
+   "bytes": 4673
+  },
+  {
+   "path": "domains/content-writing/human-writing/references/forum-prose.md",
+   "bytes": 23972
+  },
+  {
+   "path": "domains/content-writing/human-writing/references/reality.md",
+   "bytes": 6030
+  },
+  {
+   "path": "domains/content-writing/human-writing/references/revision.md",
+   "bytes": 12989
+  },
+  {
+   "path": "domains/content-writing/human-writing/scripts/check_prose.py",
+   "bytes": 22237
+  },
+  {
+   "path": "domains/content-writing/prism-content/SKILL.md",
+   "bytes": 2008
+  },
+  {
+   "path": "domains/content-writing/prism-ops/SKILL.md",
+   "bytes": 4357
+  },
+  {
+   "path": "domains/content-writing/qiangshou/SKILL.md",
+   "bytes": 11181
+  },
+  {
+   "path": "domains/content-writing/qiangshou/agents/openai.yaml",
+   "bytes": 303
+  },
+  {
+   "path": "domains/content-writing/qiangshou/references/author-voice-signals.json",
+   "bytes": 2094
+  },
+  {
+   "path": "domains/content-writing/qiangshou/references/author-voice.md",
+   "bytes": 2008
+  },
+  {
+   "path": "domains/content-writing/qiangshou/references/facts-and-strategy.md",
+   "bytes": 4673
+  },
+  {
+   "path": "domains/content-writing/qiangshou/references/format-preserving-layout.md",
+   "bytes": 2685
+  },
+  {
+   "path": "domains/content-writing/qiangshou/references/github-readme.md",
+   "bytes": 17388
+  },
+  {
+   "path": "domains/content-writing/qiangshou/references/micro-detail-and-counter-narrative.md",
+   "bytes": 14222
+  },
+  {
+   "path": "domains/content-writing/qiangshou/references/review-and-deliverables.md",
+   "bytes": 6578
+  },
+  {
+   "path": "domains/content-writing/qiangshou/references/self-evolution.md",
+   "bytes": 4393
+  },
+  {
+   "path": "domains/content-writing/qiangshou/references/test-scenarios.md",
+   "bytes": 17632
+  },
+  {
+   "path": "domains/content-writing/qiangshou/references/visual-preference-signals.json",
+   "bytes": 423
+  },
+  {
+   "path": "domains/content-writing/qiangshou/references/visual-preferences.md",
+   "bytes": 789
+  },
+  {
+   "path": "domains/content-writing/qiangshou/references/wechat-layout-and-draft.md",
+   "bytes": 4842
+  },
+  {
+   "path": "domains/content-writing/qiangshou/references/writing.md",
+   "bytes": 13360
+  },
+  {
+   "path": "domains/content-writing/qiangshou/scripts/render_wechat_html.py",
+   "bytes": 20005
+  },
+  {
+   "path": "domains/content-writing/qiangshou/scripts/self_evolution.py",
+   "bytes": 17464
+  },
+  {
+   "path": "domains/content-writing/qiangshou/scripts/validate_readme_pair.py",
+   "bytes": 6803
+  },
+  {
+   "path": "domains/content-writing/qiangshou/scripts/validate_wechat_html.py",
+   "bytes": 5485
+  },
+  {
+   "path": "domains/content-writing/qiangshou/scripts/validate_wechat_images.py",
+   "bytes": 4425
+  },
+  {
+   "path": "domains/content-writing/qiangshou/scripts/verify_content_preservation.py",
+   "bytes": 5125
+  },
+  {
+   "path": "domains/content-writing/qiangshou/tests/test_content_preservation.py",
+   "bytes": 1702
+  },
+  {
+   "path": "domains/content-writing/qiangshou/tests/test_readme_pair.py",
+   "bytes": 3378
+  },
+  {
+   "path": "domains/content-writing/qiangshou/tests/test_self_evolution.py",
+   "bytes": 9501
+  },
+  {
+   "path": "domains/content-writing/qiangshou/tests/test_skill_contract.py",
+   "bytes": 6079
+  },
+  {
+   "path": "domains/content-writing/qiangshou/tests/test_wechat_delivery.py",
+   "bytes": 6823
+  },
+  {
+   "path": "domains/content-writing/zsxq/SKILL.md",
+   "bytes": 18952
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/auth-errors.md",
+   "bytes": 3174
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/cli-exploration.md",
+   "bytes": 2164
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/group-column-create.md",
+   "bytes": 3010
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/group-columns.md",
+   "bytes": 3089
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/group-hashtags.md",
+   "bytes": 1703
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/group-list.md",
+   "bytes": 1501
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/group-members.md",
+   "bytes": 6579
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/group-settings.md",
+   "bytes": 3844
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/group-topics.md",
+   "bytes": 2671
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/note-create.md",
+   "bytes": 2096
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/note-delete.md",
+   "bytes": 1291
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/note-detail.md",
+   "bytes": 1108
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/note-edit.md",
+   "bytes": 1831
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/note-list.md",
+   "bytes": 1636
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/archive-topics-to-column.md",
+   "bytes": 7762
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/batch-tag-topics.md",
+   "bytes": 7722
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/care-expiring-members.md",
+   "bytes": 7574
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/compose-operations-report.md",
+   "bytes": 10017
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/curate-digest-and-tags.md",
+   "bytes": 6969
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/daily-patrol.md",
+   "bytes": 9005
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/generate-daily-poster.md",
+   "bytes": 9296
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/generate-daily-poster/layout-multi.md",
+   "bytes": 2929
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/generate-daily-poster/layout-single.md",
+   "bytes": 3364
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/generate-daily-poster/render-poster.md",
+   "bytes": 5209
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/generate-daily-poster/scoring.md",
+   "bytes": 3192
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/generate-video.md",
+   "bytes": 13218
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/generate-video/refinement-rules.md",
+   "bytes": 4349
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/manage-inbound-questions.md",
+   "bytes": 7037
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/migrate-legacy-skills.md",
+   "bytes": 7432
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/monitor-risky-content.md",
+   "bytes": 9006
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/scenarios/triage-comments.md",
+   "bytes": 8094
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/share-links.md",
+   "bytes": 1064
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-answer.md",
+   "bytes": 4648
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-attached-columns.md",
+   "bytes": 5897
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-create.md",
+   "bytes": 8129
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-delete.md",
+   "bytes": 1708
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-detail.md",
+   "bytes": 2447
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-digest.md",
+   "bytes": 2723
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-edit.md",
+   "bytes": 3921
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-reply.md",
+   "bytes": 2998
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-schedule.md",
+   "bytes": 4429
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-scheduled.md",
+   "bytes": 1705
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-search.md",
+   "bytes": 3566
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-set.md",
+   "bytes": 2938
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-tags.md",
+   "bytes": 2412
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/topic-unschedule.md",
+   "bytes": 2068
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/user-footprints.md",
+   "bytes": 1852
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/user-info.md",
+   "bytes": 1763
+  },
+  {
+   "path": "domains/content-writing/zsxq/references/user-nps.md",
+   "bytes": 4670
+  },
+  {
+   "path": "domains/content-writing/zsxq/scripts/scenarios/generate-video/package-lock.json",
+   "bytes": 13839
+  },
+  {
+   "path": "domains/content-writing/zsxq/scripts/scenarios/generate-video/package.json",
+   "bytes": 230
+  },
+  {
+   "path": "domains/content-writing/zsxq/scripts/scenarios/generate-video/record.js",
+   "bytes": 5140
+  },
+  {
+   "path": "domains/content-writing/zsxq/scripts/scenarios/generate-video/render-minimal.js",
+   "bytes": 6042
+  },
+  {
+   "path": "domains/content-writing/zsxq/scripts/scenarios/generate-video/render.js",
+   "bytes": 14009
   },
   {
    "path": "domains/cowork-plugin-management/INDEX.md",
-   "bytes": 778
+   "bytes": 930
   },
   {
    "path": "domains/cowork-plugin-management/cowork-plugin-customizer/LICENSE.txt",
@@ -137,7 +1137,7 @@
   },
   {
    "path": "domains/customer-support/INDEX.md",
-   "bytes": 1150
+   "bytes": 1514
   },
   {
    "path": "domains/customer-support/customer-escalation/SKILL.md",
@@ -161,7 +1161,7 @@
   },
   {
    "path": "domains/data/INDEX.md",
-   "bytes": 1804
+   "bytes": 2511
   },
   {
    "path": "domains/data/analyze/SKILL.md",
@@ -224,8 +1224,212 @@
    "bytes": 4970
   },
   {
+   "path": "domains/dbs-toolkit/INDEX.md",
+   "bytes": 4261
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-action/SKILL.md",
+   "bytes": 11079
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-agent-migration/SKILL.md",
+   "bytes": 11416
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-ai-check/SKILL.md",
+   "bytes": 12323
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-benchmark/SKILL.md",
+   "bytes": 10052
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-chatroom-austrian/SKILL.md",
+   "bytes": 4944
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-chatroom/SKILL.md",
+   "bytes": 3547
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/SKILL.md",
+   "bytes": 17274
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/docs/acceptance.md",
+   "bytes": 5152
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/docs/quickstart.md",
+   "bytes": 4249
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/scaffold/root/AGENTS.md",
+   "bytes": 3721
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/scaffold/root/CLAUDE.md",
+   "bytes": 1154
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/scaffold/root/README.md",
+   "bytes": 2859
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/scaffold/root/SOURCE_OF_TRUTH.md",
+   "bytes": 5829
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/scaffold/rules/内容单元关系规则.md",
+   "bytes": 697
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/scaffold/rules/内容单元去重与版本规则.md",
+   "bytes": 574
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/scaffold/rules/内容单元字段规范.md",
+   "bytes": 907
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/scaffold/rules/处理流程.md",
+   "bytes": 698
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/scaffold/rules/新增文稿进入系统流程.md",
+   "bytes": 1085
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/scaffold/rules/来源命名规范.md",
+   "bytes": 543
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/templates/主题地图模板.md",
+   "bytes": 265
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/templates/方案单元模板.md",
+   "bytes": 471
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/templates/案例单元模板.md",
+   "bytes": 449
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/templates/概念单元模板.md",
+   "bytes": 412
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/templates/观点单元模板.md",
+   "bytes": 431
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/templates/选题装配模板.md",
+   "bytes": 437
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/templates/问题单元模板.md",
+   "bytes": 462
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/tools/assemble-topic-from-units.js",
+   "bytes": 25453
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/tools/extract-sample-units.js",
+   "bytes": 109777
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/tools/fill-obsidian-links.js",
+   "bytes": 4777
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/tools/generate-duplicate-candidates.js",
+   "bytes": 17266
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/tools/generate-link-map.js",
+   "bytes": 6401
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/tools/generate-source-registry.js",
+   "bytes": 4870
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/tools/generate-unit-draft.js",
+   "bytes": 2313
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/tools/init-content-system.js",
+   "bytes": 4136
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/tools/rebuild-processing-ledger.js",
+   "bytes": 3020
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content-system/tools/summarize-system.js",
+   "bytes": 1864
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-content/SKILL.md",
+   "bytes": 10755
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-decision/SKILL.md",
+   "bytes": 11982
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-deconstruct/SKILL.md",
+   "bytes": 9964
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-diagnosis/SKILL.md",
+   "bytes": 22152
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-goal/SKILL.md",
+   "bytes": 12463
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-good-question/SKILL.md",
+   "bytes": 15642
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-hook/SKILL.md",
+   "bytes": 10463
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-learning/SKILL.md",
+   "bytes": 9628
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-report/SKILL.md",
+   "bytes": 8801
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-restore/SKILL.md",
+   "bytes": 6326
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-save/SKILL.md",
+   "bytes": 8150
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-slowisfast/SKILL.md",
+   "bytes": 12802
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs-xhs-title/SKILL.md",
+   "bytes": 32431
+  },
+  {
+   "path": "domains/dbs-toolkit/dbs/SKILL.md",
+   "bytes": 6584
+  },
+  {
    "path": "domains/design/INDEX.md",
-   "bytes": 1932
+   "bytes": 2102
   },
   {
    "path": "domains/design/accessibility-review/SKILL.md",
@@ -257,7 +1461,7 @@
   },
   {
    "path": "domains/engineering/INDEX.md",
-   "bytes": 2749
+   "bytes": 2900
   },
   {
    "path": "domains/engineering/architecture/SKILL.md",
@@ -301,7 +1505,7 @@
   },
   {
    "path": "domains/enterprise-search/INDEX.md",
-   "bytes": 1169
+   "bytes": 1441
   },
   {
    "path": "domains/enterprise-search/digest/SKILL.md",
@@ -325,7 +1529,7 @@
   },
   {
    "path": "domains/finance/INDEX.md",
-   "bytes": 1558
+   "bytes": 2165
   },
   {
    "path": "domains/finance/audit-support/SKILL.md",
@@ -361,7 +1565,7 @@
   },
   {
    "path": "domains/human-resources/INDEX.md",
-   "bytes": 2337
+   "bytes": 2603
   },
   {
    "path": "domains/human-resources/comp-analysis/SKILL.md",
@@ -400,8 +1604,3836 @@
    "bytes": 1442
   },
   {
+   "path": "domains/hyperframes/INDEX.md",
+   "bytes": 1796
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-cli/SKILL.md",
+   "bytes": 9970
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-helper/SKILL.md",
+   "bytes": 18033
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-helper/templates/composition-template.html",
+   "bytes": 13721
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-helper/templates/cut-retakes.py",
+   "bytes": 3235
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-helper/templates/recipes.md",
+   "bytes": 15864
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-helper/templates/silence-cut.sh",
+   "bytes": 1970
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-helper/templates/storyboard-template.html",
+   "bytes": 24961
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-helper/templates/transcribe-whisper.py",
+   "bytes": 1688
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-registry/SKILL.md",
+   "bytes": 4387
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-registry/examples/add-block.md",
+   "bytes": 1232
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-registry/examples/add-component.md",
+   "bytes": 1473
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-registry/references/demo-html-pattern.md",
+   "bytes": 1884
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-registry/references/discovery.md",
+   "bytes": 2704
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-registry/references/install-locations.md",
+   "bytes": 1519
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-registry/references/wiring-blocks.md",
+   "bytes": 3127
+  },
+  {
+   "path": "domains/hyperframes/hyperframes-registry/references/wiring-components.md",
+   "bytes": 2402
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.claude-plugin/marketplace.json",
+   "bytes": 532
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.claude-plugin/plugin.json",
+   "bytes": 523
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.claude/settings.json",
+   "bytes": 1438
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.codex-plugin/plugin.json",
+   "bytes": 1803
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.cursor-plugin/plugin.json",
+   "bytes": 1015
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.editorconfig",
+   "bytes": 147
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.env.example",
+   "bytes": 284
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.fallowrc.jsonc",
+   "bytes": 5197
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.gitattributes",
+   "bytes": 1826
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/ISSUE_TEMPLATE/bug.yml",
+   "bytes": 2608
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/ISSUE_TEMPLATE/config.yml",
+   "bytes": 28
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/ISSUE_TEMPLATE/feature.yml",
+   "bytes": 998
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/actions/install-ffmpeg-windows/action.yml",
+   "bytes": 2474
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/actions/preflight/action.yml",
+   "bytes": 926
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/codeql/codeql-config.yml",
+   "bytes": 2676
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/pull_request_template.md",
+   "bytes": 286
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/renovate.json",
+   "bytes": 1079
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/workflows/catalog-previews.yml",
+   "bytes": 2905
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/workflows/ci.yml",
+   "bytes": 19217
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/workflows/codeql.yml",
+   "bytes": 1753
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/workflows/docs.yml",
+   "bytes": 1224
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/workflows/fixtures/windows-canary.html",
+   "bytes": 2181
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/workflows/player-perf.yml",
+   "bytes": 5812
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/workflows/preview-regression.yml",
+   "bytes": 5112
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/workflows/publish.yml",
+   "bytes": 6734
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/workflows/regression.yml",
+   "bytes": 5636
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.github/workflows/windows-render.yml",
+   "bytes": 17990
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.gitignore",
+   "bytes": 2640
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.oxfmtrc.json",
+   "bytes": 127
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.oxlintrc.json",
+   "bytes": 335
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/.prettierignore",
+   "bytes": 65
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/ADOPTERS.md",
+   "bytes": 2375
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/AGENTS.md",
+   "bytes": 2921
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/CLAUDE.md",
+   "bytes": 3946
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/CODE_OF_CONDUCT.md",
+   "bytes": 1753
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/CONTRIBUTING.md",
+   "bytes": 8471
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/CREDITS.md",
+   "bytes": 1242
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/DESIGN.md",
+   "bytes": 10928
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/DOCS_GUIDELINES.md",
+   "bytes": 5011
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/Dockerfile.test",
+   "bytes": 3668
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/LICENSE",
+   "bytes": 10763
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/README.md",
+   "bytes": 11936
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/SECURITY.md",
+   "bytes": 739
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/SKILL.md",
+   "bytes": 31649
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/assets/claude-code-icon-dark.svg",
+   "bytes": 1112
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/assets/claude-code-icon-light.svg",
+   "bytes": 1112
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/assets/icon.png",
+   "bytes": 25268
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/assets/logo.png",
+   "bytes": 60586
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/bun.lock",
+   "bytes": 225044
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/commitlint.config.js",
+   "bytes": 68
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/data-in-motion.md",
+   "bytes": 1296
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/app-showcase.mdx",
+   "bytes": 1158
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/apple-money-count.mdx",
+   "bytes": 1803
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/blue-sweater-intro-video.mdx",
+   "bytes": 1565
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/chromatic-radial-split.mdx",
+   "bytes": 1222
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/cinematic-zoom.mdx",
+   "bytes": 1120
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/code-snippet-dark-2026.mdx",
+   "bytes": 1898
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/code-snippet-dark-modern.mdx",
+   "bytes": 1918
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/code-snippet-dark-plus.mdx",
+   "bytes": 1885
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/code-snippet-high-contrast-light.mdx",
+   "bytes": 1969
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/code-snippet-high-contrast.mdx",
+   "bytes": 1908
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/code-snippet-light-2026.mdx",
+   "bytes": 1909
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/code-snippet-light-modern.mdx",
+   "bytes": 1936
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/code-snippet-light-plus.mdx",
+   "bytes": 1896
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/code-snippet-monokai.mdx",
+   "bytes": 1867
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/code-snippet-solarized-light.mdx",
+   "bytes": 1941
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/code-snippet-visual-studio-dark.mdx",
+   "bytes": 1960
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/code-snippet-visual-studio-light.mdx",
+   "bytes": 1971
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/cross-warp-morph.mdx",
+   "bytes": 1144
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/data-chart.mdx",
+   "bytes": 1184
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/domain-warp-dissolve.mdx",
+   "bytes": 1194
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/flash-through-white.mdx",
+   "bytes": 1171
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/flowchart.mdx",
+   "bytes": 1217
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/glitch.mdx",
+   "bytes": 1060
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/gravitational-lens.mdx",
+   "bytes": 1184
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/instagram-follow.mdx",
+   "bytes": 1273
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/ios26-liquid-glass.mdx",
+   "bytes": 1882
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/light-leak.mdx",
+   "bytes": 1104
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/liquid-glass-context-menu.mdx",
+   "bytes": 1518
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/liquid-glass-media-controls.mdx",
+   "bytes": 1542
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/liquid-glass-notification.mdx",
+   "bytes": 1518
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/liquid-glass-widgets.mdx",
+   "bytes": 1501
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/logo-outro.mdx",
+   "bytes": 1192
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/macos-notification.mdx",
+   "bytes": 1218
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/macos-tahoe-liquid-glass.mdx",
+   "bytes": 1732
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/north-korea-locked-down.mdx",
+   "bytes": 2025
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/nyc-paris-flight.mdx",
+   "bytes": 2136
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/reddit-post.mdx",
+   "bytes": 1145
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/ridged-burn.mdx",
+   "bytes": 1115
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/ripple-waves.mdx",
+   "bytes": 1132
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/sdf-iris.mdx",
+   "bytes": 1096
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/spain-map.mdx",
+   "bytes": 1280
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/spotify-card.mdx",
+   "bytes": 1171
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/swirl-vortex.mdx",
+   "bytes": 1118
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/thermal-distortion.mdx",
+   "bytes": 1176
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/tiktok-follow.mdx",
+   "bytes": 1237
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/transitions-3d.mdx",
+   "bytes": 1150
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/transitions-blur.mdx",
+   "bytes": 1158
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/transitions-cover.mdx",
+   "bytes": 1155
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/transitions-destruction.mdx",
+   "bytes": 1217
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/transitions-dissolve.mdx",
+   "bytes": 1178
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/transitions-distortion.mdx",
+   "bytes": 1200
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/transitions-grid.mdx",
+   "bytes": 1138
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/transitions-light.mdx",
+   "bytes": 1169
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/transitions-mechanical.mdx",
+   "bytes": 1216
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/transitions-other.mdx",
+   "bytes": 1161
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/transitions-push.mdx",
+   "bytes": 1136
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/transitions-radial.mdx",
+   "bytes": 1170
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/transitions-scale.mdx",
+   "bytes": 1145
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/ui-3d-reveal.mdx",
+   "bytes": 1119
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/us-map-bubble.mdx",
+   "bytes": 1294
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/us-map-flow.mdx",
+   "bytes": 1272
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/us-map-hex.mdx",
+   "bytes": 1260
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/us-map.mdx",
+   "bytes": 1230
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/vfx-iphone-device.mdx",
+   "bytes": 1929
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/vfx-liquid-background.mdx",
+   "bytes": 1638
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/vfx-magnetic.mdx",
+   "bytes": 1258
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/vfx-portal.mdx",
+   "bytes": 1240
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/vfx-shatter.mdx",
+   "bytes": 1249
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/vfx-text-cursor.mdx",
+   "bytes": 1612
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/vpn-youtube-spot.mdx",
+   "bytes": 1757
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/whip-pan.mdx",
+   "bytes": 1086
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/world-map.mdx",
+   "bytes": 1279
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/x-post.mdx",
+   "bytes": 1103
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/blocks/yt-lower-third.mdx",
+   "bytes": 1259
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-blend-difference.mdx",
+   "bytes": 1235
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-clip-wipe.mdx",
+   "bytes": 1032
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-editorial-emphasis.mdx",
+   "bytes": 1150
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-emoji-pop.mdx",
+   "bytes": 1067
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-glitch-rgb.mdx",
+   "bytes": 1048
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-gradient-fill.mdx",
+   "bytes": 1070
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-highlight.mdx",
+   "bytes": 1062
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-kinetic-slam.mdx",
+   "bytes": 1106
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-matrix-decode.mdx",
+   "bytes": 1071
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-neon-accent.mdx",
+   "bytes": 1069
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-neon-glow.mdx",
+   "bytes": 1045
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-parallax-layers.mdx",
+   "bytes": 1108
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-particle-burst.mdx",
+   "bytes": 1084
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-pill-karaoke.mdx",
+   "bytes": 1075
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-texture.mdx",
+   "bytes": 1721
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/caption-weight-shift.mdx",
+   "bytes": 1067
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/grain-overlay.mdx",
+   "bytes": 1130
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/grid-pixelate-wipe.mdx",
+   "bytes": 1203
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/parallax-unzoom.mdx",
+   "bytes": 1197
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/parallax-zoom.mdx",
+   "bytes": 1160
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/shimmer-sweep.mdx",
+   "bytes": 1141
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/texture-mask-text.mdx",
+   "bytes": 46831
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/catalog/components/vignette.mdx",
+   "bytes": 1101
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/community/adopters.mdx",
+   "bytes": 2666
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/concepts/compositions.mdx",
+   "bytes": 7648
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/concepts/data-attributes.mdx",
+   "bytes": 5616
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/concepts/determinism.mdx",
+   "bytes": 5080
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/concepts/frame-adapters.mdx",
+   "bytes": 5041
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/concepts/variables.mdx",
+   "bytes": 12791
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/contributing.mdx",
+   "bytes": 5180
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/contributing/catalog.mdx",
+   "bytes": 6246
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/contributing/release-channels.mdx",
+   "bytes": 2117
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/contributing/studio-manual-dom-editing.mdx",
+   "bytes": 12288
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/contributing/testing-local-changes.mdx",
+   "bytes": 4192
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/custom.css",
+   "bytes": 9427
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/deploy/aws-lambda.mdx",
+   "bytes": 13667
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/deploy/migrating-to-hyperframes-lambda.mdx",
+   "bytes": 9520
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/deploy/templates-on-lambda.mdx",
+   "bytes": 16496
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/docs.json",
+   "bytes": 9789
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/examples.mdx",
+   "bytes": 12414
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/favicon.svg",
+   "bytes": 1114
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/4k-rendering.mdx",
+   "bytes": 8991
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/antigravity.mdx",
+   "bytes": 6601
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/claude-design-hyperframes.md",
+   "bytes": 47356
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/claude-design.mdx",
+   "bytes": 7127
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/common-mistakes.mdx",
+   "bytes": 11580
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/copilot-cli.mdx",
+   "bytes": 6860
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/deploy.mdx",
+   "bytes": 9034
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/feedback.mdx",
+   "bytes": 7827
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/gsap-animation.mdx",
+   "bytes": 5859
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/hdr.mdx",
+   "bytes": 10525
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/html-in-canvas.mdx",
+   "bytes": 5614
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/hyperframes-vs-remotion.mdx",
+   "bytes": 15412
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/mcp.mdx",
+   "bytes": 14011
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/open-design-hyperframes.md",
+   "bytes": 18504
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/open-design.mdx",
+   "bytes": 10288
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/performance.mdx",
+   "bytes": 5286
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/pipeline.mdx",
+   "bytes": 14329
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/prompting.mdx",
+   "bytes": 12998
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/remove-background.mdx",
+   "bytes": 23161
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/rendering.mdx",
+   "bytes": 15088
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/timeline-editing.mdx",
+   "bytes": 4376
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/troubleshooting.mdx",
+   "bytes": 7583
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/video-editor-cheatsheet.mdx",
+   "bytes": 11408
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/guides/website-to-video.mdx",
+   "bytes": 9272
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/introduction.mdx",
+   "bytes": 5766
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/launch-videos.mdx",
+   "bytes": 4806
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/logo/dark.svg",
+   "bytes": 7245
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/logo/light.svg",
+   "bytes": 7245
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/logo/symbol-dark.svg",
+   "bytes": 1112
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/logo/symbol-light.svg",
+   "bytes": 1112
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/packages/cli.mdx",
+   "bytes": 57293
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/packages/core.mdx",
+   "bytes": 13393
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/packages/engine.mdx",
+   "bytes": 14932
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/packages/player.mdx",
+   "bytes": 7945
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/packages/producer.mdx",
+   "bytes": 13985
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/packages/studio.mdx",
+   "bytes": 8811
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/public/catalog-index.json",
+   "bytes": 36785
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/quickstart.mdx",
+   "bytes": 9279
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/reference/html-schema.mdx",
+   "bytes": 10390
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/schema/hyperframes.json",
+   "bytes": 1792
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/schema/registry-item.json",
+   "bytes": 4123
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/schema/registry.json",
+   "bytes": 1422
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/showcase.mdx",
+   "bytes": 11732
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/snippets/TemplateCard.jsx",
+   "bytes": 1768
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/template-gallery.css",
+   "bytes": 450
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/docs/template-gallery.js",
+   "bytes": 992
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/examples/aws-lambda/.gitignore",
+   "bytes": 102
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/examples/aws-lambda/README.md",
+   "bytes": 10670
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/examples/aws-lambda/sample-events/assemble.json",
+   "bytes": 454
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/examples/aws-lambda/sample-events/plan.json",
+   "bytes": 333
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/examples/aws-lambda/sample-events/render-chunk.json",
+   "bytes": 279
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/examples/aws-lambda/scripts/eval.sh",
+   "bytes": 20916
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/examples/aws-lambda/scripts/smoke.sh",
+   "bytes": 16942
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/examples/aws-lambda/template.yaml",
+   "bytes": 20510
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/examples/k8s-jobs/Dockerfile.example",
+   "bytes": 5855
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/examples/k8s-jobs/README.md",
+   "bytes": 2435
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/house-style.md",
+   "bytes": 5055
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/knip.config.ts",
+   "bytes": 524
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/lefthook.yml",
+   "bytes": 1881
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/package.json",
+   "bytes": 2414
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/README.md",
+   "bytes": 8962
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/build.mjs",
+   "bytes": 2239
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/package.json",
+   "bytes": 2240
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/scripts/_formatBytes.ts",
+   "bytes": 702
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/scripts/build-zip.ts",
+   "bytes": 22312
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/scripts/probe-beginframe.dockerfile",
+   "bytes": 2013
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/scripts/probe-beginframe.ts",
+   "bytes": 5984
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/scripts/verify-zip-size.ts",
+   "bytes": 2847
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/cdk/HyperframesRenderStack.contract.test.ts",
+   "bytes": 5043
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/cdk/HyperframesRenderStack.snapshot.test.ts",
+   "bytes": 6792
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/cdk/HyperframesRenderStack.ts",
+   "bytes": 13578
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/cdk/index.ts",
+   "bytes": 401
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/chromium.test.ts",
+   "bytes": 6047
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/chromium.ts",
+   "bytes": 7207
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/events.ts",
+   "bytes": 5545
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/formatExtension.ts",
+   "bytes": 1048
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/handler.test.ts",
+   "bytes": 18723
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/handler.ts",
+   "bytes": 19636
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/index.ts",
+   "bytes": 2737
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/s3Transport.test.ts",
+   "bytes": 3211
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/s3Transport.ts",
+   "bytes": 5009
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/sdk/__fixtures__/fakeS3.ts",
+   "bytes": 2541
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/sdk/costAccounting.test.ts",
+   "bytes": 2320
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/sdk/costAccounting.ts",
+   "bytes": 3533
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/sdk/deploySite.test.ts",
+   "bytes": 4617
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/sdk/deploySite.ts",
+   "bytes": 6953
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/sdk/getRenderProgress.test.ts",
+   "bytes": 12539
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/sdk/getRenderProgress.ts",
+   "bytes": 14090
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/sdk/index.ts",
+   "bytes": 1193
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/sdk/renderToLambda.test.ts",
+   "bytes": 9140
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/sdk/renderToLambda.ts",
+   "bytes": 5486
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/sdk/validateConfig.test.ts",
+   "bytes": 10732
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/src/sdk/validateConfig.ts",
+   "bytes": 14350
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/tsconfig.build.json",
+   "bytes": 224
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/aws-lambda/tsconfig.json",
+   "bytes": 550
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/README.md",
+   "bytes": 2367
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/package.json",
+   "bytes": 1830
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/scripts/build-copy.mjs",
+   "bytes": 3289
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/scripts/build-fonts.mjs",
+   "bytes": 391
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/scripts/build-runtime.ts",
+   "bytes": 1052
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/_test-utils.ts",
+   "bytes": 1561
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/browser.ts",
+   "bytes": 1137
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/client.test.ts",
+   "bytes": 10613
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/client.ts",
+   "bytes": 7855
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/errors.test.ts",
+   "bytes": 1394
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/errors.ts",
+   "bytes": 1914
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/index.ts",
+   "bytes": 711
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/loopback.test.ts",
+   "bytes": 2599
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/loopback.ts",
+   "bytes": 8299
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/oauth.test.ts",
+   "bytes": 11758
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/oauth.ts",
+   "bytes": 14877
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/paths.test.ts",
+   "bytes": 1053
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/paths.ts",
+   "bytes": 821
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/pkce.test.ts",
+   "bytes": 1525
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/pkce.ts",
+   "bytes": 1575
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/resolver.test.ts",
+   "bytes": 5355
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/resolver.ts",
+   "bytes": 3885
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/scrub.test.ts",
+   "bytes": 3317
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/scrub.ts",
+   "bytes": 1861
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/store.test.ts",
+   "bytes": 7737
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/auth/store.ts",
+   "bytes": 8820
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/background-removal/inference.test.ts",
+   "bytes": 4583
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/background-removal/inference.ts",
+   "bytes": 7901
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/background-removal/manager.test.ts",
+   "bytes": 2631
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/background-removal/manager.ts",
+   "bytes": 3270
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/background-removal/pipeline.test.ts",
+   "bytes": 7700
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/background-removal/pipeline.ts",
+   "bytes": 14530
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/browser/ffmpeg.ts",
+   "bytes": 744
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/browser/manager.test.ts",
+   "bytes": 11323
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/browser/manager.ts",
+   "bytes": 12689
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/agentPromptGenerator.ts",
+   "bytes": 8298
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/animationCataloger.ts",
+   "bytes": 8273
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/assetCataloger.ts",
+   "bytes": 11937
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/assetDownloader.ts",
+   "bytes": 13394
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/contactSheet.ts",
+   "bytes": 10063
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/contentExtractor.ts",
+   "bytes": 16571
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/designStyleExtractor.ts",
+   "bytes": 10181
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/fontMetadataExtractor.test.ts",
+   "bytes": 5980
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/fontMetadataExtractor.ts",
+   "bytes": 13784
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/htmlExtractor.ts",
+   "bytes": 8965
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/index.ts",
+   "bytes": 25523
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/mediaCapture.ts",
+   "bytes": 12430
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/scaffolding.ts",
+   "bytes": 3303
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/screenshotCapture.ts",
+   "bytes": 6674
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/tokenExtractor.ts",
+   "bytes": 19672
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/capture/types.ts",
+   "bytes": 5176
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cli.ts",
+   "bytes": 11450
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/_gen/client.ts",
+   "bytes": 9256
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/_gen/types.ts",
+   "bytes": 5775
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/ansi.test.ts",
+   "bytes": 1628
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/ansi.ts",
+   "bytes": 1204
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/auth.ts",
+   "bytes": 3186
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/download.test.ts",
+   "bytes": 4327
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/download.ts",
+   "bytes": 5166
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/errors.ts",
+   "bytes": 3581
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/index.ts",
+   "bytes": 2863
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/parsing.test.ts",
+   "bytes": 3200
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/parsing.ts",
+   "bytes": 3054
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/poll.test.ts",
+   "bytes": 4076
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/poll.ts",
+   "bytes": 3859
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/cloud/statusColor.ts",
+   "bytes": 618
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/_examples.ts",
+   "bytes": 216
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/add.test.ts",
+   "bytes": 9480
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/add.ts",
+   "bytes": 10734
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/auth.ts",
+   "bytes": 2547
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/auth/login.test.ts",
+   "bytes": 3390
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/auth/login.ts",
+   "bytes": 7734
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/auth/logout.ts",
+   "bytes": 3459
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/auth/refresh.ts",
+   "bytes": 1641
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/auth/status.ts",
+   "bytes": 6814
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/benchmark.ts",
+   "bytes": 9405
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/browser.ts",
+   "bytes": 5795
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/capture.ts",
+   "bytes": 6222
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/catalog.ts",
+   "bytes": 4880
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/cloud.ts",
+   "bytes": 2899
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/cloud/delete.ts",
+   "bytes": 3325
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/cloud/get.ts",
+   "bytes": 2888
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/cloud/list.ts",
+   "bytes": 4943
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/cloud/render.ts",
+   "bytes": 21665
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/compositions.test.ts",
+   "bytes": 1476
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/compositions.ts",
+   "bytes": 7170
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/contrast-audit.browser.js",
+   "bytes": 4718
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/docs.ts",
+   "bytes": 3991
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/doctor.test.ts",
+   "bytes": 5189
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/doctor.ts",
+   "bytes": 9512
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/feedback.ts",
+   "bytes": 1603
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/info.ts",
+   "bytes": 3400
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/init.test.ts",
+   "bytes": 13528
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/init.ts",
+   "bytes": 35872
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/inspect.ts",
+   "bytes": 551
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda.ts",
+   "bytes": 20282
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/_dimensions.test.ts",
+   "bytes": 3121
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/_dimensions.ts",
+   "bytes": 2023
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/deploy.ts",
+   "bytes": 4161
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/destroy.ts",
+   "bytes": 1621
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/policies.test.ts",
+   "bytes": 7552
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/policies.ts",
+   "bytes": 13015
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/progress.ts",
+   "bytes": 2974
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/render-batch.test.ts",
+   "bytes": 4671
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/render-batch.ts",
+   "bytes": 16616
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/render.ts",
+   "bytes": 9086
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/repoRoot.ts",
+   "bytes": 1208
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/sam.ts",
+   "bytes": 6467
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/sites.ts",
+   "bytes": 2363
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/state.test.ts",
+   "bytes": 2146
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lambda/state.ts",
+   "bytes": 3491
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/layout-audit.browser.js",
+   "bytes": 15438
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/layout-audit.browser.test.ts",
+   "bytes": 6247
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/layout.ts",
+   "bytes": 13893
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/lint.ts",
+   "bytes": 3148
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/play.ts",
+   "bytes": 9890
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/preview.ts",
+   "bytes": 20528
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/publish.ts",
+   "bytes": 3403
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/remove-background.ts",
+   "bytes": 8165
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/render.test.ts",
+   "bytes": 8711
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/render.ts",
+   "bytes": 36682
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/skills.test.ts",
+   "bytes": 1494
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/skills.ts",
+   "bytes": 2030
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/snapshot.ts",
+   "bytes": 23587
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/telemetry.ts",
+   "bytes": 3139
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/transcribe.ts",
+   "bytes": 6322
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/tts.ts",
+   "bytes": 7504
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/upgrade.ts",
+   "bytes": 4056
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/validate.test.ts",
+   "bytes": 787
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/commands/validate.ts",
+   "bytes": 11390
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/docker/Dockerfile.render",
+   "bytes": 1403
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/docs/compositions.md",
+   "bytes": 2854
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/docs/data-attributes.md",
+   "bytes": 851
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/docs/examples.md",
+   "bytes": 502
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/docs/gsap.md",
+   "bytes": 775
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/docs/rendering.md",
+   "bytes": 1540
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/docs/troubleshooting.md",
+   "bytes": 849
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/help.ts",
+   "bytes": 7862
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/registry/index.ts",
+   "bytes": 363
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/registry/installer.test.ts",
+   "bytes": 1467
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/registry/installer.ts",
+   "bytes": 3375
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/registry/remote.ts",
+   "bytes": 5151
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/registry/resolver.test.ts",
+   "bytes": 5314
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/registry/resolver.ts",
+   "bytes": 3948
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/server/fileWatcher.test.ts",
+   "bytes": 861
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/server/fileWatcher.ts",
+   "bytes": 1695
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/server/portUtils.test.ts",
+   "bytes": 5594
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/server/portUtils.ts",
+   "bytes": 13865
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/server/runtimeSource.ts",
+   "bytes": 3361
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/server/studioRenderTelemetry.test.ts",
+   "bytes": 6455
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/server/studioRenderTelemetry.ts",
+   "bytes": 3937
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/server/studioServer.test.ts",
+   "bytes": 379
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/server/studioServer.ts",
+   "bytes": 23542
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/telemetry/agent_runtime.test.ts",
+   "bytes": 9934
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/telemetry/agent_runtime.ts",
+   "bytes": 8628
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/telemetry/client.ts",
+   "bytes": 6004
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/telemetry/config.ts",
+   "bytes": 4669
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/telemetry/events.ts",
+   "bytes": 5103
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/telemetry/feedback.ts",
+   "bytes": 3843
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/telemetry/index.ts",
+   "bytes": 443
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/telemetry/platform.ts",
+   "bytes": 702
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/telemetry/system.ts",
+   "bytes": 5366
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/templates/_shared/AGENTS.md",
+   "bytes": 2428
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/templates/_shared/CLAUDE.md",
+   "bytes": 5105
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/templates/blank/index.html",
+   "bytes": 1706
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/templates/generators.ts",
+   "bytes": 1585
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/templates/remote.test.ts",
+   "bytes": 634
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/templates/remote.ts",
+   "bytes": 1961
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/tts/manager.test.ts",
+   "bytes": 1872
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/tts/manager.ts",
+   "bytes": 5002
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/tts/synthesize.ts",
+   "bytes": 7784
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/ui/banner.ts",
+   "bytes": 4857
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/ui/colors.ts",
+   "bytes": 718
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/ui/format.ts",
+   "bytes": 980
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/ui/progress.ts",
+   "bytes": 577
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/autoUpdate.test.ts",
+   "bytes": 10539
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/autoUpdate.ts",
+   "bytes": 8356
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/clipboard.ts",
+   "bytes": 1708
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/compositionViewport.test.ts",
+   "bytes": 684
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/compositionViewport.ts",
+   "bytes": 1481
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/dockerRunArgs.test.ts",
+   "bytes": 9216
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/dockerRunArgs.ts",
+   "bytes": 3207
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/dom.ts",
+   "bytes": 364
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/download.ts",
+   "bytes": 1486
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/env.ts",
+   "bytes": 501
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/errorMessage.ts",
+   "bytes": 569
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/installerDetection.test.ts",
+   "bytes": 4631
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/installerDetection.ts",
+   "bytes": 5309
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/layoutAudit.test.ts",
+   "bytes": 4242
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/layoutAudit.ts",
+   "bytes": 6757
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/lintFormat.ts",
+   "bytes": 2443
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/lintProject.test.ts",
+   "bytes": 33452
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/lintProject.ts",
+   "bytes": 18927
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/openBrowser.test.ts",
+   "bytes": 4999
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/openBrowser.ts",
+   "bytes": 2848
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/orphanCleanup.test.ts",
+   "bytes": 1949
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/orphanCleanup.ts",
+   "bytes": 3567
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/producer.ts",
+   "bytes": 233
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/project.ts",
+   "bytes": 793
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/projectConfig.test.ts",
+   "bytes": 4060
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/projectConfig.ts",
+   "bytes": 3378
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/publishProject.test.ts",
+   "bytes": 7395
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/publishProject.ts",
+   "bytes": 10336
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/staticProjectServer.ts",
+   "bytes": 1724
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/updateCheck.ts",
+   "bytes": 3751
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/variables.test.ts",
+   "bytes": 5176
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/utils/variables.ts",
+   "bytes": 8036
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/version.ts",
+   "bytes": 146
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/whisper/manager.ts",
+   "bytes": 6581
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/whisper/normalize.test.ts",
+   "bytes": 16815
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/whisper/normalize.ts",
+   "bytes": 11891
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/src/whisper/transcribe.ts",
+   "bytes": 9697
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/tsconfig.json",
+   "bytes": 590
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/tsup.config.ts",
+   "bytes": 4425
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/cli/vitest.config.ts",
+   "bytes": 131
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/README.md",
+   "bytes": 2847
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/docs/common-mistakes.md",
+   "bytes": 3019
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/docs/core.md",
+   "bytes": 22675
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/docs/core_notes.md",
+   "bytes": 3764
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/docs/quickstart-template.html",
+   "bytes": 6908
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/docs/versions/changelog.md",
+   "bytes": 328
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/docs/versions/v0.1/core.md",
+   "bytes": 16489
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/package.json",
+   "bytes": 6749
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/schemas/registry-item.json",
+   "bytes": 4123
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/schemas/registry.json",
+   "bytes": 1422
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/scripts/build-hyperframes-runtime-artifact.ts",
+   "bytes": 3351
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/scripts/check-hyperframe-static.ts",
+   "bytes": 2396
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/scripts/debug-timeline.ts",
+   "bytes": 10095
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/scripts/lint-runtime-preview-guards.ts",
+   "bytes": 3393
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/scripts/test-hyperframe-linter.ts",
+   "bytes": 3024
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/scripts/test-hyperframe-runtime-behavior.ts",
+   "bytes": 1544
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/scripts/test-hyperframe-runtime-contract.ts",
+   "bytes": 1513
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/scripts/test-hyperframe-runtime-duration-guards.ts",
+   "bytes": 1531
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/scripts/test-hyperframe-runtime-parity.ts",
+   "bytes": 1668
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/scripts/test-hyperframe-runtime-security.ts",
+   "bytes": 3217
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/scripts/test-hyperframe-runtime-seek.ts",
+   "bytes": 4000
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/adapters/gsap.test.ts",
+   "bytes": 4461
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/adapters/gsap.ts",
+   "bytes": 1358
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/adapters/index.ts",
+   "bytes": 194
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/adapters/types.ts",
+   "bytes": 384
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/compositionScoping.test.ts",
+   "bytes": 20838
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/compositionScoping.ts",
+   "bytes": 18335
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/htmlBundler.test.ts",
+   "bytes": 44736
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/htmlBundler.ts",
+   "bytes": 38657
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/htmlCompiler.test.ts",
+   "bytes": 1312
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/htmlCompiler.ts",
+   "bytes": 2904
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/htmlDocument.test.ts",
+   "bytes": 2922
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/htmlDocument.ts",
+   "bytes": 6088
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/index.ts",
+   "bytes": 1263
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/inlineSubCompositions.test.ts",
+   "bytes": 11060
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/inlineSubCompositions.ts",
+   "bytes": 14170
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/rewriteSubCompPaths.test.ts",
+   "bytes": 2218
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/rewriteSubCompPaths.ts",
+   "bytes": 4893
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/staticGuard.ts",
+   "bytes": 1461
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/timingCompiler.test.ts",
+   "bytes": 7118
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/compiler/timingCompiler.ts",
+   "bytes": 9270
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/core.types.ts",
+   "bytes": 17505
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/generators/hyperframes.test.ts",
+   "bytes": 10761
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/generators/hyperframes.ts",
+   "bytes": 26649
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/index.test.ts",
+   "bytes": 7597
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/index.ts",
+   "bytes": 5033
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/inline-scripts/hyperframe.ts",
+   "bytes": 750
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/inline-scripts/hyperframesRuntime.engine.ts",
+   "bytes": 1718
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/inline-scripts/parityContract.test.ts",
+   "bytes": 1979
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/inline-scripts/parityContract.ts",
+   "bytes": 1254
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/inline-scripts/pickerApi.ts",
+   "bytes": 1057
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/inline-scripts/runtimeContract.ts",
+   "bytes": 563
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/context.ts",
+   "bytes": 1713
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/hyperframeLinter.test.ts",
+   "bytes": 4632
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/hyperframeLinter.ts",
+   "bytes": 7274
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/index.ts",
+   "bytes": 206
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/adapters.test.ts",
+   "bytes": 5710
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/adapters.ts",
+   "bytes": 2435
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/captions.test.ts",
+   "bytes": 5083
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/captions.ts",
+   "bytes": 9522
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/composition.test.ts",
+   "bytes": 35120
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/composition.ts",
+   "bytes": 23031
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/core.test.ts",
+   "bytes": 8979
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/core.ts",
+   "bytes": 14192
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/fonts.test.ts",
+   "bytes": 5356
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/fonts.ts",
+   "bytes": 4577
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/gsap.test.ts",
+   "bytes": 36457
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/gsap.ts",
+   "bytes": 34953
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/media.test.ts",
+   "bytes": 10032
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/media.ts",
+   "bytes": 20739
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/textures.test.ts",
+   "bytes": 5494
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/rules/textures.ts",
+   "bytes": 7927
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/types.ts",
+   "bytes": 874
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lint/utils.ts",
+   "bytes": 5936
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lottieReadiness.test.ts",
+   "bytes": 729
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/lottieReadiness.ts",
+   "bytes": 699
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/parseFps.test.ts",
+   "bytes": 5816
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/parsers/gsapConstants.ts",
+   "bytes": 791
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/parsers/gsapParser.stress.test.ts",
+   "bytes": 38441
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/parsers/gsapParser.test.ts",
+   "bytes": 42099
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/parsers/gsapParser.ts",
+   "bytes": 30887
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/parsers/gsapSerialize.ts",
+   "bytes": 11456
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/parsers/htmlParser.test.ts",
+   "bytes": 18703
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/parsers/htmlParser.ts",
+   "bytes": 25533
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/registry/catalogGeneratorInstructions.test.ts",
+   "bytes": 732
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/registry/index.ts",
+   "bytes": 452
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/registry/types.test.ts",
+   "bytes": 7828
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/registry/types.ts",
+   "bytes": 8206
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/README.md",
+   "bytes": 1718
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/animejs.test.ts",
+   "bytes": 4547
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/animejs.ts",
+   "bytes": 4064
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/css.test.ts",
+   "bytes": 5120
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/css.ts",
+   "bytes": 3921
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/gsap.test.ts",
+   "bytes": 2632
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/gsap.ts",
+   "bytes": 776
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/lottie.test.ts",
+   "bytes": 4474
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/lottie.ts",
+   "bytes": 6621
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/seek-dispatch.ts",
+   "bytes": 1408
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/three.test.ts",
+   "bytes": 1977
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/three.ts",
+   "bytes": 751
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/typegpu.test.ts",
+   "bytes": 2979
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/typegpu.ts",
+   "bytes": 3163
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/video-texture-compat.ts",
+   "bytes": 1826
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/waapi.test.ts",
+   "bytes": 5339
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/adapters/waapi.ts",
+   "bytes": 2860
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/analytics.test.ts",
+   "bytes": 5229
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/analytics.ts",
+   "bytes": 4487
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/bridge.test.ts",
+   "bytes": 6023
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/bridge.ts",
+   "bytes": 3781
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/captionOverrides.test.ts",
+   "bytes": 3802
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/captionOverrides.ts",
+   "bytes": 6296
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/clock-drift.test.ts",
+   "bytes": 6210
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/clock.test.ts",
+   "bytes": 11663
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/clock.ts",
+   "bytes": 4448
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/compositionLoader.test.ts",
+   "bytes": 45930
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/compositionLoader.ts",
+   "bytes": 23943
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/diagnostics.test.ts",
+   "bytes": 2269
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/diagnostics.ts",
+   "bytes": 2664
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/entry.ts",
+   "bytes": 1286
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/getVariables.test.ts",
+   "bytes": 4469
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/getVariables.ts",
+   "bytes": 2656
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/init.test.ts",
+   "bytes": 25051
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/init.ts",
+   "bytes": 86313
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/media.test.ts",
+   "bytes": 32382
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/media.ts",
+   "bytes": 15695
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/mediaPreloader.test.ts",
+   "bytes": 8291
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/mediaPreloader.ts",
+   "bytes": 5514
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/mediaVolumeEnvelope.ts",
+   "bytes": 5615
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/picker.test.ts",
+   "bytes": 7195
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/picker.ts",
+   "bytes": 12155
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/player.test.ts",
+   "bytes": 22638
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/player.ts",
+   "bytes": 8936
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/startResolver.test.ts",
+   "bytes": 13655
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/startResolver.ts",
+   "bytes": 8188
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/state.test.ts",
+   "bytes": 1961
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/state.ts",
+   "bytes": 4641
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/timeline.test.ts",
+   "bytes": 22175
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/timeline.ts",
+   "bytes": 28512
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/types.ts",
+   "bytes": 6378
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/validateVariables.test.ts",
+   "bytes": 4126
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/validateVariables.ts",
+   "bytes": 3310
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/webAudioTransport.test.ts",
+   "bytes": 9820
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/webAudioTransport.ts",
+   "bytes": 6405
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/runtime/window.d.ts",
+   "bytes": 3840
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/createStudioApi.ts",
+   "bytes": 1276
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/manualEditsRenderScript.test.ts",
+   "bytes": 18596
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/manualEditsRenderScript.ts",
+   "bytes": 26307
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/mediaValidation.test.ts",
+   "bytes": 2112
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/mediaValidation.ts",
+   "bytes": 2280
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/mime.ts",
+   "bytes": 1035
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/projectSignature.ts",
+   "bytes": 4835
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/safePath.ts",
+   "bytes": 881
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/screenshotClip.ts",
+   "bytes": 1000
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/sourceMutation.test.ts",
+   "bytes": 13141
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/sourceMutation.ts",
+   "bytes": 5701
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/studioMotionRenderScript.test.ts",
+   "bytes": 5856
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/studioMotionRenderScript.ts",
+   "bytes": 9948
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/subComposition.test.ts",
+   "bytes": 5157
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/subComposition.ts",
+   "bytes": 6975
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/helpers/waveform.ts",
+   "bytes": 2537
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/index.ts",
+   "bytes": 881
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/routes/files.test.ts",
+   "bytes": 14314
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/routes/files.ts",
+   "bytes": 24928
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/routes/fonts.ts",
+   "bytes": 6589
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/routes/lint.ts",
+   "bytes": 1255
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/routes/preview.test.ts",
+   "bytes": 12600
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/routes/preview.ts",
+   "bytes": 12630
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/routes/projects.ts",
+   "bytes": 1801
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/routes/registry.ts",
+   "bytes": 1242
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/routes/render.test.ts",
+   "bytes": 9067
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/routes/render.ts",
+   "bytes": 10431
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/routes/thumbnail.test.ts",
+   "bytes": 7262
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/routes/thumbnail.ts",
+   "bytes": 5275
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/routes/waveform.ts",
+   "bytes": 1566
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/studio-api/types.ts",
+   "bytes": 4080
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/templates/base.test.ts",
+   "bytes": 3740
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/templates/base.ts",
+   "bytes": 690
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/templates/constants.ts",
+   "bytes": 823
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/text/fitTextFontSize.test.ts",
+   "bytes": 2709
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/text/fitTextFontSize.ts",
+   "bytes": 1289
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/text/index.ts",
+   "bytes": 131
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/src/utils/urlPath.ts",
+   "bytes": 304
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/tsconfig.json",
+   "bytes": 460
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/core/vitest.config.ts",
+   "bytes": 650
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/README.md",
+   "bytes": 2918
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/package.json",
+   "bytes": 1003
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/scripts/generate-lut-reference.py",
+   "bytes": 6099
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/scripts/test-fitTextFontSize-browser.ts",
+   "bytes": 4200
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/cdp-headless-experimental.d.ts",
+   "bytes": 1727
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/config.test.ts",
+   "bytes": 5083
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/config.ts",
+   "bytes": 14615
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/index.ts",
+   "bytes": 8638
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/audioMixer.test.ts",
+   "bytes": 8084
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/audioMixer.ts",
+   "bytes": 20538
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/audioMixer.types.ts",
+   "bytes": 641
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/audioVolumeEnvelope.test.ts",
+   "bytes": 5836
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/audioVolumeEnvelope.ts",
+   "bytes": 5775
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/browserManager.test.ts",
+   "bytes": 11422
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/browserManager.ts",
+   "bytes": 22898
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/chunkEncoder.test.ts",
+   "bytes": 31954
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/chunkEncoder.ts",
+   "bytes": 24636
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/chunkEncoder.types.ts",
+   "bytes": 1932
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/extractionCache.test.ts",
+   "bytes": 7017
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/extractionCache.ts",
+   "bytes": 7866
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/fileServer.ts",
+   "bytes": 3441
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/frameCapture-discardWarmup.test.ts",
+   "bytes": 6833
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/frameCapture-namePolyfill.test.ts",
+   "bytes": 3596
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/frameCapture-warmupTicks.test.ts",
+   "bytes": 5847
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/frameCapture.test.ts",
+   "bytes": 3295
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/frameCapture.ts",
+   "bytes": 41959
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/hdrCapture.test.ts",
+   "bytes": 5730
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/hdrCapture.ts",
+   "bytes": 10818
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/parallelCoordinator.test.ts",
+   "bytes": 3339
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/parallelCoordinator.ts",
+   "bytes": 13985
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/screenshotService.test.ts",
+   "bytes": 19580
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/screenshotService.ts",
+   "bytes": 26835
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/streamingEncoder.test.ts",
+   "bytes": 23480
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/streamingEncoder.ts",
+   "bytes": 18505
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/videoFrameExtractor.test.ts",
+   "bytes": 23313
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/videoFrameExtractor.ts",
+   "bytes": 38997
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/videoFrameInjector.test.ts",
+   "bytes": 11055
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/services/videoFrameInjector.ts",
+   "bytes": 25658
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/types.ts",
+   "bytes": 6325
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/alphaBlit.test.ts",
+   "bytes": 50556
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/alphaBlit.ts",
+   "bytes": 36945
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/assertSwiftShader.test.ts",
+   "bytes": 5035
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/assertSwiftShader.ts",
+   "bytes": 5345
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/ffprobe.test.ts",
+   "bytes": 10539
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/ffprobe.ts",
+   "bytes": 13204
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/gpuEncoder.test.ts",
+   "bytes": 3961
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/gpuEncoder.ts",
+   "bytes": 7301
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/hdr.test.ts",
+   "bytes": 5997
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/hdr.ts",
+   "bytes": 4716
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/hdrCompositing.test.ts",
+   "bytes": 4114
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/htmlTemplate.test.ts",
+   "bytes": 1598
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/htmlTemplate.ts",
+   "bytes": 1378
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/layerCompositor.test.ts",
+   "bytes": 5052
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/layerCompositor.ts",
+   "bytes": 2240
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/parityContract.ts",
+   "bytes": 88
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/processTracker.test.ts",
+   "bytes": 2411
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/processTracker.ts",
+   "bytes": 925
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/readWebGlVendorInfoFromCanvas.ts",
+   "bytes": 2145
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/runFfmpeg.test.ts",
+   "bytes": 2047
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/runFfmpeg.ts",
+   "bytes": 3077
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/shaderTransitions.test.ts",
+   "bytes": 26809
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/shaderTransitions.ts",
+   "bytes": 43322
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/uint16-alignment-audit.test.ts",
+   "bytes": 5462
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/src/utils/urlDownloader.ts",
+   "bytes": 2549
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/tsconfig.json",
+   "bytes": 468
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/engine/vitest.config.ts",
+   "bytes": 131
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/.gitignore",
+   "bytes": 20
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/README.md",
+   "bytes": 10521
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/package.json",
+   "bytes": 1012
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/composition-probe.test.ts",
+   "bytes": 1074
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/composition-probe.ts",
+   "bytes": 6824
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/controls-setup.ts",
+   "bytes": 2325
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/controls.ts",
+   "bytes": 12601
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/direct-timeline-clock.ts",
+   "bytes": 2562
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/hyperframes-player.test.ts",
+   "bytes": 54827
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/hyperframes-player.ts",
+   "bytes": 19001
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/iframe-dom.ts",
+   "bytes": 2441
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/mediaObserverScope.test.ts",
+   "bytes": 7310
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/mediaObserverScope.ts",
+   "bytes": 4030
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/parent-media.ts",
+   "bytes": 12288
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/playback-state.ts",
+   "bytes": 2919
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/runtime-message-handler.ts",
+   "bytes": 2993
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/shader-loader-element.ts",
+   "bytes": 4828
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/shader-loader-state.ts",
+   "bytes": 4353
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/shader-options.ts",
+   "bytes": 4464
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/shouldInjectRuntime.test.ts",
+   "bytes": 3127
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/shouldInjectRuntime.ts",
+   "bytes": 1722
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/styles.test.ts",
+   "bytes": 4510
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/styles.ts",
+   "bytes": 12903
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/src/timeline-adapters.ts",
+   "bytes": 1966
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/baseline.json",
+   "bytes": 275
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/fixtures/10-video-grid/index.html",
+   "bytes": 3526
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/fixtures/10-video-grid/sample.mp4",
+   "bytes": 195172
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/fixtures/gsap-heavy/index.html",
+   "bytes": 3024
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/index.ts",
+   "bytes": 9205
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/perf-gate.ts",
+   "bytes": 4583
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/runner.ts",
+   "bytes": 4650
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/scenarios/02-fps.ts",
+   "bytes": 9499
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/scenarios/03-load.ts",
+   "bytes": 3156
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/scenarios/04-scrub.ts",
+   "bytes": 12658
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/scenarios/05-drift.ts",
+   "bytes": 12690
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/scenarios/06-parity.ts",
+   "bytes": 18039
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/server.ts",
+   "bytes": 6801
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tests/perf/tsconfig.json",
+   "bytes": 373
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tsconfig.json",
+   "bytes": 376
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/tsup.config.ts",
+   "bytes": 244
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/player/vitest.config.ts",
+   "bytes": 126
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/.DS_Store",
+   "bytes": 8196
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/README.md",
+   "bytes": 8857
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/build.mjs",
+   "bytes": 4793
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/package.json",
+   "bytes": 4178
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/scripts/build-fonts.mjs",
+   "bytes": 389
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/scripts/generate-font-data.ts",
+   "bytes": 5389
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/benchmark.ts",
+   "bytes": 11488
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/config.ts",
+   "bytes": 258
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/distributed.ts",
+   "bytes": 3404
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/index.ts",
+   "bytes": 3859
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/logger.test.ts",
+   "bytes": 8474
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/logger.ts",
+   "bytes": 2789
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/parity-fixtures.ts",
+   "bytes": 892
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/parity-harness.ts",
+   "bytes": 13654
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/perf-gate.ts",
+   "bytes": 1055
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/regression-harness-distributed.test.ts",
+   "bytes": 6597
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/regression-harness-distributed.ts",
+   "bytes": 11071
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/regression-harness-lambda-local-types.ts",
+   "bytes": 1550
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/regression-harness-lambda-local.ts",
+   "bytes": 8142
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/regression-harness.ts",
+   "bytes": 53067
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/runtime-conformance.ts",
+   "bytes": 1485
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/server.ts",
+   "bytes": 21988
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/audioExtractor.ts",
+   "bytes": 7951
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/audioMixer.ts",
+   "bytes": 257
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/browserManager.ts",
+   "bytes": 355
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/chunkEncoder.ts",
+   "bytes": 363
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/compilationRunner.ts",
+   "bytes": 4380
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/compilationTester.ts",
+   "bytes": 11763
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/deterministicFonts-failClosed.test.ts",
+   "bytes": 8278
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/deterministicFonts-googleSubsets.test.ts",
+   "bytes": 4707
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/deterministicFonts.ts",
+   "bytes": 22634
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/distributed/__test_utils__/hostChromeFailures.ts",
+   "bytes": 1273
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/distributed/assemble.test.ts",
+   "bytes": 21114
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/distributed/assemble.ts",
+   "bytes": 17426
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/distributed/chunkBoundary.test.ts",
+   "bytes": 8635
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/distributed/crossWorkerIdempotency.test.ts",
+   "bytes": 9934
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/distributed/plan.test.ts",
+   "bytes": 25747
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/distributed/plan.ts",
+   "bytes": 38622
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/distributed/planFormatBanlist.test.ts",
+   "bytes": 4581
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/distributed/planSizeCap.test.ts",
+   "bytes": 5272
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/distributed/publicExports.test.ts",
+   "bytes": 3824
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/distributed/renderChunk.test.ts",
+   "bytes": 17039
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/distributed/renderChunk.ts",
+   "bytes": 28446
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/distributed/shared.ts",
+   "bytes": 6375
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/fileServer-seededRandom.test.ts",
+   "bytes": 7720
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/fileServer.test.ts",
+   "bytes": 11122
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/fileServer.ts",
+   "bytes": 24637
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/fontData.generated.ts",
+   "bytes": 983321
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/frameCapture.ts",
+   "bytes": 493
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/frameDirCache.test.ts",
+   "bytes": 13082
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/frameDirCache.ts",
+   "bytes": 4984
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/hdrImageTransferCache.test.ts",
+   "bytes": 12392
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/hdrImageTransferCache.ts",
+   "bytes": 2608
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/htmlCompiler.test.ts",
+   "bytes": 30768
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/htmlCompiler.ts",
+   "bytes": 50143
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/hyperframeLint.ts",
+   "bytes": 3679
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/hyperframeRuntimeLoader.test.ts",
+   "bytes": 3492
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/hyperframeRuntimeLoader.ts",
+   "bytes": 3058
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/parallelCoordinator.ts",
+   "bytes": 340
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/pngDecodeBlitWorker.ts",
+   "bytes": 4474
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/pngDecodeBlitWorkerPool.test.ts",
+   "bytes": 11461
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/pngDecodeBlitWorkerPool.ts",
+   "bytes": 16506
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/audioPadTrim.test.ts",
+   "bytes": 9113
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/audioPadTrim.ts",
+   "bytes": 11493
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/captureCost.ts",
+   "bytes": 14939
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/cleanup.test.ts",
+   "bytes": 7659
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/cleanup.ts",
+   "bytes": 3403
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/hdrMode.test.ts",
+   "bytes": 4772
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/hdrMode.ts",
+   "bytes": 3193
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/hdrPerf.ts",
+   "bytes": 3983
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/perfSummary.ts",
+   "bytes": 3133
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/planValidation.test.ts",
+   "bytes": 7707
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/planValidation.ts",
+   "bytes": 5446
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/runtimeEnvSnapshot.test.ts",
+   "bytes": 5389
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/runtimeEnvSnapshot.ts",
+   "bytes": 3894
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/shared.ts",
+   "bytes": 15915
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/assembleStage.ts",
+   "bytes": 2559
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/audioStage.ts",
+   "bytes": 2488
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/captureHdrFrameShared.test.ts",
+   "bytes": 5719
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/captureHdrFrameShared.ts",
+   "bytes": 11061
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/captureHdrHybridLoop.ts",
+   "bytes": 14085
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/captureHdrResources.ts",
+   "bytes": 10552
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/captureHdrSequentialLoop.ts",
+   "bytes": 7683
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/captureHdrStage.ts",
+   "bytes": 16494
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/captureStage.ts",
+   "bytes": 10920
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/captureStreamingStage.ts",
+   "bytes": 11385
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/compileStage.test.ts",
+   "bytes": 6908
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/compileStage.ts",
+   "bytes": 7058
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/encodeStage.ts",
+   "bytes": 7280
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/extractVideosStage.ts",
+   "bytes": 9621
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/freezePlan.ts",
+   "bytes": 12866
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/planHash.test.ts",
+   "bytes": 7937
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/planHash.ts",
+   "bytes": 6286
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/probeStage.test.ts",
+   "bytes": 1100
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/render/stages/probeStage.ts",
+   "bytes": 16245
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/renderOrchestrator.test.ts",
+   "bytes": 31086
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/renderOrchestrator.ts",
+   "bytes": 76012
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/screenshotService.ts",
+   "bytes": 318
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/shaderTransitionWorker.ts",
+   "bytes": 5306
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/shaderTransitionWorkerPool.test.ts",
+   "bytes": 11601
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/shaderTransitionWorkerPool.ts",
+   "bytes": 14954
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/streamingEncoder.ts",
+   "bytes": 324
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/videoFrameExtractor.ts",
+   "bytes": 426
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/services/videoFrameInjector.ts",
+   "bytes": 183
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/transparency-test.ts",
+   "bytes": 7681
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/utils/audioRegression.test.ts",
+   "bytes": 3581
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/utils/audioRegression.ts",
+   "bytes": 12902
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/utils/errorMessage.test.ts",
+   "bytes": 1342
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/utils/errorMessage.ts",
+   "bytes": 1102
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/utils/ffprobe.ts",
+   "bytes": 260
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/utils/parityContract.ts",
+   "bytes": 202
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/utils/paths.test.ts",
+   "bytes": 5828
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/utils/paths.ts",
+   "bytes": 4626
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/utils/semaphore.ts",
+   "bytes": 849
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/src/utils/urlDownloader.ts",
+   "bytes": 176
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/tests/.DS_Store",
+   "bytes": 6148
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/tests/README.md",
+   "bytes": 7776
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/tests/animejs-adapter/meta.json",
+   "bytes": 416
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/packages/producer/tests/animejs-adapter/output/compiled.html",
+   "bytes": 153328
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/palettes/bold-energetic.md",
+   "bytes": 417
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/palettes/clean-corporate.md",
+   "bytes": 410
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/palettes/dark-premium.md",
+   "bytes": 389
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/palettes/jewel-rich.md",
+   "bytes": 394
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/palettes/monochrome.md",
+   "bytes": 454
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/palettes/nature-earth.md",
+   "bytes": 399
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/palettes/neon-electric.md",
+   "bytes": 380
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/palettes/pastel-soft.md",
+   "bytes": 392
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/palettes/warm-editorial.md",
+   "bytes": 411
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/patterns.md",
+   "bytes": 5539
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/audio-reactive.md",
+   "bytes": 3064
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/beat-direction.md",
+   "bytes": 13804
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/captions.md",
+   "bytes": 7880
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/css-patterns.md",
+   "bytes": 8312
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/design-picker.md",
+   "bytes": 12209
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/dynamic-techniques.md",
+   "bytes": 7812
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/html-in-canvas-patterns.md",
+   "bytes": 17166
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/motion-principles.md",
+   "bytes": 11581
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/narration.md",
+   "bytes": 3482
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/prompt-expansion.md",
+   "bytes": 5639
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/techniques.md",
+   "bytes": 21135
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/text-effects.md",
+   "bytes": 4064
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transcript-guide.md",
+   "bytes": 5864
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions.md",
+   "bytes": 12845
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/catalog.md",
+   "bytes": 6290
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/css-3d.md",
+   "bytes": 421
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/css-blur.md",
+   "bytes": 1787
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/css-cover.md",
+   "bytes": 1448
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/css-destruction.md",
+   "bytes": 4484
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/css-dissolve.md",
+   "bytes": 2462
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/css-distortion.md",
+   "bytes": 1803
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/css-grid.md",
+   "bytes": 370
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/css-light.md",
+   "bytes": 2376
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/css-mechanical.md",
+   "bytes": 1613
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/css-other.md",
+   "bytes": 838
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/css-push.md",
+   "bytes": 1195
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/css-radial.md",
+   "bytes": 1060
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/transitions/css-scale.md",
+   "bytes": 715
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/tts.md",
+   "bytes": 2562
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/typography.md",
+   "bytes": 9326
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/references/video-composition.md",
+   "bytes": 3663
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/scripts/animation-map.mjs",
+   "bytes": 19774
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/scripts/contrast-report.mjs",
+   "bytes": 12248
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/templates/design-picker.html",
+   "bytes": 44098
+  },
+  {
+   "path": "domains/hyperframes/hyperframes/visual-styles.md",
+   "bytes": 11765
+  },
+  {
+   "path": "domains/hyperframes/website-to-hyperframes/SKILL.md",
+   "bytes": 6659
+  },
+  {
+   "path": "domains/hyperframes/website-to-hyperframes/references/step-1-capture.md",
+   "bytes": 4878
+  },
+  {
+   "path": "domains/hyperframes/website-to-hyperframes/references/step-2-design.md",
+   "bytes": 8888
+  },
+  {
+   "path": "domains/hyperframes/website-to-hyperframes/references/step-3-script.md",
+   "bytes": 3890
+  },
+  {
+   "path": "domains/hyperframes/website-to-hyperframes/references/step-4-storyboard.md",
+   "bytes": 14983
+  },
+  {
+   "path": "domains/hyperframes/website-to-hyperframes/references/step-5-vo.md",
+   "bytes": 2498
+  },
+  {
+   "path": "domains/hyperframes/website-to-hyperframes/references/step-6-build.md",
+   "bytes": 11346
+  },
+  {
+   "path": "domains/hyperframes/website-to-hyperframes/references/step-7-validate.md",
+   "bytes": 4542
+  },
+  {
+   "path": "domains/hyperframes/website-to-hyperframes/references/techniques.md",
+   "bytes": 11127
+  },
+  {
    "path": "domains/legal/INDEX.md",
-   "bytes": 1709
+   "bytes": 2399
   },
   {
    "path": "domains/legal/brief/SKILL.md",
@@ -440,8 +5472,28 @@
    "bytes": 5876
   },
   {
+   "path": "domains/local-tooling/INDEX.md",
+   "bytes": 1144
+  },
+  {
+   "path": "domains/local-tooling/local-ocr/SKILL.md",
+   "bytes": 6247
+  },
+  {
+   "path": "domains/local-tooling/local-ocr/agents/openai.yaml",
+   "bytes": 244
+  },
+  {
+   "path": "domains/local-tooling/local-ocr/references/zh-quickref.md",
+   "bytes": 4147
+  },
+  {
+   "path": "domains/local-tooling/skill-tuner/SKILL.md",
+   "bytes": 4379
+  },
+  {
    "path": "domains/marketing/INDEX.md",
-   "bytes": 1698
+   "bytes": 2309
   },
   {
    "path": "domains/marketing/brand-review/SKILL.md",
@@ -477,7 +5529,7 @@
   },
   {
    "path": "domains/operations/INDEX.md",
-   "bytes": 1972
+   "bytes": 2405
   },
   {
    "path": "domains/operations/capacity-plan/SKILL.md",
@@ -517,7 +5569,7 @@
   },
   {
    "path": "domains/pdf-viewer/INDEX.md",
-   "bytes": 509
+   "bytes": 585
   },
   {
    "path": "domains/pdf-viewer/view-pdf/SKILL.md",
@@ -525,7 +5577,7 @@
   },
   {
    "path": "domains/product-management/INDEX.md",
-   "bytes": 2621
+   "bytes": 3399
   },
   {
    "path": "domains/product-management/metrics-review/SKILL.md",
@@ -825,7 +5877,7 @@
   },
   {
    "path": "domains/productivity/INDEX.md",
-   "bytes": 967
+   "bytes": 1221
   },
   {
    "path": "domains/productivity/memory-management/SKILL.md",
@@ -845,7 +5897,7 @@
   },
   {
    "path": "domains/sales/INDEX.md",
-   "bytes": 5521
+   "bytes": 8248
   },
   {
    "path": "domains/sales/account-context/SKILL.md",
@@ -993,7 +6045,7 @@
   },
   {
    "path": "domains/small-business/INDEX.md",
-   "bytes": 6566
+   "bytes": 9907
   },
   {
    "path": "domains/small-business/ad-manager/SKILL.md",
@@ -1840,12 +6892,244 @@
    "bytes": 2439
   },
   {
+   "path": "domains/understand/INDEX.md",
+   "bytes": 2225
+  },
+  {
+   "path": "domains/understand/understand-chat/SKILL.md",
+   "bytes": 3098
+  },
+  {
+   "path": "domains/understand/understand-dashboard/SKILL.md",
+   "bytes": 5318
+  },
+  {
+   "path": "domains/understand/understand-diff/SKILL.md",
+   "bytes": 4198
+  },
+  {
+   "path": "domains/understand/understand-domain/SKILL.md",
+   "bytes": 7687
+  },
+  {
+   "path": "domains/understand/understand-domain/extract-domain-context.py",
+   "bytes": 16316
+  },
+  {
+   "path": "domains/understand/understand-explain/SKILL.md",
+   "bytes": 3472
+  },
+  {
+   "path": "domains/understand/understand-knowledge/SKILL.md",
+   "bytes": 5545
+  },
+  {
+   "path": "domains/understand/understand-knowledge/merge-knowledge-graph.py",
+   "bytes": 16554
+  },
+  {
+   "path": "domains/understand/understand-knowledge/parse-knowledge-base.py",
+   "bytes": 18938
+  },
+  {
+   "path": "domains/understand/understand-onboard/SKILL.md",
+   "bytes": 3437
+  },
+  {
+   "path": "domains/understand/understand/SKILL.md",
+   "bytes": 45792
+  },
+  {
+   "path": "domains/understand/understand/build-fingerprints.mjs",
+   "bytes": 3340
+  },
+  {
+   "path": "domains/understand/understand/compute-batches.mjs",
+   "bytes": 21940
+  },
+  {
+   "path": "domains/understand/understand/extract-import-map.mjs",
+   "bytes": 62950
+  },
+  {
+   "path": "domains/understand/understand/extract-structure.mjs",
+   "bytes": 11161
+  },
+  {
+   "path": "domains/understand/understand/frameworks/django.md",
+   "bytes": 4807
+  },
+  {
+   "path": "domains/understand/understand/frameworks/express.md",
+   "bytes": 4394
+  },
+  {
+   "path": "domains/understand/understand/frameworks/fastapi.md",
+   "bytes": 4381
+  },
+  {
+   "path": "domains/understand/understand/frameworks/flask.md",
+   "bytes": 3486
+  },
+  {
+   "path": "domains/understand/understand/frameworks/gin.md",
+   "bytes": 4639
+  },
+  {
+   "path": "domains/understand/understand/frameworks/nextjs.md",
+   "bytes": 4374
+  },
+  {
+   "path": "domains/understand/understand/frameworks/rails.md",
+   "bytes": 5474
+  },
+  {
+   "path": "domains/understand/understand/frameworks/react.md",
+   "bytes": 3836
+  },
+  {
+   "path": "domains/understand/understand/frameworks/spring.md",
+   "bytes": 4972
+  },
+  {
+   "path": "domains/understand/understand/frameworks/vue.md",
+   "bytes": 4487
+  },
+  {
+   "path": "domains/understand/understand/languages/cpp.md",
+   "bytes": 2590
+  },
+  {
+   "path": "domains/understand/understand/languages/csharp.md",
+   "bytes": 2672
+  },
+  {
+   "path": "domains/understand/understand/languages/css.md",
+   "bytes": 2096
+  },
+  {
+   "path": "domains/understand/understand/languages/dockerfile.md",
+   "bytes": 1978
+  },
+  {
+   "path": "domains/understand/understand/languages/go.md",
+   "bytes": 2484
+  },
+  {
+   "path": "domains/understand/understand/languages/graphql.md",
+   "bytes": 1979
+  },
+  {
+   "path": "domains/understand/understand/languages/html.md",
+   "bytes": 1913
+  },
+  {
+   "path": "domains/understand/understand/languages/java.md",
+   "bytes": 2463
+  },
+  {
+   "path": "domains/understand/understand/languages/javascript.md",
+   "bytes": 2356
+  },
+  {
+   "path": "domains/understand/understand/languages/json.md",
+   "bytes": 1786
+  },
+  {
+   "path": "domains/understand/understand/languages/kotlin.md",
+   "bytes": 2517
+  },
+  {
+   "path": "domains/understand/understand/languages/markdown.md",
+   "bytes": 1919
+  },
+  {
+   "path": "domains/understand/understand/languages/php.md",
+   "bytes": 2515
+  },
+  {
+   "path": "domains/understand/understand/languages/protobuf.md",
+   "bytes": 1881
+  },
+  {
+   "path": "domains/understand/understand/languages/python.md",
+   "bytes": 2645
+  },
+  {
+   "path": "domains/understand/understand/languages/ruby.md",
+   "bytes": 2438
+  },
+  {
+   "path": "domains/understand/understand/languages/rust.md",
+   "bytes": 2475
+  },
+  {
+   "path": "domains/understand/understand/languages/shell.md",
+   "bytes": 1820
+  },
+  {
+   "path": "domains/understand/understand/languages/sql.md",
+   "bytes": 2097
+  },
+  {
+   "path": "domains/understand/understand/languages/swift.md",
+   "bytes": 2519
+  },
+  {
+   "path": "domains/understand/understand/languages/terraform.md",
+   "bytes": 2123
+  },
+  {
+   "path": "domains/understand/understand/languages/typescript.md",
+   "bytes": 2545
+  },
+  {
+   "path": "domains/understand/understand/languages/yaml.md",
+   "bytes": 1970
+  },
+  {
+   "path": "domains/understand/understand/locales/en.md",
+   "bytes": 1521
+  },
+  {
+   "path": "domains/understand/understand/locales/ja.md",
+   "bytes": 2150
+  },
+  {
+   "path": "domains/understand/understand/locales/ko.md",
+   "bytes": 1914
+  },
+  {
+   "path": "domains/understand/understand/locales/ru.md",
+   "bytes": 3202
+  },
+  {
+   "path": "domains/understand/understand/locales/zh-TW.md",
+   "bytes": 1726
+  },
+  {
+   "path": "domains/understand/understand/locales/zh.md",
+   "bytes": 1695
+  },
+  {
+   "path": "domains/understand/understand/merge-batch-graphs.py",
+   "bytes": 51004
+  },
+  {
+   "path": "domains/understand/understand/merge-subdomain-graphs.py",
+   "bytes": 12397
+  },
+  {
+   "path": "domains/understand/understand/scan-project.mjs",
+   "bytes": 28876
+  },
+  {
    "path": "tools/fetch.py",
    "bytes": 8564
   },
   {
    "path": "tools/zh_keys.py",
-   "bytes": 20728
+   "bytes": 27753
   }
  ]
 }

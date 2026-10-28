@@ -1,7 +1,7 @@
 # 技能库索引（L0）
 
-> **这是唯一需要常驻进上下文的内容**（约 50 行 / ~800 tokens）。
-> 其余 2.7 MB 技能正文**全部按需拉取**，绝不整包读入。
+> **这是唯一需要常驻进上下文的内容**（50 行 / ~1,180 tokens）。
+> 其余 13 MB、235 个技能正文**全部按需拉取**，绝不整包读入。
 
 ## 取用三步
 
@@ -29,6 +29,12 @@
 | 14 | **小企业 / 团队经营** `small-business` | 经营快照,现金流,月结,报税,CRM | 44 | [`domains/small-business/INDEX.md`](domains/small-business/INDEX.md) |
 | 15 | **插件 / 技能工程** `cowork-plugin-management` | 创建插件,定制插件 | 2 | [`domains/cowork-plugin-management/INDEX.md`](domains/cowork-plugin-management/INDEX.md) |
 | 16 | **PDF 处理** `pdf-viewer` | PDF,批注,填表,签名 | 1 | [`domains/pdf-viewer/INDEX.md`](domains/pdf-viewer/INDEX.md) |
+| 17 | **商业诊断工具箱** `dbs-toolkit` | 商业模式,执行力,拖延,对标,目标澄清 | 21 | [`domains/dbs-toolkit/INDEX.md`](domains/dbs-toolkit/INDEX.md) |
+| 18 | **CAD / 3D 工程** `cad-3d` | CAD建模,DXF,工程图,URDF,3D打印 | 14 | [`domains/cad-3d/INDEX.md`](domains/cad-3d/INDEX.md) |
+| 19 | **HyperFrames 动效** `hyperframes` | 网页动效,动效引擎,转场,网页转视频 | 5 | [`domains/hyperframes/INDEX.md`](domains/hyperframes/INDEX.md) |
+| 20 | **语义理解** `understand` | 语义分析,差异理解,知识抽取,通俗解释 | 8 | [`domains/understand/INDEX.md`](domains/understand/INDEX.md) |
+| 21 | **内容与创作** `content-writing` | 人味写作,去AI味,海报,知识星球,内容图谱 | 7 | [`domains/content-writing/INDEX.md`](domains/content-writing/INDEX.md) |
+| 22 | **本机工具** `local-tooling` | 离线OCR,截图识文,Skill调优 | 2 | [`domains/local-tooling/INDEX.md`](domains/local-tooling/INDEX.md) |
 
 ## 硬规则
 

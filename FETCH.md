@@ -1,6 +1,6 @@
 # 技能库取用协议（Agent 读这份）
 
-> 这份文档描述**如何以最小上下文代价**用到 178 个岗位技能。
+> 这份文档描述**如何以最小上下文代价**用到 235 个岗位技能。
 > 核心原则：**永远不要整包读。** 本仓库 2.7 MB，按需拉取单次只需 3~15 KB。
 
 ---
@@ -11,7 +11,7 @@
 https://raw.githubusercontent.com/maning636/agent-skills/main/INDEX.md
 ```
 
-它是 **L0 索引**，44 行 / ~990 tokens。里面是一张领域路由表 + 取用三步 + 硬规则。
+它是 **L0 索引**，50 行 / ~1,180 tokens。里面是一张领域路由表 + 取用三步 + 硬规则。
 
 **其余所有内容都不进上下文，直到你决定去取。**
 
@@ -65,7 +65,7 @@ python tools/fetch.py --search "面试 评分卡"      # 自动搜 L0+L1，返�
 
 | 动作 | 拉取量 | tokens |
 |---|---|---:|
-| 常驻 L0 | 3.5 KB | ~990 |
+| 常驻 L0 | 4.5 KB | ~1,180 |
 | 读 L1（一个领域） | 0.3~4.8 KB | ~110~1,610 |
 | 拉 1 个技能（典型） | 3~15 KB | ~900~4,200 |
 | **合计（典型任务）** | **~10 KB** | **~2,100~6,400** |
@@ -126,6 +126,12 @@ python tools/fetch.py --cache-dir
 | `small-business` | 经营快照、现金流、月结、报税、收件箱、发票、薪酬、增长、投标 |
 | `cowork-plugin-management` | 创建插件、定制插件、技能工程 |
 | `pdf-viewer` | PDF、批注、填表、签名 |
+| `dbs-toolkit` | 商业模式、执行力、拖延、AI 味检测、对标、目标澄清、概念拆解、决策系统、交互式学习、存档恢复 |
+| `cad-3d` | CAD 建模、DXF、工程图、STEP、URDF、G-code、DFM、3D 打印、3D 产品图 |
+| `hyperframes` | 网页动效、转场、动效视频、网页转视频、动效注册表 |
+| `understand` | 语义分析、差异理解、知识抽取、通俗解释、领域建模、上手引导 |
+| `content-writing` | 人味写作、去 AI 味、大字海报、内容图谱、知识星球、Prism 内容、创作工具 |
+| `local-tooling` | 离线 OCR、截图识文、发票识别、Skill 调优 |
 
 > 记不住就直接读 `INDEX.md`，那是设计给你用的。
 
@@ -138,7 +144,7 @@ agent-skills/
 ├── INDEX.md                    L0：领域路由表（常驻）
 ├── FETCH.md                    本文件：完整协议
 ├── manifest.json               文件清单 + 大小（机器读）
-├── domains/
+├── domains/                 22 个领域，共 235 个技能
 │   ├── <domain>/
 │   │   ├── INDEX.md            L1：该领域的技能清单
 │   │   └── <skill>/
@@ -146,7 +152,7 @@ agent-skills/
 │   │       └── references/…    按需的附属参考文件
 └── tools/
     ├── fetch.py                带缓存的取用脚本
-    └── zh_keys.py              178 个技能的中文标签 / 中文关键词（维护用）
+    └── zh_keys.py              235 个技能的中文标签 / 中文关键词（维护用）
 ```
 
 ---
@@ -157,5 +163,9 @@ agent-skills/
 |---|---|---|
 | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Apache-2.0 | `domains/<插件名>/`，除 bio-research 外全部收录 |
 | [humanlayer/skills](https://github.com/humanlayer/skills) | MIT | `domains/product-management/{rpi,show-me,visual-pr}` |
+| [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | `domains/cad-3d/` 的 CAD/机器人描述系列 |
+| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Apache-2.0 | `domains/hyperframes/` |
+| [unnoo/zsxq-skill](https://github.com/unnoo/zsxq-skill) | MIT | `domains/content-writing/zsxq` |
+| 本机自研 | 见各技能 `license` | `domains/{dbs-toolkit,understand,content-writing,local-tooling}/` 等 |
 
 各文件的 `origin` frontmatter 字段记录了精确来源路径与上游 commit。

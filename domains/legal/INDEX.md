@@ -5,14 +5,14 @@
 
 | 技能 | 中文标签 | 关键词（中文 / 英文） | 路径 | 大小 |
 |---|---|---|---|---|
-| `brief` | 法务简报 | 法律简报,案情摘要,专题研究,事件法律分析 | `domains/legal/brief/SKILL.md` | 7.1K |
-| `compliance-check` | 合规检查 | 合规,监管,法规适用,合规校验 | `domains/legal/compliance-check/SKILL.md` | 14.7K |
-| `legal-response` | 法务标准回复 | 法律问询回复,模板回复,法务答疑 | `domains/legal/legal-response/SKILL.md` | 16.4K |
-| `legal-risk-assessment` | 法律风险评估 | 风险分级,严重度,法律风险,升级标准 | `domains/legal/legal-risk-assessment/SKILL.md` | 12.7K |
-| `meeting-briefing` | 法务会议准备 | 法务会前准备,法律会议,行动项 | `domains/legal/meeting-briefing/SKILL.md` | 9.2K |
-| `review-contract` | 合同审查 | 合同审核,合同条款,红线,谈判手册,偏离项 | `domains/legal/review-contract/SKILL.md` | 16.8K |
-| `signature-request` | 签署发起 | 电子签,签署,签约,盖章,签字流程 | `domains/legal/signature-request/SKILL.md` | 3.6K |
-| `triage-nda` | NDA 三色分级 | 保密协议,nda,分级,快速判断,保密协议审查 | `domains/legal/triage-nda/SKILL.md` | 14.6K |
-| `vendor-check` | 供应商合同状态 | 供应商,合作方合同,协议台账,尽调 | `domains/legal/vendor-check/SKILL.md` | 5.7K |
+| `brief` | 法务简报 | 法律简报,案情摘要,专题研究,事件法律分析 / generate contextual briefings for legal work — daily summary, topic re… | `domains/legal/brief/SKILL.md` | 7.1K |
+| `compliance-check` | 合规检查 | 合规,监管,法规适用,合规校验 / run a compliance check on a proposed action, product feature, or busin… | `domains/legal/compliance-check/SKILL.md` | 14.7K |
+| `legal-response` | 法务标准回复 | 法律问询回复,模板回复,法务答疑 / generate a response to a common legal inquiry using configured templat… | `domains/legal/legal-response/SKILL.md` | 16.4K |
+| `legal-risk-assessment` | 法律风险评估 | 风险分级,严重度,法律风险,升级标准 / assess and classify legal risks using a severity-by-likelihood framewo… | `domains/legal/legal-risk-assessment/SKILL.md` | 12.7K |
+| `meeting-briefing` | 法务会议准备 | 法务会前准备,法律会议,行动项 / prepare structured briefings for meetings with legal relevance and tra… | `domains/legal/meeting-briefing/SKILL.md` | 9.2K |
+| `review-contract` | 合同审查 | 合同审核,合同条款,红线,谈判手册,偏离项 / review a contract against your organization's negotiation playbook — f… | `domains/legal/review-contract/SKILL.md` | 16.8K |
+| `signature-request` | 签署发起 | 电子签,签署,签约,盖章,签字流程 / prepare and route a document for e-signature — run a pre-signature che… | `domains/legal/signature-request/SKILL.md` | 3.6K |
+| `triage-nda` | NDA 三色分级 | 保密协议,nda,分级,快速判断,保密协议审查 / rapidly triage an incoming nda and classify it as green (standard appr… | `domains/legal/triage-nda/SKILL.md` | 14.6K |
+| `vendor-check` | 供应商合同状态 | 供应商,合作方合同,协议台账,尽调 / check the status of existing agreements with a vendor across all conne… | `domains/legal/vendor-check/SKILL.md` | 5.7K |
 
 > 读法：拿用户需求里的关键词去对「关键词」列，命中哪一行就拉哪个路径的 SKILL.md。

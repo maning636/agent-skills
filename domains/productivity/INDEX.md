@@ -5,9 +5,9 @@
 
 | 技能 | 中文标签 | 关键词（中文 / 英文） | 路径 | 大小 |
 |---|---|---|---|---|
-| `memory-management` | 双层记忆 | 记忆,长期记忆,偏好记忆,工作记忆,上下文 | `domains/productivity/memory-management/SKILL.md` | 9.0K |
-| `start` | 启动生产力系统 | 初始化,首次启动,引导配置,工作初始化 | `domains/productivity/start/SKILL.md` | 5.1K |
-| `task-management` | 任务管理 | 待办,todo,任务清单,任务追踪 | `domains/productivity/task-management/SKILL.md` | 2.8K |
-| `update` | 同步任务与记忆 | 同步,刷新记忆,更新状态 | `domains/productivity/update/SKILL.md` | 5.2K |
+| `memory-management` | 双层记忆 | 记忆,长期记忆,偏好记忆,工作记忆,上下文 / two-tier memory system that makes claude a true workplace collaborator… | `domains/productivity/memory-management/SKILL.md` | 9.0K |
+| `start` | 启动生产力系统 | 初始化,首次启动,引导配置,工作初始化 / initialize the productivity system and open the dashboard. | `domains/productivity/start/SKILL.md` | 5.1K |
+| `task-management` | 任务管理 | 待办,todo,任务清单,任务追踪 / simple task management using a shared tasks.md file… | `domains/productivity/task-management/SKILL.md` | 2.8K |
+| `update` | 同步任务与记忆 | 同步,刷新记忆,更新状态 / sync tasks and refresh memory from your current activity. | `domains/productivity/update/SKILL.md` | 5.2K |
 
 > 读法：拿用户需求里的关键词去对「关键词」列，命中哪一行就拉哪个路径的 SKILL.md。

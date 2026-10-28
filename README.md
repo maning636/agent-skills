@@ -1,16 +1,16 @@
 # agent-skills
 
-> **178 个岗位技能，按需远程加载，常驻上下文只有 ~1,000 tokens。**
+> **235 个岗位技能，按需远程加载，常驻上下文只有 ~1,180 tokens。**
 
 一个给任意 Agent 用的技能库。设计上只让 Agent 常驻一张**领域路由表**，具体技能**用时再拉**——
-不把 2.7 MB 技能正文整包塞进上下文。
+不把 13.5 MB 技能正文整包塞进上下文。
 
 ```
-常驻：   INDEX.md            44 行 / 3.5 KB / ~990 tokens
-按需：   domains/<域>/INDEX.md        0.3~4.8 KB（最多 ~1,600 tok）
+常驻：   INDEX.md            50 行 / 4.5 KB / ~1,180 tokens
+按需：   domains/<域>/INDEX.md        0.3~5 KB（最多 ~1,600 tok）
 按需：   domains/<域>/<技能>/SKILL.md  3~15 KB
 ────────────────────────────────────────────────
-整包读入（❌ 不要）： 2.7 MB / ~700,000 tokens
+整包读入（❌ 不要）： 13.5 MB / ~3,500,000 tokens
 ```
 
 ---
@@ -73,8 +73,14 @@ python tools/fetch.py --cache-dir                    # 缓存位置
 | `small-business` | 44 | 经营快照、现金流、月结、报税、CRM、投标… |
 | `cowork-plugin-management` | 2 | 插件创建与定制 |
 | `pdf-viewer` | 1 | PDF 批注、填表、签名 |
+| **`dbs-toolkit`** | **21** | 商业模式、执行力、拖延、AI 味检测、对标、目标澄清、概念拆解、决策系统、交互式学习、存档恢复 |
+| **`cad-3d`** | **14** | CAD 建模、DXF、工程图、STEP、URDF、G-code、DFM、3D 打印、3D 产品图 |
+| **`hyperframes`** | **5** | 网页动效引擎、转场、动效视频、网页转视频、动效注册表 |
+| **`understand`** | **8** | 语义分析、差异理解、知识抽取、通俗解释、领域建模、上手引导 |
+| **`content-writing`** | **7** | 人味写作、去 AI 味、大字海报、内容图谱、知识星球、Prism 内容、创作工具 |
+| **`local-tooling`** | **2** | 离线 OCR 截图识文、Skill 调优评测 |
 
-**共 178 个技能 / 443 个文件 / 2.65 MB。**
+**共 235 个技能 / 1,758 个文件 / 13.52 MB**（其中 175 个来自 Anthropic、3 个来自 HumanLayer、57 个来自本机 `.agents/skills`）。
 
 ---
 
@@ -82,7 +88,7 @@ python tools/fetch.py --cache-dir                    # 缓存位置
 
 | | 传统 skill 机制 | 本库 |
 |---|---|---|
-| 常驻上下文 | 全部 skill 的 name+description ≈ **10,524 tok** | **~990 tok** |
+| 常驻上下文 | 全部 skill 的 name+description ≈ **14,000 tok** | **~1,180 tok** |
 | 取用方式 | 已经在 prompt 里，直接展开 | 按需拉取，单次 3~15 KB |
 | 行为约束 | 强：进 prompt 就等于激活 | 弱：Agent 自己决定取不取 |
 | 更新 | 要重新 import / 重启 | push 即生效，全员同步 |
@@ -95,8 +101,12 @@ python tools/fetch.py --cache-dir                    # 缓存位置
 
 | 来源 | 许可 | 收录内容 |
 |---|---|---|
-| [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Apache-2.0 | 除 `bio-research` 外全部 16 个插件 |
-| [humanlayer/skills](https://github.com/humanlayer/skills) | MIT | `rpi` / `show-me` / `visual-pr` |
+| [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Apache-2.0 | 除 `bio-research` 外全部 16 个插件（175 个技能） |
+| [humanlayer/skills](https://github.com/humanlayer/skills) | MIT | `rpi` / `show-me` / `visual-pr`（3 个） |
+| [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | `cad` `dxf` `sdf` `srdf` `urdf` `gcode` `step-parts` `sendcutsend` `engineering-drawing` `dfm` `dfam-check`（11 个） |
+| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Apache-2.0 | `hyperframes` 全套 + `website-to-hyperframes`（5 个） |
+| [unnoo/zsxq-skill](https://github.com/unnoo/zsxq-skill) | MIT | `zsxq`（1 个） |
+| 本机 `.agents/skills` 自研 | 见各技能 `license` 字段 | `dbs-toolkit` `understand` `content-writing` `cad-3d` `local-tooling` 等（40 个） |
 
 每个技能的 frontmatter 都带 `origin` 字段，标明精确来源路径与上游 commit。
 
