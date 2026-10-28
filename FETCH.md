@@ -56,6 +56,8 @@ curl -sS https://raw.githubusercontent.com/maning636/agent-skills/main/domains/h
 带缓存的取用（推荐，见 §3）：
 ```bash
 python tools/fetch.py human-resources/interview-prep
+python tools/fetch.py --index                    # L0 领域路由表（唯一该常驻的文件）
+python tools/fetch.py --l1 human-resources       # L1 某领域技能清单
 python tools/fetch.py --search "面试 评分卡"      # 自动搜 L0+L1，返回候选
 ```
 
@@ -76,11 +78,21 @@ python tools/fetch.py --search "面试 评分卡"      # 自动搜 L0+L1，返�
 ## 3. 带缓存的取用脚本
 
 ```bash
+# 取 L0 入口索引（唯一该常驻进上下文的内容；缓存 6 小时自动刷新）
+python tools/fetch.py --index
+
+# 取某个领域的 L1 技能清单
+python tools/fetch.py --l1 legal
+
 # 搜索（读 L0 + 所有 L1，本地缓存后离线可用）
 python tools/fetch.py --search "合同 审查"
 
 # 取单个技能，命中缓存则不发请求
 python tools/fetch.py legal/contract-review
+
+# 取技能的附属文件（references/、assets/ 等），先用 --ls 看目录
+python tools/fetch.py --ls domains/legal/contract-review
+python tools/fetch.py --raw domains/legal/contract-review/references/clauses.md
 
 # 打印缓存目录
 python tools/fetch.py --cache-dir
@@ -88,6 +100,7 @@ python tools/fetch.py --cache-dir
 
 缓存目录：`~/.cache/agent-skills/latest/`（可用 `--cache-dir` 打印）
 网络失败时脚本自动降级到缓存；缓存也没有则**报错退出，不伪造内容**。
+`--update` 强制重新拉取，`--offline` 完全不联网。
 
 ---
 
@@ -161,7 +174,7 @@ agent-skills/
 │   │       ├── SKILL.md        L2：技能正文
 │   │       └── references/…    按需的附属参考文件
 └── tools/
-    ├── fetch.py                带缓存的取用脚本
+    ├── fetch.py                带缓存的取用脚本（--index / --l1 / --search / --raw / --ls）
     ├── curated_zh.py           手工维护的中文标签 / 关键词表
     └── gen_zh_keys.py          生成 zh_keys.py（由 curated_zh + 技能描述）
 ```

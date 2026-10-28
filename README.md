@@ -44,9 +44,13 @@
 带缓存的取用脚本（`tools/fetch.py`，零依赖）：
 
 ```bash
-python tools/fetch.py --search "招聘 面试"           # 搜，返回候选 + 直链
-python tools/fetch.py human-resources/interview-prep # 取正文（命中缓存不发请求）
-python tools/fetch.py --cache-dir                    # 缓存位置
+python tools/fetch.py --index                           # L0 领域路由表
+python tools/fetch.py --l1 human-resources              # L1 某领域技能清单
+python tools/fetch.py --search "招聘 面试"               # 搜，返回候选 + 直链
+python tools/fetch.py human-resources/interview-prep    # 取正文（命中缓存不发请求）
+python tools/fetch.py --ls domains/legal/contract-review    # 看技能的附属文件
+python tools/fetch.py --raw domains/legal/contract-review/references/x.md
+python tools/fetch.py --cache-dir                       # 缓存位置
 ```
 
 **完整协议见 [`FETCH.md`](FETCH.md)。**
@@ -152,7 +156,7 @@ agent-skills/
 │           ├── SKILL.md     L2  技能正文
 │           └── references/  按需附属文件
 └── tools/
-    ├── fetch.py             带缓存的取用脚本（零依赖）
+    ├── fetch.py             带缓存的取用脚本（零依赖，--index/--l1/--search/--raw/--ls）
     ├── curated_zh.py        手工维护的中文标签/关键词表
     └── gen_zh_keys.py       由 curated_zh + 技能描述生成 zh_keys.py
 ```

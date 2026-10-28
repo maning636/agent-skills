@@ -7,6 +7,10 @@ agent-skills 取用工具（零依赖，仅标准库）
   python fetch.py <domain>/<skill>            # 取单个技能，命中缓存不发请求；打印正文
   python fetch.py --fetch <domain>/<skill>     # 同上（位置参数与 --fetch 等价）
   python fetch.py --path <domain>/<skill>      # 同上，但只打印本地路径
+  python fetch.py --index                      # 取 L0 索引（领域路由表，唯一该常驻的文件）
+  python fetch.py --l1 <domain>                # 取某领域的 L1 索引（该领域技能清单）
+  python fetch.py --raw <仓库内相对路径>        # 取任意文件（如某技能的 references/xxx.md）
+  python fetch.py --ls <仓库内目录>             # 列出目录内容（用于发现技能的附属文件）
   python fetch.py --search "招聘 面试"          # 在 L0+L1 中搜索，返回候选（带直链）
   python fetch.py --search "面试" --domain human-resources
   python fetch.py --cache-dir                  # 打印缓存目录
@@ -18,12 +22,17 @@ agent-skills 取用工具（零依赖，仅标准库）
   * 网络失败自动降级到本地缓存
   * 取不到就报错退出，绝不返回编造内容
 """
-import argparse, os, re, sys, time, urllib.request
+import argparse, json, os, re, sys, time, urllib.request
 
 RAW_BASE = "https://raw.githubusercontent.com/maning636/agent-skills/main/"
 # raw 主站失败时的备用通道（同一份内容）
 ALT_BASE = "https://github.com/maning636/agent-skills/raw/main/"
+# 目录列举用 GitHub tree API（一次拿全仓文件树，之后走缓存）
+TREE_URL = "https://api.github.com/repos/maning636/agent-skills/git/trees/main?recursive=1"
 CACHE = os.path.join(os.path.expanduser("~"), ".cache", "agent-skills")
+# L0 入口索引的缓存有效期（秒）。它一变整个路由表就失效，代价只有几 KB，
+# 所以允许自动刷新；L1/L2 默认永久缓存，需要时用 --update 手动刷新。
+L0_TTL = 6 * 3600
 
 try:  # Windows 控制台默认 GBK，强制 UTF-8 输出避免中文乱码
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -61,13 +70,20 @@ def cache_path(rel):
     return os.path.join(CACHE, "latest", *rel.replace("\\", "/").lstrip("/").split("/"))
 
 
-def fetch(rel, offline=False, force=False):
-    """取仓库内相对路径内容。返回 (text, from_cache)。取不到抛异常。"""
+def fetch(rel, offline=False, force=False, ttl=0):
+    """取仓库内相对路径内容。返回 (text, from_cache)。取不到抛异常。
+
+    ttl>0 时，缓存文件超过该秒数就重新拉取（用于 L0 这种入口索引，
+    它一变整个路由表就失效，代价只有几 KB）。
+    """
     rel = rel.replace("\\", "/").lstrip("/")
     local = cache_path(rel)
-    if os.path.isfile(local) and not force:
+    fresh = os.path.isfile(local) and (ttl <= 0 or (time.time() - os.path.getmtime(local)) < ttl)
+    if fresh and not force:
         return open(local, encoding="utf-8", errors="replace").read(), True
     if offline:
+        if os.path.isfile(local):
+            return open(local, encoding="utf-8", errors="replace").read(), True
         raise FileNotFoundError("离线且无缓存: %s" % rel)
     url = RAW_BASE + rel
     try:
@@ -140,9 +156,82 @@ def score(text, toks, grams):
 
 
 # ----------------------------------------------------------------- 动作
+def _tree(offline=False, force=False):
+    """取全仓文件树（GitHub tree API），本地缓存一次即可复用。"""
+    p = os.path.join(CACHE, "_tree.json")
+    if os.path.isfile(p) and not force:
+        try:
+            return json.load(open(p, encoding="utf-8"))
+        except Exception:
+            pass
+    if offline:
+        raise FileNotFoundError("离线且无文件树缓存: %s" % p)
+    req = urllib.request.Request(TREE_URL, headers={
+        "User-Agent": "agent-skills-fetch/1.0 (+https://github.com/maning636/agent-skills)",
+        "Accept": "application/vnd.github+json",
+    })
+    with urllib.request.urlopen(req, timeout=40) as r:
+        data = json.loads(r.read().decode("utf-8"))
+    os.makedirs(CACHE, exist_ok=True)
+    with open(p, "w", encoding="utf-8") as f:
+        json.dump(data, f)
+    return data
+
+
+def do_ls(dirpath, offline=False, force=False):
+    """列出仓库内某目录的内容（按目录分组），用于发现技能的 references/ assets/ 等附属文件。"""
+    d = (dirpath or "").replace("\\", "/").strip("/")
+    try:
+        data = _tree(offline=offline, force=force)
+    except Exception as e:
+        print("错误: %s" % e, file=sys.stderr)
+        return 1
+    if data.get("truncated"):
+        print("注意: 文件树被 GitHub 截断，列表可能不完整", file=sys.stderr)
+    pref = (d + "/") if d else ""
+    rows = []
+    for it in data.get("tree", []):
+        if not it.get("path", "").startswith(pref):
+            continue
+        rel = it["path"][len(pref):]
+        if not rel or "/" in rel:
+            continue
+        rows.append((rel, it.get("size", 0), it.get("type", "")))
+    if not rows:
+        print("空目录或不存在: %s" % (d or "/"), file=sys.stderr)
+        return 1
+    print("# 目录内容: %s" % (d or "/"))
+    for rel, size, typ in sorted(rows):
+        print("  %-46s %8s" % (rel, ("%dB" % size) if typ == "blob" else typ))
+    print("\n取用: python fetch.py --raw <路径>")
+    return 0
+
+
+def do_raw(rel, offline=False, force=False, path_only=False):
+    """取仓库内任意相对路径（L0 / L1 / 附属文件都走这里）。"""
+    rel = (rel or "").replace("\\", "/").strip("/")
+    if not rel:
+        print("用法: fetch.py --raw <仓库内相对路径>", file=sys.stderr)
+        return 2
+    try:
+        txt, cached = fetch(rel, offline=offline, force=force,
+                            ttl=L0_TTL if rel == "INDEX.md" else 0)
+    except Exception as e:
+        print("错误: %s" % e, file=sys.stderr)
+        print("提示：该文件不可用。如需它，请告知用户缺少哪个文件，不要凭印象编造内容。", file=sys.stderr)
+        return 1
+    if path_only:
+        print(cache_path(rel))
+        return 0
+    if cached:
+        print("<!-- from cache: %s -->" % cache_path(rel), file=sys.stderr)
+    sys.stdout.write(txt)
+    return 0
+
+
 def do_search(query, domain=None, limit=12):
     toks, grams = tokenize(query)
-    l0, _ = fetch("INDEX.md")
+    l0, _ = fetch("INDEX.md", ttl=L0_TTL)
     doms = parse_domains(l0)
     if domain:
         doms = [d for d in doms if d[0] == domain]
@@ -204,6 +293,11 @@ def main():
     ap.add_argument("--fetch", dest="fetch_spec", help="domain/skill（与位置参数等价）")
     ap.add_argument("--search", help="搜索关键词")
     ap.add_argument("--domain", help="限定领域")
+    ap.add_argument("--index", "--l0", dest="index", action="store_true",
+                    help="取 L0 索引（领域路由表）")
+    ap.add_argument("--l1", metavar="DOMAIN", help="取某领域的 L1 索引")
+    ap.add_argument("--raw", metavar="PATH", help="取仓库内任意相对路径")
+    ap.add_argument("--ls", metavar="DIR", help="列出仓库内某目录内容")
     ap.add_argument("--path", action="store_true", help="只打印本地路径")
     ap.add_argument("--cache-dir", action="store_true", help="打印缓存目录")
     ap.add_argument("--update", action="store_true", help="强制重新拉取")
@@ -215,6 +309,14 @@ def main():
         return 0
     if a.search:
         return do_search(a.search, a.domain)
+    if a.index:
+        return do_raw("INDEX.md", offline=a.offline, force=a.update, path_only=a.path)
+    if a.l1:
+        return do_raw("domains/%s/INDEX.md" % a.l1, offline=a.offline, force=a.update, path_only=a.path)
+    if a.raw:
+        return do_raw(a.raw, offline=a.offline, force=a.update, path_only=a.path)
+    if a.ls is not None:
+        return do_ls(a.ls, offline=a.offline, force=a.update)
     spec = a.fetch_spec or a.spec
     if spec:
         return do_fetch(spec, a.offline, a.update, a.path)
