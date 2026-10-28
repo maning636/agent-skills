@@ -1,7 +1,7 @@
 # 技能库索引（L0）
 
-> **这是唯一需要常驻进上下文的内容**（50 行 / ~1,180 tokens）。
-> 其余 13 MB、235 个技能正文**全部按需拉取**，绝不整包读入。
+> **这是唯一需要常驻进上下文的内容**（~1,752 tokens）。
+> 其余 50.5 MB、453 个技能正文**全部按需拉取**，绝不整包读入。
 
 ## 取用三步
 
@@ -38,13 +38,13 @@
 | 23 | **飞书办公套件** `lark-suite` | 飞书,发消息,多维表格,电子表格,知识库 | 28 | [`domains/lark-suite/INDEX.md`](domains/lark-suite/INDEX.md) |
 | 24 | **企业微信套件** `wecom-suite` | 企微,企微消息,在线文档,待办,通讯录 | 14 | [`domains/wecom-suite/INDEX.md`](domains/wecom-suite/INDEX.md) |
 | 25 | **内容创作全家桶** `baoyu-content` | 文章配图,封面图,信息图,漫画,公众号发布 | 21 | [`domains/baoyu-content/INDEX.md`](domains/baoyu-content/INDEX.md) |
-| 27 | **红狐·小红书** `redfox-xiaohongshu` | 小红书搜笔记,小红书标题,小红书封面,小红书榜单,违禁词 | 19 | [`domains/redfox-xiaohongshu/INDEX.md`](domains/redfox-xiaohongshu/INDEX.md) |
-| 28 | **红狐·抖音** `redfox-douyin` | 抖音搜索,抖音热榜,涨粉榜,抖音账号诊断,抖音作品 | 15 | [`domains/redfox-douyin/INDEX.md`](domains/redfox-douyin/INDEX.md) |
-| 29 | **红狐·B站** `redfox-bilibili` | B站搜索,UP主作品,B站评论,关键词账号 | 7 | [`domains/redfox-bilibili/INDEX.md`](domains/redfox-bilibili/INDEX.md) |
-| 30 | **红狐·公众号** `redfox-wechat` | 公众号搜索,10w热文,涨粉最快,原创榜,公众号标题 | 21 | [`domains/redfox-wechat/INDEX.md`](domains/redfox-wechat/INDEX.md) |
-| 31 | **红狐·通用** `redfox-multi` | 多平台聚合,AI搜索,热点榜,股票研报,视频下载 | 25 | [`domains/redfox-multi/INDEX.md`](domains/redfox-multi/INDEX.md) |
-| 32 | **商业与增长** `growth-ops` | 竞品分析,客户情报,KPI,销售漏斗,市场情报 | 38 | [`domains/growth-ops/INDEX.md`](domains/growth-ops/INDEX.md) |
-| 33 | **Agent 工具箱** `agent-toolkit` | 网页动画,HTML生成,前端设计,Office文档,电脑操作 | 30 | [`domains/agent-toolkit/INDEX.md`](domains/agent-toolkit/INDEX.md) |
+| 26 | **红狐·小红书** `redfox-xiaohongshu` | 小红书搜笔记,小红书标题,小红书封面,小红书榜单,违禁词 | 19 | [`domains/redfox-xiaohongshu/INDEX.md`](domains/redfox-xiaohongshu/INDEX.md) |
+| 27 | **红狐·抖音** `redfox-douyin` | 抖音搜索,抖音热榜,涨粉榜,抖音账号诊断,抖音作品 | 15 | [`domains/redfox-douyin/INDEX.md`](domains/redfox-douyin/INDEX.md) |
+| 28 | **红狐·B站** `redfox-bilibili` | B站搜索,UP主作品,B站评论,关键词账号 | 7 | [`domains/redfox-bilibili/INDEX.md`](domains/redfox-bilibili/INDEX.md) |
+| 29 | **红狐·公众号** `redfox-wechat` | 公众号搜索,10w热文,涨粉最快,原创榜,公众号标题 | 21 | [`domains/redfox-wechat/INDEX.md`](domains/redfox-wechat/INDEX.md) |
+| 30 | **红狐·通用** `redfox-multi` | 多平台聚合,AI搜索,热点榜,股票研报,视频下载 | 25 | [`domains/redfox-multi/INDEX.md`](domains/redfox-multi/INDEX.md) |
+| 31 | **商业与增长** `growth-ops` | 竞品分析,客户情报,KPI,销售漏斗,市场情报 | 38 | [`domains/growth-ops/INDEX.md`](domains/growth-ops/INDEX.md) |
+| 32 | **Agent 工具箱** `agent-toolkit` | 网页动画,HTML生成,前端设计,Office文档,电脑操作 | 30 | [`domains/agent-toolkit/INDEX.md`](domains/agent-toolkit/INDEX.md) |
 
 ## 硬规则
 

@@ -12,7 +12,7 @@
 | `dashiai-ppt` | PPT 主题生成 | ppt生成,ppt主题,幻灯片模板,dashiai,生成ppt / 制作 ppt、演示文稿、幻灯片、汇报材料时使用。dashiai ppt 基于预置视觉主题组合页面,生成可离线打开、可在浏览器编辑的 html… | `domains/agent-toolkit/dashiai-ppt/SKILL.md` | 18.0K |
 | `design-taste-frontend` | 前端设计品味 | 前端设计,ui设计,设计品味,界面审美,web设计 / anti-slop frontend skill for landing pages, portfolios, and redesigns… | `domains/agent-toolkit/design-taste-frontend/SKILL.md` | 85.3K |
 | `find-redskills` | 发现红狐技能 | 找技能,技能发现,redskills,搜索技能 / 小红书 redskill 商店的技能安装入口。当用户提到「装技能 / 装 skill / install skill / 我要 xxx 这个… | `domains/agent-toolkit/find-redskills/SKILL.md` | 1.3K |
-| `find-skills` | 技能发现 | 找技能,skill发现,技能搜索,有什么技能 / helps users discover and install agent skills when they ask questions… | `domains/agent-toolkit/find-skills/SKILL.md` | 5.6K |
+| `find-skills` | 技能发现 | 找技能,技能搜索 / helps users discover and install agent skills when they ask questions… | `domains/agent-toolkit/find-skills/SKILL.md` | 5.6K |
 | `gidlin-law` | 吉德林法则顾问 | 1) 用户说帮我理清思路,我很迷茫,我说不清楚问题在哪,吉德林,情绪和事实交织,第一性原理,私董会）之前需要先定义问题 | `domains/agent-toolkit/gidlin-law/SKILL.md` | 5.0K |
 | `gif-splitter` | GIF动图切分 | 读取GIF,计算分片,均匀分配,保存输出,库依赖,Python版本,支持格式,输出优化 / gif动图切分工具，将超过指定帧数的gif文件自动拆分成多个小文件。适用于微信公众号等平台上传gif时遇到"帧数超限"的问题。 | `domains/agent-toolkit/gif-splitter/SKILL.md` | 4.3K |
 | `gsap` | GSAP 动画 | gsap,网页动画,补间,时间轴,动画库 / gsap animation reference for hyperframes. covers gsap.to(), from(), fr… | `domains/agent-toolkit/gsap/SKILL.md` | 6.3K |

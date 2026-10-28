@@ -22,7 +22,7 @@
 | `wechat-rewrite` | 一位公众号爆款文案撰写专家 | 吸引人,有趣和具有说服力,🎯 爆款标题生成,✍️ 风格转换,📝 结构优化,🏷️ Tags 附加,⚡ 10项行文原则,💡 2-3个关键词 | `domains/redfox-wechat/wechat-rewrite/SKILL.md` | 10.8K |
 | `wechat-search` | 公众号搜索 | 需要搜索公众号文章,查找爆款内容,获取创作灵感,关键词智能搜索,三维评分排序,灵活时间范围,赛道词识别与拓展,热门推荐文章 | `domains/redfox-wechat/wechat-search/SKILL.md` | 20.3K |
 | `wechat-similar-account` | 公众号创作者对标账号匹配 | 公众号对标,相似账号,对标推荐,起号参考,账号匹配,需要公众号账号推荐,账号投放选择 | `domains/redfox-wechat/wechat-similar-account/SKILL.md` | 13.8K |
-| `wechat-styler` | 将 Markdown 文章转换为微信公众 | elegant,modern,字号,强调色,背景色,用于公众号排版 / 将 markdown 文章转换为微信公众号可用的内联样式 html，默认使用 kami 纸感主题，支持 kami、magazine-ink、… | `domains/redfox-wechat/wechat-styler/SKILL.md` | 17.7K |
+| `wechat-styler` | 公众号样式 | 公众号排版,微信样式,样式美化,排版主题 / 将 markdown 文章转换为微信公众号可用的内联样式 html，默认使用 kami 纸感主题，支持 kami、magazine-ink、… | `domains/redfox-wechat/wechat-styler/SKILL.md` | 17.7K |
 | `wechat-title` | 基于热门数据生成公众号爆款标题或对用户标 | 公众号标题,爆款标题,标题生成,标题评分,公众号爆款 | `domains/redfox-wechat/wechat-title/SKILL.md` | 10.0K |
 | `wechat-top-account` | 公众号热门账号推荐快速获取微信公众号综合 | 按时间或领域筛选,查看互动指标,获取榜单解读,📊 多维排行查询,📈 综合评分体系,🔍 深度分析,📄 HTML 报告,🔔 定时订阅 / 公众号热门账号推荐快速获取微信公众号综合实力排行榜top50，支持按日榜/周榜/月榜及垂直领域筛选，展示综合评分以及详细数据。支持深度分析单… | `domains/redfox-wechat/wechat-top-account/SKILL.md` | 13.7K |
 | `wechat-write` | 公众号文案创作 | 公众号文案,公众号爆款,爆款文章,公众号写作,公众号文章生成,写公众号文章,生成公众号文案,查找爆款文章,分析爆款规律 | `domains/redfox-wechat/wechat-write/SKILL.md` | 9.9K |

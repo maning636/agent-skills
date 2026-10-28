@@ -391,7 +391,7 @@ ZH_NEW = {
     "agent-toolkit/slidecraft": ("幻灯片精修", "幻灯片打磨,ppt美化,版式调整,slidecraft"),
     "agent-toolkit/tweak": ("微调优化", "微调,微调代码,小改,调参,tweak"),
     "agent-toolkit/using-coze-cli": ("Coze CLI", "coze,扣子,coze cli,扣子平台,工作流"),
-    "agent-toolkit/wechat-styler": ("公众号样式", "公众号排版,微信样式,样式美化,排版主题"),
+    "redfox-wechat/wechat-styler": ("公众号样式", "公众号排版,微信样式,样式美化,排版主题"),
     "agent-toolkit/手绘叙事风 PPT": ("手绘叙事风 PPT", "手绘风,叙事型ppt,手绘幻灯片,插画风ppt"),
-    "agent-toolkit/find-skills-cn": ("技能发现", "找技能,技能搜索"),
+    "agent-toolkit/find-skills": ("技能发现", "找技能,技能搜索"),
 }

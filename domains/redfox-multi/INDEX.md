@@ -17,7 +17,7 @@
 | `multi-copywrite-alchemy` | 复刻蒸馏写作技能 —— 分析一位作者的多 | 蒸馏写作风格,写作分身,克隆写作风格,复刻蒸馏写作技能,支持公众号 | `domains/redfox-multi/multi-copywrite-alchemy/SKILL.md` | 5.5K |
 | `multi-rewrite` | 多平台文案改写能力 | 单平台改写,多平台批量改写,全平台覆盖,🔄 单平台改写,📦 多平台批量改写,🌐 全平台覆盖,🔍 智能平台识别,⚡ 七合一输出 | `domains/redfox-multi/multi-rewrite/SKILL.md` | 9.3K |
 | `multi-wordcheck` | 基于官方违禁词库 | 小红书,图片,违禁词标记,上下文替换建议,优化文案输出,长文案分批检测,新注册用户将获赠免费积分,macOS/Linux | `domains/redfox-multi/multi-wordcheck/SKILL.md` | 12.5K |
-| `redfox-community` | RedFoxHub 技能合集 | 选题,文案创作 / redfoxhub 技能合集：面向 agent 的可复用 skill 集合，覆盖灵感、选题、文案创作、数据复盘等场景，88 个子技能。 | `domains/redfox-multi/redfox-community/SKILL.md` | 0.4K |
+| `redfox-community` | RedFoxHub 技能合集入口 | 按平台拆进 5 个域,单个 / redfoxhub 技能合集入口：88 个子技能已按平台拆分到 redfox-xiaohongshu / redfox-douyin / r… | `domains/redfox-multi/redfox-community/SKILL.md` | 1.5K |
 | `redfox-skill-generator` | 一键生成高质量红狐Skill专属技能文件 | 生成红狐技能,新建红狐skill,写一个红狐skill,做个红狐skill,红狐技能生成时使用 / 一键生成高质量红狐skill专属技能文件包（skill.md + 配套资源）。只需描述功能需求、提供接口地址和接口文档，即可自动生成符合红狐… | `domains/redfox-multi/redfox-skill-generator/SKILL.md` | 10.3K |
 | `seedance-video-gen` | 基于 Seedance 2.0 模型的 | 支持文生视频,预置虚拟人像引用,AI 视频,Seedance 2.0,一行命令即可生成视频,Skill 特色,对开发者,对创作者 / 基于 seedance 2.0 模型的 ai 视频生成器，输入关键词/描述文案即可生成 mp4 视频。支持文生视频、分辨率/比例/时长控制、… | `domains/redfox-multi/seedance-video-gen/SKILL.md` | 11.5K |
 | `seedream 5.0 lite` | 基于火山方舟 seedream 5.0 | 图生图,AI 绘图,文生图,一行命令即可生成高质量图片,对开发者,对创作者,组图生成,提示词优化 / 基于火山方舟 seedream 5.0 lite 模型的 ai 图片生成器，支持文生图、图生图、组图生成与提示词优化。输入关键词即可生成高分… | `domains/redfox-multi/seedream 5.0 lite/SKILL.md` | 11.8K |

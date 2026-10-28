@@ -3,7 +3,7 @@
  "version": "1.0.0",
  "layout": "three-tier-progressive-disclosure",
  "l0": "INDEX.md",
- "l0_bytes": 6374,
+ "l0_bytes": 6308,
  "domains": {
   "human-resources": {
    "index": "domains/human-resources/INDEX.md",
@@ -135,21 +135,25 @@
   }
  },
  "total_skills": 453,
- "total_files": 4636,
- "total_bytes": 60715335,
+ "total_files": 4108,
+ "total_bytes": 53187239,
  "raw_base": "https://raw.githubusercontent.com/maning636/agent-skills/main/",
  "files": [
+  {
+   "path": ".gitattributes",
+   "bytes": 141
+  },
   {
    "path": ".gitignore",
    "bytes": 39
   },
   {
    "path": "FETCH.md",
-   "bytes": 7676
+   "bytes": 9340
   },
   {
    "path": "INDEX.md",
-   "bytes": 6374
+   "bytes": 6308
   },
   {
    "path": "LICENSE",
@@ -157,15 +161,15 @@
   },
   {
    "path": "NOTICE",
-   "bytes": 4910
+   "bytes": 6720
   },
   {
    "path": "README.md",
-   "bytes": 7028
+   "bytes": 9478
   },
   {
    "path": "domains/agent-toolkit/INDEX.md",
-   "bytes": 8130
+   "bytes": 8061
   },
   {
    "path": "domains/agent-toolkit/agent-reach/SKILL.md",
@@ -1133,7 +1137,7 @@
   },
   {
    "path": "domains/baoyu-content/INDEX.md",
-   "bytes": 5619
+   "bytes": 5587
   },
   {
    "path": "domains/baoyu-content/_shared/docs/chrome-profile.md",
@@ -4109,7 +4113,7 @@
   },
   {
    "path": "domains/cad-3d/INDEX.md",
-   "bytes": 3556
+   "bytes": 3531
   },
   {
    "path": "domains/cad-3d/bambu-labs/LICENSE",
@@ -4469,7 +4473,7 @@
   },
   {
    "path": "domains/content-writing/INDEX.md",
-   "bytes": 2972
+   "bytes": 2954
   },
   {
    "path": "domains/content-writing/bigtype-poster/SKILL.md",
@@ -4869,7 +4873,7 @@
   },
   {
    "path": "domains/cowork-plugin-management/INDEX.md",
-   "bytes": 930
+   "bytes": 919
   },
   {
    "path": "domains/cowork-plugin-management/cowork-plugin-customizer/LICENSE.txt",
@@ -4905,7 +4909,7 @@
   },
   {
    "path": "domains/customer-support/INDEX.md",
-   "bytes": 1514
+   "bytes": 1500
   },
   {
    "path": "domains/customer-support/customer-escalation/SKILL.md",
@@ -4929,7 +4933,7 @@
   },
   {
    "path": "domains/data/INDEX.md",
-   "bytes": 2511
+   "bytes": 2492
   },
   {
    "path": "domains/data/analyze/SKILL.md",
@@ -4993,7 +4997,7 @@
   },
   {
    "path": "domains/dbs-toolkit/INDEX.md",
-   "bytes": 4261
+   "bytes": 4229
   },
   {
    "path": "domains/dbs-toolkit/dbs-action/SKILL.md",
@@ -5197,7 +5201,7 @@
   },
   {
    "path": "domains/design/INDEX.md",
-   "bytes": 2102
+   "bytes": 2086
   },
   {
    "path": "domains/design/accessibility-review/SKILL.md",
@@ -5229,7 +5233,7 @@
   },
   {
    "path": "domains/engineering/INDEX.md",
-   "bytes": 2900
+   "bytes": 2881
   },
   {
    "path": "domains/engineering/architecture/SKILL.md",
@@ -5273,7 +5277,7 @@
   },
   {
    "path": "domains/enterprise-search/INDEX.md",
-   "bytes": 1441
+   "bytes": 1427
   },
   {
    "path": "domains/enterprise-search/digest/SKILL.md",
@@ -5297,7 +5301,7 @@
   },
   {
    "path": "domains/finance/INDEX.md",
-   "bytes": 2165
+   "bytes": 2148
   },
   {
    "path": "domains/finance/audit-support/SKILL.md",
@@ -5333,7 +5337,7 @@
   },
   {
    "path": "domains/growth-ops/INDEX.md",
-   "bytes": 9578
+   "bytes": 9529
   },
   {
    "path": "domains/growth-ops/absurd/SKILL.md",
@@ -5893,7 +5897,7 @@
   },
   {
    "path": "domains/human-resources/INDEX.md",
-   "bytes": 2603
+   "bytes": 2585
   },
   {
    "path": "domains/human-resources/comp-analysis/SKILL.md",
@@ -5933,7 +5937,7 @@
   },
   {
    "path": "domains/hyperframes/INDEX.md",
-   "bytes": 1796
+   "bytes": 1780
   },
   {
    "path": "domains/hyperframes/hyperframes-cli/SKILL.md",
@@ -9761,7 +9765,7 @@
   },
   {
    "path": "domains/lark-suite/INDEX.md",
-   "bytes": 7243
+   "bytes": 7204
   },
   {
    "path": "domains/lark-suite/lark-approval/SKILL.md",
@@ -11965,7 +11969,7 @@
   },
   {
    "path": "domains/legal/INDEX.md",
-   "bytes": 2399
+   "bytes": 2381
   },
   {
    "path": "domains/legal/brief/SKILL.md",
@@ -12005,7 +12009,7 @@
   },
   {
    "path": "domains/local-tooling/INDEX.md",
-   "bytes": 1144
+   "bytes": 1131
   },
   {
    "path": "domains/local-tooling/local-ocr/SKILL.md",
@@ -12025,7 +12029,7 @@
   },
   {
    "path": "domains/marketing/INDEX.md",
-   "bytes": 2309
+   "bytes": 2292
   },
   {
    "path": "domains/marketing/brand-review/SKILL.md",
@@ -12061,7 +12065,7 @@
   },
   {
    "path": "domains/operations/INDEX.md",
-   "bytes": 2405
+   "bytes": 2387
   },
   {
    "path": "domains/operations/capacity-plan/SKILL.md",
@@ -12101,7 +12105,7 @@
   },
   {
    "path": "domains/pdf-viewer/INDEX.md",
-   "bytes": 585
+   "bytes": 575
   },
   {
    "path": "domains/pdf-viewer/view-pdf/SKILL.md",
@@ -12109,7 +12113,7 @@
   },
   {
    "path": "domains/product-management/INDEX.md",
-   "bytes": 3399
+   "bytes": 3379
   },
   {
    "path": "domains/product-management/metrics-review/SKILL.md",
@@ -12409,7 +12413,7 @@
   },
   {
    "path": "domains/productivity/INDEX.md",
-   "bytes": 1221
+   "bytes": 1208
   },
   {
    "path": "domains/productivity/memory-management/SKILL.md",
@@ -12445,7 +12449,7 @@
   },
   {
    "path": "domains/redfox-bilibili/INDEX.md",
-   "bytes": 3443
+   "bytes": 3425
   },
   {
    "path": "domains/redfox-bilibili/bili-ai-feed/README.en.md",
@@ -12597,7 +12601,7 @@
   },
   {
    "path": "domains/redfox-douyin/INDEX.md",
-   "bytes": 6317
+   "bytes": 6291
   },
   {
    "path": "domains/redfox-douyin/cultural-tourism-douyin-feed/README.en.md",
@@ -12949,7 +12953,7 @@
   },
   {
    "path": "domains/redfox-multi/INDEX.md",
-   "bytes": 8527
+   "bytes": 8471
   },
   {
    "path": "domains/redfox-multi/ai-intelligence-investigator/README.en.md",
@@ -13253,2123 +13257,7 @@
   },
   {
    "path": "domains/redfox-multi/redfox-community/SKILL.md",
-   "bytes": 449
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ai-intelligence-investigator/README.en.md",
-   "bytes": 5979
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ai-intelligence-investigator/README.md",
-   "bytes": 4898
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ai-intelligence-investigator/SKILL.md",
-   "bytes": 6203
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ai-intelligence-investigator/references/core_workflow.md",
-   "bytes": 14085
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ai-intelligence-investigator/references/engine-strategy.md",
-   "bytes": 10156
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ai-intelligence-investigator/references/investigation-modes.md",
-   "bytes": 7628
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ai-intelligence-investigator/references/investigation-templates.md",
-   "bytes": 15936
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bili-ai-feed/README.en.md",
-   "bytes": 5821
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bili-ai-feed/README.md",
-   "bytes": 4718
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bili-ai-feed/SKILL.md",
-   "bytes": 12744
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bili-ai-feed/assets/daily_report.py",
-   "bytes": 59964
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bili-ai-feed/assets/report_template.html",
-   "bytes": 23437
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bili-ai-feed/references/engine-strategy.md",
-   "bytes": 7296
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bili-ai-feed/references/investigation-modes.md",
-   "bytes": 5632
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bili-ai-feed/references/investigation-templates.md",
-   "bytes": 6352
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bili-ai-feed/references/investigator-config.json",
-   "bytes": 4810
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-comment/README.en.md",
-   "bytes": 5346
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-comment/README.md",
-   "bytes": 4572
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-comment/SKILL.md",
-   "bytes": 6000
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-comment/assets/report_template.html",
-   "bytes": 15417
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-comment/references/core_workflow.md",
-   "bytes": 4507
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-comment/scripts/backfill_html.py",
-   "bytes": 3857
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-comment/scripts/bili_comment_search.py",
-   "bytes": 17043
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-keywords-accounts/README.en.md",
-   "bytes": 4598
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-keywords-accounts/README.md",
-   "bytes": 4022
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-keywords-accounts/SKILL.md",
-   "bytes": 2180
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-keywords-accounts/references/core_workflow.md",
-   "bytes": 7037
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-keywords-accounts/scripts/search_bili_user.py",
-   "bytes": 5213
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-keywords-search/README.en.md",
-   "bytes": 4790
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-keywords-search/README.md",
-   "bytes": 4316
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-keywords-search/SKILL.md",
-   "bytes": 8995
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-keywords-search/scripts/search_bili_realtime.py",
-   "bytes": 7418
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-portfolio-search/README.en.md",
-   "bytes": 4625
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-portfolio-search/README.md",
-   "bytes": 4126
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-portfolio-search/SKILL.md",
-   "bytes": 1730
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-portfolio-search/references/core_workflow.md",
-   "bytes": 4935
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/bilibili-portfolio-search/scripts/fetch_bili_user_works.py",
-   "bytes": 9080
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cn-last30days/README.en.md",
-   "bytes": 5300
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cn-last30days/README.md",
-   "bytes": 4283
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cn-last30days/SKILL.md",
-   "bytes": 6333
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cn-last30days/agents/openai.yaml",
-   "bytes": 500
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cn-last30days/references/output-rules.md",
-   "bytes": 4089
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cn-last30days/scripts/.DS_Store",
-   "bytes": 6148
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cn-last30days/scripts/cn_last30days.py",
-   "bytes": 49979
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-bilibili-feed/README.en.md",
-   "bytes": 4061
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-bilibili-feed/README.md",
-   "bytes": 3658
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-bilibili-feed/SKILL.md",
-   "bytes": 4615
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-bilibili-feed/assets/report_template.html",
-   "bytes": 13017
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-bilibili-feed/scripts/cultural_tourism_bilibili_report.py",
-   "bytes": 33550
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-douyin-feed/README.en.md",
-   "bytes": 4044
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-douyin-feed/README.md",
-   "bytes": 3678
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-douyin-feed/SKILL.md",
-   "bytes": 4631
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-douyin-feed/assets/report_template.html",
-   "bytes": 13021
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-douyin-feed/scripts/cultural_tourism_douyin_report.py",
-   "bytes": 33782
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-wechat-feed/README.en.md",
-   "bytes": 4116
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-wechat-feed/README.md",
-   "bytes": 3711
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-wechat-feed/SKILL.md",
-   "bytes": 4640
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-wechat-feed/assets/report_template.html",
-   "bytes": 12619
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-wechat-feed/scripts/cultural_tourism_report.py",
-   "bytes": 31800
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-xiaohongshu-feed/README.en.md",
-   "bytes": 4091
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-xiaohongshu-feed/README.md",
-   "bytes": 3716
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-xiaohongshu-feed/SKILL.md",
-   "bytes": 4897
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-xiaohongshu-feed/assets/report_template.html",
-   "bytes": 13979
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/cultural-tourism-xiaohongshu-feed/scripts/cultural_tourism_xiaohongshu_report.py",
-   "bytes": 34280
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/deepseek-websearch/README.en.md",
-   "bytes": 3862
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/deepseek-websearch/README.md",
-   "bytes": 3380
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/deepseek-websearch/SKILL.md",
-   "bytes": 4338
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/deepseek-websearch/references/core_workflow.md",
-   "bytes": 975
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/deepseek-websearch/scripts/deepseek_search.py",
-   "bytes": 5626
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/doubao-websearch/README.en.md",
-   "bytes": 3397
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/doubao-websearch/README.md",
-   "bytes": 3122
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/doubao-websearch/SKILL.md",
-   "bytes": 2934
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/doubao-websearch/scripts/doubao_search.py",
-   "bytes": 4050
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-account-diagnosis/README.en.md",
-   "bytes": 4951
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-account-diagnosis/README.md",
-   "bytes": 8759
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-account-diagnosis/SKILL.md",
-   "bytes": 9135
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-account-diagnosis/references/core_workflow.md",
-   "bytes": 21318
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-account-diagnosis/scripts/douyin_api_client.py",
-   "bytes": 18089
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-account-diagnosis/scripts/douyin_diagnosis_report_v3.md",
-   "bytes": 3012
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-account-diagnosis/scripts/generate_diagnosis_report.py",
-   "bytes": 34516
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-ai-feed/README.en.md",
-   "bytes": 3687
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-ai-feed/README.md",
-   "bytes": 3431
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-ai-feed/SKILL.md",
-   "bytes": 4184
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-ai-feed/assets/report_template.html",
-   "bytes": 10520
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-ai-feed/scripts/fetch_douyin_ai.py",
-   "bytes": 26369
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-content-surge/README.en.md",
-   "bytes": 5340
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-content-surge/README.md",
-   "bytes": 4936
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-content-surge/SKILL.md",
-   "bytes": 5927
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-content-surge/references/api-config.md",
-   "bytes": 2626
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-content-surge/references/interaction-guide.md",
-   "bytes": 3901
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-content-surge/scripts/douyin_daily_increment.py",
-   "bytes": 10423
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-daily-hot/README.en.md",
-   "bytes": 4845
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-daily-hot/README.md",
-   "bytes": 4376
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-daily-hot/SKILL.md",
-   "bytes": 6770
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-daily-hot/references/api-config.md",
-   "bytes": 2708
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-daily-hot/references/interaction-guide.md",
-   "bytes": 3818
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-daily-hot/scripts/douyin_daily_hot.py",
-   "bytes": 10992
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-hot-trend/README.en.md",
-   "bytes": 6311
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-hot-trend/README.md",
-   "bytes": 5037
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-hot-trend/SKILL.md",
-   "bytes": 12437
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-hot-trend/references/core_workflow.md",
-   "bytes": 11828
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-hot-trend/scripts/gen_douyin_hot_html.py",
-   "bytes": 32936
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-hot-trend/scripts/hotspot_fetcher.py",
-   "bytes": 6537
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-prohibited-word/README.en.md",
-   "bytes": 5622
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-prohibited-word/README.md",
-   "bytes": 5097
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-prohibited-word/SKILL.md",
-   "bytes": 14714
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-prohibited-word/references/core_workflow.md",
-   "bytes": 12681
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-prohibited-word/scripts/check_sensitive_words.py",
-   "bytes": 13266
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-rise-ranking/README.en.md",
-   "bytes": 6529
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-rise-ranking/README.md",
-   "bytes": 1550
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-rise-ranking/SKILL.md",
-   "bytes": 9936
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-rise-ranking/references/core_workflow.md",
-   "bytes": 15182
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-rise-ranking/references/dy-rank-api.md",
-   "bytes": 2895
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-rise-ranking/scripts/gzh_growth_fetcher.py",
-   "bytes": 32984
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-search/README.en.md",
-   "bytes": 6289
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-search/README.md",
-   "bytes": 5026
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-search/SKILL.md",
-   "bytes": 7175
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-search/scripts/search_douyin.py",
-   "bytes": 4100
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-similar-account/README.en.md",
-   "bytes": 6756
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-similar-account/README.md",
-   "bytes": 5712
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-similar-account/SKILL.md",
-   "bytes": 9855
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-similar-account/references/core_workflow.md",
-   "bytes": 18168
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-similar-account/scripts/douyin_similar_account.py",
-   "bytes": 50863
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-subscribe/README.en.md",
-   "bytes": 4279
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-subscribe/README.md",
-   "bytes": 3685
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-subscribe/SKILL.md",
-   "bytes": 13839
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-subscribe/scripts/subscribe.py",
-   "bytes": 50873
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-top-account/README.en.md",
-   "bytes": 6631
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-top-account/README.md",
-   "bytes": 6156
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-top-account/SKILL.md",
-   "bytes": 10337
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-top-account/assets/category_config.json",
-   "bytes": 13727
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-top-account/assets/period_config.json",
-   "bytes": 1257
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-top-account/references/api_docs.md",
-   "bytes": 5335
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-top-account/references/category_map.md",
-   "bytes": 2530
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-top-account/references/score_rules.md",
-   "bytes": 974
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-top-account/references/update_rules.md",
-   "bytes": 2860
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-top-account/scripts/fetch_rank.py",
-   "bytes": 32616
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-top-account/scripts/generate_report.py",
-   "bytes": 25992
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-weekly-surge/README.en.md",
-   "bytes": 5461
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-weekly-surge/README.md",
-   "bytes": 5083
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-weekly-surge/SKILL.md",
-   "bytes": 6110
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-weekly-surge/references/api-config.md",
-   "bytes": 2686
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-weekly-surge/references/interaction-guide.md",
-   "bytes": 4042
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-weekly-surge/scripts/douyin_weekly_surge.py",
-   "bytes": 10521
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-works-crawler/README.en.md",
-   "bytes": 5968
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-works-crawler/README.md",
-   "bytes": 5489
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-works-crawler/SKILL.md",
-   "bytes": 9186
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-works-crawler/references/core_workflow.md",
-   "bytes": 8398
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/douyin-works-crawler/scripts/douyin_works_fetcher.py",
-   "bytes": 20191
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-ai-feed/README.en.md",
-   "bytes": 3287
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-ai-feed/README.md",
-   "bytes": 3270
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-ai-feed/SKILL.md",
-   "bytes": 4385
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-ai-feed/assets/daily_report.py",
-   "bytes": 35525
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-ai-feed/assets/report_template.html",
-   "bytes": 24650
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-astock-top/README.en.md",
-   "bytes": 7290
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-astock-top/README.md",
-   "bytes": 5874
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-astock-top/SKILL.md",
-   "bytes": 11749
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-astock-top/cache/last_dual_result.json",
-   "bytes": 25866
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-astock-top/references/api_guide.md",
-   "bytes": 8993
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-astock-top/scripts/fetch_astock_accounts.py",
-   "bytes": 11480
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-astock-top/scripts/fetch_subscribed_updates.py",
-   "bytes": 16890
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-astock-top/scripts/manage_subscriptions.py",
-   "bytes": 10650
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-astock-top/scripts/search_user_test_result.json",
-   "bytes": 46414
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-astock-top/scripts/verify_search_user.py",
-   "bytes": 15274
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-astock-top/subscriptions.json",
-   "bytes": 1002
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-search/README.en.md",
-   "bytes": 3322
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-search/README.md",
-   "bytes": 3256
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-search/SKILL.md",
-   "bytes": 4966
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-search/assets/report_template.html",
-   "bytes": 32694
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-search/assets/search.py",
-   "bytes": 39706
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-subscribe/README.en.md",
-   "bytes": 3433
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-subscribe/README.md",
-   "bytes": 3328
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-subscribe/SKILL.md",
-   "bytes": 7671
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-subscribe/assets/report_template.html",
-   "bytes": 9928
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/gzh-subscribe/assets/subscribe.py",
-   "bytes": 36924
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/image-gen/README.en.md",
-   "bytes": 3065
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/image-gen/README.md",
-   "bytes": 2801
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/image-gen/SKILL.md",
-   "bytes": 6063
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/image-gen/assets/imagegen.py",
-   "bytes": 15609
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/investor-distiller/README.en.md",
-   "bytes": 4955
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/investor-distiller/README.md",
-   "bytes": 4058
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/investor-distiller/SKILL.md",
-   "bytes": 16972
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/investor-distiller/assets/profile_template.md",
-   "bytes": 6202
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/investor-distiller/references/蒸馏维度规范.md",
-   "bytes": 57292
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/investor-distiller/scripts/distill.py",
-   "bytes": 61751
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/investor-distiller/scripts/gzh.py",
-   "bytes": 13215
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/kimi-websearch/README.en.md",
-   "bytes": 2763
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/kimi-websearch/README.md",
-   "bytes": 2544
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/kimi-websearch/SKILL.md",
-   "bytes": 2858
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/kimi-websearch/scripts/kimi_search.py",
-   "bytes": 4036
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ks-ai-feed/README.en.md",
-   "bytes": 5918
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ks-ai-feed/README.md",
-   "bytes": 4877
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ks-ai-feed/SKILL.md",
-   "bytes": 8017
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ks-ai-feed/assets/daily_report.py",
-   "bytes": 60308
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ks-ai-feed/assets/preview_server.py",
-   "bytes": 1665
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ks-ai-feed/assets/report_template.html",
-   "bytes": 21045
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ks-ai-feed/references/engine-strategy.md",
-   "bytes": 7296
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ks-ai-feed/references/investigation-modes.md",
-   "bytes": 5632
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ks-ai-feed/references/investigation-templates.md",
-   "bytes": 6352
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/ks-ai-feed/references/investigator-config.json",
-   "bytes": 4809
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/kuaishou-search/README.en.md",
-   "bytes": 4859
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/kuaishou-search/README.md",
-   "bytes": 4883
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/kuaishou-search/SKILL.md",
-   "bytes": 10250
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/kuaishou-search/scripts/search_ks_work.py",
-   "bytes": 8395
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-content-feed/README.en.md",
-   "bytes": 6958
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-content-feed/README.md",
-   "bytes": 5598
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-content-feed/SKILL.md",
-   "bytes": 12028
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-content-feed/assets/daily_report.py",
-   "bytes": 30542
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-content-feed/assets/default_cover.png",
-   "bytes": 2439
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-content-feed/references/core_workflow.md",
-   "bytes": 13281
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-content-feed/references/examples.md",
-   "bytes": 10680
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-content-feed/scripts/playlet_xhs_daily.py",
-   "bytes": 30542
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-copywrite-alchemy/README.en.md",
-   "bytes": 4613
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-copywrite-alchemy/README.md",
-   "bytes": 4081
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-copywrite-alchemy/SKILL.md",
-   "bytes": 5624
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-copywrite-alchemy/references/7-dimensions-framework.md",
-   "bytes": 20738
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-copywrite-alchemy/references/core_workflow.md",
-   "bytes": 29479
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-copywrite-alchemy/references/persona-template.md",
-   "bytes": 15854
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-copywrite-alchemy/references/writing-formulas.md",
-   "bytes": 8631
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-rewrite/README.en.md",
-   "bytes": 3915
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-rewrite/README.md",
-   "bytes": 3720
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-rewrite/SKILL.md",
-   "bytes": 9655
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-rewrite/assets/platform-rules.md",
-   "bytes": 20392
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-rewrite/scripts/rewrite.py",
-   "bytes": 13626
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-wordcheck/README.en.md",
-   "bytes": 5417
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-wordcheck/README.md",
-   "bytes": 4321
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-wordcheck/SKILL.md",
-   "bytes": 13319
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-wordcheck/scripts/check_sensitive_words.py",
-   "bytes": 7132
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/multi-wordcheck/scripts/extract_text.py",
-   "bytes": 15588
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/optimize-skill-md/README.en.md",
-   "bytes": 3505
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/optimize-skill-md/README.md",
-   "bytes": 3025
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/optimize-skill-md/SKILL.md",
-   "bytes": 7773
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/optimize-skill-md/references/standard-format.md",
-   "bytes": 6872
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/optimize-skill-md/scripts/record.py",
-   "bytes": 2217
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/pdf-image-text-extractor/README.en.md",
-   "bytes": 3657
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/pdf-image-text-extractor/README.md",
-   "bytes": 3085
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/pdf-image-text-extractor/SKILL.md",
-   "bytes": 5291
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/pdf-image-text-extractor/scripts/pdf_text_extractor.py",
-   "bytes": 4907
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-bili-feed/README.en.md",
-   "bytes": 6505
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-bili-feed/README.md",
-   "bytes": 5265
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-bili-feed/SKILL.md",
-   "bytes": 14572
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-bili-feed/references/core_workflow.md",
-   "bytes": 7118
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-bili-feed/references/examples.md",
-   "bytes": 2772
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-bili-feed/scripts/playlet_bili_daily.py",
-   "bytes": 18912
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-douyin-feed/README.en.md",
-   "bytes": 6387
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-douyin-feed/README.md",
-   "bytes": 5326
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-douyin-feed/SKILL.md",
-   "bytes": 13032
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-douyin-feed/references/core_workflow.md",
-   "bytes": 9240
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-douyin-feed/references/examples.md",
-   "bytes": 3845
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-douyin-feed/scripts/playlet_douyin_daily.py",
-   "bytes": 18398
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-wechat-feed/README.en.md",
-   "bytes": 11248
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-wechat-feed/README.md",
-   "bytes": 9757
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-wechat-feed/SKILL.md",
-   "bytes": 23996
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-wechat-feed/assets/daily_report.py",
-   "bytes": 18740
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-wechat-feed/references/core_workflow.md",
-   "bytes": 12323
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-wechat-feed/references/examples.md",
-   "bytes": 5214
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-wechat-feed/scripts/playlet_wechat_daily.py",
-   "bytes": 18183
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-xiaohongshu-feed/README.en.md",
-   "bytes": 6084
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-xiaohongshu-feed/README.md",
-   "bytes": 5362
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-xiaohongshu-feed/SKILL.md",
-   "bytes": 22330
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-xiaohongshu-feed/assets/daily_report.py",
-   "bytes": 19615
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-xiaohongshu-feed/assets/default_cover.png",
-   "bytes": 2439
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-xiaohongshu-feed/references/core_workflow.md",
-   "bytes": 15570
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-xiaohongshu-feed/references/examples.md",
-   "bytes": 9388
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/playlet-xiaohongshu-feed/scripts/playlet_xhs_daily.py",
-   "bytes": 19615
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/redfox-skill-generator/README.en.md",
-   "bytes": 6879
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/redfox-skill-generator/README.md",
-   "bytes": 6291
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/redfox-skill-generator/SKILL.md",
-   "bytes": 10621
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/redfox-skill-generator/references/core_workflow.md",
-   "bytes": 30247
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/seedance-video-gen/README.en.md",
-   "bytes": 3248
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/seedance-video-gen/README.md",
-   "bytes": 2999
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/seedance-video-gen/SKILL.md",
-   "bytes": 12057
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/seedance-video-gen/scripts/videogen.py",
-   "bytes": 15903
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/seedream-5-lite/README.en.md",
-   "bytes": 3409
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/seedream-5-lite/README.md",
-   "bytes": 3049
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/seedream-5-lite/SKILL.md",
-   "bytes": 12353
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/seedream-5-lite/assets/seedream.py",
-   "bytes": 17212
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/README.en.md",
-   "bytes": 5465
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/README.md",
-   "bytes": 4915
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/SKILL.md",
-   "bytes": 8907
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/assets/article_template.md",
-   "bytes": 1933
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/profiles/投资明见_profile.json",
-   "bytes": 5202
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/profiles/格兰投研_profile.json",
-   "bytes": 5841
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/profiles/猫笔刀_profile.json",
-   "bytes": 6026
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/profiles/终身黑白_profile.json",
-   "bytes": 6231
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/profiles/财躺平_profile.json",
-   "bytes": 8464
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/references/质量准出标准.md",
-   "bytes": 6694
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/scripts/analyze.py",
-   "bytes": 25764
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/scripts/common.py",
-   "bytes": 13784
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/scripts/earnings.py",
-   "bytes": 11672
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/scripts/fetch_market_data.py",
-   "bytes": 6589
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/scripts/portfolio.py",
-   "bytes": 11200
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/scripts/quality_audit.py",
-   "bytes": 25891
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/scripts/stock_screen.py",
-   "bytes": 14812
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/scripts/sync_articles.py",
-   "bytes": 11165
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-analysis/scripts/validate_profile.py",
-   "bytes": 11924
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-feed/README.en.md",
-   "bytes": 4276
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-feed/README.md",
-   "bytes": 3753
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-feed/SKILL.md",
-   "bytes": 6944
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-feed/references/output-rules.md",
-   "bytes": 6172
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/stock-feed/scripts/stock_feed.py",
-   "bytes": 51820
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/toutiao-search/README.en.md",
-   "bytes": 5130
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/toutiao-search/README.md",
-   "bytes": 5237
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/toutiao-search/SKILL.md",
-   "bytes": 5990
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/toutiao-search/assets/report_template.html",
-   "bytes": 30909
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/toutiao-search/scripts/search.py",
-   "bytes": 33080
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub-top10/README.en.md",
-   "bytes": 7313
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub-top10/README.md",
-   "bytes": 6279
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub-top10/SKILL.md",
-   "bytes": 15281
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub-top10/assets/api-data.json",
-   "bytes": 64363
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub-top10/assets/report-template.html",
-   "bytes": 18380
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub-top10/references/instruction-list.md",
-   "bytes": 5360
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub-top10/references/output-templates.md",
-   "bytes": 9690
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub-top10/references/prediction-logic.md",
-   "bytes": 4507
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub-top10/scripts/fetch_hotspot.py",
-   "bytes": 7695
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub-top10/scripts/generate_html_report.py",
-   "bytes": 12053
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub/README.en.md",
-   "bytes": 8603
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub/README.md",
-   "bytes": 8027
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub/SKILL.md",
-   "bytes": 13821
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub/references/instruction-list.md",
-   "bytes": 4734
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub/references/output-templates.md",
-   "bytes": 6892
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub/references/prediction-logic.md",
-   "bytes": 3773
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/trending-hub/scripts/fetch_hotspot.py",
-   "bytes": 14128
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/video-downloader/README.en.md",
-   "bytes": 2742
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/video-downloader/README.md",
-   "bytes": 2623
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/video-downloader/SKILL.md",
-   "bytes": 4197
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/video-downloader/assets/downloader.py",
-   "bytes": 8853
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/video-downloader/presentation.html",
-   "bytes": 49897
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/video-downloader/短视频下载器_Skill_审核演示.pdf",
-   "bytes": 720569
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/video-prompt-expert/README.en.md",
-   "bytes": 5138
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/video-prompt-expert/README.md",
-   "bytes": 4536
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/video-prompt-expert/SKILL.md",
-   "bytes": 5946
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/video-prompt-expert/assets/templates/prompt_templates.json",
-   "bytes": 2169
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/video-prompt-expert/references/core_workflow.md",
-   "bytes": 11483
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/video-prompt-expert/scripts/videogen.py",
-   "bytes": 18223
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/README.en.md",
-   "bytes": 6118
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/README.md",
-   "bytes": 5395
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/SKILL.md",
-   "bytes": 9787
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/assets/02.jpg",
-   "bytes": 499452
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/assets/03.jpg",
-   "bytes": 352640
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/references/article-type-templates.md",
-   "bytes": 7972
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/references/core_workflow.md",
-   "bytes": 12564
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/references/error-handling.md",
-   "bytes": 1167
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/references/image-decision-rules.md",
-   "bytes": 8661
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/references/link-rewrite-guide.md",
-   "bytes": 9651
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/references/persona-matrix.md",
-   "bytes": 6336
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/references/prompt-templates.md",
-   "bytes": 10852
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/references/writing-framework.md",
-   "bytes": 10080
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/scripts/decide_images.py",
-   "bytes": 10883
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/scripts/fetch_article.py",
-   "bytes": 8104
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/scripts/generate_image.py",
-   "bytes": 22454
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/visual-ops-writer/scripts/validate_article.py",
-   "bytes": 20397
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-10w-hot/README.en.md",
-   "bytes": 6632
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-10w-hot/README.md",
-   "bytes": 6004
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-10w-hot/SKILL.md",
-   "bytes": 16025
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-10w-hot/references/api-spec.md",
-   "bytes": 4135
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-10w-hot/references/category-mapping.md",
-   "bytes": 4740
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-10w-hot/scripts/fetch_hot_articles.py",
-   "bytes": 18798
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-10w-hot/scripts/generate_hot_html.py",
-   "bytes": 19750
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-account-analyzer/README.en.md",
-   "bytes": 5773
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-account-analyzer/README.md",
-   "bytes": 4638
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-account-analyzer/SKILL.md",
-   "bytes": 9560
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-account-analyzer/assets/report_template.html",
-   "bytes": 12837
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-account-analyzer/references/api_guide.md",
-   "bytes": 18423
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-account-analyzer/references/core_workflow.md",
-   "bytes": 15594
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-account-analyzer/references/workflow_guide.md",
-   "bytes": 22758
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-account-analyzer/scripts/wechat_analyzer.py",
-   "bytes": 76909
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-channels-ai-feed/README.en.md",
-   "bytes": 3429
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-channels-ai-feed/README.md",
-   "bytes": 3101
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-channels-ai-feed/SKILL.md",
-   "bytes": 4104
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-channels-ai-feed/assets/report_template.html",
-   "bytes": 14907
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-channels-ai-feed/scripts/fetch_sph_ai.py",
-   "bytes": 26498
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-cover/README.en.md",
-   "bytes": 5673
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-cover/README.md",
-   "bytes": 4580
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-cover/SKILL.md",
-   "bytes": 7082
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-cover/references/gzh_trend_data_format.md",
-   "bytes": 7265
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-cover/references/report_template.md",
-   "bytes": 9079
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-cover/scripts/fetch_explosive_covers.py",
-   "bytes": 18243
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-fastest-growing/README.en.md",
-   "bytes": 5374
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-fastest-growing/README.md",
-   "bytes": 4314
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-fastest-growing/SKILL.md",
-   "bytes": 12931
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-fastest-growing/references/api-spec.md",
-   "bytes": 4483
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-fastest-growing/references/core_workflow.md",
-   "bytes": 2913
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-fastest-growing/scripts/fetch_growth_rank.py",
-   "bytes": 9596
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-original-hot/README.en.md",
-   "bytes": 6082
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-original-hot/README.md",
-   "bytes": 5366
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-original-hot/SKILL.md",
-   "bytes": 14615
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-original-hot/references/category_mapping.md",
-   "bytes": 4192
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-original-hot/scripts/fetch_articles.py",
-   "bytes": 20486
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-original-hot/scripts/generate_hot_html.py",
-   "bytes": 19762
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-prohibited-word/README.en.md",
-   "bytes": 7022
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-prohibited-word/README.md",
-   "bytes": 6278
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-prohibited-word/SKILL.md",
-   "bytes": 9941
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-prohibited-word/references/core_workflow.md",
-   "bytes": 15536
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-prohibited-word/scripts/check_sensitive_words.py",
-   "bytes": 13443
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-rewrite/README.en.md",
-   "bytes": 4427
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-rewrite/README.md",
-   "bytes": 4101
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-rewrite/SKILL.md",
-   "bytes": 11175
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-rewrite/assets/platform-rules.md",
-   "bytes": 3981
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-rewrite/scripts/rewrite.py",
-   "bytes": 7439
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-search/README.en.md",
-   "bytes": 7209
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-search/README.md",
-   "bytes": 6605
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-search/SKILL.md",
-   "bytes": 21279
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-search/references/gzh_trend_data_format.md",
-   "bytes": 6218
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-search/scripts/fetch_gzh_trends.py",
-   "bytes": 23778
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-similar-account/README.en.md",
-   "bytes": 7073
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-similar-account/README.md",
-   "bytes": 6100
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-similar-account/SKILL.md",
-   "bytes": 14388
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-similar-account/references/core_workflow.md",
-   "bytes": 11455
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-similar-account/scripts/wechat_similar_accountr.py",
-   "bytes": 36572
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-title/README.en.md",
-   "bytes": 6425
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-title/README.md",
-   "bytes": 5193
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-title/SKILL.md",
-   "bytes": 10481
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-title/scripts/fetch_official_account_trends.py",
-   "bytes": 13391
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-top-account/README.en.md",
-   "bytes": 7293
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-top-account/README.md",
-   "bytes": 5707
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-top-account/SKILL.md",
-   "bytes": 14338
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-top-account/references/core_workflow.md",
-   "bytes": 18934
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-top-account/scripts/gen_gzh_html.py",
-   "bytes": 41587
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-top-account/scripts/gzh_growth_fetcher.py",
-   "bytes": 34495
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-write/README.en.md",
-   "bytes": 6530
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-write/README.md",
-   "bytes": 5335
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-write/SKILL.md",
-   "bytes": 10275
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-write/references/gzh_trend_data_format.md",
-   "bytes": 5159
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/wechat-write/scripts/fetch_gzh_trends.py",
-   "bytes": 12132
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/README.en.md",
-   "bytes": 7878
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/README.md",
-   "bytes": 7034
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/SKILL.md",
-   "bytes": 13191
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/assets/multi_report_data_template.json",
-   "bytes": 2569
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/assets/multi_report_template.html",
-   "bytes": 9966
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/assets/report_data_template.json",
-   "bytes": 3593
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/assets/report_template.html",
-   "bytes": 17379
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/references/api_guide.md",
-   "bytes": 6405
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/references/benchmark_data.md",
-   "bytes": 2262
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/references/report_template.md",
-   "bytes": 11775
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/references/workflow_guide.md",
-   "bytes": 25027
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/scripts/html_checker.py",
-   "bytes": 11350
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/scripts/html_generator.py",
-   "bytes": 28304
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-account-analyzer/scripts/xiaohongshu_analyzer.py",
-   "bytes": 66830
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-ai-feed/README.en.md",
-   "bytes": 3482
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-ai-feed/README.md",
-   "bytes": 3144
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-ai-feed/SKILL.md",
-   "bytes": 4201
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-ai-feed/assets/report_template.html",
-   "bytes": 11110
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-ai-feed/scripts/fetch_xhs_ai.py",
-   "bytes": 26708
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-cover/README.en.md",
-   "bytes": 6041
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-cover/README.md",
-   "bytes": 5339
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-cover/SKILL.md",
-   "bytes": 11723
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-cover/references/core_workflow.md",
-   "bytes": 12321
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-cover/references/xhs_trend_data_format.md",
-   "bytes": 8745
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-cover/scripts/fetch_explosive_covers.py",
-   "bytes": 23278
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-crawler/README.en.md",
-   "bytes": 5328
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-crawler/README.md",
-   "bytes": 4850
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-crawler/SKILL.md",
-   "bytes": 10739
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-crawler/assets/report_template.html",
-   "bytes": 8665
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-crawler/scripts/crawl_xhs.py",
-   "bytes": 4945
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-crawler/scripts/generate_report.py",
-   "bytes": 5849
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-dailytop/README.en.md",
-   "bytes": 5547
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-dailytop/README.md",
-   "bytes": 4518
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-dailytop/SKILL.md",
-   "bytes": 13569
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-dailytop/references/core_workflow.md",
-   "bytes": 28724
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-dailytop/scripts/gen_xhs_html.py",
-   "bytes": 35123
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-dailytop/scripts/xhs_daily_fetcher.py",
-   "bytes": 28984
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-dailytop/scripts/xhs_weekly.html",
-   "bytes": 37728
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-lowtop/README.en.md",
-   "bytes": 5219
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-lowtop/README.md",
-   "bytes": 4403
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-lowtop/SKILL.md",
-   "bytes": 10567
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-lowtop/assets/preview-template.html",
-   "bytes": 11439
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-lowtop/references/api-spec.md",
-   "bytes": 10034
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-lowtop/scripts/fetch_explosive_articles.py",
-   "bytes": 50397
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-lowtop/scripts/generate_html_on_demand.py",
-   "bytes": 5095
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-note-analyzer/README.en.md",
-   "bytes": 5464
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-note-analyzer/README.md",
-   "bytes": 4586
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-note-analyzer/SKILL.md",
-   "bytes": 11942
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-note-analyzer/references/xhs_trend_data_format.md",
-   "bytes": 6249
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-note-analyzer/scripts/fetch_xhs_trends.py",
-   "bytes": 14745
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-prohibited-word/README.en.md",
-   "bytes": 5393
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-prohibited-word/README.md",
-   "bytes": 5081
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-prohibited-word/SKILL.md",
-   "bytes": 11099
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-prohibited-word/references/core_workflow.md",
-   "bytes": 16908
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-prohibited-word/scripts/check_sensitive_words.py",
-   "bytes": 14116
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-prohibited-word/skill-card.md",
-   "bytes": 2452
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-rewrite/README.en.md",
-   "bytes": 3515
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-rewrite/README.md",
-   "bytes": 3551
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-rewrite/SKILL.md",
-   "bytes": 7044
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-rewrite/assets/platform-rules.md",
-   "bytes": 2935
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-rewrite/scripts/rewrite.py",
-   "bytes": 7262
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-search/README.en.md",
-   "bytes": 8595
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-search/README.md",
-   "bytes": 6980
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-search/SKILL.md",
-   "bytes": 28940
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-search/references/xhs_hot_article_format.md",
-   "bytes": 4771
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-search/scripts/fetch_xhs_hot_articles.py",
-   "bytes": 23933
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-similar-account/README.en.md",
-   "bytes": 7454
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-similar-account/README.md",
-   "bytes": 6894
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-similar-account/SKILL.md",
-   "bytes": 10411
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-similar-account/references/account_template.html",
-   "bytes": 4496
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-similar-account/scripts/xiaohongshu-similar-account.py",
-   "bytes": 38617
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-title-score/README.en.md",
-   "bytes": 6411
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-title-score/README.md",
-   "bytes": 5802
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-title-score/SKILL.md",
-   "bytes": 9870
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-title-score/references/guide.md",
-   "bytes": 9093
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-title-score/scripts/fetch_xhs_trends.py",
-   "bytes": 16474
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-title/README.en.md",
-   "bytes": 5890
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-title/README.md",
-   "bytes": 4610
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-title/SKILL.md",
-   "bytes": 11156
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-title/scripts/fetch_xhs_trends.py",
-   "bytes": 22562
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-top-account/README.en.md",
-   "bytes": 7103
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-top-account/README.md",
-   "bytes": 6806
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-top-account/SKILL.md",
-   "bytes": 10783
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-top-account/references/api_docs.md",
-   "bytes": 8303
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-top-account/references/score_rules.md",
-   "bytes": 1028
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-top-account/scripts/fetch_rank.py",
-   "bytes": 36937
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-top-account/scripts/generate_report.py",
-   "bytes": 20862
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-weeklytop/README.en.md",
-   "bytes": 5711
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-weeklytop/README.md",
-   "bytes": 4612
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-weeklytop/SKILL.md",
-   "bytes": 12528
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-weeklytop/references/core_workflow.md",
-   "bytes": 33881
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-weeklytop/scripts/gen_xhs_html.py",
-   "bytes": 21731
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-weeklytop/scripts/xhs_weekly.html",
-   "bytes": 38663
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-weeklytop/scripts/xhs_weekly_fetcher.py",
-   "bytes": 29729
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-write/README.en.md",
-   "bytes": 6335
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-write/README.md",
-   "bytes": 5233
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-write/SKILL.md",
-   "bytes": 12032
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-write/references/xhs_hot_article_format.md",
-   "bytes": 4745
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/xiaohongshu-write/scripts/fetch_xhs_hot_articles.py",
-   "bytes": 23521
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/zhihu-rewrite/README.en.md",
-   "bytes": 3627
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/zhihu-rewrite/README.md",
-   "bytes": 3605
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/zhihu-rewrite/SKILL.md",
-   "bytes": 7799
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/zhihu-rewrite/assets/platform-rules.md",
-   "bytes": 2882
-  },
-  {
-   "path": "domains/redfox-multi/redfox-community/skills/zhihu-rewrite/scripts/rewrite.py",
-   "bytes": 7382
+   "bytes": 1498
   },
   {
    "path": "domains/redfox-multi/redfox-skill-generator/README.en.md",
@@ -15705,7 +13593,7 @@
   },
   {
    "path": "domains/redfox-wechat/INDEX.md",
-   "bytes": 7653
+   "bytes": 7587
   },
   {
    "path": "domains/redfox-wechat/cultural-tourism-wechat-feed/README.en.md",
@@ -16585,7 +14473,7 @@
   },
   {
    "path": "domains/redfox-xiaohongshu/INDEX.md",
-   "bytes": 7262
+   "bytes": 7232
   },
   {
    "path": "domains/redfox-xiaohongshu/cultural-tourism-xiaohongshu-feed/README.en.md",
@@ -17053,7 +14941,7 @@
   },
   {
    "path": "domains/sales/INDEX.md",
-   "bytes": 8248
+   "bytes": 8203
   },
   {
    "path": "domains/sales/account-context/SKILL.md",
@@ -17201,7 +15089,7 @@
   },
   {
    "path": "domains/small-business/INDEX.md",
-   "bytes": 9907
+   "bytes": 9854
   },
   {
    "path": "domains/small-business/ad-manager/SKILL.md",
@@ -18049,7 +15937,7 @@
   },
   {
    "path": "domains/understand/INDEX.md",
-   "bytes": 2225
+   "bytes": 2206
   },
   {
    "path": "domains/understand/understand-chat/SKILL.md",
@@ -18281,7 +16169,7 @@
   },
   {
    "path": "domains/wecom-suite/INDEX.md",
-   "bytes": 4722
+   "bytes": 4697
   },
   {
    "path": "domains/wecom-suite/wecomcli-calendar/SKILL.md",
@@ -18669,7 +16557,7 @@
   },
   {
    "path": "tools/curated_zh.py",
-   "bytes": 42260
+   "bytes": 42257
   },
   {
    "path": "tools/fetch.py",
@@ -18677,11 +16565,11 @@
   },
   {
    "path": "tools/gen_zh_keys.py",
-   "bytes": 7931
+   "bytes": 8089
   },
   {
    "path": "tools/zh_keys.py",
-   "bytes": 58433
+   "bytes": 58389
   }
  ]
 }
