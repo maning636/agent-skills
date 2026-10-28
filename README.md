@@ -7,7 +7,7 @@
 
 ```
 常驻：   INDEX.md            44 行 / 3.5 KB / ~990 tokens
-按需：   domains/<域>/INDEX.md        0.5~6.5 KB（最多 ~1,800 tok）
+按需：   domains/<域>/INDEX.md        0.3~4.8 KB（最多 ~1,600 tok）
 按需：   domains/<域>/<技能>/SKILL.md  3~15 KB
 ────────────────────────────────────────────────
 整包读入（❌ 不要）： 2.7 MB / ~700,000 tokens
@@ -22,6 +22,15 @@
 ```
 技能库：https://raw.githubusercontent.com/maning636/agent-skills/main/INDEX.md
 取用协议：https://raw.githubusercontent.com/maning636/agent-skills/main/FETCH.md
+```
+
+或者直接给 Agent 这一段**更省事的指令**（推荐，效果等同）：
+
+```
+你有一个远程岗位技能库，入口 https://raw.githubusercontent.com/maning636/agent-skills/main/INDEX.md
+（先读它，再按其中的「取用三步」按需拉取 domains/<领域>/INDEX.md 与 domains/<领域>/<技能>/SKILL.md）。
+硬规则：一次只取 1~3 个技能；禁止整包下载整个仓库；技能正文必须来自上面的 URL，不得凭记忆编造流程。
+需要中文检索时用 python tools/fetch.py --search "<关键词>"（克隆后可用）或直接读 L1 的「关键词」列比对。
 ```
 
 **第二步，Agent 自己去取：**

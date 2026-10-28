@@ -15,6 +15,18 @@ https://raw.githubusercontent.com/maning636/agent-skills/main/INDEX.md
 
 **其余所有内容都不进上下文，直到你决定去取。**
 
+如果你想省掉"自己读索引判断"这一步，直接把下面这段写进系统提示即可：
+
+```
+你有一个远程岗位技能库。
+入口：https://raw.githubusercontent.com/maning636/agent-skills/main/INDEX.md
+协议：https://raw.githubusercontent.com/maning636/agent-skills/main/FETCH.md
+硬规则：
+  1. 一次只取 1~3 个技能，禁止整包下载整个仓库；
+  2. 技能正文必须来自上述 URL 的 raw 内容，不得凭记忆编造流程或步骤；
+  3. 任务不匹配任何领域时，明确说"本库无对应技能"，不要硬套。
+```
+
 ---
 
 ## 1. 取用三步
@@ -31,8 +43,8 @@ https://raw.githubusercontent.com/maning636/agent-skills/main/INDEX.md
 
 ### ② 选技能
 
-L1 索引每行有：技能名 / 用途 / 路径 / 大小。
-**用途列就是路由信号** —— 读它、跟用户需求比对、挑 1~3 个。
+L1 索引每行有 5 列：**技能名 / 中文标签 / 关键词（中英双语）/ 路径 / 大小**。
+**关键词列 + 中文标签列就是路由信号** —— 读它、跟用户需求比对、挑 1~3 个。
 
 ### ③ 拉技能文件
 
@@ -54,7 +66,7 @@ python tools/fetch.py --search "面试 评分卡"      # 自动搜 L0+L1，返�
 | 动作 | 拉取量 | tokens |
 |---|---|---:|
 | 常驻 L0 | 3.5 KB | ~990 |
-| 读 L1（一个领域） | 2~6 KB | ~500~1,500 |
+| 读 L1（一个领域） | 0.3~4.8 KB | ~110~1,610 |
 | 拉 1 个技能（典型） | 3~15 KB | ~900~4,200 |
 | **合计（典型任务）** | **~10 KB** | **~2,100~6,400** |
 | ~~整包读入~~ | ~~2.7 MB~~ | ~~700,000~~ ❌ |
@@ -74,7 +86,7 @@ python tools/fetch.py legal/contract-review
 python tools/fetch.py --cache-dir
 ```
 
-缓存目录：`~/.cache/agent-skills/<commit-sha>/`
+缓存目录：`~/.cache/agent-skills/latest/`（可用 `--cache-dir` 打印）
 网络失败时脚本自动降级到缓存；缓存也没有则**报错退出，不伪造内容**。
 
 ---
