@@ -3,7 +3,7 @@
  "version": "1.0.0",
  "layout": "three-tier-progressive-disclosure",
  "l0": "INDEX.md",
- "l0_bytes": 6308,
+ "l0_bytes": 6475,
  "domains": {
   "human-resources": {
    "index": "domains/human-resources/INDEX.md",
@@ -127,16 +127,20 @@
   },
   "growth-ops": {
    "index": "domains/growth-ops/INDEX.md",
-   "skills": 38
+   "skills": 29
+  },
+  "opc": {
+   "index": "domains/opc/INDEX.md",
+   "skills": 14
   },
   "agent-toolkit": {
    "index": "domains/agent-toolkit/INDEX.md",
    "skills": 30
   }
  },
- "total_skills": 453,
- "total_files": 4108,
- "total_bytes": 53187239,
+ "total_skills": 458,
+ "total_files": 4170,
+ "total_bytes": 64709807,
  "raw_base": "https://raw.githubusercontent.com/maning636/agent-skills/main/",
  "files": [
   {
@@ -148,12 +152,16 @@
    "bytes": 39
   },
   {
+   "path": "CATALOG.md",
+   "bytes": 93604
+  },
+  {
    "path": "FETCH.md",
-   "bytes": 9340
+   "bytes": 10045
   },
   {
    "path": "INDEX.md",
-   "bytes": 6308
+   "bytes": 6475
   },
   {
    "path": "LICENSE",
@@ -165,7 +173,7 @@
   },
   {
    "path": "README.md",
-   "bytes": 9478
+   "bytes": 9848
   },
   {
    "path": "domains/agent-toolkit/INDEX.md",
@@ -174,6 +182,10 @@
   {
    "path": "domains/agent-toolkit/agent-reach/SKILL.md",
    "bytes": 2897
+  },
+  {
+   "path": "domains/agent-toolkit/agent-reach/SKILL_en.md",
+   "bytes": 5473
   },
   {
    "path": "domains/agent-toolkit/agent-reach/references/career.md",
@@ -246,6 +258,54 @@
   {
    "path": "domains/agent-toolkit/dashiai-ppt/project/assets/vendor/unicornstudio.umd.js",
    "bytes": 134676
+  },
+  {
+   "path": "domains/agent-toolkit/dashiai-ppt/project/dist/theme-runtime/imported-theme-runtime.theme01.js",
+   "bytes": 769930
+  },
+  {
+   "path": "domains/agent-toolkit/dashiai-ppt/project/dist/theme-runtime/imported-theme-runtime.theme02.js",
+   "bytes": 695708
+  },
+  {
+   "path": "domains/agent-toolkit/dashiai-ppt/project/dist/theme-runtime/imported-theme-runtime.theme03.js",
+   "bytes": 759737
+  },
+  {
+   "path": "domains/agent-toolkit/dashiai-ppt/project/dist/theme-runtime/imported-theme-runtime.theme04.js",
+   "bytes": 1054104
+  },
+  {
+   "path": "domains/agent-toolkit/dashiai-ppt/project/dist/theme-runtime/imported-theme-runtime.theme05.js",
+   "bytes": 1306512
+  },
+  {
+   "path": "domains/agent-toolkit/dashiai-ppt/project/dist/theme-runtime/imported-theme-runtime.theme06.js",
+   "bytes": 712325
+  },
+  {
+   "path": "domains/agent-toolkit/dashiai-ppt/project/dist/theme-runtime/imported-theme-runtime.theme07.js",
+   "bytes": 1146737
+  },
+  {
+   "path": "domains/agent-toolkit/dashiai-ppt/project/dist/theme-runtime/imported-theme-runtime.theme08.js",
+   "bytes": 1223098
+  },
+  {
+   "path": "domains/agent-toolkit/dashiai-ppt/project/dist/theme-runtime/imported-theme-runtime.theme09.js",
+   "bytes": 964510
+  },
+  {
+   "path": "domains/agent-toolkit/dashiai-ppt/project/dist/theme-runtime/imported-theme-runtime.theme10.js",
+   "bytes": 835449
+  },
+  {
+   "path": "domains/agent-toolkit/dashiai-ppt/project/dist/theme-runtime/imported-theme-runtime.theme11.js",
+   "bytes": 990397
+  },
+  {
+   "path": "domains/agent-toolkit/dashiai-ppt/project/dist/theme-runtime/imported-theme-runtime.theme12.js",
+   "bytes": 701037
   },
   {
    "path": "domains/agent-toolkit/dashiai-ppt/project/layout-manifest.json",
@@ -4516,6 +4576,10 @@
    "bytes": 310
   },
   {
+   "path": "domains/content-writing/human-writing/dist/human-writing-lite.md",
+   "bytes": 2690
+  },
+  {
    "path": "domains/content-writing/human-writing/references/fiction.md",
    "bytes": 4910
   },
@@ -5337,7 +5401,7 @@
   },
   {
    "path": "domains/growth-ops/INDEX.md",
-   "bytes": 9529
+   "bytes": 7393
   },
   {
    "path": "domains/growth-ops/absurd/SKILL.md",
@@ -5598,166 +5662,6 @@
   {
    "path": "domains/growth-ops/market-intel/SKILL.md",
    "bytes": 6750
-  },
-  {
-   "path": "domains/growth-ops/opc-asset-ops/SKILL.md",
-   "bytes": 5873
-  },
-  {
-   "path": "domains/growth-ops/opc-asset-ops/agents/openai.yaml",
-   "bytes": 290
-  },
-  {
-   "path": "domains/growth-ops/opc-asset-ops/references/asset-taxonomy.md",
-   "bytes": 156
-  },
-  {
-   "path": "domains/growth-ops/opc-asset-ops/references/knowledge-structure.md",
-   "bytes": 141
-  },
-  {
-   "path": "domains/growth-ops/opc-business-model-design/SKILL.md",
-   "bytes": 5598
-  },
-  {
-   "path": "domains/growth-ops/opc-business-model-design/agents/openai.yaml",
-   "bytes": 323
-  },
-  {
-   "path": "domains/growth-ops/opc-business-model-design/references/bmc-lite.md",
-   "bytes": 189
-  },
-  {
-   "path": "domains/growth-ops/opc-business-model-design/references/lean-canvas-lite.md",
-   "bytes": 219
-  },
-  {
-   "path": "domains/growth-ops/opc-business-model-design/references/pricing-checklist.md",
-   "bytes": 241
-  },
-  {
-   "path": "domains/growth-ops/opc-conversion-loop/SKILL.md",
-   "bytes": 4999
-  },
-  {
-   "path": "domains/growth-ops/opc-conversion-loop/agents/openai.yaml",
-   "bytes": 276
-  },
-  {
-   "path": "domains/growth-ops/opc-conversion-loop/references/channel-playbook.md",
-   "bytes": 184
-  },
-  {
-   "path": "domains/growth-ops/opc-conversion-loop/references/conversion-patterns.md",
-   "bytes": 222
-  },
-  {
-   "path": "domains/growth-ops/opc-dashboard-review/SKILL.md",
-   "bytes": 4943
-  },
-  {
-   "path": "domains/growth-ops/opc-dashboard-review/agents/openai.yaml",
-   "bytes": 312
-  },
-  {
-   "path": "domains/growth-ops/opc-dashboard-review/references/review-metrics.md",
-   "bytes": 166
-  },
-  {
-   "path": "domains/growth-ops/opc-dashboard-review/references/stop-loss-rules.md",
-   "bytes": 181
-  },
-  {
-   "path": "domains/growth-ops/opc-dashboard-review/references/weekly-review-template.md",
-   "bytes": 143
-  },
-  {
-   "path": "domains/growth-ops/opc-mvp-designer/SKILL.md",
-   "bytes": 4804
-  },
-  {
-   "path": "domains/growth-ops/opc-mvp-designer/agents/openai.yaml",
-   "bytes": 286
-  },
-  {
-   "path": "domains/growth-ops/opc-mvp-designer/references/experiment-template.md",
-   "bytes": 169
-  },
-  {
-   "path": "domains/growth-ops/opc-mvp-designer/references/mvp-patterns.md",
-   "bytes": 267
-  },
-  {
-   "path": "domains/growth-ops/opc-niche-positioning/SKILL.md",
-   "bytes": 14917
-  },
-  {
-   "path": "domains/growth-ops/opc-niche-positioning/agents/openai.yaml",
-   "bytes": 295
-  },
-  {
-   "path": "domains/growth-ops/opc-niche-positioning/references/market-scan-checklist.md",
-   "bytes": 256
-  },
-  {
-   "path": "domains/growth-ops/opc-niche-positioning/references/niche-evaluation.md",
-   "bytes": 249
-  },
-  {
-   "path": "domains/growth-ops/opc-niche-positioning/references/positioning-formula.md",
-   "bytes": 200
-  },
-  {
-   "path": "domains/growth-ops/opc-orchestrator/SKILL.md",
-   "bytes": 11079
-  },
-  {
-   "path": "domains/growth-ops/opc-orchestrator/agents/openai.yaml",
-   "bytes": 285
-  },
-  {
-   "path": "domains/growth-ops/opc-orchestrator/references/file-contract.md",
-   "bytes": 3346
-  },
-  {
-   "path": "domains/growth-ops/opc-orchestrator/references/interaction-protocol.md",
-   "bytes": 2709
-  },
-  {
-   "path": "domains/growth-ops/opc-orchestrator/references/stage-map.md",
-   "bytes": 2452
-  },
-  {
-   "path": "domains/growth-ops/opc-resource-audit/SKILL.md",
-   "bytes": 8316
-  },
-  {
-   "path": "domains/growth-ops/opc-resource-audit/agents/openai.yaml",
-   "bytes": 299
-  },
-  {
-   "path": "domains/growth-ops/opc-resource-audit/references/resource-categories.md",
-   "bytes": 2594
-  },
-  {
-   "path": "domains/growth-ops/opc-resource-audit/references/scoring-rubric.md",
-   "bytes": 277
-  },
-  {
-   "path": "domains/growth-ops/opc-value-proposition/SKILL.md",
-   "bytes": 5598
-  },
-  {
-   "path": "domains/growth-ops/opc-value-proposition/agents/openai.yaml",
-   "bytes": 307
-  },
-  {
-   "path": "domains/growth-ops/opc-value-proposition/references/messaging-template.md",
-   "bytes": 255
-  },
-  {
-   "path": "domains/growth-ops/opc-value-proposition/references/vpc-lite.md",
-   "bytes": 321
   },
   {
    "path": "domains/growth-ops/orchestration/SKILL.md",
@@ -10080,6 +9984,10 @@
    "bytes": 15739
   },
   {
+   "path": "domains/lark-suite/lark-base/references/lark-base-cell-value.md",
+   "bytes": 6311
+  },
+  {
    "path": "domains/lark-suite/lark-base/references/lark-base-dashboard-block-config.md",
    "bytes": 20976
   },
@@ -10090,6 +9998,14 @@
   {
    "path": "domains/lark-suite/lark-base/references/lark-base-dashboard.md",
    "bytes": 16731
+  },
+  {
+   "path": "domains/lark-suite/lark-base/references/lark-base-data-analysis-pandas.md",
+   "bytes": 3116
+  },
+  {
+   "path": "domains/lark-suite/lark-base/references/lark-base-data-analysis-python-stdlib.md",
+   "bytes": 3783
   },
   {
    "path": "domains/lark-suite/lark-base/references/lark-base-data-query.md",
@@ -10140,8 +10056,20 @@
    "bytes": 7180
   },
   {
+   "path": "domains/lark-suite/lark-base/references/lark-base-record-batch-create.md",
+   "bytes": 2618
+  },
+  {
+   "path": "domains/lark-suite/lark-base/references/lark-base-record-batch-update.md",
+   "bytes": 2449
+  },
+  {
    "path": "domains/lark-suite/lark-base/references/lark-base-record-history-list.md",
    "bytes": 2747
+  },
+  {
+   "path": "domains/lark-suite/lark-base/references/lark-base-record-query-and-analysis-cloud-sop.md",
+   "bytes": 8645
   },
   {
    "path": "domains/lark-suite/lark-base/references/lark-base-record-query-and-analysis-sop.md",
@@ -11496,6 +11424,10 @@
    "bytes": 2090
   },
   {
+   "path": "domains/lark-suite/lark-sheets/scripts/sheets_df.py",
+   "bytes": 2085
+  },
+  {
    "path": "domains/lark-suite/lark-skill-maker/SKILL.md",
    "bytes": 2542
   },
@@ -12062,6 +11994,306 @@
   {
    "path": "domains/marketing/seo-audit/SKILL.md",
    "bytes": 9830
+  },
+  {
+   "path": "domains/opc/INDEX.md",
+   "bytes": 4631
+  },
+  {
+   "path": "domains/opc/opc-100day-profit/SKILL.md",
+   "bytes": 5417
+  },
+  {
+   "path": "domains/opc/opc-100day-profit/assets/toolkit-09-100-day-plan.md",
+   "bytes": 8184
+  },
+  {
+   "path": "domains/opc/opc-asset-ops/SKILL.md",
+   "bytes": 5903
+  },
+  {
+   "path": "domains/opc/opc-asset-ops/agents/openai.yaml",
+   "bytes": 290
+  },
+  {
+   "path": "domains/opc/opc-asset-ops/references/asset-taxonomy.md",
+   "bytes": 156
+  },
+  {
+   "path": "domains/opc/opc-asset-ops/references/knowledge-structure.md",
+   "bytes": 141
+  },
+  {
+   "path": "domains/opc/opc-business-model-design/SKILL.md",
+   "bytes": 5628
+  },
+  {
+   "path": "domains/opc/opc-business-model-design/agents/openai.yaml",
+   "bytes": 323
+  },
+  {
+   "path": "domains/opc/opc-business-model-design/references/bmc-lite.md",
+   "bytes": 189
+  },
+  {
+   "path": "domains/opc/opc-business-model-design/references/lean-canvas-lite.md",
+   "bytes": 219
+  },
+  {
+   "path": "domains/opc/opc-business-model-design/references/pricing-checklist.md",
+   "bytes": 241
+  },
+  {
+   "path": "domains/opc/opc-compliance/SKILL.md",
+   "bytes": 5125
+  },
+  {
+   "path": "domains/opc/opc-compliance/assets/toolkit-04-city-selection.md",
+   "bytes": 5958
+  },
+  {
+   "path": "domains/opc/opc-compliance/assets/toolkit-05-tax-optimization.md",
+   "bytes": 7582
+  },
+  {
+   "path": "domains/opc/opc-compliance/assets/toolkit-06-contract-template.md",
+   "bytes": 7519
+  },
+  {
+   "path": "domains/opc/opc-compliance/assets/toolkit-10-risk-assessment.md",
+   "bytes": 8509
+  },
+  {
+   "path": "domains/opc/opc-compliance/references/ai-legal-compliance.md",
+   "bytes": 3320
+  },
+  {
+   "path": "domains/opc/opc-compliance/references/entity-selection.md",
+   "bytes": 1851
+  },
+  {
+   "path": "domains/opc/opc-compliance/references/hangzhou-registration.md",
+   "bytes": 4227
+  },
+  {
+   "path": "domains/opc/opc-compliance/references/tax-optimization.md",
+   "bytes": 3053
+  },
+  {
+   "path": "domains/opc/opc-compliance/references/yangtze-delta-registration.md",
+   "bytes": 2478
+  },
+  {
+   "path": "domains/opc/opc-conversion-loop/SKILL.md",
+   "bytes": 5029
+  },
+  {
+   "path": "domains/opc/opc-conversion-loop/agents/openai.yaml",
+   "bytes": 276
+  },
+  {
+   "path": "domains/opc/opc-conversion-loop/references/channel-playbook.md",
+   "bytes": 184
+  },
+  {
+   "path": "domains/opc/opc-conversion-loop/references/conversion-patterns.md",
+   "bytes": 222
+  },
+  {
+   "path": "domains/opc/opc-dashboard-review/SKILL.md",
+   "bytes": 4973
+  },
+  {
+   "path": "domains/opc/opc-dashboard-review/agents/openai.yaml",
+   "bytes": 312
+  },
+  {
+   "path": "domains/opc/opc-dashboard-review/references/review-metrics.md",
+   "bytes": 166
+  },
+  {
+   "path": "domains/opc/opc-dashboard-review/references/stop-loss-rules.md",
+   "bytes": 181
+  },
+  {
+   "path": "domains/opc/opc-dashboard-review/references/weekly-review-template.md",
+   "bytes": 143
+  },
+  {
+   "path": "domains/opc/opc-growth/SKILL.md",
+   "bytes": 4284
+  },
+  {
+   "path": "domains/opc/opc-growth/assets/starter-prompts.md",
+   "bytes": 2628
+  },
+  {
+   "path": "domains/opc/opc-growth/references/conversion-pipeline.md",
+   "bytes": 2607
+  },
+  {
+   "path": "domains/opc/opc-growth/references/delivery-sop.md",
+   "bytes": 2637
+  },
+  {
+   "path": "domains/opc/opc-growth/references/platform-strategies.md",
+   "bytes": 3096
+  },
+  {
+   "path": "domains/opc/opc-growth/references/retention-referral.md",
+   "bytes": 2025
+  },
+  {
+   "path": "domains/opc/opc-mvp-designer/SKILL.md",
+   "bytes": 4834
+  },
+  {
+   "path": "domains/opc/opc-mvp-designer/agents/openai.yaml",
+   "bytes": 286
+  },
+  {
+   "path": "domains/opc/opc-mvp-designer/references/experiment-template.md",
+   "bytes": 169
+  },
+  {
+   "path": "domains/opc/opc-mvp-designer/references/mvp-patterns.md",
+   "bytes": 267
+  },
+  {
+   "path": "domains/opc/opc-niche-positioning/SKILL.md",
+   "bytes": 14947
+  },
+  {
+   "path": "domains/opc/opc-niche-positioning/agents/openai.yaml",
+   "bytes": 295
+  },
+  {
+   "path": "domains/opc/opc-niche-positioning/references/market-scan-checklist.md",
+   "bytes": 256
+  },
+  {
+   "path": "domains/opc/opc-niche-positioning/references/niche-evaluation.md",
+   "bytes": 249
+  },
+  {
+   "path": "domains/opc/opc-niche-positioning/references/positioning-formula.md",
+   "bytes": 200
+  },
+  {
+   "path": "domains/opc/opc-orchestrator/SKILL.md",
+   "bytes": 11109
+  },
+  {
+   "path": "domains/opc/opc-orchestrator/agents/openai.yaml",
+   "bytes": 285
+  },
+  {
+   "path": "domains/opc/opc-orchestrator/references/file-contract.md",
+   "bytes": 3346
+  },
+  {
+   "path": "domains/opc/opc-orchestrator/references/interaction-protocol.md",
+   "bytes": 2709
+  },
+  {
+   "path": "domains/opc/opc-orchestrator/references/stage-map.md",
+   "bytes": 2452
+  },
+  {
+   "path": "domains/opc/opc-resource-audit/SKILL.md",
+   "bytes": 8346
+  },
+  {
+   "path": "domains/opc/opc-resource-audit/agents/openai.yaml",
+   "bytes": 299
+  },
+  {
+   "path": "domains/opc/opc-resource-audit/references/resource-categories.md",
+   "bytes": 2594
+  },
+  {
+   "path": "domains/opc/opc-resource-audit/references/scoring-rubric.md",
+   "bytes": 277
+  },
+  {
+   "path": "domains/opc/opc-strategy/SKILL.md",
+   "bytes": 4524
+  },
+  {
+   "path": "domains/opc/opc-strategy/assets/toolkit-01-niche-evaluation.md",
+   "bytes": 4866
+  },
+  {
+   "path": "domains/opc/opc-strategy/assets/toolkit-02-mvp-checklist.md",
+   "bytes": 5702
+  },
+  {
+   "path": "domains/opc/opc-strategy/assets/toolkit-03-pricing-calculator.md",
+   "bytes": 5415
+  },
+  {
+   "path": "domains/opc/opc-strategy/references/business-model.md",
+   "bytes": 2349
+  },
+  {
+   "path": "domains/opc/opc-strategy/references/mvp-validation.md",
+   "bytes": 2402
+  },
+  {
+   "path": "domains/opc/opc-strategy/references/niche-selection.md",
+   "bytes": 4210
+  },
+  {
+   "path": "domains/opc/opc-techstack/SKILL.md",
+   "bytes": 4241
+  },
+  {
+   "path": "domains/opc/opc-techstack/assets/toolkit-07-cost-tracker.md",
+   "bytes": 7740
+  },
+  {
+   "path": "domains/opc/opc-techstack/assets/toolkit-08-agent-prompts.md",
+   "bytes": 8885
+  },
+  {
+   "path": "domains/opc/opc-techstack/assets/toolkit-11-prompt-library.md",
+   "bytes": 48131
+  },
+  {
+   "path": "domains/opc/opc-techstack/assets/toolkit-12-dify-bot-config.md",
+   "bytes": 13807
+  },
+  {
+   "path": "domains/opc/opc-techstack/references/agent-frameworks.md",
+   "bytes": 2905
+  },
+  {
+   "path": "domains/opc/opc-techstack/references/automation-workflows.md",
+   "bytes": 2286
+  },
+  {
+   "path": "domains/opc/opc-techstack/references/cost-optimization.md",
+   "bytes": 2011
+  },
+  {
+   "path": "domains/opc/opc-techstack/references/tool-configuration.md",
+   "bytes": 2607
+  },
+  {
+   "path": "domains/opc/opc-value-proposition/SKILL.md",
+   "bytes": 5628
+  },
+  {
+   "path": "domains/opc/opc-value-proposition/agents/openai.yaml",
+   "bytes": 307
+  },
+  {
+   "path": "domains/opc/opc-value-proposition/references/messaging-template.md",
+   "bytes": 255
+  },
+  {
+   "path": "domains/opc/opc-value-proposition/references/vpc-lite.md",
+   "bytes": 321
   },
   {
    "path": "domains/operations/INDEX.md",
@@ -13542,6 +13774,14 @@
   {
    "path": "domains/redfox-multi/video-downloader/presentation.html",
    "bytes": 49897
+  },
+  {
+   "path": "domains/redfox-multi/video-downloader/references/platform-tips.md",
+   "bytes": 3386
+  },
+  {
+   "path": "domains/redfox-multi/video-downloader/scripts/download.py",
+   "bytes": 5388
   },
   {
    "path": "domains/redfox-multi/video-downloader/短视频下载器_Skill_审核演示.pdf",
@@ -15996,6 +16236,10 @@
    "bytes": 62950
   },
   {
+   "path": "domains/understand/understand/extract-structure-result.mjs",
+   "bytes": 4005
+  },
+  {
    "path": "domains/understand/understand/extract-structure.mjs",
    "bytes": 11161
   },
@@ -16038,6 +16282,10 @@
   {
    "path": "domains/understand/understand/frameworks/vue.md",
    "bytes": 4487
+  },
+  {
+   "path": "domains/understand/understand/generate-ignore.mjs",
+   "bytes": 2613
   },
   {
    "path": "domains/understand/understand/languages/cpp.md",
@@ -16106,6 +16354,10 @@
   {
    "path": "domains/understand/understand/languages/rust.md",
    "bytes": 2475
+  },
+  {
+   "path": "domains/understand/understand/languages/scala.md",
+   "bytes": 3302
   },
   {
    "path": "domains/understand/understand/languages/shell.md",
@@ -16557,11 +16809,11 @@
   },
   {
    "path": "tools/curated_zh.py",
-   "bytes": 42257
+   "bytes": 42955
   },
   {
    "path": "tools/fetch.py",
-   "bytes": 8564
+   "bytes": 14139
   },
   {
    "path": "tools/gen_zh_keys.py",
@@ -16569,7 +16821,7 @@
   },
   {
    "path": "tools/zh_keys.py",
-   "bytes": 58389
+   "bytes": 59084
   }
  ]
 }

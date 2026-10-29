@@ -1,7 +1,7 @@
 # 技能库索引（L0）
 
-> **这是唯一需要常驻进上下文的内容**（~1,752 tokens）。
-> 其余 50.5 MB、453 个技能正文**全部按需拉取**，绝不整包读入。
+> **这是唯一需要常驻进上下文的内容**（~1,799 tokens）。
+> 其余 61.3 MB、458 个技能正文**全部按需拉取**，绝不整包读入。
 
 ## 取用三步
 
@@ -43,8 +43,9 @@
 | 28 | **红狐·B站** `redfox-bilibili` | B站搜索,UP主作品,B站评论,关键词账号 | 7 | [`domains/redfox-bilibili/INDEX.md`](domains/redfox-bilibili/INDEX.md) |
 | 29 | **红狐·公众号** `redfox-wechat` | 公众号搜索,10w热文,涨粉最快,原创榜,公众号标题 | 21 | [`domains/redfox-wechat/INDEX.md`](domains/redfox-wechat/INDEX.md) |
 | 30 | **红狐·通用** `redfox-multi` | 多平台聚合,AI搜索,热点榜,股票研报,视频下载 | 25 | [`domains/redfox-multi/INDEX.md`](domains/redfox-multi/INDEX.md) |
-| 31 | **商业与增长** `growth-ops` | 竞品分析,客户情报,KPI,销售漏斗,市场情报 | 38 | [`domains/growth-ops/INDEX.md`](domains/growth-ops/INDEX.md) |
-| 32 | **Agent 工具箱** `agent-toolkit` | 网页动画,HTML生成,前端设计,Office文档,电脑操作 | 30 | [`domains/agent-toolkit/INDEX.md`](domains/agent-toolkit/INDEX.md) |
+| 31 | **商业与增长** `growth-ops` | 竞品分析,客户情报,KPI,销售漏斗,市场情报 | 29 | [`domains/growth-ops/INDEX.md`](domains/growth-ops/INDEX.md) |
+| 32 | **AI 一人公司** `opc` | OPC,一人公司,AI创业,选赛道,注册公司,合规,获客,百日盈利 | 14 | [`domains/opc/INDEX.md`](domains/opc/INDEX.md) |
+| 33 | **Agent 工具箱** `agent-toolkit` | 网页动画,HTML生成,前端设计,Office文档,电脑操作 | 30 | [`domains/agent-toolkit/INDEX.md`](domains/agent-toolkit/INDEX.md) |
 
 ## 硬规则
 

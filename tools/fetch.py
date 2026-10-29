@@ -30,9 +30,16 @@ ALT_BASE = "https://github.com/maning636/agent-skills/raw/main/"
 # 目录列举用 GitHub tree API（一次拿全仓文件树，之后走缓存）
 TREE_URL = "https://api.github.com/repos/maning636/agent-skills/git/trees/main?recursive=1"
 CACHE = os.path.join(os.path.expanduser("~"), ".cache", "agent-skills")
-# L0 入口索引的缓存有效期（秒）。它一变整个路由表就失效，代价只有几 KB，
-# 所以允许自动刷新；L1/L2 默认永久缓存，需要时用 --update 手动刷新。
-L0_TTL = 6 * 3600
+# 缓存有效期（秒）。
+# L0 是路由表：变一次整个检索都受影响，所以 1 小时自动刷新（只有几 KB）。
+# L1 是各域清单：新增域时旧缓存里根本没有该域，所以也要自动刷新（32 个共约 120 KB）。
+# L2 技能正文体积大且稳定，默认永久缓存，需要时用 --update 手动刷新。
+L0_TTL = 3600
+L1_TTL = 21600
+
+
+def _is_index(rel):
+    return rel == "INDEX.md" or (rel.startswith("domains/") and rel.endswith("/INDEX.md"))
 
 try:  # Windows 控制台默认 GBK，强制 UTF-8 输出避免中文乱码
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -233,7 +240,8 @@ def do_raw(rel, offline=False, force=False, path_only=False):
         return 2
     try:
         txt, cached = fetch(rel, offline=offline, force=force,
-                            ttl=L0_TTL if rel == "INDEX.md" else 0)
+                            ttl=(L0_TTL if rel == "INDEX.md" else
+                                 L1_TTL if _is_index(rel) else 0))
     except Exception as e:
         print("错误: %s" % e, file=sys.stderr)
         print("提示：该文件不可用。如需它，请告知用户缺少哪个文件，不要凭印象编造内容。", file=sys.stderr)
@@ -261,7 +269,7 @@ def do_search(query, domain=None, limit=12):
     for dname, dzh, dtrig, dcount in doms:
         ds = score(dzh + " " + dtrig, toks, grams)
         try:
-            l1, _ = fetch("domains/%s/INDEX.md" % dname)
+            l1, _ = fetch("domains/%s/INDEX.md" % dname, ttl=L1_TTL)
         except Exception as e:
             print("跳过 %s: %s" % (dname, e), file=sys.stderr)
             continue

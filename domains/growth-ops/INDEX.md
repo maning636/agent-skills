@@ -1,7 +1,7 @@
 # growth-ops — 商业与增长
 
 > **触发场景**：竞品分析、客户情报、KPI看板、销售漏斗、决策评分、市场情报、线索编排、报告自动化
-> **技能数**：38　|　**来源**：本机自研
+> **技能数**：29　|　**来源**：本机自研
 
 | 技能 | 中文标签 | 关键词（中文 / 英文） | 路径 | 大小 |
 |---|---|---|---|---|
@@ -22,15 +22,6 @@
 | `lead-orchestration` | 线索编排 | 线索,leads,销售线索,线索分配,跟进编排 / 线索协同与自动化分发。基于标准 crm 任务/工作流引擎，不绑定特定后端。触发场景：批量分发线索、自动化 follow-up、sdr 任务调… | `domains/growth-ops/lead-orchestration/SKILL.md` | 5.1K |
 | `magazine-layout` | 杂志排版 | 杂志排版,杂志版式,editorial排版,版面设计 | `domains/growth-ops/magazine-layout/SKILL.md` | 7.7K |
 | `market-intel` | 市场情报 | 市场情报,市场规模,行业动态,市场扫描,竞品动态 / 市场情报方法论。覆盖：宏观市场分析、市场规模测算（tam/sam/som）、细分市场选择、增长趋势预测。适用场景：新业务立项、市场扩张决策、… | `domains/growth-ops/market-intel/SKILL.md` | 6.6K |
-| `opc-asset-ops` | 资产运营 | 资产运营,沉淀资产,复用资产,内容资产 / turn repeatable outputs of a one-person company into compounding asset… | `domains/growth-ops/opc-asset-ops/SKILL.md` | 5.7K |
-| `opc-business-model-design` | 商业模式设计 | 商业模式设计,盈利模式设计,价值主张设计,business model / design a viable business model for a one-person company using lean can… | `domains/growth-ops/opc-business-model-design/SKILL.md` | 5.5K |
-| `opc-conversion-loop` | 转化闭环 | 转化闭环,增长闭环,投放转化,落地页转化 / design a conversion loop for a one-person company from reach to lead c… | `domains/growth-ops/opc-conversion-loop/SKILL.md` | 4.9K |
-| `opc-dashboard-review` | 经营看板复盘 | 看板复盘,经营复盘,指标复盘,数据复盘 / review the operating health of a one-person company using lightweight… | `domains/growth-ops/opc-dashboard-review/SKILL.md` | 4.8K |
-| `opc-mvp-designer` | MVP 设计 | mvp,最小可行产品,mvp设计,验证方案,原型范围 / define the smallest viable experiment and mvp for a selected one-perso… | `domains/growth-ops/opc-mvp-designer/SKILL.md` | 4.7K |
-| `opc-niche-positioning` | 细分定位 | 细分定位,利基,垂直定位,定位策略,赛道选择 / find and position a viable niche market for a one-person company by co… | `domains/growth-ops/opc-niche-positioning/SKILL.md` | 14.6K |
-| `opc-orchestrator` | OPC 编排 | 编排,orchestrator,流程编排,跨域协作,调度 / orchestrate the full one-person company workflow across all opc skills… | `domains/growth-ops/opc-orchestrator/SKILL.md` | 10.8K |
-| `opc-resource-audit` | 资源盘点 | 资源盘点,家底盘点,资源清单,盘点 / inventory all founder resources across 8 categories for a one-person c… | `domains/growth-ops/opc-resource-audit/SKILL.md` | 8.1K |
-| `opc-value-proposition` | 价值主张 | 价值主张,value proposition,用户价值,核心价值,差异化 / design value propositions for candidate customer segments and help the… | `domains/growth-ops/opc-value-proposition/SKILL.md` | 5.5K |
 | `orchestration` | 多 Agent 编排 | 编排,多agent,任务编排,subagent,流水线 / use orca orchestration for structured multi-agent coordination: thread… | `domains/growth-ops/orchestration/SKILL.md` | 17.2K |
 | `peers-advisory-group` | 同伴顾问组 | 同伴顾问,同伴评议,peer,顾问组,同行建议 | `domains/growth-ops/peers-advisory-group/SKILL.md` | 10.9K |
 | `personalise` | 个性化方案 | 个性化,定制方案,按需定制,个性化推荐 / take any external input (tutorial, repo, article, prompt, tool, framew… | `domains/growth-ops/personalise/SKILL.md` | 3.9K |
@@ -46,4 +37,4 @@
 
 > 读法：拿用户需求里的关键词去对「关键词」列，命中哪一行就拉哪个路径的 SKILL.md。
 
-> **前置条件**：`opc-*` 系列需先做资源盘点（`opc-resource-audit`）与定位（`opc-niche-positioning`）。
+> 商业增长通用分析。**OPC 一人公司体系已独立成 `opc` 域**，找 OPC 相关请到 `opc`。
