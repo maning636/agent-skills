@@ -4,21 +4,46 @@
     "engineering/debug": {
       "authority": "fallback",
       "superseded_by": "plugin:superpowers/systematic-debugging",
-      "tags": ["engineering", "process", "debug"]
+      "tags": [
+        "engineering",
+        "process",
+        "debug"
+      ]
     },
     "engineering/standup": {
       "authority": "primary",
-      "tags": ["engineering", "process", "standup"]
-    },
-    "agent-toolkit/skill-tuner": {
-      "authority": "fallback",
-      "superseded_by": "plugin:superpowers/writing-skills",
-      "tags": ["agent-toolkit", "process", "skill-tuning"]
+      "tags": [
+        "engineering",
+        "process",
+        "standup"
+      ]
     },
     "cowork-plugin-management/create-cowork-plugin": {
       "authority": "primary",
-      "tags": ["cowork-plugin-management", "process", "cowork"],
+      "tags": [
+        "cowork-plugin-management",
+        "process",
+        "cowork"
+      ],
       "note": "AionUi/Cowork 平台侧插件开发，与 plugin-dev（Claude Code 侧）不冲突"
+    },
+    "agent-toolkit/optimize-skill-md": {
+      "authority": "fallback",
+      "superseded_by": "plugin:superpowers/writing-skills",
+      "tags": [
+        "agent-toolkit",
+        "process",
+        "skill-authoring"
+      ]
+    },
+    "agent-toolkit/tweak": {
+      "authority": "fallback",
+      "superseded_by": "plugin:superpowers/writing-skills",
+      "tags": [
+        "agent-toolkit",
+        "process",
+        "skill-tuning"
+      ]
     }
   },
   "domains": {

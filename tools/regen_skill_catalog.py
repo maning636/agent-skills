@@ -116,6 +116,18 @@ def main():
     for dname, row in rows:
         by_domain.setdefault(dname, []).append(row)
 
+    # 校验：skill_overrides.json / plugin_overlap.json 里的 key 必须指向真实存在的技能
+    live_ids = {r["id"] for _d, r in rows}
+    overrides = load_json("skill_overrides.json")
+    for key in overrides.get("skills", {}):
+        if key not in live_ids:
+            print("!! skill_overrides.json 的 key 不存在: %s" % key)
+    overlap = load_json("plugin_overlap.json")
+    for row in overlap.get("overlap", []) + overlap.get("l0_rows", []):
+        fb = row.get("fallback")
+        if fb and fb not in live_ids:
+            print("!! plugin_overlap.json 的 fallback 不存在: %s" % fb)
+
     # ---- library-level catalog.yaml -------------------------------------
     lib = {
         "version": 1,

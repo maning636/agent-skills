@@ -96,7 +96,7 @@ git worktree、并行子代理、完成前验证、写技能）一律先查插�
 | 企业运营 / 指标口径与实验 | — | 主导 | 插件不得接管 |
 | 交付发布与合规 | — | 主导（`engineering-standard`） | 插件不得接管 |
 
-本库中 `authority: fallback` 的技能只有 `engineering/debug`，
+本库中 `authority: fallback` 的技能是 `engineering/debug`、`agent-toolkit/optimize-skill-md`、`agent-toolkit/tweak`，
 其 `superseded_by` 指向 `plugin:superpowers/systematic-debugging`。
 
 ---

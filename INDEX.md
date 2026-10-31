@@ -1,6 +1,6 @@
 # 技能库索引（L0）
 
-> **这是唯一需要常驻进上下文的内容**（~1924 tokens）。
+> **这是唯一需要常驻进上下文的内容**（~1925 tokens）。
 > 其余按需拉取，186 个技能正文**全部按需拉取**，绝不整包读入。
 
 ## 取用三步
@@ -56,7 +56,7 @@ Agent 若已安装插件，**插件优先**。下表是插件已提供的能力�
 | 并行子代理 / 子代理驱动 | `superpowers/{dispatching-parallel-agents, subagent-driven-development}` | — |
 | 完成前验证 / 分支收尾 | `superpowers/{verification-before-completion, finishing-a-development-branch}` | — |
 | git worktree 隔离开发 | `superpowers/using-git-worktrees` | — |
-| 写技能 / 技能工作流 | `superpowers/writing-skills, skill-creator/skill-creator` | `agent-toolkit/skill-tuner` |
+| 写技能 / 技能工作流 | `superpowers/writing-skills, skill-creator/skill-creator` | `agent-toolkit/optimize-skill-md` |
 | Claude Code 插件 / 命令 / Agent 开发 | `plugin-dev/{plugin-structure, command-development, agent-development, hook-development, mcp-integration}` | — |
 | PRD / 从零路线图 / 定位 / TAM·SAM·SOM / SaaS 指标 / 用户旅程 / 竞品研究 / 视频分镜 | `Product-Manager-Skills-main/{prd-development, roadmap-planning, positioning-statement, tam-sam-som-calculator, saas-*-metrics, customer-journey-map, company-research, storyboard}` | — |
 

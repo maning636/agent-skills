@@ -110,7 +110,9 @@
       "status": "detected",
       "version": "unknown",
       "root": "C:\\Users\\maning\\.claude\\plugins\\marketplaces\\claude-plugins-official\\plugins",
-      "skills": ["skill-creator"]
+      "skills": [
+        "skill-creator"
+      ]
     }
   ],
   "_l0_rows_note": "L0 索引只放 10 行紧凑表；逐条精确对照见下面 overlap 数组（非常驻）",
@@ -153,7 +155,7 @@
     {
       "capability": "写技能 / 技能工作流",
       "plugin": "superpowers/writing-skills, skill-creator/skill-creator",
-      "fallback": "agent-toolkit/skill-tuner"
+      "fallback": "agent-toolkit/optimize-skill-md"
     },
     {
       "capability": "Claude Code 插件 / 命令 / Agent 开发",
@@ -211,7 +213,7 @@
     {
       "capability": "写技能 / 写技能工作流",
       "plugin": "plugin:superpowers/writing-skills, plugin:skill-creator/skill-creator, plugin:Product-Manager-Skills-main/skill-authoring-workflow",
-      "fallback": "agent-toolkit/skill-tuner"
+      "fallback": "agent-toolkit/optimize-skill-md"
     },
     {
       "capability": "插件 / 命令 / Agent 开发（Claude Code 侧）",

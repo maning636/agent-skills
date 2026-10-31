@@ -135,8 +135,11 @@ skills:
   license: 见来源
   tags:
   - agent-toolkit
+  - process
+  - skill-authoring
   deprecated: false
-  authority: primary
+  authority: fallback
+  superseded_by: plugin:superpowers/writing-skills
   keywords: 优化SKILL.md,改进skill,标准化skill格式,skill格式检查,skill优化,需要优化
 - id: agent-toolkit/orca-cli
   name: Orca CLI
@@ -223,6 +226,9 @@ skills:
   license: 见来源
   tags:
   - agent-toolkit
+  - process
+  - skill-tuning
   deprecated: false
-  authority: primary
+  authority: fallback
+  superseded_by: plugin:superpowers/writing-skills
   keywords: 微调,微调代码,小改,调参,tweak
