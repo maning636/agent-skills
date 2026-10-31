@@ -11,6 +11,13 @@ Copyright (c) 2026 maning636
              engineering, design, marketing, sales, legal, finance, operations,
              customer-support, data, enterprise-search, productivity,
              small-business, cowork-plugin-management, pdf-viewer），
+             共 175 个技能；
+             以及 domains/opc/ 下的 9 个 growth-ops 插件技能
+             （opc-resource-audit / opc-niche-positioning /
+              opc-business-model-design / opc-mvp-designer /
+              opc-value-proposition / opc-conversion-loop / opc-asset-ops /
+              opc-dashboard-review / opc-orchestrator），
+             合计 184 个。
              未收录: bio-research（含可执行 Python 与模型数据，出于体积与依赖原因排除）
    各文件 frontmatter 的 origin 字段记录了精确来源与上游 commit。
    Copyright 2026 Anthropic, PBC.
@@ -41,15 +48,7 @@ Copyright (c) 2026 maning636
    all copies or substantial portions of the Software.
 
 --------------------------------------------------------------------------
-3. earthtojake/text-to-cad
-   https://github.com/earthtojake/text-to-cad
-   License: MIT
-   收录内容: domains/cad-3d/ 下的 cad, dxf, sdf, srdf, urdf, gcode, step-parts,
-             sendcutsend, engineering-drawing, dfm, dfam-check
-   各技能目录下的 LICENSE 文件原样保留。
-
---------------------------------------------------------------------------
-4. heygen-com/hyperframes
+3. heygen-com/hyperframes
    https://github.com/heygen-com/hyperframes
    License: Apache License 2.0
    收录内容: domains/hyperframes/ 下的 hyperframes, hyperframes-cli,
@@ -58,46 +57,29 @@ Copyright (c) 2026 maning636
          packages/ 引擎源码（不含 .git 历史）。
 
 --------------------------------------------------------------------------
-5. unnoo/zsxq-skill
-   https://github.com/unnoo/zsxq-skill
-   License: MIT
-   收录内容: domains/content-writing/zsxq
-
---------------------------------------------------------------------------
-6. 飞书官方 skills (open.feishu.cn)
-   License: MIT
-   收录内容: domains/lark-suite/ （28 个技能：lark-im / lark-base / lark-sheets /
-             lark-doc / lark-calendar / lark-task / lark-wiki / lark-approval …）
-
---------------------------------------------------------------------------
-7. WeComTeam/wecom-cli
-   License: MIT
-   来源: https://github.com/WeComTeam/wecom-cli
-   收录内容: domains/wecom-suite/ （14 个技能）
-
---------------------------------------------------------------------------
-8. baoyu-skills（宝玉）
-   License: MIT
-   收录内容: domains/baoyu-content/ （21 个技能）
-   说明: 部分技能依赖同域下的 _shared/packages 与 _shared/scripts（随库一并收录）
-
---------------------------------------------------------------------------
-9. redfox-data/redfox-community
-   收录内容: domains/redfox-xiaohongshu/、redfox-douyin/、redfox-bilibili/、
-             redfox-wechat/、redfox-multi/（合计 87 个技能）
-   说明: 该社区技能按平台拆分为 5 个领域，以避免单个 L1 索引过大。
-         部分技能需要 redfox API 凭证，凭证不在本库内。
-
---------------------------------------------------------------------------
-10. 本机自研 / 手工安装技能（源自 C:\Users\maning\.agents\skills 及其历史备份目录）
+4. 本机自研 / 手工安装技能（源自 C:\Users\maning\.agents\skills）
    License: 见各技能 frontmatter 的 license 字段；未声明者视为作者自研
-   收录内容: dbs-toolkit(21), understand(8), content-writing(7), cad-3d(3),
-             local-tooling(2), growth-ops(38), agent-toolkit(30),
-             以及其余自研与第三方混合包，共 275 个技能
+   收录内容: agent-toolkit(15), growth-ops(13), understand(8),
+             local-tooling(2), opc 本地自研部分(5)，共 43 个
 
    说明: 导入时对所有文本文件做了编码归一化（原 redfox 系列为 GBK，现统一 UTF-8），
          并剔除了 .git / node_modules / dist 等构建产物。技能正文未做内容修改，
          仅重写了 frontmatter（增加 id / domain / origin / license 字段）。
+
+--------------------------------------------------------------------------
+已移除的内容（2026-10-31 精简）
+--------------------------------------------------------------------------
+以下上游内容曾短暂收录，现已从本仓库移除，不再随本仓库分发：
+
+  * earthtojake/text-to-cad (MIT)         -> domains/cad-3d/            14 个
+  * unnoo/zsxq-skill (MIT)               -> domains/content-writing/zsxq
+  * 飞书官方 skills open.feishu.cn (MIT)  -> domains/lark-suite/        28 个
+  * WeComTeam/wecom-cli (MIT)            -> domains/wecom-suite/       14 个
+  * baoyu-skills 宝玉 (MIT)               -> domains/baoyu-content/     21 个
+  * redfox-data/redfox-community          -> domains/redfox-*/         87 个
+  * dontbesilent2025/dbskill (CC BY-NC 4.0) -> domains/dbs-toolkit/     21 个
+    移除原因: 该上游为 **非商业许可（NC）**，与本仓库的 MIT / Apache-2.0 再分发
+              条款不兼容；如需使用请直接访问上游仓库并自行遵守其许可。
 
 --------------------------------------------------------------------------
 关于本地依赖
@@ -105,17 +87,16 @@ Copyright (c) 2026 maning636
 部分技能在运行时会依赖本机环境（而非随技能分发），已在其 SKILL.md 与
 所属领域的 L1 索引中标注，例如：
   * local-ocr  -> 需要本机安装 light-ocr (E:\npm-global\light-ocr.cmd)
-  * cad-3d/*  -> 需要本机 Python CAD 内核 (cadquery / build123d / trimesh)
   * hyperframes/* -> 需要 Node / Bun
-  * lark-suite/*  -> 需要飞书开放平台应用凭证 (app_id / app_secret)
-  * wecom-suite/* -> 需要企业微信 CLI 与机器人身份
-  * redfox-*      -> 需要 redfox API 凭证
-  * prism-* / zsxq / bigtype-poster -> 需要本机浏览器或对应平台登录态
+  * computer-use / orca-cli / orchestration -> 需要 orca CLI 与本机工作台
+  * minimax    -> 需要本机安装 minimax CLI (mmx)
+  * sandcastle-verify -> 需要 sandcastle 环境
 这些依赖不随本仓库分发，使用前请先读对应 SKILL.md 的前置条件。
 
 --------------------------------------------------------------------------
 本仓库自身的原创部分（三级索引结构、INDEX.md / FETCH.md 协议、
-tools/fetch.py、tools/zh_keys.py、manifest.json 生成逻辑、以及各技能
+tools/fetch.py、tools/zh_keys.py、tools/regen_manifest.py、
+tools/regen_catalog.py、manifest.json 生成逻辑、以及各技能
 frontmatter 的重写工作）以 MIT 许可发布，见 LICENSE。
 各技能目录内保留的上游 LICENSE / NOTICE 文件，均继续适用其各自许可。
 --------------------------------------------------------------------------
