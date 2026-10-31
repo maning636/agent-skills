@@ -11,13 +11,15 @@ Copyright (c) 2026 maning636
              engineering, design, marketing, sales, legal, finance, operations,
              customer-support, data, enterprise-search, productivity,
              small-business, cowork-plugin-management, pdf-viewer），
-             共 175 个技能；
-             以及 domains/opc/ 下的 9 个 growth-ops 插件技能
+             共 154 个技能；
+             domains/opc/ 下的 9 个 growth-ops 插件技能
              （opc-resource-audit / opc-niche-positioning /
               opc-business-model-design / opc-mvp-designer /
               opc-value-proposition / opc-conversion-loop / opc-asset-ops /
-              opc-dashboard-review / opc-orchestrator），
-             合计 184 个。
+              opc-dashboard-review / opc-orchestrator）；
+             domains/product-management/ 下的 3 个（pm-roadmap-update,
+             pm-metrics-review, pm-stakeholder-update）。
+             合计 166 个。
              未收录: bio-research（含可执行 Python 与模型数据，出于体积与依赖原因排除）
    各文件 frontmatter 的 origin 字段记录了精确来源与上游 commit。
    Copyright 2026 Anthropic, PBC.
@@ -33,9 +35,12 @@ Copyright (c) 2026 maning636
 2. humanlayer/skills
    https://github.com/humanlayer/skills
    License: MIT
-   收录内容: domains/product-management/{rpi,show-me,visual-pr}
-   修改内容: frontmatter 增加 id/domain/origin/license 字段；
-             所有 $SKILLBASE 变量替换为仓库内相对路径。
+   收录内容: 无（已于 2026-10-31 全部移除，见下方「已移除的内容」）
+   原收录: domains/product-management/{rpi,show-me,visual-pr}
+   移除原因:
+     * show-me —— 与 design-skills-playbook/scene-1-show-me 完全重复
+     * visual-pr —— 与 engineering-standard/PROJECT-RUN/CRAFTS/REVIEW.md 重复
+     * rpi —— 需求-规格-实现全流程，与 write-spec 同族（PRD 类）
    Copyright (c) 2026 HumanLayer
    Permission is hereby granted, free of charge, to any person obtaining a copy
    of this software and associated documentation files (the "Software"), to deal
@@ -59,8 +64,8 @@ Copyright (c) 2026 maning636
 --------------------------------------------------------------------------
 4. 本机自研 / 手工安装技能（源自 C:\Users\maning\.agents\skills）
    License: 见各技能 frontmatter 的 license 字段；未声明者视为作者自研
-   收录内容: agent-toolkit(15), growth-ops(13), understand(8),
-             local-tooling(2), opc 本地自研部分(5)，共 43 个
+   收录内容: agent-toolkit(15), growth-ops(13), understand(7),
+             local-tooling(2), opc 本地自研部分(5)，共 42 个
 
    说明: 导入时对所有文本文件做了编码归一化（原 redfox 系列为 GBK，现统一 UTF-8），
          并剔除了 .git / node_modules / dist 等构建产物。技能正文未做内容修改，

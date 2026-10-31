@@ -1,4 +1,4 @@
-# 技能总目录（22 域 / 235 技能）
+# 技能总目录（22 域 / 213 技能）
 
 | # | 域 | 能做什么 | 技能数 |
 |---|---|---|---:|
@@ -7,22 +7,22 @@
 | 3 | **Agent 工具箱** `agent-toolkit` | Office文档,电脑操作,技能发现与调优,PPT,多模态生成,联网抓取 | 15 |
 | 4 | **AI 一人公司** `opc` | 赛道选择,价值主张,商业模式,MVP,转化闭环,获客,经营复盘 | 14 |
 | 5 | **商业与增长** `growth-ops` | 目标拆解,假设验证,根因分析,同行顾问,决策评分,创意到回款 | 13 |
-| 6 | **产品管理** `product-management` | PRD,需求,路线图,竞品,指标 | 11 |
-| 7 | **数据 / 数据科学** `data` | SQL,数据探查,统计,可视化,仪表盘 | 10 |
-| 8 | **研发 / 工程** `engineering` | 代码评审,调试,架构,故障,发版 | 10 |
-| 9 | **人力资源 / HR** `human-resources` | 招聘,面试,绩效,薪酬,入职 | 9 |
-| 10 | **法务 / 合规** `legal` | 合同,NDA,合规,法律风险 | 9 |
-| 11 | **运营** `operations` | 流程文档,变更,风险,运行手册 | 9 |
-| 12 | **市场 / 营销** `marketing` | 内容创作,邮件序列,SEO,品牌 | 8 |
-| 13 | **语义理解** `understand` | 语义分析,差异理解,知识抽取,通俗解释 | 8 |
-| 14 | **财务** `finance` | 记账,对账,结账,报表,差异分析 | 8 |
-| 15 | **设计** `design` | 设计评审,无障碍,设计交付,设计系统 | 7 |
-| 16 | **HyperFrames 动效** `hyperframes` | 网页动效,动效引擎,转场,网页转视频 | 5 |
-| 17 | **企业搜索** `enterprise-search` | 跨源检索,知识综合,日报 | 5 |
-| 18 | **客户支持** `customer-support` | 工单,回复,升级,知识库 | 5 |
-| 19 | **个人生产力** `productivity` | 任务管理,记忆管理,日常同步 | 4 |
-| 20 | **插件 / 技能工程** `cowork-plugin-management` | 创建插件,定制插件 | 2 |
-| 21 | **本机工具** `local-tooling` | 离线OCR,截图识文,Skill调优 | 2 |
+| 6 | **数据 / 数据科学** `data` | SQL,数据探查,统计,可视化,仪表盘 | 10 |
+| 7 | **人力资源 / HR** `human-resources` | 招聘,面试,绩效,薪酬,入职 | 9 |
+| 8 | **法务 / 合规** `legal` | 合同,NDA,合规,法律风险 | 9 |
+| 9 | **运营** `operations` | 流程文档,变更,风险,运行手册 | 9 |
+| 10 | **财务** `finance` | 记账,对账,结账,报表,差异分析 | 8 |
+| 11 | **设计** `design` | 设计评审,无障碍,设计交付,设计系统 | 7 |
+| 12 | **语义理解** `understand` | 语义分析,差异理解,知识抽取,通俗解释 | 7 |
+| 13 | **HyperFrames 动效** `hyperframes` | 网页动效,动效引擎,转场,网页转视频 | 5 |
+| 14 | **企业搜索** `enterprise-search` | 跨源检索,知识综合,日报 | 5 |
+| 15 | **客户支持** `customer-support` | 工单,回复,升级,知识库 | 5 |
+| 16 | **个人生产力** `productivity` | 任务管理,记忆管理,日常同步 | 4 |
+| 17 | **产品管理** `product-management` | PRD,需求,路线图,竞品,指标 | 3 |
+| 18 | **市场 / 营销** `marketing` | 内容创作,邮件序列,SEO,品牌 | 3 |
+| 19 | **插件 / 技能工程** `cowork-plugin-management` | 创建插件,定制插件 | 2 |
+| 20 | **本机工具** `local-tooling` | 离线OCR,截图识文,Skill调优 | 2 |
+| 21 | **研发 / 工程** `engineering` | 代码评审,调试,架构,故障,发版 | 2 |
 | 22 | **PDF 处理** `pdf-viewer` | PDF,批注,填表,签名 | 1 |
 
 ## 小企业 / 团队经营 `small-business`  — 44 个
@@ -162,20 +162,6 @@
 - **风险评分** `risk-scoring` — 风险评分,风险量化,风险等级,风险评估,打分模型
 - **六顶思考帽** `six-thinking-hats` — 六顶帽,思维帽,多角度思考,批判视角
 
-## 产品管理 `product-management`  — 11 个
-
-- **产品指标复盘** `metrics-review` — 指标,数据复盘,留存,转化,北极星指标,效果分析 / review and analyze product metrics with trend analysis and actionable…
-- **竞品分析简报** `pm-competitive-brief` — 竞品,竞争对手,对标分析,竞品拆解,功能对比 / create a competitive analysis brief for one or more competitors or a f…
-- **产品头脑风暴** `product-brainstorming` — 头脑风暴,创意发散,问题定义,假设挑战,灵感,点子 / brainstorm product ideas, explore problem spaces, and challenge assump…
-- **路线图维护** `roadmap-update` — 路线图,roadmap,排期,优先级,版本规划,迭代规划 / update, create, or reprioritize your product roadmap.
-- **PRD 全流程研发流水线** `rpi` — prd,需求文档,全流程,研究,设计讨论,技术设计,tdd,实现,流水线,需求到代码 / only use when the user explicitly invokes this skill by name.
-- **可视化讲解产物** `show-me` — 可视化,图示,演示,可视化讲解,图表,示意,可视化预览 / help the user understand the current topic visually with concise diagr…
-- **迭代计划** `sprint-planning` — sprint,迭代计划,冲刺,工作拆分,容量估算 / plan a sprint — scope work, estimate capacity, set goals, and draft a…
-- **干系人同步** `stakeholder-update` — 周报,汇报,向上汇报,同步进展,干系人,状态同步 / generate a stakeholder update tailored to audience and cadence.
-- **用户研究综合** `synthesize-research` — 用户研究,访谈,问卷,调研,洞察,综合分析 / synthesize user research from interviews, surveys, and feedback into s…
-- **可视化 PR 描述** `visual-pr` — pull request,pr描述,pr说明,可视化pr,变更说明 / only use when the user explicitly invokes this skill by name.
-- **需求文档 PRD 撰写** `write-spec` — prd,需求文档,需求规格,功能规格,产品需求,prd撰写 / write a feature spec or prd from a problem statement or feature idea.
-
 ## 数据 / 数据科学 `data`  — 10 个
 
 - **数据分析** `analyze` — 数据问题,分析问题,洞察,算指标 / answer data questions -- from quick lookups to full analyses.
@@ -188,19 +174,6 @@
 - **统计分析** `statistical-analysis` — 统计,假设检验,离群点,趋势分析,显著性 / apply statistical methods including descriptive stats, trend analysis…
 - **数据校验** `validate-data` — 数据校验,口径核对,偏差检查,准确性 / qa an analysis before sharing -- methodology, accuracy, and bias check…
 - **SQL 编写** `write-query` — sql,写查询,取数,数仓查询 / write optimized sql for your dialect with best practices.
-
-## 研发 / 工程 `engineering`  — 10 个
-
-- **架构决策记录** `architecture` — 架构决策,adr,技术选型,架构评审,选型对比 / create or evaluate an architecture decision record (adr).
-- **代码评审** `code-review` — 代码评审,code review,代码审查,合并评审,cr / a pr url or diff, review this before i merge, is this code safe?, injection risks, missing edge cases, or error handling gaps
-- **结构化调试** `debug` — 调试,debug,排查问题,定位bug,复现,修bug / an error message or stack trace, this works in staging but not prod, something broke after the deploy
-- **发版前检查** `deploy-checklist` — 发版,上线检查,发布清单,部署检查,上线前 / pre-deployment verification checklist.
-- **技术文档** `documentation` — 技术文档,readme,运维手册,新人文档,接口文档 / write docs for, document this, create a readme, write a runbook, onboarding guide, architecture docs
-- **故障应急响应** `incident-response` — 故障,事故,应急,值班,线上问题,复盘 / we have an incident, production is down, an alert that needs severity assessment, a status update mid-incident
-- **站会同步** `standup` — 站会,日报,进度同步,晨会,工作汇报 / generate a standup update from recent activity.
-- **系统设计** `system-design` — 系统设计,架构设计,服务设计,技术方案,系统方案 / design a system for, how should we architect, system design for, what's the right architecture for, data modeling, or service boundaries
-- **技术债治理** `tech-debt` — 技术债,代码健康度,重构优先级,历史包袱 / tech debt, technical debt audit, what should we refactor, code health, refactoring priorities, or maintenance backlog
-- **测试策略** `testing-strategy` — 测试策略,测试计划,用例设计,怎么测,质量保障 / how should we test, test strategy for, write tests for, test plan, what tests do we need, coverage
 
 ## 人力资源 / HR `human-resources`  — 9 个
 
@@ -238,28 +211,6 @@
 - **运营状态报告** `status-report` — 运营周报,kpi,风险与行动项 / generate a status report with kpis, risks, and action items.
 - **供应商评估** `vendor-review` — 供应商评估,成本分析,供应商风险,推荐结论 / evaluate a vendor — cost analysis, risk assessment, and recommendation…
 
-## 市场 / 营销 `marketing`  — 8 个
-
-- **品牌一致性检查** `brand-review` — 品牌,品牌调性,口吻,style guide,文案审校 / review content against your brand voice, style guide, and messaging pi…
-- **营销活动方案** `campaign-plan` — 活动策划,投放方案,营销方案,campaign,活动日历 / generate a full campaign brief with objectives, audience, messaging, c…
-- **营销内容创作** `content-creation` — 内容创作,博客,公众号,小红书,社交媒体,落地页,新闻稿 / draft marketing content across channels — blog posts, social media, em…
-- **多渠道内容起草** `draft-content` — 文案撰写,文章起草,推文,邮件稿,案例稿 / draft blog posts, social media, email newsletters, landing pages, pres…
-- **邮件序列** `email-sequence` — 邮件营销,EDM,培育序列,邮件自动化,召回邮件 / design and draft multi-email sequences with full copy, timing, branchi…
-- **营销竞品简报** `mkt-competitive-brief` — 竞品营销,对手打法,内容差距,定位对比 / research competitors and generate a positioning and messaging comparis…
-- **营销效果报告** `performance-report` — 投放效果,营销数据,ROI,获客成本,营销复盘 / build a marketing performance report with key metrics, trend analysis…
-- **SEO 审计** `seo-audit` — seo,搜索引擎优化,关键词,收录,站点体检,内容缺口 / run a comprehensive seo audit — keyword research, on-page analysis, co…
-
-## 语义理解 `understand`  — 8 个
-
-- **语义理解引擎** `understand` — understand,理解,语义分析,读懂 / analyze a codebase to produce an interactive knowledge graph for under…
-- **对话式理解** `understand-chat` — 对话,chat,提问,问答理解 / use when you need to ask questions about a codebase or understand code…
-- **理解看板** `understand-dashboard` — 仪表盘,dashboard,概览,总览 / launch the interactive web dashboard to visualize a codebase's knowled…
-- **差异理解** `understand-diff` — diff,差异,变更对比,改了哪里 / use when you need to analyze git diffs or pull requests to understand…
-- **领域语义建模** `understand-domain` — 领域,domain,领域模型,业务语义 / extract business domain knowledge from a codebase and generate an inte…
-- **通俗解释生成** `understand-explain` — 解释,explain,通俗解释,讲明白 / use when you need a deep-dive explanation of a specific file, function…
-- **知识结构化理解** `understand-knowledge` — 知识,knowledge,知识图谱,知识抽取 / analyze a karpathy-pattern llm wiki knowledge base and generate an int…
-- **上手引导** `understand-onboard` — 上手,onboard,入门,快速开始 / use when you need to generate an onboarding guide for new team members…
-
 ## 财务 `finance`  — 8 个
 
 - **内审支持** `audit-support` — sox,内控测试,审计底稿,抽样 / support sox 404 compliance with control testing methodology, sample se…
@@ -280,6 +231,16 @@
 - **研究结论综合** `research-synthesis` — 研究结论,主题归纳,用户洞察,研究综合 / synthesize user research into themes, insights, and recommendations.
 - **用户研究方案** `user-research` — 用户研究,访谈提纲,可用性测试,问卷设计,调研方案 / user research plan, interview guide, usability test, survey design, research questions
 - **UX 文案** `ux-copy` — 微文案,界面文案,错误提示,空状态,按钮文案,提示语 / write copy for, what should this button say?, review this error message, or when naming a cta, wording a confirmation dialog, filling an empty state
+
+## 语义理解 `understand`  — 7 个
+
+- **语义理解引擎** `understand` — understand,理解,语义分析,读懂 / analyze a codebase to produce an interactive knowledge graph for under…
+- **对话式理解** `understand-chat` — 对话,chat,提问,问答理解 / use when you need to ask questions about a codebase or understand code…
+- **理解看板** `understand-dashboard` — 仪表盘,dashboard,概览,总览 / launch the interactive web dashboard to visualize a codebase's knowled…
+- **差异理解** `understand-diff` — diff,差异,变更对比,改了哪里 / use when you need to analyze git diffs or pull requests to understand…
+- **领域语义建模** `understand-domain` — 领域,domain,领域模型,业务语义 / extract business domain knowledge from a codebase and generate an inte…
+- **通俗解释生成** `understand-explain` — 解释,explain,通俗解释,讲明白 / use when you need a deep-dive explanation of a specific file, function…
+- **知识结构化理解** `understand-knowledge` — 知识,knowledge,知识图谱,知识抽取 / analyze a karpathy-pattern llm wiki knowledge base and generate an int…
 
 ## HyperFrames 动效 `hyperframes`  — 5 个
 
@@ -312,6 +273,18 @@
 - **任务管理** `task-management` — 待办,todo,任务清单,任务追踪 / simple task management using a shared tasks.md file…
 - **同步任务与记忆** `update` — 同步,刷新记忆,更新状态 / sync tasks and refresh memory from your current activity.
 
+## 产品管理 `product-management`  — 3 个
+
+- **产品指标复盘** `metrics-review` — 指标,数据复盘,留存,转化,北极星指标,效果分析 / review and analyze product metrics with trend analysis and actionable…
+- **路线图维护** `roadmap-update` — 路线图,roadmap,排期,优先级,版本规划,迭代规划 / update, create, or reprioritize your product roadmap.
+- **干系人同步** `stakeholder-update` — 周报,汇报,向上汇报,同步进展,干系人,状态同步 / generate a stakeholder update tailored to audience and cadence.
+
+## 市场 / 营销 `marketing`  — 3 个
+
+- **品牌一致性检查** `brand-review` — 品牌,品牌调性,口吻,style guide,文案审校 / review content against your brand voice, style guide, and messaging pi…
+- **营销活动方案** `campaign-plan` — 活动策划,投放方案,营销方案,campaign,活动日历 / generate a full campaign brief with objectives, audience, messaging, c…
+- **邮件序列** `email-sequence` — 邮件营销,EDM,培育序列,邮件自动化,召回邮件 / design and draft multi-email sequences with full copy, timing, branchi…
+
 ## 插件 / 技能工程 `cowork-plugin-management`  — 2 个
 
 - **定制组织插件** `cowork-plugin-customizer` — 定制插件,组织适配,改插件,接mcp / customize a claude code plugin for a specific organization's tools and…
@@ -321,6 +294,11 @@
 
 - **本地离线 OCR 识文** `local-ocr` — ocr,截图识文,离线识别,图片转文字,发票识别,文字提取 / extract text from local images (png, jpeg) with precise coordinates, c…
 - **Skill 调优评测** `skill-tuner` — skill调优,优化skill,技能测试,skill评分,技能评测 / 调整、优化、重写其他 skill 时必须使用的元 skill。当任务涉及修改任何 skill.md（新增规则、改写措辞、删除内容、全文重写）…
+
+## 研发 / 工程 `engineering`  — 2 个
+
+- **结构化调试** `debug` — 调试,debug,排查问题,定位bug,复现,修bug / an error message or stack trace, this works in staging but not prod, something broke after the deploy
+- **站会同步** `standup` — 站会,日报,进度同步,晨会,工作汇报 / generate a standup update from recent activity.
 
 ## PDF 处理 `pdf-viewer`  — 1 个
 

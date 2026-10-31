@@ -1,16 +1,16 @@
 # agent-skills
 
-> **235 个岗位技能，按需远程加载，常驻上下文只有 ~1,290 tokens。**
+> **213 个岗位技能，按需远程加载，常驻上下文只有 ~1,290 tokens。**
 
 一个给任意 Agent 用的技能库。设计上只让 Agent 常驻一张**领域路由表**，具体技能**用时再拉**——
-不把 12.8 MB 技能正文整包塞进上下文。
+不把 12.1 MB 技能正文整包塞进上下文。
 
 ```
 常驻：   INDEX.md                    4.9 KB / ~1,290 tokens
 按需：   domains/<域>/INDEX.md       0.6~9.6 KB（最多 ~2,600 tok）
 按需：   domains/<域>/<技能>/SKILL.md 3~15 KB
 ────────────────────────────────────────────────────────────
-整包读入（❌ 不要）： 12.8 MB / ~3,900,000 tokens
+整包读入（❌ 不要）： 12.1 MB / ~3,690,000 tokens
 ```
 
 ---
@@ -57,7 +57,7 @@ python tools/fetch.py --cache-dir                       # 缓存位置
 
 ---
 
-## 库里有什么（22 个领域 / 235 个技能）
+## 库里有什么（22 个领域 / 213 个技能）
 
 | 领域 | 技能数 | L1 大小 | 说明 |
 |---|---:|---:|---|
@@ -66,15 +66,15 @@ python tools/fetch.py --cache-dir                       # 缓存位置
 | `agent-toolkit` | 15 | 3.7 KB | Office 文档、电脑操作、技能发现与调优、技能发布、PPT、多模态生成、联网抓取 |
 | `opc` | 14 | 4.5 KB | **AI 一人公司**：赛道选择、价值主张、商业模式、MVP、转化闭环、获客、经营复盘、工具栈 |
 | `growth-ops` | 13 | 3.7 KB | 目标拆解、假设验证、根因分析、同行顾问、决策评分、创意到回款 |
-| `product-management` | 11 | 3.3 KB | PRD、路线图、竞品、指标；另含 HumanLayer `rpi` 全流程 |
+| `product-management` | 3 | 1.4 KB | 路线图维护、指标评审、干系人同步 |
 | `data` | 10 | 2.4 KB | SQL、探查、统计、可视化、仪表盘 |
-| `engineering` | 10 | 2.8 KB | 代码评审、调试、架构、故障应急、发版、测试策略、技术债 |
+| `engineering` | 2 | 0.9 KB | 调试方法、站会引导 |
 | `human-resources` | 9 | 2.5 KB | 招聘、面试、绩效、薪酬、组织 |
 | `legal` | 9 | 2.3 KB | 合同、NDA、合规、法律风险、供应商审查 |
 | `operations` | 9 | 2.3 KB | 流程文档、变更、风险、运行手册、容量规划 |
-| `marketing` | 8 | 2.2 KB | 内容创作、邮件序列、SEO、品牌、竞品情报 |
+| `marketing` | 3 | 1.2 KB | 品牌评审、营销活动计划、邮件序列 |
 | `finance` | 8 | 2.1 KB | 记账、对账、结账、报表、差异分析 |
-| `understand` | 8 | 2.2 KB | 语义分析、差异理解、知识抽取、通俗解释、领域建模、上手引导 |
+| `understand` | 7 | 2.1 KB | 代码库知识图谱、diff 影响面、深度解读、领域建模 |
 | `design` | 7 | 2.0 KB | 设计评审、无障碍、设计交付、设计系统、UX 文案 |
 | `customer-support` | 5 | 1.5 KB | 工单分级、回复、升级、知识库 |
 | `enterprise-search` | 5 | 1.4 KB | 跨源检索、知识综合、日报 |
@@ -84,11 +84,11 @@ python tools/fetch.py --cache-dir                       # 缓存位置
 | `local-tooling` | 2 | 1.1 KB | 离线 OCR 截图识文、Skill 调优评测 |
 | `pdf-viewer` | 1 | 0.6 KB | PDF 批注、填表、签名 |
 
-**共 235 个技能 / 1,661 个文件 / 12.81 MB**
+**共 213 个技能 / 1,565 个文件 / 12.09 MB**
 
 | 来源批次 | 技能数 |
 |---|---:|
-| Anthropic `knowledge-work-plugins`（16 个插件，已排除 `bio-research`） | 184 |
+| Anthropic `knowledge-work-plugins`（16 个插件，已排除 `bio-research`） | 162 |
 | HumanLayer `skills`（rpi / show-me / visual-pr） | 3 |
 | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | 5 |
 | 本机自研（`agent-toolkit` / `growth-ops` / `understand` / `local-tooling` / OPC 体系） | 43 |
@@ -100,7 +100,7 @@ python tools/fetch.py --cache-dir                       # 缓存位置
 
 | | 传统 skill 机制 | 本库 |
 |---|---|---|
-| 常驻上下文 | 全部 skill 的 name+description ≈ **14,000 tok** | **~1,290 tok** |
+| 常驻上下文 | 全部 skill 的 name+description ≈ **12,600 tok** | **~1,290 tok** |
 | 取用方式 | 已经在 prompt 里，直接展开 | 按需拉取，单次 3~15 KB |
 | 行为约束 | 强：进 prompt 就等于激活 | 弱：Agent 自己决定取不取 |
 | 更新 | 要重新 import / 重启 | push 即生效，全员同步 |
@@ -126,6 +126,14 @@ python tools/fetch.py --cache-dir                       # 缓存位置
 > **已剔除的非 MIT / 非商业内容**：飞书 `lark-suite`、企业微信 `wecom-suite`、宝玉 `baoyu-content`、
 > 红狐 `redfox-*`（5 域）、`cad-3d`、`content-writing`、DBS `dbs-toolkit`（CC BY-NC 4.0）。
 > 本仓库只保留 MIT / Apache-2.0 / 本机自研内容。
+
+> **已剔除的重复能力（2026-10-31 第二批）**：与 `engineering-standard`（P0-P6 / CRAFTS / RELEASE）、
+> `design-skills-playbook`（7 场景路由）、`agent-workspace-spec`（工作区 + 元库规范）重复的
+> 22 个 Anthropic skill 已被删除：代码评审、测试策略、发版检查单、事故响应、文档、架构、系统设计、
+> 技术债（→ engineering-standard）、onboarding 指南（→ engineering-standard §4）、
+> 竞品分析 ×2、SEO 审计、效果报告、内容创作 ×2（→ sales / small-business / 自媒体内容）、
+> PRD 写规格、rpi、需求-实现全流程、show-me（→ design-skills-playbook）、sprint 规划、
+> 研究综合、PR 视觉评审、产品头脑风暴（→ OPC + growth-ops）。
 
 ---
 

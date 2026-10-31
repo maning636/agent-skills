@@ -1,7 +1,7 @@
 # understand — 语义理解
 
 > **触发场景**：语义分析、差异理解、知识抽取、通俗解释、领域建模、上手引导
-> **技能数**：8　|　**来源**：语义理解,差异理解,知识抽取,通俗解释,领域建模,看板
+> **技能数**：7　|　**来源**：语义理解,差异理解,知识抽取,通俗解释,领域建模,看板
 
 | 技能 | 中文标签 | 关键词（中文 / 英文） | 路径 | 大小 |
 |---|---|---|---|---|
@@ -12,7 +12,6 @@
 | `understand-domain` | 领域语义建模 | 领域,domain,领域模型,业务语义 / extract business domain knowledge from a codebase and generate an inte… | `domains/understand/understand-domain/SKILL.md` | 7.5K |
 | `understand-explain` | 通俗解释生成 | 解释,explain,通俗解释,讲明白 / use when you need a deep-dive explanation of a specific file, function… | `domains/understand/understand-explain/SKILL.md` | 3.4K |
 | `understand-knowledge` | 知识结构化理解 | 知识,knowledge,知识图谱,知识抽取 / analyze a karpathy-pattern llm wiki knowledge base and generate an int… | `domains/understand/understand-knowledge/SKILL.md` | 5.4K |
-| `understand-onboard` | 上手引导 | 上手,onboard,入门,快速开始 / use when you need to generate an onboarding guide for new team members… | `domains/understand/understand-onboard/SKILL.md` | 3.4K |
 
 > 读法：拿用户需求里的关键词去对「关键词」列，命中哪一行就拉哪个路径的 SKILL.md。
 

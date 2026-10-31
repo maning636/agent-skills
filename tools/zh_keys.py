@@ -55,16 +55,8 @@ ZH = {
 "design/ux-copy": ("UX 文案", "微文案,界面文案,错误提示,空状态,按钮文案,提示语"),
 
 # ---- engineering ----
-"engineering/architecture": ("架构决策记录", "架构决策,adr,技术选型,架构评审,选型对比"),
-"engineering/code-review": ("代码评审", "代码评审,code review,代码审查,合并评审,cr"),
 "engineering/debug": ("结构化调试", "调试,debug,排查问题,定位bug,复现,修bug"),
-"engineering/deploy-checklist": ("发版前检查", "发版,上线检查,发布清单,部署检查,上线前"),
-"engineering/documentation": ("技术文档", "技术文档,readme,运维手册,新人文档,接口文档"),
-"engineering/incident-response": ("故障应急响应", "故障,事故,应急,值班,线上问题,复盘"),
 "engineering/standup": ("站会同步", "站会,日报,进度同步,晨会,工作汇报"),
-"engineering/system-design": ("系统设计", "系统设计,架构设计,服务设计,技术方案,系统方案"),
-"engineering/tech-debt": ("技术债治理", "技术债,代码健康度,重构优先级,历史包袱"),
-"engineering/testing-strategy": ("测试策略", "测试策略,测试计划,用例设计,怎么测,质量保障"),
 
 # ---- enterprise-search ----
 "enterprise-search/digest": ("活动摘要", "日报,周报摘要,每日简报,自动汇总"),
@@ -134,12 +126,7 @@ ZH = {
 # ---- marketing ----
 "marketing/brand-review": ("品牌一致性检查", "品牌,品牌调性,口吻,style guide,文案审校"),
 "marketing/campaign-plan": ("营销活动方案", "活动策划,投放方案,营销方案,campaign,活动日历"),
-"marketing/content-creation": ("营销内容创作", "内容创作,博客,公众号,小红书,社交媒体,落地页,新闻稿"),
-"marketing/draft-content": ("多渠道内容起草", "文案撰写,文章起草,推文,邮件稿,案例稿"),
 "marketing/email-sequence": ("邮件序列", "邮件营销,EDM,培育序列,邮件自动化,召回邮件"),
-"marketing/mkt-competitive-brief": ("营销竞品简报", "竞品营销,对手打法,内容差距,定位对比"),
-"marketing/performance-report": ("营销效果报告", "投放效果,营销数据,ROI,获客成本,营销复盘"),
-"marketing/seo-audit": ("SEO 审计", "seo,搜索引擎优化,关键词,收录,站点体检,内容缺口"),
 
 # ---- opc ----
 "opc/opc-100day-profit": ("百日盈利蓝图", "AI一人公司,百日盈利,100天,盈利计划,启动路线,新手起步"),
@@ -173,16 +160,8 @@ ZH = {
 
 # ---- product-management ----
 "product-management/metrics-review": ("产品指标复盘", "指标,数据复盘,留存,转化,北极星指标,效果分析"),
-"product-management/pm-competitive-brief": ("竞品分析简报", "竞品,竞争对手,对标分析,竞品拆解,功能对比"),
-"product-management/product-brainstorming": ("产品头脑风暴", "头脑风暴,创意发散,问题定义,假设挑战,灵感,点子"),
 "product-management/roadmap-update": ("路线图维护", "路线图,roadmap,排期,优先级,版本规划,迭代规划"),
-"product-management/rpi": ("PRD 全流程研发流水线", "prd,需求文档,全流程,研究,设计讨论,技术设计,tdd,实现,流水线,需求到代码"),
-"product-management/show-me": ("可视化讲解产物", "可视化,图示,演示,可视化讲解,图表,示意,可视化预览"),
-"product-management/sprint-planning": ("迭代计划", "sprint,迭代计划,冲刺,工作拆分,容量估算"),
 "product-management/stakeholder-update": ("干系人同步", "周报,汇报,向上汇报,同步进展,干系人,状态同步"),
-"product-management/synthesize-research": ("用户研究综合", "用户研究,访谈,问卷,调研,洞察,综合分析"),
-"product-management/visual-pr": ("可视化 PR 描述", "pull request,pr描述,pr说明,可视化pr,变更说明"),
-"product-management/write-spec": ("需求文档 PRD 撰写", "prd,需求文档,需求规格,功能规格,产品需求,prd撰写"),
 
 # ---- productivity ----
 "productivity/memory-management": ("双层记忆", "记忆,长期记忆,偏好记忆,工作记忆,上下文"),
@@ -282,5 +261,4 @@ ZH = {
 "understand/understand-domain": ("领域语义建模", "领域,domain,领域模型,业务语义"),
 "understand/understand-explain": ("通俗解释生成", "解释,explain,通俗解释,讲明白"),
 "understand/understand-knowledge": ("知识结构化理解", "知识,knowledge,知识图谱,知识抽取"),
-"understand/understand-onboard": ("上手引导", "上手,onboard,入门,快速开始"),
 }

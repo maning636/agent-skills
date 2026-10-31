@@ -27,7 +27,7 @@
   },
   "engineering": {
    "index": "domains/engineering/INDEX.md",
-   "skills": 10
+   "skills": 2
   },
   "enterprise-search": {
    "index": "domains/enterprise-search/INDEX.md",
@@ -59,7 +59,7 @@
   },
   "marketing": {
    "index": "domains/marketing/INDEX.md",
-   "skills": 8
+   "skills": 3
   },
   "opc": {
    "index": "domains/opc/INDEX.md",
@@ -75,7 +75,7 @@
   },
   "product-management": {
    "index": "domains/product-management/INDEX.md",
-   "skills": 11
+   "skills": 3
   },
   "productivity": {
    "index": "domains/productivity/INDEX.md",
@@ -91,7 +91,7 @@
   },
   "understand": {
    "index": "domains/understand/INDEX.md",
-   "skills": 8
+   "skills": 7
   }
  },
  "files": [
@@ -150,10 +150,6 @@
   {
    "path": "domains/agent-toolkit/INDEX.md",
    "bytes": 3827
-  },
-  {
-   "path": "domains/agent-toolkit/liurun-bookwriter/.DS_Store",
-   "bytes": 6148
   },
   {
    "path": "domains/agent-toolkit/minimax/SKILL.md",
@@ -468,48 +464,16 @@
    "bytes": 3644
   },
   {
-   "path": "domains/engineering/architecture/SKILL.md",
-   "bytes": 2618
-  },
-  {
-   "path": "domains/engineering/code-review/SKILL.md",
-   "bytes": 4526
-  },
-  {
    "path": "domains/engineering/debug/SKILL.md",
    "bytes": 4270
   },
   {
-   "path": "domains/engineering/deploy-checklist/SKILL.md",
-   "bytes": 2603
-  },
-  {
-   "path": "domains/engineering/documentation/SKILL.md",
-   "bytes": 1730
-  },
-  {
-   "path": "domains/engineering/incident-response/SKILL.md",
-   "bytes": 5959
-  },
-  {
    "path": "domains/engineering/INDEX.md",
-   "bytes": 2881
+   "bytes": 879
   },
   {
    "path": "domains/engineering/standup/SKILL.md",
    "bytes": 3503
-  },
-  {
-   "path": "domains/engineering/system-design/SKILL.md",
-   "bytes": 1526
-  },
-  {
-   "path": "domains/engineering/tech-debt/SKILL.md",
-   "bytes": 1656
-  },
-  {
-   "path": "domains/engineering/testing-strategy/SKILL.md",
-   "bytes": 1492
   },
   {
    "path": "domains/enterprise-search/digest/SKILL.md",
@@ -4732,32 +4696,12 @@
    "bytes": 14579
   },
   {
-   "path": "domains/marketing/content-creation/SKILL.md",
-   "bytes": 9138
-  },
-  {
-   "path": "domains/marketing/draft-content/SKILL.md",
-   "bytes": 4854
-  },
-  {
    "path": "domains/marketing/email-sequence/SKILL.md",
    "bytes": 10983
   },
   {
    "path": "domains/marketing/INDEX.md",
-   "bytes": 2292
-  },
-  {
-   "path": "domains/marketing/mkt-competitive-brief/SKILL.md",
-   "bytes": 13616
-  },
-  {
-   "path": "domains/marketing/performance-report/SKILL.md",
-   "bytes": 19739
-  },
-  {
-   "path": "domains/marketing/seo-audit/SKILL.md",
-   "bytes": 9830
+   "bytes": 1125
   },
   {
    "path": "domains/opc/INDEX.md",
@@ -5109,303 +5053,19 @@
   },
   {
    "path": "domains/product-management/INDEX.md",
-   "bytes": 3379
+   "bytes": 1439
   },
   {
    "path": "domains/product-management/metrics-review/SKILL.md",
    "bytes": 18575
   },
   {
-   "path": "domains/product-management/pm-competitive-brief/SKILL.md",
-   "bytes": 15238
-  },
-  {
-   "path": "domains/product-management/product-brainstorming/SKILL.md",
-   "bytes": 16428
-  },
-  {
    "path": "domains/product-management/roadmap-update/SKILL.md",
    "bytes": 12796
   },
   {
-   "path": "domains/product-management/rpi/.claude-plugin/plugin.json",
-   "bytes": 645
-  },
-  {
-   "path": "domains/product-management/rpi/agents/codebase-analyzer.md",
-   "bytes": 5813
-  },
-  {
-   "path": "domains/product-management/rpi/agents/codebase-locator.md",
-   "bytes": 4956
-  },
-  {
-   "path": "domains/product-management/rpi/agents/codebase-pattern-finder.md",
-   "bytes": 7177
-  },
-  {
-   "path": "domains/product-management/rpi/agents/outline-implementer-agent.md",
-   "bytes": 4543
-  },
-  {
-   "path": "domains/product-management/rpi/agents/web-search-researcher.md",
-   "bytes": 6086
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-design-discussion/process.md",
-   "bytes": 4160
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-design-discussion/references/design_discussion_final_answer.md",
-   "bytes": 263
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-design-discussion/references/design_discussion_final_answer_resolved.md",
-   "bytes": 476
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-design-discussion/references/design_discussion_template.md",
-   "bytes": 1084
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-prd/process.md",
-   "bytes": 3639
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-prd/references/prd_final_answer_resolved.md",
-   "bytes": 451
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-prd/references/prd_template.md",
-   "bytes": 889
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-research/process.md",
-   "bytes": 5624
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-research/references/research_final_answer.md",
-   "bytes": 670
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-research/references/research_template.md",
-   "bytes": 1691
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-research-questions/process.md",
-   "bytes": 3473
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-research-questions/references/request_template.md",
-   "bytes": 326
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-research-questions/references/research_questions_final_answer.md",
-   "bytes": 484
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-research-questions/references/research_questions_template.md",
-   "bytes": 480
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-structure-outline/process.md",
-   "bytes": 3357
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-structure-outline/references/structure_outline_final_answer.md",
-   "bytes": 353
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-structure-outline/references/structure_outline_template.md",
-   "bytes": 1119
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-tdd/process.md",
-   "bytes": 3697
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-tdd/references/tdd_final_answer_resolved.md",
-   "bytes": 466
-  },
-  {
-   "path": "domains/product-management/rpi/references/create-tdd/references/tdd_template.md",
-   "bytes": 800
-  },
-  {
-   "path": "domains/product-management/rpi/references/implement-outline/process.md",
-   "bytes": 3029
-  },
-  {
-   "path": "domains/product-management/rpi/references/implement-outline/references/implement_outline_final_answer.md",
-   "bytes": 519
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-design-discussion/process.md",
-   "bytes": 2720
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-design-discussion/references/design_discussion_final_answer.md",
-   "bytes": 263
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-design-discussion/references/design_discussion_final_answer_resolved.md",
-   "bytes": 476
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-design-discussion/references/design_discussion_template.md",
-   "bytes": 957
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-implementation/process.md",
-   "bytes": 1613
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-implementation/references/iterate_implementation_final_answer.md",
-   "bytes": 395
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-prd/process.md",
-   "bytes": 2544
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-prd/references/prd_final_answer_resolved.md",
-   "bytes": 451
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-prd/references/prd_template.md",
-   "bytes": 889
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-research/process.md",
-   "bytes": 4572
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-research/references/research_final_answer.md",
-   "bytes": 731
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-research/references/research_template.md",
-   "bytes": 1525
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-research-questions/process.md",
-   "bytes": 2590
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-research-questions/references/research_questions_final_answer.md",
-   "bytes": 486
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-research-questions/references/research_questions_template.md",
-   "bytes": 480
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-structure-outline/process.md",
-   "bytes": 2288
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-structure-outline/references/structure_outline_final_answer.md",
-   "bytes": 355
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-structure-outline/references/structure_outline_template.md",
-   "bytes": 1119
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-tdd/process.md",
-   "bytes": 2777
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-tdd/references/tdd_final_answer_resolved.md",
-   "bytes": 466
-  },
-  {
-   "path": "domains/product-management/rpi/references/iterate-tdd/references/tdd_template.md",
-   "bytes": 800
-  },
-  {
-   "path": "domains/product-management/rpi/references/show-me.md",
-   "bytes": 3424
-  },
-  {
-   "path": "domains/product-management/rpi/references/subagents/codebase-analyzer.md",
-   "bytes": 5813
-  },
-  {
-   "path": "domains/product-management/rpi/references/subagents/codebase-locator.md",
-   "bytes": 4956
-  },
-  {
-   "path": "domains/product-management/rpi/references/subagents/codebase-pattern-finder.md",
-   "bytes": 7177
-  },
-  {
-   "path": "domains/product-management/rpi/references/subagents/outline-implementer-agent.md",
-   "bytes": 4543
-  },
-  {
-   "path": "domains/product-management/rpi/references/subagents/web-search-researcher.md",
-   "bytes": 6086
-  },
-  {
-   "path": "domains/product-management/rpi/references/workflow-choice.md",
-   "bytes": 2634
-  },
-  {
-   "path": "domains/product-management/rpi/references/workflow.md",
-   "bytes": 3878
-  },
-  {
-   "path": "domains/product-management/rpi/SKILL.md",
-   "bytes": 5189
-  },
-  {
-   "path": "domains/product-management/show-me/.claude-plugin/plugin.json",
-   "bytes": 406
-  },
-  {
-   "path": "domains/product-management/show-me/agents/openai.yaml",
-   "bytes": 45
-  },
-  {
-   "path": "domains/product-management/show-me/SKILL.md",
-   "bytes": 3424
-  },
-  {
-   "path": "domains/product-management/sprint-planning/SKILL.md",
-   "bytes": 4391
-  },
-  {
    "path": "domains/product-management/stakeholder-update/SKILL.md",
    "bytes": 15189
-  },
-  {
-   "path": "domains/product-management/synthesize-research/SKILL.md",
-   "bytes": 16607
-  },
-  {
-   "path": "domains/product-management/visual-pr/.claude-plugin/plugin.json",
-   "bytes": 404
-  },
-  {
-   "path": "domains/product-management/visual-pr/references/describe_pr_final_answer.md",
-   "bytes": 439
-  },
-  {
-   "path": "domains/product-management/visual-pr/references/pr_description_template.md",
-   "bytes": 2032
-  },
-  {
-   "path": "domains/product-management/visual-pr/references/show-me.md",
-   "bytes": 3162
-  },
-  {
-   "path": "domains/product-management/visual-pr/SKILL.md",
-   "bytes": 3608
-  },
-  {
-   "path": "domains/product-management/write-spec/SKILL.md",
-   "bytes": 12716
   },
   {
    "path": "domains/productivity/INDEX.md",
@@ -6425,7 +6085,7 @@
   },
   {
    "path": "domains/understand/INDEX.md",
-   "bytes": 2265
+   "bytes": 2072
   },
   {
    "path": "domains/understand/understand/build-fingerprints.mjs",
@@ -6664,12 +6324,8 @@
    "bytes": 5545
   },
   {
-   "path": "domains/understand/understand-onboard/SKILL.md",
-   "bytes": 3437
-  },
-  {
    "path": "tools/curated_zh.py",
-   "bytes": 42930
+   "bytes": 28007
   },
   {
    "path": "tools/fetch.py",
@@ -6680,16 +6336,28 @@
    "bytes": 8089
   },
   {
+   "path": "tools/prune_batch2.py",
+   "bytes": 3934
+  },
+  {
+   "path": "tools/prune_curated.py",
+   "bytes": 1063
+  },
+  {
+   "path": "tools/regen_catalog.py",
+   "bytes": 5558
+  },
+  {
    "path": "tools/regen_manifest.py",
    "bytes": 2102
   },
   {
    "path": "tools/zh_keys.py",
-   "bytes": 59084
+   "bytes": 25274
   }
  ],
- "total_skills": 235,
- "total_files": 1648,
- "total_bytes": 13025784,
+ "total_skills": 213,
+ "total_files": 1565,
+ "total_bytes": 12676065,
  "raw_base": "https://raw.githubusercontent.com/maning636/agent-skills/main/"
 }

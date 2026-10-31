@@ -1,7 +1,7 @@
 # 技能库索引（L0）
 
 > **这是唯一需要常驻进上下文的内容**（~1,290 tokens）。
-> 其余按需拉取，235 个技能正文**全部按需拉取**，绝不整包读入。
+> 其余按需拉取，213 个技能正文**全部按需拉取**，绝不整包读入。
 
 ## 取用三步
 
@@ -14,10 +14,10 @@
 | # | 领域 | 何时用（触发词） | 技能数 | L1 索引 |
 |---|---|---|---:|---|
 | 1 | **人力资源 / HR** `human-resources` | 招聘,简历,面试,绩效,薪酬,入职,离职,岗位,人才盘点,组织架构 | 9 | [`domains/human-resources/INDEX.md`](domains/human-resources/INDEX.md) |
-| 2 | **产品管理** `product-management` | PRD,需求,路线图,指标,竞品,用户故事,冲刺规划,干系人 | 11 | [`domains/product-management/INDEX.md`](domains/product-management/INDEX.md) |
-| 3 | **研发 / 工程** `engineering` | 代码评审,调试,架构,故障排查,发版,部署,测试,技术债 | 10 | [`domains/engineering/INDEX.md`](domains/engineering/INDEX.md) |
+| 2 | **产品 / 经营** `product-management` | 路线图,指标评审,干系人同步 | 3 | [`domains/product-management/INDEX.md`](domains/product-management/INDEX.md) |
+| 3 | **研发 / 工程** `engineering` | 调试,站会 | 2 | [`domains/engineering/INDEX.md`](domains/engineering/INDEX.md) |
 | 4 | **设计** `design` | 设计评审,无障碍,设计交付,设计系统,用户研究 | 7 | [`domains/design/INDEX.md`](domains/design/INDEX.md) |
-| 5 | **市场 / 营销** `marketing` | 内容创作,邮件序列,SEO,品牌,营销,竞品情报 | 8 | [`domains/marketing/INDEX.md`](domains/marketing/INDEX.md) |
+| 5 | **市场 / 营销** `marketing` | 品牌评审,营销活动计划,邮件序列 | 3 | [`domains/marketing/INDEX.md`](domains/marketing/INDEX.md) |
 | 6 | **销售** `sales` | 线索,商机,报价,赢单,销售漏斗,CRM,竞品 | 36 | [`domains/sales/INDEX.md`](domains/sales/INDEX.md) |
 | 7 | **法务 / 合规** `legal` | 合同,法务,合规,NDA,风险 | 9 | [`domains/legal/INDEX.md`](domains/legal/INDEX.md) |
 | 8 | **财务** `finance` | 记账,对账,结账,报表,发票 | 8 | [`domains/finance/INDEX.md`](domains/finance/INDEX.md) |
@@ -30,7 +30,7 @@
 | 15 | **插件 / 技能工程** `cowork-plugin-management` | 创建插件,定制插件 | 2 | [`domains/cowork-plugin-management/INDEX.md`](domains/cowork-plugin-management/INDEX.md) |
 | 16 | **PDF 处理** `pdf-viewer` | PDF,批注,填表,签名 | 1 | [`domains/pdf-viewer/INDEX.md`](domains/pdf-viewer/INDEX.md) |
 | 17 | **HyperFrames 动效** `hyperframes` | 网页动效,动效引擎,转场,网页转视频,关键帧,动效注册 | 5 | [`domains/hyperframes/INDEX.md`](domains/hyperframes/INDEX.md) |
-| 18 | **语义理解** `understand` | 语义理解,差异理解,知识抽取,通俗解释,领域建模,看板 | 8 | [`domains/understand/INDEX.md`](domains/understand/INDEX.md) |
+| 18 | **代码理解** `understand` | 代码库知识图谱,diff影响面,深度解读,领域建模 | 7 | [`domains/understand/INDEX.md`](domains/understand/INDEX.md) |
 | 19 | **本机工具** `local-tooling` | OCR,截图识文,离线识别,技能调优 | 2 | [`domains/local-tooling/INDEX.md`](domains/local-tooling/INDEX.md) |
 | 20 | **商业与增长** `growth-ops` | 目标拆解,假设验证,第一性原理,根因分析,决策,同行顾问,idea-to-cash | 13 | [`domains/growth-ops/INDEX.md`](domains/growth-ops/INDEX.md) |
 | 21 | **AI 一人公司** `opc` | OPC,一人公司,AI创业,选赛道,MVP,定价,注册公司,合规,算法备案,获客,转化,交付,复购,工具栈,Agent搭建,百日盈利,资源盘点,价值主张 | 14 | [`domains/opc/INDEX.md`](domains/opc/INDEX.md) |
