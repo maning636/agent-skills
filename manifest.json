@@ -3,7 +3,7 @@
  "version": "1.0.0",
  "layout": "three-tier-progressive-disclosure",
  "l0": "INDEX.md",
- "l0_bytes": 6475,
+ "l0_bytes": 6806,
  "domains": {
   "human-resources": {
    "index": "domains/human-resources/INDEX.md",
@@ -140,7 +140,7 @@
  },
  "total_skills": 458,
  "total_files": 4170,
- "total_bytes": 64709807,
+ "total_bytes": 64711802,
  "raw_base": "https://raw.githubusercontent.com/maning636/agent-skills/main/",
  "files": [
   {
@@ -161,7 +161,7 @@
   },
   {
    "path": "INDEX.md",
-   "bytes": 6475
+   "bytes": 6806
   },
   {
    "path": "LICENSE",
@@ -177,7 +177,7 @@
   },
   {
    "path": "domains/agent-toolkit/INDEX.md",
-   "bytes": 8061
+   "bytes": 8113
   },
   {
    "path": "domains/agent-toolkit/agent-reach/SKILL.md",
@@ -4533,7 +4533,7 @@
   },
   {
    "path": "domains/content-writing/INDEX.md",
-   "bytes": 2954
+   "bytes": 2971
   },
   {
    "path": "domains/content-writing/bigtype-poster/SKILL.md",
@@ -5061,7 +5061,7 @@
   },
   {
    "path": "domains/dbs-toolkit/INDEX.md",
-   "bytes": 4229
+   "bytes": 4269
   },
   {
    "path": "domains/dbs-toolkit/dbs-action/SKILL.md",
@@ -5401,7 +5401,7 @@
   },
   {
    "path": "domains/growth-ops/INDEX.md",
-   "bytes": 7393
+   "bytes": 7449
   },
   {
    "path": "domains/growth-ops/absurd/SKILL.md",
@@ -5841,7 +5841,7 @@
   },
   {
    "path": "domains/hyperframes/INDEX.md",
-   "bytes": 1780
+   "bytes": 1813
   },
   {
    "path": "domains/hyperframes/hyperframes-cli/SKILL.md",
@@ -9669,7 +9669,7 @@
   },
   {
    "path": "domains/lark-suite/INDEX.md",
-   "bytes": 7204
+   "bytes": 7229
   },
   {
    "path": "domains/lark-suite/lark-approval/SKILL.md",
@@ -11941,7 +11941,7 @@
   },
   {
    "path": "domains/local-tooling/INDEX.md",
-   "bytes": 1131
+   "bytes": 1161
   },
   {
    "path": "domains/local-tooling/local-ocr/SKILL.md",
@@ -12681,7 +12681,7 @@
   },
   {
    "path": "domains/redfox-bilibili/INDEX.md",
-   "bytes": 3425
+   "bytes": 3438
   },
   {
    "path": "domains/redfox-bilibili/bili-ai-feed/README.en.md",
@@ -12833,7 +12833,7 @@
   },
   {
    "path": "domains/redfox-douyin/INDEX.md",
-   "bytes": 6291
+   "bytes": 6313
   },
   {
    "path": "domains/redfox-douyin/cultural-tourism-douyin-feed/README.en.md",
@@ -13185,7 +13185,7 @@
   },
   {
    "path": "domains/redfox-multi/INDEX.md",
-   "bytes": 8471
+   "bytes": 8509
   },
   {
    "path": "domains/redfox-multi/ai-intelligence-investigator/README.en.md",
@@ -13833,7 +13833,7 @@
   },
   {
    "path": "domains/redfox-wechat/INDEX.md",
-   "bytes": 7587
+   "bytes": 7626
   },
   {
    "path": "domains/redfox-wechat/cultural-tourism-wechat-feed/README.en.md",
@@ -14713,7 +14713,7 @@
   },
   {
    "path": "domains/redfox-xiaohongshu/INDEX.md",
-   "bytes": 7232
+   "bytes": 7265
   },
   {
    "path": "domains/redfox-xiaohongshu/cultural-tourism-xiaohongshu-feed/README.en.md",
@@ -16177,7 +16177,7 @@
   },
   {
    "path": "domains/understand/INDEX.md",
-   "bytes": 2206
+   "bytes": 2265
   },
   {
    "path": "domains/understand/understand-chat/SKILL.md",
@@ -16421,7 +16421,7 @@
   },
   {
    "path": "domains/wecom-suite/INDEX.md",
-   "bytes": 4697
+   "bytes": 4737
   },
   {
    "path": "domains/wecom-suite/wecomcli-calendar/SKILL.md",
@@ -16813,7 +16813,7 @@
   },
   {
    "path": "tools/fetch.py",
-   "bytes": 14139
+   "bytes": 15306
   },
   {
    "path": "tools/gen_zh_keys.py",

@@ -381,7 +381,6 @@ ZH_NEW = {
     "agent-toolkit/dashiai-ppt": ("PPT 主题生成", "ppt生成,ppt主题,幻灯片模板,dashiai,生成ppt"),
     "agent-toolkit/design-taste-frontend": ("前端设计品味", "前端设计,ui设计,设计品味,界面审美,web设计"),
     "agent-toolkit/find-redskills": ("发现红狐技能", "找技能,技能发现,redskills,搜索技能"),
-    "agent-toolkit/find-skills": ("技能发现", "找技能,skill发现,技能搜索,有什么技能"),
     "agent-toolkit/gsap": ("GSAP 动画", "gsap,网页动画,补间,时间轴,动画库"),
     "agent-toolkit/guizang-material-illustration": ("归藏素材插画", "插画素材,归藏,配图素材,插画风格"),
     "agent-toolkit/html-it": ("HTML 生成", "html,生成网页,网页稿,单页html"),
@@ -398,5 +397,5 @@ ZH_NEW = {
     "agent-toolkit/using-coze-cli": ("Coze CLI", "coze,扣子,coze cli,扣子平台,工作流"),
     "redfox-wechat/wechat-styler": ("公众号样式", "公众号排版,微信样式,样式美化,排版主题"),
     "agent-toolkit/手绘叙事风 PPT": ("手绘叙事风 PPT", "手绘风,叙事型ppt,手绘幻灯片,插画风ppt"),
-    "agent-toolkit/find-skills": ("技能发现", "找技能,技能搜索"),
+    "agent-toolkit/find-skills": ("技能发现", "找技能,skill发现,技能搜索,有什么技能,安装技能,怎么装技能,装技能,技能列表"),
 }

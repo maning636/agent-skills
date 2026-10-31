@@ -162,6 +162,21 @@ def score(text, toks, grams):
     return s
 
 
+def score_tokens(text, toks):
+    """只按整词计分，不看二元组。
+
+    领域路由必须用这个：像「人力资源」这种域名里偶然含有「资源」，
+    会被查询「我的资源有哪些」的二元组误命中，再乘 3 倍域权重就压过了
+    真正命中的技能。整词命中才是「触发词里确实有这个词」的可靠信号。
+    """
+    t = text.lower()
+    s = 0
+    for tok in toks:
+        if tok in t:
+            s += 6 if len(tok) >= 3 else 3
+    return s
+
+
 # ----------------------------------------------------------------- 动作
 def _tree(offline=False, force=False):
     """取全仓文件树（GitHub tree API），本地缓存一次即可复用。
@@ -267,14 +282,17 @@ def do_search(query, domain=None, limit=12):
             return 2
     hits = []
     for dname, dzh, dtrig, dcount in doms:
-        ds = score(dzh + " " + dtrig, toks, grams)
+        # 领域触发词是精修字段，整词命中才算数（不看二元组，避免误命中）
+        ds = score_tokens(dzh + " " + dtrig, toks) * 2
         try:
             l1, _ = fetch("domains/%s/INDEX.md" % dname, ttl=L1_TTL)
         except Exception as e:
             print("跳过 %s: %s" % (dname, e), file=sys.stderr)
             continue
         for name, label, keys, path, size in parse_skills(l1):
-            ss = score(name + " " + label + " " + keys, toks, grams)
+            # 关键词列是人工精修的高精度字段，权重加倍；
+            # 名称+标签次之（名称本身多含英文，容易被噪音词命中）
+            ss = score(keys, toks, grams) * 2 + score(name + " " + label, toks, grams)
             if name.lower() in [t for t in toks]:
                 ss += 12
             hits.append((ss + ds * 3, dname, name, label, keys, path, size))
