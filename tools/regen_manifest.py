@@ -19,7 +19,7 @@ def collect_files():
     files = []
     # repo root documents (README / INDEX / FETCH / CATALOG / catalog.yaml / NOTICE / AGENT ...)
     for p in sorted(ROOT.iterdir()):
-        if p.is_file() and p.name not in {".DS_Store"}:
+        if p.is_file() and p.name not in {".DS_Store", "manifest.json"}:
             files.append({"path": p.name, "bytes": p.stat().st_size})
     for sub in ("domains", "tools"):
         base = ROOT / sub

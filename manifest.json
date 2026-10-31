@@ -121,10 +121,6 @@
    "bytes": 1146
   },
   {
-   "path": "manifest.json",
-   "bytes": 163211
-  },
-  {
    "path": "NOTICE",
    "bytes": 8892
   },
@@ -5917,14 +5913,6 @@
    "bytes": 5545
   },
   {
-   "path": "tools/_fix_tuner.py",
-   "bytes": 2572
-  },
-  {
-   "path": "tools/_truth.json",
-   "bytes": 21062
-  },
-  {
    "path": "tools/audit_truth.py",
    "bytes": 4750
   },
@@ -5982,7 +5970,7 @@
   },
   {
    "path": "tools/regen_manifest.py",
-   "bytes": 2435
+   "bytes": 2452
   },
   {
    "path": "tools/regen_skill_catalog.py",
@@ -6002,7 +5990,7 @@
   }
  ],
  "total_skills": 186,
- "total_files": 1478,
- "total_bytes": 12576032,
+ "total_files": 1475,
+ "total_bytes": 12389204,
  "raw_base": "https://raw.githubusercontent.com/maning636/agent-skills/main/"
 }
