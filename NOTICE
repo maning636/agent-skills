@@ -12,14 +12,15 @@ Copyright (c) 2026 maning636
              customer-support, data, enterprise-search, productivity,
              small-business, cowork-plugin-management, pdf-viewer），
              共 154 个技能；
-             domains/opc/ 下的 9 个 growth-ops 插件技能
+             domains/product-management/ 下的 3 个（pm-roadmap-update,
+             pm-metrics-review, pm-stakeholder-update）。
+             合计 157 个。
+             已迁出: domains/opc/ 下的 9 个 growth-ops 插件技能
              （opc-resource-audit / opc-niche-positioning /
               opc-business-model-design / opc-mvp-designer /
               opc-value-proposition / opc-conversion-loop / opc-asset-ops /
-              opc-dashboard-review / opc-orchestrator）；
-             domains/product-management/ 下的 3 个（pm-roadmap-update,
-             pm-metrics-review, pm-stakeholder-update）。
-             合计 166 个。
+              opc-dashboard-review / opc-orchestrator）已于 2026-10-31 随 opc 域
+              迁往 opc-playbook 独立库，不再随本仓库分发。
              未收录: bio-research（含可执行 Python 与模型数据，出于体积与依赖原因排除）
    各文件 frontmatter 的 origin 字段记录了精确来源与上游 commit。
    Copyright 2026 Anthropic, PBC.
@@ -30,6 +31,8 @@ Copyright (c) 2026 maning636
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
 
 --------------------------------------------------------------------------
 2. humanlayer/skills
@@ -64,15 +67,14 @@ Copyright (c) 2026 maning636
 --------------------------------------------------------------------------
 4. 本机自研 / 手工安装技能（源自 C:\Users\maning\.agents\skills）
    License: 见各技能 frontmatter 的 license 字段；未声明者视为作者自研
-   收录内容: agent-toolkit(15), growth-ops(13), understand(7),
-             local-tooling(2), opc 本地自研部分(5)，共 42 个
+   收录内容: agent-toolkit(15), understand(7), local-tooling(2)，共 24 个
 
    说明: 导入时对所有文本文件做了编码归一化（原 redfox 系列为 GBK，现统一 UTF-8），
          并剔除了 .git / node_modules / dist 等构建产物。技能正文未做内容修改，
          仅重写了 frontmatter（增加 id / domain / origin / license 字段）。
 
 --------------------------------------------------------------------------
-已移除的内容（2026-10-31 精简）
+已移除的内容
 --------------------------------------------------------------------------
 以下上游内容曾短暂收录，现已从本仓库移除，不再随本仓库分发：
 
@@ -103,6 +105,19 @@ Copyright (c) 2026 maning636
         -> 与 engineering-standard 4 文档分层 / AGENTS.md 新人上手重复
 
 --------------------------------------------------------------------------
+已迁出的内容（2026-10-31 独立成库）
+--------------------------------------------------------------------------
+domains/opc/ (14) 与 domains/growth-ops/ (13)，共 27 个技能，
+已于 2026-10-31 迁往独立库 **opc-playbook**（skills/<name>/SKILL.md 形态）。
+
+  * 迁出理由: 经营层（OPC 9 阶段）与产品层（idea-to-cash 16 关）是一套独立的
+    商业方法论，与「企业职能技能库」是两种东西，混在一起会让 L0 路由表既长
+    又容易让 Agent 在做企业事务时误拉商业判断技能。独立后各自 L0 更短。
+  * 迁出后本库为 20 个领域 / 186 个技能；opc-playbook 为 27 个技能 / 2 个组。
+  * 引用 opc-playbook 技能时，许可以各 SKILL.md 的 frontmatter 为准
+    （含 Anthropic Apache-2.0 与本机自研两部分）。
+
+--------------------------------------------------------------------------
 关于本地依赖
 --------------------------------------------------------------------------
 部分技能在运行时会依赖本机环境（而非随技能分发），已在其 SKILL.md 与
@@ -115,9 +130,11 @@ Copyright (c) 2026 maning636
 这些依赖不随本仓库分发，使用前请先读对应 SKILL.md 的前置条件。
 
 --------------------------------------------------------------------------
-本仓库自身的原创部分（三级索引结构、INDEX.md / FETCH.md 协议、
-tools/fetch.py、tools/zh_keys.py、tools/regen_manifest.py、
-tools/regen_catalog.py、manifest.json 生成逻辑、以及各技能
-frontmatter 的重写工作）以 MIT 许可发布，见 LICENSE。
+本仓库自身的原创部分（三级索引结构、INDEX.md / FETCH.md / AGENT.md 协议、
+tools/fetch.py、tools/zh_keys.py、tools/curated_zh.py、tools/domain_meta.json、
+tools/plugin_overlap.json、tools/regen_manifest.py、tools/regen_catalog.py、
+tools/regen_index.py、tools/regen_skill_catalog.py、tools/prune_curated.py、
+tools/origin_report.py、tools/audit_truth.py、manifest.json 生成逻辑、
+以及各技能 frontmatter 的重写工作）以 MIT 许可发布，见 LICENSE。
 各技能目录内保留的上游 LICENSE / NOTICE 文件，均继续适用其各自许可。
 --------------------------------------------------------------------------

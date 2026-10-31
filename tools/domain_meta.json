@@ -1,0 +1,155 @@
+{
+  "_comment": "Single source of truth for domain-level metadata. Regenerated docs (INDEX.md / CATALOG.md / catalog.yaml / manifest.json) all read this file. Edit here, never in the generated outputs.",
+  "_schema": {
+    "label": "中文域名",
+    "what": "CATALOG.md 里的『能做什么』一句话",
+    "triggers": "INDEX.md L0 路由表的触发词，逗号分隔",
+    "authority": "domain = 我们权威，插件不得接管；process = 通用工艺，插件可主导",
+    "plugin_priority": "true = 该域与已装插件能力重叠，Agent 先查插件",
+    "plugin_overlap": "与插件重叠的具体技能（仅 plugin_priority=true 时有值）"
+  },
+  "domains": {
+    "human-resources": {
+      "label": "人力资源 / HR",
+      "what": "招聘,面试,绩效,薪酬,入职",
+      "triggers": "招聘,简历,面试,绩效,薪酬,入职,离职,岗位,人才盘点,组织架构",
+      "authority": "domain",
+      "plugin_priority": false
+    },
+    "product-management": {
+      "label": "产品 / 经营",
+      "what": "路线图,指标评审,干系人同步",
+      "triggers": "路线图,指标评审,干系人同步",
+      "authority": "domain",
+      "plugin_priority": false
+    },
+    "engineering": {
+      "label": "研发 / 工程",
+      "what": "调试,站会",
+      "triggers": "调试,站会",
+      "authority": "process",
+      "plugin_priority": true,
+      "plugin_overlap": "debug"
+    },
+    "design": {
+      "label": "设计",
+      "what": "设计评审,无障碍,设计交付,设计系统",
+      "triggers": "设计评审,无障碍,设计交付,设计系统,用户研究",
+      "authority": "domain",
+      "plugin_priority": false
+    },
+    "marketing": {
+      "label": "市场 / 营销",
+      "what": "品牌评审,营销活动计划,邮件序列",
+      "triggers": "品牌评审,营销活动计划,邮件序列",
+      "authority": "domain",
+      "plugin_priority": false
+    },
+    "sales": {
+      "label": "销售",
+      "what": "线索,商机,报价,赢单,销售漏斗,CRM,竞品",
+      "triggers": "线索,商机,报价,赢单,销售漏斗,CRM,竞品",
+      "authority": "domain",
+      "plugin_priority": false
+    },
+    "legal": {
+      "label": "法务 / 合规",
+      "what": "合同,法务,合规,NDA,风险",
+      "triggers": "合同,法务,合规,NDA,风险",
+      "authority": "domain",
+      "plugin_priority": false
+    },
+    "finance": {
+      "label": "财务",
+      "what": "记账,对账,结账,报表,发票",
+      "triggers": "记账,对账,结账,报表,发票",
+      "authority": "domain",
+      "plugin_priority": false
+    },
+    "operations": {
+      "label": "运营",
+      "what": "流程文档,变更管理,风险评估,运行手册,供应商",
+      "triggers": "流程文档,变更管理,风险评估,运行手册,供应商",
+      "authority": "domain",
+      "plugin_priority": false
+    },
+    "customer-support": {
+      "label": "客户支持",
+      "what": "客服,工单,回复,升级,知识库",
+      "triggers": "客服,工单,回复,升级,知识库",
+      "authority": "domain",
+      "plugin_priority": false
+    },
+    "data": {
+      "label": "数据 / 数据科学",
+      "what": "SQL,数据探查,统计分析,可视化,仪表盘",
+      "triggers": "SQL,数据探查,统计分析,可视化,仪表盘",
+      "authority": "domain",
+      "plugin_priority": false
+    },
+    "enterprise-search": {
+      "label": "企业搜索",
+      "what": "跨源检索,知识综合,日报",
+      "triggers": "跨源检索,知识综合,日报",
+      "authority": "domain",
+      "plugin_priority": false
+    },
+    "productivity": {
+      "label": "个人生产力",
+      "what": "任务管理,记忆管理",
+      "triggers": "任务管理,记忆管理",
+      "authority": "process",
+      "plugin_priority": false
+    },
+    "small-business": {
+      "label": "小企业 / 团队经营",
+      "what": "现金流,月结,报税,品牌风格,内容策略,SEO,合同审查,报表,CRM",
+      "triggers": "现金流,月结,报税,品牌风格,内容策略,SEO,合同审查,报表,CRM",
+      "authority": "domain",
+      "plugin_priority": false
+    },
+    "cowork-plugin-management": {
+      "label": "插件 / 技能工程",
+      "what": "创建插件,定制插件",
+      "triggers": "创建插件,定制插件",
+      "authority": "process",
+      "plugin_priority": true,
+      "plugin_overlap": "cowork 平台侧插件开发（Claude Code 侧的 plugin-dev 不冲突）"
+    },
+    "pdf-viewer": {
+      "label": "PDF 处理",
+      "what": "PDF,批注,填表,签名",
+      "triggers": "PDF,批注,填表,签名",
+      "authority": "process",
+      "plugin_priority": false
+    },
+    "hyperframes": {
+      "label": "HyperFrames 动效",
+      "what": "网页动效,动效引擎,转场,网页转视频",
+      "triggers": "网页动效,动效引擎,转场,网页转视频,关键帧,动效注册",
+      "authority": "domain",
+      "plugin_priority": false
+    },
+    "understand": {
+      "label": "代码理解",
+      "what": "代码库知识图谱,diff影响面,深度解读,领域建模",
+      "triggers": "代码库知识图谱,diff影响面,深度解读,领域建模",
+      "authority": "process",
+      "plugin_priority": false
+    },
+    "local-tooling": {
+      "label": "本机工具",
+      "what": "离线OCR,截图识文,Skill调优",
+      "triggers": "OCR,截图识文,离线识别,技能调优",
+      "authority": "process",
+      "plugin_priority": false
+    },
+    "agent-toolkit": {
+      "label": "Agent 工具箱",
+      "what": "Office文档,电脑操作,技能发现与调优,PPT,多模态生成,联网抓取",
+      "triggers": "Office文档,电脑操作,技能发现,技能调优,技能发布,PPT,多模态生成,联网抓取,认知护栏",
+      "authority": "process",
+      "plugin_priority": false
+    }
+  }
+}

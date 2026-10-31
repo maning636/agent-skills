@@ -1,0 +1,76 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: customer-support
+label: 客户支持
+updated: '2026-10-31'
+authority: domain
+plugin_priority: false
+count:
+  skills: 5
+skills:
+- id: customer-support/customer-escalation
+  name: 升级处理
+  path: domains/customer-support/customer-escalation/SKILL.md
+  version: 1.0.0
+  domain: customer-support
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:customer-support/skills/customer-escalation/SKILL.md
+  license: Apache-2.0
+  tags:
+  - customer-support
+  deprecated: false
+  authority: primary
+  keywords: 客诉升级,升级工单,打包上报
+- id: customer-support/customer-research
+  name: 客户问题调研
+  path: domains/customer-support/customer-research/SKILL.md
+  version: 1.0.0
+  domain: customer-support
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:customer-support/skills/customer-research/SKILL.md
+  license: Apache-2.0
+  tags:
+  - customer-support
+  deprecated: false
+  authority: primary
+  keywords: 客户问题研究,多源调研,溯源
+- id: customer-support/draft-response
+  name: 客服回复起草
+  path: domains/customer-support/draft-response/SKILL.md
+  version: 1.0.0
+  domain: customer-support
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:customer-support/skills/draft-response/SKILL.md
+  license: Apache-2.0
+  tags:
+  - customer-support
+  deprecated: false
+  authority: primary
+  keywords: 回复客户,客服话术,答复草稿
+- id: customer-support/kb-article
+  name: 知识库文章
+  path: domains/customer-support/kb-article/SKILL.md
+  version: 1.0.0
+  domain: customer-support
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:customer-support/skills/kb-article/SKILL.md
+  license: Apache-2.0
+  tags:
+  - customer-support
+  deprecated: false
+  authority: primary
+  keywords: 知识库,自助文档,faq,沉淀文章
+- id: customer-support/ticket-triage
+  name: 工单分级
+  path: domains/customer-support/ticket-triage/SKILL.md
+  version: 1.0.0
+  domain: customer-support
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:customer-support/skills/ticket-triage/SKILL.md
+  license: Apache-2.0
+  tags:
+  - customer-support
+  deprecated: false
+  authority: primary
+  keywords: 工单,问题分级,优先级,分诊

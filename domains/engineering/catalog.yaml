@@ -1,0 +1,43 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: engineering
+label: 研发 / 工程
+updated: '2026-10-31'
+authority: process
+plugin_priority: true
+count:
+  skills: 2
+skills:
+- id: engineering/debug
+  name: 结构化调试
+  path: domains/engineering/debug/SKILL.md
+  version: 1.0.0
+  domain: engineering
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:engineering/skills/debug/SKILL.md
+  license: Apache-2.0
+  tags:
+  - engineering
+  - process
+  - debug
+  deprecated: false
+  authority: fallback
+  superseded_by: plugin:superpowers/systematic-debugging
+  keywords: 调试,debug,排查问题,定位bug,复现,修bug
+- id: engineering/standup
+  name: 站会同步
+  path: domains/engineering/standup/SKILL.md
+  version: 1.0.0
+  domain: engineering
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:engineering/skills/standup/SKILL.md
+  license: Apache-2.0
+  tags:
+  - engineering
+  - process
+  - standup
+  deprecated: false
+  authority: primary
+  keywords: 站会,日报,进度同步,晨会,工作汇报
+plugin_overlap: debug

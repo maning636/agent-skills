@@ -1,0 +1,76 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: enterprise-search
+label: 企业搜索
+updated: '2026-10-31'
+authority: domain
+plugin_priority: false
+count:
+  skills: 5
+skills:
+- id: enterprise-search/digest
+  name: 活动摘要
+  path: domains/enterprise-search/digest/SKILL.md
+  version: 1.0.0
+  domain: enterprise-search
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:enterprise-search/skills/digest/SKILL.md
+  license: Apache-2.0
+  tags:
+  - enterprise-search
+  deprecated: false
+  authority: primary
+  keywords: 日报,周报摘要,每日简报,自动汇总
+- id: enterprise-search/knowledge-synthesis
+  name: 多源知识综合
+  path: domains/enterprise-search/knowledge-synthesis/SKILL.md
+  version: 1.0.0
+  domain: enterprise-search
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:enterprise-search/skills/knowledge-synthesis/SKILL.md
+  license: Apache-2.0
+  tags:
+  - enterprise-search
+  deprecated: false
+  authority: primary
+  keywords: 知识综合,多源合并,去重,可信度
+- id: enterprise-search/search
+  name: 跨源检索
+  path: domains/enterprise-search/search/SKILL.md
+  version: 1.0.0
+  domain: enterprise-search
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:enterprise-search/skills/search/SKILL.md
+  license: Apache-2.0
+  tags:
+  - enterprise-search
+  deprecated: false
+  authority: primary
+  keywords: 搜索,一次查询,多系统搜索
+- id: enterprise-search/search-strategy
+  name: 检索策略
+  path: domains/enterprise-search/search-strategy/SKILL.md
+  version: 1.0.0
+  domain: enterprise-search
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:enterprise-search/skills/search-strategy/SKILL.md
+  license: Apache-2.0
+  tags:
+  - enterprise-search
+  deprecated: false
+  authority: primary
+  keywords: 查询分解,检索编排,查询改写,搜索策略
+- id: enterprise-search/source-management
+  name: 检索源管理
+  path: domains/enterprise-search/source-management/SKILL.md
+  version: 1.0.0
+  domain: enterprise-search
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:enterprise-search/skills/source-management/SKILL.md
+  license: Apache-2.0
+  tags:
+  - enterprise-search
+  deprecated: false
+  authority: primary
+  keywords: 搜索源,数据源接入,源优先级

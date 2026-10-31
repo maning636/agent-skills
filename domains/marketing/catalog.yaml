@@ -1,0 +1,50 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: marketing
+label: 市场 / 营销
+updated: '2026-10-31'
+authority: domain
+plugin_priority: false
+count:
+  skills: 3
+skills:
+- id: marketing/brand-review
+  name: 品牌一致性检查
+  path: domains/marketing/brand-review/SKILL.md
+  version: 1.0.0
+  domain: marketing
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:marketing/skills/brand-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - marketing
+  deprecated: false
+  authority: primary
+  keywords: 品牌,品牌调性,口吻,style guide,文案审校
+- id: marketing/campaign-plan
+  name: 营销活动方案
+  path: domains/marketing/campaign-plan/SKILL.md
+  version: 1.0.0
+  domain: marketing
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:marketing/skills/campaign-plan/SKILL.md
+  license: Apache-2.0
+  tags:
+  - marketing
+  deprecated: false
+  authority: primary
+  keywords: 活动策划,投放方案,营销方案,campaign,活动日历
+- id: marketing/email-sequence
+  name: 邮件序列
+  path: domains/marketing/email-sequence/SKILL.md
+  version: 1.0.0
+  domain: marketing
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:marketing/skills/email-sequence/SKILL.md
+  license: Apache-2.0
+  tags:
+  - marketing
+  deprecated: false
+  authority: primary
+  keywords: 邮件营销,EDM,培育序列,邮件自动化,召回邮件

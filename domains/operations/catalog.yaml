@@ -1,0 +1,128 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: operations
+label: 运营
+updated: '2026-10-31'
+authority: domain
+plugin_priority: false
+count:
+  skills: 9
+skills:
+- id: operations/capacity-plan
+  name: 容量规划
+  path: domains/operations/capacity-plan/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/capacity-plan/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 产能,资源规划,负载预测,利用率
+- id: operations/change-request
+  name: 变更申请
+  path: domains/operations/change-request/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/change-request/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 变更管理,影响分析,回滚方案,变更单
+- id: operations/compliance-tracking
+  name: 合规跟踪
+  path: domains/operations/compliance-tracking/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/compliance-tracking/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 合规要求,审计准备,合规台账
+- id: operations/process-doc
+  name: 流程文档化
+  path: domains/operations/process-doc/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/process-doc/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 流程图,sop,raci,流程梳理,操作手册
+- id: operations/process-optimization
+  name: 流程优化
+  path: domains/operations/process-optimization/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/process-optimization/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 瓶颈,提效,流程改进,价值流
+- id: operations/risk-assessment
+  name: 运营风险评估
+  path: domains/operations/risk-assessment/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/risk-assessment/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 运营风险,风险识别,缓解措施
+- id: operations/runbook
+  name: 运行手册
+  path: domains/operations/runbook/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/runbook/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: runbook,操作手册,值守手册,应急手册
+- id: operations/status-report
+  name: 运营状态报告
+  path: domains/operations/status-report/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/status-report/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 运营周报,kpi,风险与行动项
+- id: operations/vendor-review
+  name: 供应商评估
+  path: domains/operations/vendor-review/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/vendor-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 供应商评估,成本分析,供应商风险,推荐结论

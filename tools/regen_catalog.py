@@ -5,37 +5,25 @@
 - Drops sections for removed domains and lines for removed skills.
 - Rebuilds the top summary table with live counts.
 """
+import json
 import pathlib
 import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "CATALOG.md"
+META_FILE = ROOT / "tools" / "domain_meta.json"
 
-# domain -> (中文名, 能做什么)
-DOMAIN_META = {
-    "small-business": ("小企业 / 团队经营", "经营快照,现金流,月结,报税,CRM"),
-    "sales": ("销售", "线索,商机,报价,赢单,预测"),
-    "opc": ("AI 一人公司", "赛道选择,价值主张,商业模式,MVP,转化闭环,获客,经营复盘"),
-    "product-management": ("产品管理", "PRD,需求,路线图,竞品,指标"),
-    "engineering": ("研发 / 工程", "代码评审,调试,架构,故障,发版"),
-    "data": ("数据 / 数据科学", "SQL,数据探查,统计,可视化,仪表盘"),
-    "human-resources": ("人力资源 / HR", "招聘,面试,绩效,薪酬,入职"),
-    "legal": ("法务 / 合规", "合同,NDA,合规,法律风险"),
-    "operations": ("运营", "流程文档,变更,风险,运行手册"),
-    "marketing": ("市场 / 营销", "内容创作,邮件序列,SEO,品牌"),
-    "finance": ("财务", "记账,对账,结账,报表,差异分析"),
-    "understand": ("语义理解", "语义分析,差异理解,知识抽取,通俗解释"),
-    "design": ("设计", "设计评审,无障碍,设计交付,设计系统"),
-    "customer-support": ("客户支持", "工单,回复,升级,知识库"),
-    "enterprise-search": ("企业搜索", "跨源检索,知识综合,日报"),
-    "hyperframes": ("HyperFrames 动效", "网页动效,动效引擎,转场,网页转视频"),
-    "agent-toolkit": ("Agent 工具箱", "Office文档,电脑操作,技能发现与调优,PPT,多模态生成,联网抓取"),
-    "productivity": ("个人生产力", "任务管理,记忆管理,日常同步"),
-    "growth-ops": ("商业与增长", "目标拆解,假设验证,根因分析,同行顾问,决策评分,创意到回款"),
-    "local-tooling": ("本机工具", "离线OCR,截图识文,Skill调优"),
-    "cowork-plugin-management": ("插件 / 技能工程", "创建插件,定制插件"),
-    "pdf-viewer": ("PDF 处理", "PDF,批注,填表,签名"),
-}
+
+def _load_domain_meta():
+    """domain -> (中文名, 能做什么) from the single source of truth."""
+    data = json.loads(META_FILE.read_text(encoding="utf-8"))
+    return {
+        d: (m.get("label", d), m.get("what", ""))
+        for d, m in data["domains"].items()
+    }
+
+
+DOMAIN_META = _load_domain_meta()
 
 SKILL_LINE = re.compile(r"^- \*\*(.+?)\*\* `([^`]+)` — ")
 

@@ -1,0 +1,479 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: sales
+label: 销售
+updated: '2026-10-31'
+authority: domain
+plugin_priority: false
+count:
+  skills: 36
+skills:
+- id: sales/account-context
+  name: 客户全景
+  path: domains/sales/account-context/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/account-context/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户档案,360视图,客户历史,往来记录
+- id: sales/account-plan
+  name: 客户战略计划
+  path: domains/sales/account-plan/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/account-plan/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 大客户计划,客户经营,覆盖策略,干系人覆盖
+- id: sales/account-research
+  name: 目标公司调研
+  path: domains/sales/account-research/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/account-research/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户调研,目标公司,背景调查,甲方背景
+- id: sales/account-tiering
+  name: 客户分层
+  path: domains/sales/account-tiering/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/account-tiering/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户分级,ICP打分,客户优先级,名单排序
+- id: sales/call-prep
+  name: 通话准备
+  path: domains/sales/call-prep/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/call-prep/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 通话前准备,会前简报,会议准备,客户背景
+- id: sales/call-summary
+  name: 通话纪要
+  path: domains/sales/call-summary/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/call-summary/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 通话总结,会议纪要,跟进邮件,通话笔记
+- id: sales/close-plan
+  name: 成交方案
+  path: domains/sales/close-plan/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/close-plan/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 成交计划,行动计划,ROI论证,关闭计划
+- id: sales/competitive-intelligence
+  name: 竞争情报
+  path: domains/sales/competitive-intelligence/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/competitive-intelligence/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 竞对,竞争对手分析,赢单丢单模式,竞争格局
+- id: sales/create-an-asset
+  name: 客户材料制作
+  path: domains/sales/create-an-asset/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/create-an-asset/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户材料,单页页,deck,提案材料,客户方案
+- id: sales/crm-hygiene-check
+  name: CRM 数据体检
+  path: domains/sales/crm-hygiene-check/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/crm-hygiene-check/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: crm检查,字段缺失,阶段错乱,数据卫生
+- id: sales/customer-health
+  name: 客户健康度
+  path: domains/sales/customer-health/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/customer-health/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户风险,续约风险,qbr,客户活跃度
+- id: sales/customer-voice
+  name: 客户原声
+  path: domains/sales/customer-voice/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/customer-voice/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户声音,客户反馈,原话引用,客户评价
+- id: sales/daily-briefing
+  name: 晨间简报
+  path: domains/sales/daily-briefing/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/daily-briefing/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 今日会议,每日简报,晨会,待跟进客户
+- id: sales/deal-advance-gap
+  name: 商机推进缺口
+  path: domains/sales/deal-advance-gap/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/deal-advance-gap/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 还差什么,推进条件,下一阶段,缺口检查
+- id: sales/deal-review
+  name: 商机深度复盘
+  path: domains/sales/deal-review/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/deal-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 商机复盘,单子体检,赢单风险,推进卡点
+- id: sales/deal-signals
+  name: 商机异动监控
+  path: domains/sales/deal-signals/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/deal-signals/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 商机预警,单子停滞,冠军换人,续约窗口,风险信号
+- id: sales/deal-slip-scenario
+  name: 丢单影响模拟
+  path: domains/sales/deal-slip-scenario/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/deal-slip-scenario/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 丢单影响,配额缺口,业绩影响,情景推演
+- id: sales/draft-outreach
+  name: 外联邮件起草
+  path: domains/sales/draft-outreach/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/draft-outreach/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 外联,开发信,触达邮件,跟进邮件
+- id: sales/end-of-day
+  name: 收尾复盘
+  path: domains/sales/end-of-day/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/end-of-day/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 下班收尾,当日总结,承诺追踪
+- id: sales/expansion-whitespace
+  name: 增购空间挖掘
+  path: domains/sales/expansion-whitespace/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/expansion-whitespace/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 增购,交叉销售,扩容机会,空白市场
+- id: sales/forecast
+  name: 业绩预测
+  path: domains/sales/forecast/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/forecast/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 预测,commit,销售预测,管道预测,1v1
+- id: sales/handle-objection
+  name: 异议处理
+  path: domains/sales/handle-objection/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/handle-objection/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户异议,反对意见,竞争威胁,异议应对
+- id: sales/inbox-sweep
+  name: 邮件批量处理
+  path: domains/sales/inbox-sweep/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/inbox-sweep/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 批量邮件,未读邮件,邮件分类,邮件批处理
+- id: sales/log-activity
+  name: 活动回填 CRM
+  path: domains/sales/log-activity/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/log-activity/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 补录,活动记录,写入crm,通话记录
+- id: sales/pipeline-review
+  name: 管道健康度
+  path: domains/sales/pipeline-review/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/pipeline-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 销售管道,漏斗,转化率,管道覆盖,阶段健康
+- id: sales/renewal-radar
+  name: 续约雷达
+  path: domains/sales/renewal-radar/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/renewal-radar/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 续约,续费,到期提醒,续约机会
+- id: sales/rep-context
+  name: 销售一对一准备
+  path: domains/sales/rep-context/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/rep-context/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 销售1v1,组长的辅导,销售汇报,个人管道
+- id: sales/route-lead
+  name: 线索分配
+  path: domains/sales/route-lead/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/route-lead/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 线索分配,归属,转交,交接
+- id: sales/sales-lead-triage
+  name: 线索分级排序
+  path: domains/sales/sales-lead-triage/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/lead-triage/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 线索打分,线索优先级,ICP,线索质量,分级
+- id: sales/schedule-meeting
+  name: 约会安排
+  path: domains/sales/schedule-meeting/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/schedule-meeting/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 约会议,日历,发起会议,安排会议
+- id: sales/setup
+  name: 销售首次配置
+  path: domains/sales/setup/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/setup/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 销售初始化,连接工具,首次运行,配置向导
+- id: sales/stakeholder-map
+  name: 决策链地图
+  path: domains/sales/stakeholder-map/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/stakeholder-map/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 决策人,影响力,关键人物,干系人地图,联系人角色
+- id: sales/team-pipeline
+  name: 团队管道汇总
+  path: domains/sales/team-pipeline/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/team-pipeline/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 团队管道,销售团队,组长视图,辅导
+- id: sales/update-opportunity
+  name: 商机更新
+  path: domains/sales/update-opportunity/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/update-opportunity/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 商机阶段,更新商机,赢单概率,预计成交日
+- id: sales/weekly-wrap
+  name: 周度小结
+  path: domains/sales/weekly-wrap/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/weekly-wrap/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 周报,本周总结,下周计划
+- id: sales/win-loss-review
+  name: 赢单丢单复盘
+  path: domains/sales/win-loss-review/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/win-loss-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 赢单分析,丢单分析,赢单复盘,输单原因

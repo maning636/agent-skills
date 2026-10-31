@@ -1,0 +1,50 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: product-management
+label: 产品 / 经营
+updated: '2026-10-31'
+authority: domain
+plugin_priority: false
+count:
+  skills: 3
+skills:
+- id: product-management/metrics-review
+  name: 产品指标复盘
+  path: domains/product-management/metrics-review/SKILL.md
+  version: 1.0.0
+  domain: product-management
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:product-management/skills/metrics-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - product-management
+  deprecated: false
+  authority: primary
+  keywords: 指标,数据复盘,留存,转化,北极星指标,效果分析
+- id: product-management/roadmap-update
+  name: 路线图维护
+  path: domains/product-management/roadmap-update/SKILL.md
+  version: 1.0.0
+  domain: product-management
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:product-management/skills/roadmap-update/SKILL.md
+  license: Apache-2.0
+  tags:
+  - product-management
+  deprecated: false
+  authority: primary
+  keywords: 路线图,roadmap,排期,优先级,版本规划,迭代规划
+- id: product-management/stakeholder-update
+  name: 干系人同步
+  path: domains/product-management/stakeholder-update/SKILL.md
+  version: 1.0.0
+  domain: product-management
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:product-management/skills/stakeholder-update/SKILL.md
+  license: Apache-2.0
+  tags:
+  - product-management
+  deprecated: false
+  authority: primary
+  keywords: 周报,汇报,向上汇报,同步进展,干系人,状态同步

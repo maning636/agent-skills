@@ -1,0 +1,24 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: pdf-viewer
+label: PDF 处理
+updated: '2026-10-31'
+authority: process
+plugin_priority: false
+count:
+  skills: 1
+skills:
+- id: pdf-viewer/view-pdf
+  name: PDF 交互查看
+  path: domains/pdf-viewer/view-pdf/SKILL.md
+  version: 1.0.0
+  domain: pdf-viewer
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:pdf-viewer/skills/view-pdf/SKILL.md
+  license: Apache-2.0
+  tags:
+  - pdf-viewer
+  deprecated: false
+  authority: primary
+  keywords: pdf,批注,填表,签名,标注pdf

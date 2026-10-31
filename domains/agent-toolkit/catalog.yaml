@@ -1,0 +1,228 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: agent-toolkit
+label: Agent 工具箱
+updated: '2026-10-31'
+authority: process
+plugin_priority: false
+count:
+  skills: 15
+skills:
+- id: agent-toolkit/agent-reach
+  name: Agent 触达能力
+  path: domains/agent-toolkit/agent-reach/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: '>'
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 联网能力,触达,agent reach,获取信息渠道
+- id: agent-toolkit/calibrate
+  name: 校准
+  path: domains/agent-toolkit/calibrate/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: 'In-session self-improvement. Reviews the current conversation for corrections, preferences,
+    and patterns, then suggests specific skill/setup updates. Triggers on "calibrate", "what can you improve",
+    "update your skills", "what did we learn", "tune up". Lite mode: "calibrate lite" or "/calibrate lite"
+    — fast 1-3 suggestion sweep for shorter sessions.'
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 校准,置信度校准,自检,结果校准,calibration
+- id: agent-toolkit/cognitive-guard
+  name: 认知防护
+  path: domains/agent-toolkit/cognitive-guard/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: '|'
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 认知偏差,防护,思维陷阱,避免误导,cognitive guard
+- id: agent-toolkit/computer-use
+  name: 电脑操作
+  path: domains/agent-toolkit/computer-use/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: '>-'
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 操作电脑,鼠标键盘,截图操作,ui自动化,computer use
+- id: agent-toolkit/find-skills
+  name: 技能发现
+  path: domains/agent-toolkit/find-skills/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: Helps users discover and install agent skills when they ask questions like "how do I do
+    X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities.
+    This skill should be used when the user is looking for functionality that might exist as an installable
+    skill.
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 找技能,skill发现,技能搜索,有什么技能,安装技能,怎么装技能,装技能,技能列表
+- id: agent-toolkit/gidlin-law
+  name: 吉德林法则顾问
+  path: domains/agent-toolkit/gidlin-law/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: 吉德林法则顾问，通过六步结构化提问帮用户将模糊困扰转化为清晰问题陈述。触发场景：(1) 用户说"帮我理清思路"、"我很迷茫"、"我说不清楚问题在哪"、"吉德林"，(2) 用户面对复杂问题但表达模糊、情绪和事实交织，(3)
+    用户在使用其他思维工具（5Why、第一性原理、私董会）之前需要先定义问题。
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 1) 用户说帮我理清思路,我很迷茫,我说不清楚问题在哪,吉德林,情绪和事实交织,第一性原理,私董会）之前需要先定义问题
+- id: agent-toolkit/minimax
+  name: MiniMax 能力
+  path: domains/agent-toolkit/minimax/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: Use MiniMax CLI (mmx) for image generation, video generation, speech synthesis, music generation,
+    and image understanding. Activate when the user asks to generate/create images, videos, audio, or
+    music, or when they ask about their quota.
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: minimax,海螺,音视频,多模态,minimax模型
+- id: agent-toolkit/officecli
+  name: Office 文档处理
+  path: domains/agent-toolkit/officecli/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: Create, analyze, proofread, and modify Office documents (.docx, .xlsx, .pptx) using the
+    officecli CLI tool. Use when the user wants to create, inspect, check formatting, find issues, add
+    charts, or modify Office documents.
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: word,excel,ppt,office文档,表格处理,文档分析
+- id: agent-toolkit/optimize-skill-md
+  name: 按照《Skills MD 标准书写格式》
+  path: domains/agent-toolkit/optimize-skill-md/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: 按照《Skills MD 标准书写格式》对现有 SKILL.md 进行结构化优化，提升描述质量、章节组织、内容简洁度和格式规范性。当用户需要优化、改进或标准化 SKILL.md
+    文件时使用。触发词：优化SKILL.md、改进skill、标准化skill格式、skill格式检查、skill优化。
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 优化SKILL.md,改进skill,标准化skill格式,skill格式检查,skill优化,需要优化
+- id: agent-toolkit/orca-cli
+  name: Orca CLI
+  path: domains/agent-toolkit/orca-cli/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: '>-'
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: orca,截图工具,界面识别,视觉定位,cli
+- id: agent-toolkit/release-skills
+  name: 技能发布
+  path: domains/agent-toolkit/release-skills/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: Universal release workflow. Auto-detects version files and changelogs. Supports Node.js,
+    Python, Rust, Claude Plugin, GitHub Releases, annotated tags, historical release backfill, and generic
+    projects. Use when user says "release", "发布", "new version", "bump version", "push", "推送", "release
+    notes", "GitHub Release", or "回填 Release".
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 发布技能,打包技能,技能分发,release
+- id: agent-toolkit/sandcastle-verify
+  name: 沙盒校验
+  path: domains/agent-toolkit/sandcastle-verify/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: 通过 Sandcastle 在隔离环境中验证代码变更。当你的 Claude Code 在某个环境写了代码，想让另一个 Claude 实例验证时使用。触发词："验证代码"/"sandcastle
+    验证"/"调用沙箱"/"verify with sandbox
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 沙盒,验证环境,试运行,沙盒测试,sandbox
+- id: agent-toolkit/skill-update
+  name: 技能更新
+  path: domains/agent-toolkit/skill-update/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: '|'
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 更新技能,升级skill,同步上游,skill更新
+- id: agent-toolkit/slidecraft
+  name: 幻灯片精修
+  path: domains/agent-toolkit/slidecraft/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint
+    files. Use when the user wants to build a presentation, convert a PPT/PPTX to web, or create slides
+    for a talk/pitch. Helps non-designers discover their aesthetic through visual exploration rather than
+    abstract choices.
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 幻灯片打磨,ppt美化,版式调整,slidecraft
+- id: agent-toolkit/tweak
+  name: 微调优化
+  path: domains/agent-toolkit/tweak/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: Inject a live tweak panel into any HTML file (slides, websites, mockups). Auto-scans the
+    page, picks reasonable sliders, lets the user dial in changes in browser, then bakes the chosen values
+    back into the source CSS and removes the panel. Two levels — `tweak light` (5 sliders), `tweak max`
+    (10 sliders).
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 微调,微调代码,小改,调参,tweak

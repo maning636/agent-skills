@@ -1,0 +1,141 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: data
+label: 数据 / 数据科学
+updated: '2026-10-31'
+authority: domain
+plugin_priority: false
+count:
+  skills: 10
+skills:
+- id: data/analyze
+  name: 数据分析
+  path: domains/data/analyze/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/analyze/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 数据问题,分析问题,洞察,算指标
+- id: data/build-dashboard
+  name: 交互式仪表盘
+  path: domains/data/build-dashboard/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/build-dashboard/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 仪表盘,dashboard,看板,交互式报表
+- id: data/create-viz
+  name: 数据可视化
+  path: domains/data/create-viz/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/create-viz/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 图表,画图,matplotlib,seaborn,可视化
+- id: data/data-context-extractor
+  name: 数据隐性知识提取
+  path: domains/data/data-context-extractor/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/data-context-extractor/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 数据字典,隐性知识,分析师访谈,口径沉淀
+- id: data/data-visualization
+  name: 图表设计
+  path: domains/data/data-visualization/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/data-visualization/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 图表选型,可视化方案,图表规范
+- id: data/explore-data
+  name: 数据探查
+  path: domains/data/explore-data/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/explore-data/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 数据剖析,数据质量,字段分布,缺失值,摸底
+- id: data/sql-queries
+  name: 多方言 SQL
+  path: domains/data/sql-queries/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/sql-queries/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: sql方言,snowflake,bigquery,databricks,数仓
+- id: data/statistical-analysis
+  name: 统计分析
+  path: domains/data/statistical-analysis/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/statistical-analysis/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 统计,假设检验,离群点,趋势分析,显著性
+- id: data/validate-data
+  name: 数据校验
+  path: domains/data/validate-data/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/validate-data/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 数据校验,口径核对,偏差检查,准确性
+- id: data/write-query
+  name: SQL 编写
+  path: domains/data/write-query/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/write-query/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: sql,写查询,取数,数仓查询

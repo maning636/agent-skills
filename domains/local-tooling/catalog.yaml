@@ -1,0 +1,41 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: local-tooling
+label: 本机工具
+updated: '2026-10-31'
+authority: process
+plugin_priority: false
+count:
+  skills: 2
+skills:
+- id: local-tooling/local-ocr
+  name: 本地离线 OCR 识文
+  path: domains/local-tooling/local-ocr/SKILL.md
+  version: 1.0.0
+  domain: local-tooling
+  description: Extract text from local images (PNG, JPEG) with precise coordinates, confidence scores,
+    and stable error handling using the light-ocr CLI. Use when needing to read small/dense text in screenshots,
+    receipts, labels, forms, or documents that a multimodal model may misread; when exact text plus bounding
+    box coordinates are needed for field extraction, redaction, counting, or layout analysis; or when
+    deterministic offline OCR is required without network or API calls.
+  origin: local (light-ocr wrapper)
+  license: Apache-2.0
+  tags:
+  - local-tooling
+  deprecated: false
+  authority: primary
+  keywords: ocr,截图识文,离线识别,图片转文字,发票识别,文字提取
+- id: local-tooling/skill-tuner
+  name: Skill 调优评测
+  path: domains/local-tooling/skill-tuner/SKILL.md
+  version: 1.0.0
+  domain: local-tooling
+  description: 调整、优化、重写其他 Skill 时必须使用的元 Skill。当任务涉及修改任何 SKILL.md（新增规则、改写措辞、删除内容、全文重写）时触发。目的是让 skill 的演进由失败案例驱动、以最小改动进行、经回归验证后才保留，防止越改越差。
+  origin: local
+  license: 未声明
+  tags:
+  - local-tooling
+  deprecated: false
+  authority: primary
+  keywords: skill调优,优化skill,技能测试,skill评分,技能评测

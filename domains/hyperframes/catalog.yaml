@@ -1,0 +1,95 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: hyperframes
+label: HyperFrames 动效
+updated: '2026-10-31'
+authority: domain
+plugin_priority: false
+count:
+  skills: 5
+skills:
+- id: hyperframes/hyperframes
+  name: HyperFrames 动效引擎
+  path: domains/hyperframes/hyperframes/SKILL.md
+  version: 1.0.0
+  domain: hyperframes
+  description: Create video compositions, animations, title cards, overlays, captions, voiceovers, audio-reactive
+    visuals, and scene transitions in HyperFrames HTML. Use when asked to build any HTML-based video content,
+    add captions or subtitles synced to audio, generate text-to-speech narration, create audio-reactive
+    animation (beat sync, glow, pulse driven by music), add animated text highlighting (marker sweeps,
+    hand-drawn circles, burst lines, scribble, sketchout), or add transitions between scenes (crossfades,
+    wipes, reveals, shader transitions). Covers composition authoring, timing, media, and the full video
+    production workflow. For dev-loop CLI commands (init, lint, inspect, preview, render) see the hyperframes-cli
+    skill; for asset preprocessing commands (tts, transcribe, remove-background) see the hyperframes-media
+    skill.
+  origin: heygen-com/hyperframes
+  license: Apache-2.0
+  tags:
+  - hyperframes
+  deprecated: false
+  authority: primary
+  keywords: hyperframes,动效,网页动画,转场,动效视频,动画引擎
+- id: hyperframes/hyperframes-cli
+  name: HyperFrames 命令行
+  path: domains/hyperframes/hyperframes-cli/SKILL.md
+  version: 1.0.0
+  domain: hyperframes
+  description: HyperFrames CLI dev loop — `npx hyperframes` for scaffolding (init), validation (lint,
+    inspect), preview, render, and environment troubleshooting (doctor, browser, info, upgrade). Use when
+    running any of these commands or troubleshooting the HyperFrames build/render environment. For asset
+    preprocessing commands (`tts`, `transcribe`, `remove-background`), invoke the `hyperframes-media`
+    skill instead.
+  origin: heygen-com/hyperframes
+  license: Apache-2.0
+  tags:
+  - hyperframes
+  deprecated: false
+  authority: primary
+  keywords: hyperframes cli,命令行,渲染,build,导出视频
+- id: hyperframes/hyperframes-helper
+  name: HyperFrames 辅助工具
+  path: domains/hyperframes/hyperframes-helper/SKILL.md
+  version: 1.0.0
+  domain: hyperframes
+  description: Build agent-friendly motion-graphics videos with Hyperframes (HTML-to-MP4). Three levels
+    of effort — Level 1 website-to-video for quick conversions, Level 2 storyboards for guided design
+    iteration, Level 3 fully custom guided-video productions with cut/storyboard/motion-graphics workflow.
+    Triggers on "hyperframes", "html to mp4", "render with hyperframes", "motion graphics for [recording]",
+    "storyboard a video", "/hyperframes-helper".
+  origin: heygen-com/hyperframes
+  license: Apache-2.0
+  tags:
+  - hyperframes
+  deprecated: false
+  authority: primary
+  keywords: hyperframes,辅助,调试,安装,排查
+- id: hyperframes/hyperframes-registry
+  name: 动效注册表
+  path: domains/hyperframes/hyperframes-registry/SKILL.md
+  version: 1.0.0
+  domain: hyperframes
+  description: Install and wire registry blocks and components into HyperFrames compositions. Use when
+    running hyperframes add, installing a block or component, wiring an installed item into index.html,
+    or working with hyperframes.json. Covers the add command, install locations, block sub-composition
+    wiring, component snippet merging, and registry discovery.
+  origin: heygen-com/hyperframes
+  license: Apache-2.0
+  tags:
+  - hyperframes
+  deprecated: false
+  authority: primary
+  keywords: registry,注册表,动效库,预设
+- id: hyperframes/website-to-hyperframes
+  name: 网页转 HyperFrames 视频
+  path: domains/hyperframes/website-to-hyperframes/SKILL.md
+  version: 1.0.0
+  domain: hyperframes
+  description: '|'
+  origin: heygen-com/hyperframes
+  license: Apache-2.0
+  tags:
+  - hyperframes
+  deprecated: false
+  authority: primary
+  keywords: 网页转视频,网站转动效,录屏,promo视频,网站做成视频

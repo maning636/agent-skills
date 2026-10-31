@@ -14,6 +14,10 @@ agent-skills 取用工具（零依赖，仅标准库）
   python fetch.py --search "招聘 面试"          # 在 L0+L1 中搜索，返回候选（带直链）
   python fetch.py --search "面试" --domain human-resources
   python fetch.py --cache-dir                  # 打印缓存目录
+  python fetch.py --cache-clear                # 一键清理本地缓存
+  python fetch.py --cache-clear-dry-run        # 预览将要清理的缓存
+  python fetch.py --composition one-person-company   # 解析 skills-meta 的 composition
+  python fetch.py --pin-list                   # 列出已固定的库版本（库@tag）
   python fetch.py --update                     # 强制重新拉取（忽略缓存）
   python fetch.py --offline <domain>/<skill>   # 只用缓存，不联网
 
@@ -21,8 +25,9 @@ agent-skills 取用工具（零依赖，仅标准库）
   * 绝不整包下载；一次只取需要的文件
   * 网络失败自动降级到本地缓存
   * 取不到就报错退出，绝不返回编造内容
+  * composition 解析只打印「库@tag + 技能 id」，不代跑，避免误拉
 """
-import argparse, json, os, re, sys, time, urllib.request
+import argparse, json, os, re, shutil, sys, time, urllib.request
 
 RAW_BASE = "https://raw.githubusercontent.com/maning636/agent-skills/main/"
 # raw 主站失败时的备用通道（同一份内容）
@@ -175,6 +180,169 @@ def score_tokens(text, toks):
         if tok in t:
             s += 6 if len(tok) >= 3 else 3
     return s
+
+
+# ----------------------------------------------------------------- 元库（skills-meta）
+def meta_root():
+    """定位 skills-meta 元库根目录。
+
+    优先级: $SKILLS_META 环境变量 -> D:\\skills-meta -> ~/skills-meta
+    """
+    env = os.environ.get("SKILLS_META")
+    cands = [env] if env else []
+    cands += [r"D:\skills-meta", os.path.join(os.path.expanduser("~"), "skills-meta")]
+    for c in cands:
+        if c and os.path.isdir(c):
+            return os.path.abspath(c)
+    return None
+
+
+def _read_pin(meta):
+    """读 pin 文件: <lib>@<tag> 每行一条，# 开头为注释。"""
+    pins = {}
+    p = os.path.join(meta, "pin")
+    if not os.path.isfile(p):
+        return pins
+    for line in open(p, encoding="utf-8"):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        for sep in ("@", "="):
+            if sep in line:
+                k, _, v = line.partition(sep)
+                pins[k.strip()] = v.strip()
+                break
+    return pins
+
+
+def _read_yaml(path):
+    """极简 YAML 读取（只支持本项目用到的两层结构），无 PyYAML 依赖。"""
+    try:
+        import yaml  # 有就用标准库之外最稳的
+        with open(path, "r", encoding="utf-8") as fh:
+            return yaml.safe_load(fh)
+    except Exception:
+        pass
+    # 回退：手写解析 include: / - library: / domains: / skills:
+    out, cur = {}, None
+    try:
+        lines = open(path, encoding="utf-8").read().splitlines()
+    except OSError:
+        return out
+    section = None
+    for ln in lines:
+        s = ln.strip()
+        if not s or s.startswith("#"):
+            continue
+        if s.startswith("include:"):
+            section = "include"
+            out.setdefault("include", [])
+            continue
+        if s.startswith("name:"):
+            out["name"] = s.split(":", 1)[1].strip()
+            continue
+        if s.startswith("- ") and section == "include":
+            item = {}
+            rest = s[2:].strip()
+            if ":" in rest:
+                k, _, v = rest.partition(":")
+                item[k.strip()] = v.strip()
+            out["include"].append(item)
+            cur = item
+            continue
+        if cur is not None and ":" in s:
+            k, _, v = s.partition(":")
+            cur[k.strip()] = v.strip()
+    return out
+
+
+def do_pin_list():
+    meta = meta_root()
+    if not meta:
+        print("找不到 skills-meta 元库。设置 $SKILLS_META 或放到 D:\\skills-meta。", file=sys.stderr)
+        return 1
+    pins = _read_pin(meta)
+    if not pins:
+        print("pin 文件为空或不存在: %s" % os.path.join(meta, "pin"))
+        return 1
+    print("# 已固定的库版本 (skills-meta/pin)\n")
+    for k in sorted(pins):
+        print("  %-28s @ %s" % (k, pins[k]))
+    return 0
+
+
+def do_composition(name, offline=False, force=False):
+    """解析 composition，输出「库@tag + 技能 id 列表」，并给出一条可复制的取用命令。"""
+    meta = meta_root()
+    if not meta:
+        print("找不到 skills-meta 元库。设置 $SKILLS_META 或放到 D:\\skills-meta。", file=sys.stderr)
+        return 1
+    cpath = os.path.join(meta, "compositions", "%s.yaml" % name)
+    if not os.path.isfile(cpath):
+        print("未知 composition: %s（可选: %s）"
+              % (name, ", ".join(sorted(
+                  f[:-5] for f in os.listdir(os.path.join(meta, "compositions"))
+                  if f.endswith(".yaml")))), file=sys.stderr)
+        return 1
+    comp = _read_yaml(cpath)
+    pins = _read_pin(meta)
+    includes = comp.get("include") or []
+
+    print("本次使用：composition=%s" % name)
+    if comp.get("description"):
+        print("  说明: %s" % comp["description"])
+    print()
+
+    total = 0
+    lines = []
+    for inc in includes:
+        lib = inc.get("library", "")
+        base, _, want_tag = lib.partition("@")
+        tag = want_tag or pins.get(base, "")
+        doms = inc.get("domains", "")
+        sks = inc.get("skills", "")
+        if not tag:
+            print("  ! %s 未固定版本（pin 里没有），按 main 处理" % base)
+            tag = "main"
+        if base.startswith("plugin:"):
+            print("  库 %s@%s   [插件，优先于我们的技能]" % (base, tag))
+        else:
+            print("  库 %s@%s" % (base, tag))
+        if doms:
+            print("      domains: %s" % doms)
+        if sks:
+            print("      skills : %s" % sks)
+        n = len([x for x in re.split(r"[,\s]+", str(doms or "")) if x])
+        n += len([x for x in re.split(r"[,\s]+", str(sks or "")) if x])
+        total += n
+        lines.append("    %s@%s" % (base, tag))
+    print()
+    print("  技能 id 数量（按组成项计）: %d" % total)
+    print("  取用:")
+    for l in lines:
+        print("    # %s" % l)
+    print("    python tools/fetch.py --index      # 再按 L0 路由表逐个取")
+    print()
+    print("  提示: 插件优先 —— 通用工艺（脑暴/计划/TDD/调试/评审/并行/验证）先查插件；")
+    print("        商业判断/OPC/设计令牌/企业运营/指标口径 只从本库与 opc-playbook 取。")
+    return 0
+
+
+def do_cache_clear(dry_run=False):
+    """一键清理本地缓存。"""
+    if not os.path.isdir(CACHE):
+        print("缓存目录不存在，无需清理: %s" % CACHE)
+        return 0
+    n = sum(len(files) for _, _, files in os.walk(CACHE))
+    size = sum(os.path.getsize(os.path.join(r, f))
+               for r, _, fs in os.walk(CACHE) for f in fs
+               if os.path.exists(os.path.join(r, f)))
+    if dry_run:
+        print("将清理: %s（%d 个文件 / %.1f MB）" % (CACHE, n, size / 1048576))
+        return 0
+    shutil.rmtree(CACHE, ignore_errors=True)
+    print("已清理缓存: %s（%d 个文件 / %.1f MB）" % (CACHE, n, size / 1048576))
+    return 0
 
 
 # ----------------------------------------------------------------- 动作
@@ -344,10 +512,22 @@ def main():
     ap.add_argument("--ls", metavar="DIR", help="列出仓库内某目录内容")
     ap.add_argument("--path", action="store_true", help="只打印本地路径")
     ap.add_argument("--cache-dir", action="store_true", help="打印缓存目录")
+    ap.add_argument("--cache-clear", action="store_true", help="一键清理本地缓存")
+    ap.add_argument("--cache-clear-dry-run", action="store_true", help="预览将要清理的缓存")
+    ap.add_argument("--composition", metavar="NAME", help="解析 skills-meta 里的 composition")
+    ap.add_argument("--pin-list", action="store_true", help="列出已固定的库版本")
     ap.add_argument("--update", action="store_true", help="强制重新拉取")
     ap.add_argument("--offline", action="store_true", help="只用缓存，不联网")
     a = ap.parse_args()
 
+    if a.cache_clear:
+        return do_cache_clear()
+    if a.cache_clear_dry_run:
+        return do_cache_clear(dry_run=True)
+    if a.pin_list:
+        return do_pin_list()
+    if a.composition:
+        return do_composition(a.composition, offline=a.offline, force=a.update)
     if a.cache_dir:
         print(CACHE)
         return 0

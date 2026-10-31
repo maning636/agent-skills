@@ -1,0 +1,280 @@
+{
+  "_comment": "插件覆盖对照表。索引 L0 的『插件已覆盖』一节由此生成；由 skills-meta/tools/scan_plugins.py 按本机实际安装版本刷新（--refresh-agent-skills）。skill id 形如 plugin:<plugin>/<skill>（冒号命名空间，与我们的 <domain>/<skill> 天然不冲突）。",
+  "_scanned_at": "2026-10-31",
+  "_scan_result": "本机实扫到 25 个插件目录；其中真正与本库能力重叠的是 4 个：superpowers(15) / Product-Manager-Skills(46) / plugin-dev(7) / skill-creator(1)",
+  "plugins": [
+    {
+      "name": "superpowers",
+      "namespace": "plugin:superpowers",
+      "source": "local",
+      "status": "detected",
+      "version": "7.0.1",
+      "root": "C:\\Users\\maning\\.kimi-code\\plugins\\managed\\superpowers",
+      "skills": [
+        "brainstorming",
+        "diagnosing-superpowers",
+        "dispatching-parallel-agents",
+        "executing-plans",
+        "finishing-a-development-branch",
+        "receiving-code-review",
+        "requesting-code-review",
+        "subagent-driven-development",
+        "systematic-debugging",
+        "test-driven-development",
+        "using-git-worktrees",
+        "using-superpowers",
+        "verification-before-completion",
+        "writing-plans",
+        "writing-skills"
+      ]
+    },
+    {
+      "name": "Product-Manager-Skills-main",
+      "namespace": "plugin:Product-Manager-Skills-main",
+      "source": "local",
+      "status": "detected",
+      "version": "unknown",
+      "root": "C:\\Users\\maning\\.skills-manager\\skills",
+      "note": "46 个通用 PM 技能。覆盖 PRD/路线图/优先级/用户故事/发现流程/定位陈述/TAM-SAM-SOM/SaaS 指标。与本库 product-management(3) 及 opc-playbook 的 OPC 组部分相邻。",
+      "skills": [
+        "acquisition-channel-advisor",
+        "ai-shaped-readiness-advisor",
+        "altitude-horizon-framework",
+        "business-health-diagnostic",
+        "company-research",
+        "context-engineering-advisor",
+        "customer-journey-map",
+        "customer-journey-mapping-workshop",
+        "director-readiness-advisor",
+        "discovery-interview-prep",
+        "discovery-process",
+        "eol-message",
+        "epic-breakdown-advisor",
+        "epic-hypothesis",
+        "executive-onboarding-playbook",
+        "feature-investment-advisor",
+        "finance-based-pricing-advisor",
+        "finance-metrics-quickref",
+        "jobs-to-be-done",
+        "lean-ux-canvas",
+        "opportunity-solution-tree",
+        "pestel-analysis",
+        "pol-probe",
+        "pol-probe-advisor",
+        "positioning-statement",
+        "positioning-workshop",
+        "prd-development",
+        "press-release",
+        "prioritization-advisor",
+        "problem-framing-canvas",
+        "problem-statement",
+        "product-strategy-session",
+        "proto-persona",
+        "recommendation-canvas",
+        "roadmap-planning",
+        "saas-economics-efficiency-metrics",
+        "saas-revenue-growth-metrics",
+        "skill-authoring-workflow",
+        "storyboard",
+        "tam-sam-som-calculator",
+        "user-story",
+        "user-story-mapping",
+        "user-story-mapping-workshop",
+        "user-story-splitting",
+        "vp-cpo-readiness-advisor",
+        "workshop-facilitation"
+      ]
+    },
+    {
+      "name": "plugin-dev",
+      "namespace": "plugin:plugin-dev",
+      "source": "local",
+      "status": "detected",
+      "version": "unknown",
+      "root": "C:\\Users\\maning\\.claude\\plugins\\marketplaces\\claude-plugins-official\\plugins",
+      "note": "Claude Code 官方插件开发套件（7 个）。",
+      "skills": [
+        "agent-development",
+        "command-development",
+        "hook-development",
+        "mcp-integration",
+        "plugin-settings",
+        "plugin-structure",
+        "skill-development"
+      ]
+    },
+    {
+      "name": "skill-creator",
+      "namespace": "plugin:skill-creator",
+      "source": "local",
+      "status": "detected",
+      "version": "unknown",
+      "root": "C:\\Users\\maning\\.claude\\plugins\\marketplaces\\claude-plugins-official\\plugins",
+      "skills": ["skill-creator"]
+    }
+  ],
+  "_l0_rows_note": "L0 索引只放 10 行紧凑表；逐条精确对照见下面 overlap 数组（非常驻）",
+  "l0_rows": [
+    {
+      "capability": "脑暴 / 写计划 / 执行计划",
+      "plugin": "superpowers/{brainstorming, writing-plans, executing-plans}",
+      "fallback": ""
+    },
+    {
+      "capability": "TDD",
+      "plugin": "superpowers/test-driven-development",
+      "fallback": ""
+    },
+    {
+      "capability": "代码评审（发起 / 接收）",
+      "plugin": "superpowers/{requesting-code-review, receiving-code-review}",
+      "fallback": ""
+    },
+    {
+      "capability": "调试",
+      "plugin": "superpowers/systematic-debugging",
+      "fallback": "engineering/debug"
+    },
+    {
+      "capability": "并行子代理 / 子代理驱动",
+      "plugin": "superpowers/{dispatching-parallel-agents, subagent-driven-development}",
+      "fallback": ""
+    },
+    {
+      "capability": "完成前验证 / 分支收尾",
+      "plugin": "superpowers/{verification-before-completion, finishing-a-development-branch}",
+      "fallback": ""
+    },
+    {
+      "capability": "git worktree 隔离开发",
+      "plugin": "superpowers/using-git-worktrees",
+      "fallback": ""
+    },
+    {
+      "capability": "写技能 / 技能工作流",
+      "plugin": "superpowers/writing-skills, skill-creator/skill-creator",
+      "fallback": "agent-toolkit/skill-tuner"
+    },
+    {
+      "capability": "Claude Code 插件 / 命令 / Agent 开发",
+      "plugin": "plugin-dev/{plugin-structure, command-development, agent-development, hook-development, mcp-integration}",
+      "fallback": ""
+    },
+    {
+      "capability": "PRD / 从零路线图 / 定位 / TAM·SAM·SOM / SaaS 指标 / 用户旅程 / 竞品研究 / 视频分镜",
+      "plugin": "Product-Manager-Skills-main/{prd-development, roadmap-planning, positioning-statement, tam-sam-som-calculator, saas-*-metrics, customer-journey-map, company-research, storyboard}",
+      "fallback": ""
+    }
+  ],
+  "overlap": [
+    {
+      "capability": "调试",
+      "plugin": "plugin:superpowers/systematic-debugging",
+      "fallback": "engineering/debug",
+      "note": "真实重叠；我们的降级为 fallback"
+    },
+    {
+      "capability": "写计划 / 执行计划",
+      "plugin": "plugin:superpowers/writing-plans, executing-plans",
+      "fallback": ""
+    },
+    {
+      "capability": "TDD",
+      "plugin": "plugin:superpowers/test-driven-development",
+      "fallback": ""
+    },
+    {
+      "capability": "代码评审（发起 / 接收）",
+      "plugin": "plugin:superpowers/requesting-code-review, receiving-code-review",
+      "fallback": ""
+    },
+    {
+      "capability": "脑暴",
+      "plugin": "plugin:superpowers/brainstorming",
+      "fallback": ""
+    },
+    {
+      "capability": "并行子代理 / 子代理驱动开发",
+      "plugin": "plugin:superpowers/dispatching-parallel-agents, subagent-driven-development",
+      "fallback": ""
+    },
+    {
+      "capability": "完成前验证",
+      "plugin": "plugin:superpowers/verification-before-completion",
+      "fallback": ""
+    },
+    {
+      "capability": "git worktree 隔离开发",
+      "plugin": "plugin:superpowers/using-git-worktrees",
+      "fallback": ""
+    },
+    {
+      "capability": "写技能 / 写技能工作流",
+      "plugin": "plugin:superpowers/writing-skills, plugin:skill-creator/skill-creator, plugin:Product-Manager-Skills-main/skill-authoring-workflow",
+      "fallback": "agent-toolkit/skill-tuner"
+    },
+    {
+      "capability": "插件 / 命令 / Agent 开发（Claude Code 侧）",
+      "plugin": "plugin:plugin-dev/{plugin-structure, command-development, agent-development, hook-development, mcp-integration, plugin-settings}",
+      "fallback": "",
+      "note": "我们的 cowork-plugin-management 是 AionUi/Cowork 平台侧，不冲突，两者都留"
+    },
+    {
+      "capability": "PRD 撰写",
+      "plugin": "plugin:Product-Manager-Skills-main/prd-development",
+      "fallback": "",
+      "note": "我们已于第二批清库删除 PRD 类技能，此处由插件承接"
+    },
+    {
+      "capability": "路线图（从零规划）",
+      "plugin": "plugin:Product-Manager-Skills-main/roadmap-planning",
+      "fallback": "",
+      "note": "不替代我们的 product-management/roadmap-update —— 后者是『加一件事、动什么』的增量维护"
+    },
+    {
+      "capability": "定位陈述 / 市场定位",
+      "plugin": "plugin:Product-Manager-Skills-main/positioning-statement, positioning-workshop",
+      "fallback": "",
+      "note": "可作为 opc-playbook 阶段内的工具引用，但不作为 OPC 价值主张的判断依据"
+    },
+    {
+      "capability": "市场规模测算 TAM/SAM/SOM",
+      "plugin": "plugin:Product-Manager-Skills-main/tam-sam-som-calculator",
+      "fallback": "",
+      "note": "可作为 opc-playbook/赛道选择阶段的工具引用"
+    },
+    {
+      "capability": "SaaS 单位经济与增长指标",
+      "plugin": "plugin:Product-Manager-Skills-main/saas-economics-efficiency-metrics, saas-revenue-growth-metrics, finance-metrics-quickref, business-health-diagnostic",
+      "fallback": "",
+      "note": "SaaS 专用口径。我们只做通用指标字典，SaaS 口径直接引用插件，不重复建设"
+    },
+    {
+      "capability": "用户旅程 / 客户旅程地图",
+      "plugin": "plugin:Product-Manager-Skills-main/customer-journey-map, customer-journey-mapping-workshop",
+      "fallback": ""
+    },
+    {
+      "capability": "竞品 / 公司研究 / PESTEL",
+      "plugin": "plugin:Product-Manager-Skills-main/company-research, pestel-analysis",
+      "fallback": ""
+    },
+    {
+      "capability": "脚本分镜（视频）",
+      "plugin": "plugin:Product-Manager-Skills-main/storyboard",
+      "fallback": "",
+      "note": "自媒体视频分镜；我们已清掉自媒体技能，这里由插件承接"
+    }
+  ],
+  "never_delegate": [
+    "商业判断 / 经营层",
+    "OPC 经营层阶段机",
+    "idea-to-cash 产品层阶段机",
+    "价值主张与商业模式",
+    "设计令牌与设计评审",
+    "企业运营（CRM / 现金流 / 竞品 / 销售漏斗）",
+    "指标口径与实验设计",
+    "交付发布与合规"
+  ],
+  "never_delegate_note": "插件里即使有相近能力（如 positioning-statement、tam-sam-som-calculator、business-health-diagnostic），也只能当作『阶段内可引用的工具』，不能当『判断依据』。判断依据永远来自 opc-playbook 与本库。"
+}

@@ -17,6 +17,10 @@ SKIP_DIRS = {".git", "__pycache__", ".pytest_cache"}
 
 def collect_files():
     files = []
+    # repo root documents (README / INDEX / FETCH / CATALOG / catalog.yaml / NOTICE / AGENT ...)
+    for p in sorted(ROOT.iterdir()):
+        if p.is_file() and p.name not in {".DS_Store"}:
+            files.append({"path": p.name, "bytes": p.stat().st_size})
     for sub in ("domains", "tools"):
         base = ROOT / sub
         if not base.exists():
@@ -46,12 +50,14 @@ def main():
 
     files = collect_files()
     l0 = ROOT / "INDEX.md"
+    l0_bytes = l0.stat().st_size
     manifest = {
         "name": "agent-skills",
         "version": "1.0.0",
         "layout": "three-tier-progressive-disclosure",
         "l0": "INDEX.md",
-        "l0_bytes": l0.stat().st_size,
+        "l0_bytes": l0_bytes,
+        "l0_tokens_est": round(l0_bytes / 3.85),
         "domains": domains,
         "files": files,
         "total_skills": total_skills,

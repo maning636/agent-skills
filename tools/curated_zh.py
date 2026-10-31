@@ -196,20 +196,6 @@ ZH = {
 "cowork-plugin-management/cowork-plugin-customizer": ("定制组织插件", "定制插件,组织适配,改插件,接mcp"),
 # ---------------------------------------------------------------- pdf-viewer
 "pdf-viewer/view-pdf":  ("PDF 交互查看", "pdf,批注,填表,签名,标注pdf"),
-    "opc/opc-100day-profit": ("百日盈利蓝图", "AI一人公司,百日盈利,100天,盈利计划,启动路线,新手起步"),
-    "opc/opc-asset-ops": ("资产沉淀", "复利资产,可复用产出,沉淀资产,资产化,内容资产"),
-    "opc/opc-business-model-design": ("商业模式设计", "商业模式,盈利模式,精益画布,业务模型,商业模式设计"),
-    "opc/opc-compliance": ("公司注册与合规", "公司注册,个体户,杭州注册,苏州注册,财税合规,算法备案,备案,合规,营业执照"),
-    "opc/opc-conversion-loop": ("转化闭环", "转化,转化闭环,增长闭环,落地页转化,成交路径"),
-    "opc/opc-dashboard-review": ("经营体检", "经营体检,经营看板,经营复盘,指标复盘,数据复盘,运营健康度"),
-    "opc/opc-growth": ("获客增长", "获客,增长,拉新,客户获取,小红书获客,客户访谈,增长框架"),
-    "opc/opc-mvp-designer": ("MVP 设计", "mvp,最小可行产品,mvp设计,最小实验,验证方案,原型范围"),
-    "opc/opc-niche-positioning": ("赛道选择", "选赛道,细分定位,细分市场,赛道定位,利基,市场定位,垂直定位"),
-    "opc/opc-orchestrator": ("OPC 编排", "opc,一人公司,编排,orchestrator,流程编排,全流程,调度"),
-    "opc/opc-resource-audit": ("资源盘点", "资源盘点,家底盘点,资源清单,个人资源,优势盘点"),
-    "opc/opc-strategy": ("OPC 战略", "opc,一人公司,战略,定位,赛道,访谈,付费测试,go/no-go,最小交付"),
-    "opc/opc-techstack": ("技术栈搭建", "技术栈,工具栈,agent搭建,自动化,订阅审计,ai工具"),
-    "opc/opc-value-proposition": ("价值主张", "价值主张,value proposition,用户价值,核心价值,差异化,定价"),
 }
 
 ZH_NEW = {
@@ -217,19 +203,6 @@ ZH_NEW = {
     # ---------------- 企业微信 ----------------
     # ---------------- 宝玉内容全家桶 ----------------
     # ---------------- 增长 / 商业 ----------------
-    "growth-ops/anomaly-detection": ("异常检测", "异常检测,离群点,异常指标,数据告警"),
-    "growth-ops/crm-data-governance": ("CRM 数据治理", "crm治理,数据质量,字段规范,主数据,脏数据"),
-    "growth-ops/hv-analysis": ("霍夫曼价值分析", "hv分析,价值评估,可行性,成本收益,方案比选"),
-    "growth-ops/kpi-monitoring": ("KPI 监控", "kpi监控,指标预警,阈值,监控看板,经营监控"),
-    "growth-ops/personalise": ("个性化方案", "个性化,定制方案,按需定制,个性化推荐"),
-    "growth-ops/plan-for-goal": ("目标导向规划", "目标拆解,okr拆解,计划制定,里程碑,达成路径"),
-    "growth-ops/risk-scoring": ("风险评分", "风险评分,风险量化,风险等级,风险评估,打分模型"),
-    "growth-ops/idea-to-cash": ("创意到回款", "从想法到收款,回款,现金流落地,创意变现,收款"),
-    "growth-ops/orchestration": ("多 Agent 编排", "编排,多agent,任务编排,subagent,流水线"),
-    "growth-ops/first-principles-mentor": ("第一性原理导师", "第一性原理,本质思考,拆到底层,回到本质"),
-    "growth-ops/six-thinking-hats": ("六顶思考帽", "六顶帽,思维帽,多角度思考,批判视角"),
-    "growth-ops/five-why": ("五问法", "5why,五问,根因分析,连续追问,根本原因"),
-    "growth-ops/peers-advisory-group": ("同伴顾问组", "同伴顾问,同伴评议,peer,顾问组,同行建议"),
     # ---------------- Agent 工具 ----------------
     "agent-toolkit/agent-reach": ("Agent 触达能力", "联网能力,触达,agent reach,获取信息渠道"),
     "agent-toolkit/calibrate": ("校准", "校准,置信度校准,自检,结果校准,calibration"),

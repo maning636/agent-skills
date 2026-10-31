@@ -1,0 +1,2647 @@
+version: 1
+kind: skills
+library: agent-skills
+updated: '2026-10-31'
+count:
+  domains: 20
+  skills: 186
+domains:
+- id: agent-toolkit
+  label: Agent 工具箱
+  path: domains/agent-toolkit
+  catalog: domains/agent-toolkit/catalog.yaml
+  index: domains/agent-toolkit/INDEX.md
+  skills: 15
+  authority: process
+  plugin_priority: false
+- id: cowork-plugin-management
+  label: 插件 / 技能工程
+  path: domains/cowork-plugin-management
+  catalog: domains/cowork-plugin-management/catalog.yaml
+  index: domains/cowork-plugin-management/INDEX.md
+  skills: 2
+  authority: process
+  plugin_priority: true
+  plugin_overlap: cowork 平台侧插件开发（Claude Code 侧的 plugin-dev 不冲突）
+- id: customer-support
+  label: 客户支持
+  path: domains/customer-support
+  catalog: domains/customer-support/catalog.yaml
+  index: domains/customer-support/INDEX.md
+  skills: 5
+  authority: domain
+  plugin_priority: false
+- id: data
+  label: 数据 / 数据科学
+  path: domains/data
+  catalog: domains/data/catalog.yaml
+  index: domains/data/INDEX.md
+  skills: 10
+  authority: domain
+  plugin_priority: false
+- id: design
+  label: 设计
+  path: domains/design
+  catalog: domains/design/catalog.yaml
+  index: domains/design/INDEX.md
+  skills: 7
+  authority: domain
+  plugin_priority: false
+- id: engineering
+  label: 研发 / 工程
+  path: domains/engineering
+  catalog: domains/engineering/catalog.yaml
+  index: domains/engineering/INDEX.md
+  skills: 2
+  authority: process
+  plugin_priority: true
+  plugin_overlap: debug
+- id: enterprise-search
+  label: 企业搜索
+  path: domains/enterprise-search
+  catalog: domains/enterprise-search/catalog.yaml
+  index: domains/enterprise-search/INDEX.md
+  skills: 5
+  authority: domain
+  plugin_priority: false
+- id: finance
+  label: 财务
+  path: domains/finance
+  catalog: domains/finance/catalog.yaml
+  index: domains/finance/INDEX.md
+  skills: 8
+  authority: domain
+  plugin_priority: false
+- id: human-resources
+  label: 人力资源 / HR
+  path: domains/human-resources
+  catalog: domains/human-resources/catalog.yaml
+  index: domains/human-resources/INDEX.md
+  skills: 9
+  authority: domain
+  plugin_priority: false
+- id: hyperframes
+  label: HyperFrames 动效
+  path: domains/hyperframes
+  catalog: domains/hyperframes/catalog.yaml
+  index: domains/hyperframes/INDEX.md
+  skills: 5
+  authority: domain
+  plugin_priority: false
+- id: legal
+  label: 法务 / 合规
+  path: domains/legal
+  catalog: domains/legal/catalog.yaml
+  index: domains/legal/INDEX.md
+  skills: 9
+  authority: domain
+  plugin_priority: false
+- id: local-tooling
+  label: 本机工具
+  path: domains/local-tooling
+  catalog: domains/local-tooling/catalog.yaml
+  index: domains/local-tooling/INDEX.md
+  skills: 2
+  authority: process
+  plugin_priority: false
+- id: marketing
+  label: 市场 / 营销
+  path: domains/marketing
+  catalog: domains/marketing/catalog.yaml
+  index: domains/marketing/INDEX.md
+  skills: 3
+  authority: domain
+  plugin_priority: false
+- id: operations
+  label: 运营
+  path: domains/operations
+  catalog: domains/operations/catalog.yaml
+  index: domains/operations/INDEX.md
+  skills: 9
+  authority: domain
+  plugin_priority: false
+- id: pdf-viewer
+  label: PDF 处理
+  path: domains/pdf-viewer
+  catalog: domains/pdf-viewer/catalog.yaml
+  index: domains/pdf-viewer/INDEX.md
+  skills: 1
+  authority: process
+  plugin_priority: false
+- id: product-management
+  label: 产品 / 经营
+  path: domains/product-management
+  catalog: domains/product-management/catalog.yaml
+  index: domains/product-management/INDEX.md
+  skills: 3
+  authority: domain
+  plugin_priority: false
+- id: productivity
+  label: 个人生产力
+  path: domains/productivity
+  catalog: domains/productivity/catalog.yaml
+  index: domains/productivity/INDEX.md
+  skills: 4
+  authority: process
+  plugin_priority: false
+- id: sales
+  label: 销售
+  path: domains/sales
+  catalog: domains/sales/catalog.yaml
+  index: domains/sales/INDEX.md
+  skills: 36
+  authority: domain
+  plugin_priority: false
+- id: small-business
+  label: 小企业 / 团队经营
+  path: domains/small-business
+  catalog: domains/small-business/catalog.yaml
+  index: domains/small-business/INDEX.md
+  skills: 44
+  authority: domain
+  plugin_priority: false
+- id: understand
+  label: 代码理解
+  path: domains/understand
+  catalog: domains/understand/catalog.yaml
+  index: domains/understand/INDEX.md
+  skills: 7
+  authority: process
+  plugin_priority: false
+skills:
+- id: agent-toolkit/agent-reach
+  name: Agent 触达能力
+  path: domains/agent-toolkit/agent-reach/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: '>'
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 联网能力,触达,agent reach,获取信息渠道
+- id: agent-toolkit/calibrate
+  name: 校准
+  path: domains/agent-toolkit/calibrate/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: 'In-session self-improvement. Reviews the current conversation for corrections, preferences,
+    and patterns, then suggests specific skill/setup updates. Triggers on "calibrate", "what can you improve",
+    "update your skills", "what did we learn", "tune up". Lite mode: "calibrate lite" or "/calibrate lite"
+    — fast 1-3 suggestion sweep for shorter sessions.'
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 校准,置信度校准,自检,结果校准,calibration
+- id: agent-toolkit/cognitive-guard
+  name: 认知防护
+  path: domains/agent-toolkit/cognitive-guard/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: '|'
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 认知偏差,防护,思维陷阱,避免误导,cognitive guard
+- id: agent-toolkit/computer-use
+  name: 电脑操作
+  path: domains/agent-toolkit/computer-use/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: '>-'
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 操作电脑,鼠标键盘,截图操作,ui自动化,computer use
+- id: agent-toolkit/find-skills
+  name: 技能发现
+  path: domains/agent-toolkit/find-skills/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: Helps users discover and install agent skills when they ask questions like "how do I do
+    X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities.
+    This skill should be used when the user is looking for functionality that might exist as an installable
+    skill.
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 找技能,skill发现,技能搜索,有什么技能,安装技能,怎么装技能,装技能,技能列表
+- id: agent-toolkit/gidlin-law
+  name: 吉德林法则顾问
+  path: domains/agent-toolkit/gidlin-law/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: 吉德林法则顾问，通过六步结构化提问帮用户将模糊困扰转化为清晰问题陈述。触发场景：(1) 用户说"帮我理清思路"、"我很迷茫"、"我说不清楚问题在哪"、"吉德林"，(2) 用户面对复杂问题但表达模糊、情绪和事实交织，(3)
+    用户在使用其他思维工具（5Why、第一性原理、私董会）之前需要先定义问题。
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 1) 用户说帮我理清思路,我很迷茫,我说不清楚问题在哪,吉德林,情绪和事实交织,第一性原理,私董会）之前需要先定义问题
+- id: agent-toolkit/minimax
+  name: MiniMax 能力
+  path: domains/agent-toolkit/minimax/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: Use MiniMax CLI (mmx) for image generation, video generation, speech synthesis, music generation,
+    and image understanding. Activate when the user asks to generate/create images, videos, audio, or
+    music, or when they ask about their quota.
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: minimax,海螺,音视频,多模态,minimax模型
+- id: agent-toolkit/officecli
+  name: Office 文档处理
+  path: domains/agent-toolkit/officecli/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: Create, analyze, proofread, and modify Office documents (.docx, .xlsx, .pptx) using the
+    officecli CLI tool. Use when the user wants to create, inspect, check formatting, find issues, add
+    charts, or modify Office documents.
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: word,excel,ppt,office文档,表格处理,文档分析
+- id: agent-toolkit/optimize-skill-md
+  name: 按照《Skills MD 标准书写格式》
+  path: domains/agent-toolkit/optimize-skill-md/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: 按照《Skills MD 标准书写格式》对现有 SKILL.md 进行结构化优化，提升描述质量、章节组织、内容简洁度和格式规范性。当用户需要优化、改进或标准化 SKILL.md
+    文件时使用。触发词：优化SKILL.md、改进skill、标准化skill格式、skill格式检查、skill优化。
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 优化SKILL.md,改进skill,标准化skill格式,skill格式检查,skill优化,需要优化
+- id: agent-toolkit/orca-cli
+  name: Orca CLI
+  path: domains/agent-toolkit/orca-cli/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: '>-'
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: orca,截图工具,界面识别,视觉定位,cli
+- id: agent-toolkit/release-skills
+  name: 技能发布
+  path: domains/agent-toolkit/release-skills/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: Universal release workflow. Auto-detects version files and changelogs. Supports Node.js,
+    Python, Rust, Claude Plugin, GitHub Releases, annotated tags, historical release backfill, and generic
+    projects. Use when user says "release", "发布", "new version", "bump version", "push", "推送", "release
+    notes", "GitHub Release", or "回填 Release".
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 发布技能,打包技能,技能分发,release
+- id: agent-toolkit/sandcastle-verify
+  name: 沙盒校验
+  path: domains/agent-toolkit/sandcastle-verify/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: 通过 Sandcastle 在隔离环境中验证代码变更。当你的 Claude Code 在某个环境写了代码，想让另一个 Claude 实例验证时使用。触发词："验证代码"/"sandcastle
+    验证"/"调用沙箱"/"verify with sandbox
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 沙盒,验证环境,试运行,沙盒测试,sandbox
+- id: agent-toolkit/skill-update
+  name: 技能更新
+  path: domains/agent-toolkit/skill-update/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: '|'
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 更新技能,升级skill,同步上游,skill更新
+- id: agent-toolkit/slidecraft
+  name: 幻灯片精修
+  path: domains/agent-toolkit/slidecraft/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint
+    files. Use when the user wants to build a presentation, convert a PPT/PPTX to web, or create slides
+    for a talk/pitch. Helps non-designers discover their aesthetic through visual exploration rather than
+    abstract choices.
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 幻灯片打磨,ppt美化,版式调整,slidecraft
+- id: agent-toolkit/tweak
+  name: 微调优化
+  path: domains/agent-toolkit/tweak/SKILL.md
+  version: 1.0.0
+  domain: agent-toolkit
+  description: Inject a live tweak panel into any HTML file (slides, websites, mockups). Auto-scans the
+    page, picks reasonable sliders, lets the user dial in changes in browser, then bakes the chosen values
+    back into the source CSS and removes the panel. Two levels — `tweak light` (5 sliders), `tweak max`
+    (10 sliders).
+  origin: 本机自研
+  license: 见来源
+  tags:
+  - agent-toolkit
+  deprecated: false
+  authority: primary
+  keywords: 微调,微调代码,小改,调参,tweak
+- id: cowork-plugin-management/cowork-plugin-customizer
+  name: 定制组织插件
+  path: domains/cowork-plugin-management/cowork-plugin-customizer/SKILL.md
+  version: 1.0.0
+  domain: cowork-plugin-management
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:cowork-plugin-management/skills/cowork-plugin-customizer/SKILL.md
+  license: Apache-2.0
+  tags:
+  - cowork-plugin-management
+  deprecated: false
+  authority: primary
+  keywords: 定制插件,组织适配,改插件,接mcp
+- id: cowork-plugin-management/create-cowork-plugin
+  name: 从零建插件
+  path: domains/cowork-plugin-management/create-cowork-plugin/SKILL.md
+  version: 1.0.0
+  domain: cowork-plugin-management
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:cowork-plugin-management/skills/create-cowork-plugin/SKILL.md
+  license: Apache-2.0
+  tags:
+  - cowork-plugin-management
+  - process
+  - cowork
+  deprecated: false
+  authority: primary
+  keywords: 创建插件,新建插件,插件脚手架
+- id: customer-support/customer-escalation
+  name: 升级处理
+  path: domains/customer-support/customer-escalation/SKILL.md
+  version: 1.0.0
+  domain: customer-support
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:customer-support/skills/customer-escalation/SKILL.md
+  license: Apache-2.0
+  tags:
+  - customer-support
+  deprecated: false
+  authority: primary
+  keywords: 客诉升级,升级工单,打包上报
+- id: customer-support/customer-research
+  name: 客户问题调研
+  path: domains/customer-support/customer-research/SKILL.md
+  version: 1.0.0
+  domain: customer-support
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:customer-support/skills/customer-research/SKILL.md
+  license: Apache-2.0
+  tags:
+  - customer-support
+  deprecated: false
+  authority: primary
+  keywords: 客户问题研究,多源调研,溯源
+- id: customer-support/draft-response
+  name: 客服回复起草
+  path: domains/customer-support/draft-response/SKILL.md
+  version: 1.0.0
+  domain: customer-support
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:customer-support/skills/draft-response/SKILL.md
+  license: Apache-2.0
+  tags:
+  - customer-support
+  deprecated: false
+  authority: primary
+  keywords: 回复客户,客服话术,答复草稿
+- id: customer-support/kb-article
+  name: 知识库文章
+  path: domains/customer-support/kb-article/SKILL.md
+  version: 1.0.0
+  domain: customer-support
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:customer-support/skills/kb-article/SKILL.md
+  license: Apache-2.0
+  tags:
+  - customer-support
+  deprecated: false
+  authority: primary
+  keywords: 知识库,自助文档,faq,沉淀文章
+- id: customer-support/ticket-triage
+  name: 工单分级
+  path: domains/customer-support/ticket-triage/SKILL.md
+  version: 1.0.0
+  domain: customer-support
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:customer-support/skills/ticket-triage/SKILL.md
+  license: Apache-2.0
+  tags:
+  - customer-support
+  deprecated: false
+  authority: primary
+  keywords: 工单,问题分级,优先级,分诊
+- id: data/analyze
+  name: 数据分析
+  path: domains/data/analyze/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/analyze/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 数据问题,分析问题,洞察,算指标
+- id: data/build-dashboard
+  name: 交互式仪表盘
+  path: domains/data/build-dashboard/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/build-dashboard/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 仪表盘,dashboard,看板,交互式报表
+- id: data/create-viz
+  name: 数据可视化
+  path: domains/data/create-viz/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/create-viz/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 图表,画图,matplotlib,seaborn,可视化
+- id: data/data-context-extractor
+  name: 数据隐性知识提取
+  path: domains/data/data-context-extractor/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/data-context-extractor/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 数据字典,隐性知识,分析师访谈,口径沉淀
+- id: data/data-visualization
+  name: 图表设计
+  path: domains/data/data-visualization/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/data-visualization/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 图表选型,可视化方案,图表规范
+- id: data/explore-data
+  name: 数据探查
+  path: domains/data/explore-data/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/explore-data/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 数据剖析,数据质量,字段分布,缺失值,摸底
+- id: data/sql-queries
+  name: 多方言 SQL
+  path: domains/data/sql-queries/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/sql-queries/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: sql方言,snowflake,bigquery,databricks,数仓
+- id: data/statistical-analysis
+  name: 统计分析
+  path: domains/data/statistical-analysis/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/statistical-analysis/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 统计,假设检验,离群点,趋势分析,显著性
+- id: data/validate-data
+  name: 数据校验
+  path: domains/data/validate-data/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/validate-data/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: 数据校验,口径核对,偏差检查,准确性
+- id: data/write-query
+  name: SQL 编写
+  path: domains/data/write-query/SKILL.md
+  version: 1.0.0
+  domain: data
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:data/skills/write-query/SKILL.md
+  license: Apache-2.0
+  tags:
+  - data
+  deprecated: false
+  authority: primary
+  keywords: sql,写查询,取数,数仓查询
+- id: design/accessibility-review
+  name: 无障碍审计
+  path: domains/design/accessibility-review/SKILL.md
+  version: 1.0.0
+  domain: design
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:design/skills/accessibility-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - design
+  deprecated: false
+  authority: primary
+  keywords: 无障碍,a11y,wcag,读屏,适老化,可访问性
+- id: design/design-critique
+  name: 设计评审
+  path: domains/design/design-critique/SKILL.md
+  version: 1.0.0
+  domain: design
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:design/skills/design-critique/SKILL.md
+  license: Apache-2.0
+  tags:
+  - design
+  deprecated: false
+  authority: primary
+  keywords: 设计评审,设计稿点评,可用性,视觉层级,设计反馈
+- id: design/design-handoff
+  name: 设计交付规格
+  path: domains/design/design-handoff/SKILL.md
+  version: 1.0.0
+  domain: design
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:design/skills/design-handoff/SKILL.md
+  license: Apache-2.0
+  tags:
+  - design
+  deprecated: false
+  authority: primary
+  keywords: 设计交付,开发交付,设计标注,切图,还原稿,交付规范
+- id: design/design-system
+  name: 设计系统
+  path: domains/design/design-system/SKILL.md
+  version: 1.0.0
+  domain: design
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:design/skills/design-system/SKILL.md
+  license: Apache-2.0
+  tags:
+  - design
+  deprecated: false
+  authority: primary
+  keywords: 设计系统,设计规范,组件库,token,命名一致性,设计标准
+- id: design/research-synthesis
+  name: 研究结论综合
+  path: domains/design/research-synthesis/SKILL.md
+  version: 1.0.0
+  domain: design
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:design/skills/research-synthesis/SKILL.md
+  license: Apache-2.0
+  tags:
+  - design
+  deprecated: false
+  authority: primary
+  keywords: 研究结论,主题归纳,用户洞察,研究综合
+- id: design/user-research
+  name: 用户研究方案
+  path: domains/design/user-research/SKILL.md
+  version: 1.0.0
+  domain: design
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:design/skills/user-research/SKILL.md
+  license: Apache-2.0
+  tags:
+  - design
+  deprecated: false
+  authority: primary
+  keywords: 用户研究,访谈提纲,可用性测试,问卷设计,调研方案
+- id: design/ux-copy
+  name: UX 文案
+  path: domains/design/ux-copy/SKILL.md
+  version: 1.0.0
+  domain: design
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:design/skills/ux-copy/SKILL.md
+  license: Apache-2.0
+  tags:
+  - design
+  deprecated: false
+  authority: primary
+  keywords: 微文案,界面文案,错误提示,空状态,按钮文案,提示语
+- id: engineering/debug
+  name: 结构化调试
+  path: domains/engineering/debug/SKILL.md
+  version: 1.0.0
+  domain: engineering
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:engineering/skills/debug/SKILL.md
+  license: Apache-2.0
+  tags:
+  - engineering
+  - process
+  - debug
+  deprecated: false
+  authority: fallback
+  superseded_by: plugin:superpowers/systematic-debugging
+  keywords: 调试,debug,排查问题,定位bug,复现,修bug
+- id: engineering/standup
+  name: 站会同步
+  path: domains/engineering/standup/SKILL.md
+  version: 1.0.0
+  domain: engineering
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:engineering/skills/standup/SKILL.md
+  license: Apache-2.0
+  tags:
+  - engineering
+  - process
+  - standup
+  deprecated: false
+  authority: primary
+  keywords: 站会,日报,进度同步,晨会,工作汇报
+- id: enterprise-search/digest
+  name: 活动摘要
+  path: domains/enterprise-search/digest/SKILL.md
+  version: 1.0.0
+  domain: enterprise-search
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:enterprise-search/skills/digest/SKILL.md
+  license: Apache-2.0
+  tags:
+  - enterprise-search
+  deprecated: false
+  authority: primary
+  keywords: 日报,周报摘要,每日简报,自动汇总
+- id: enterprise-search/knowledge-synthesis
+  name: 多源知识综合
+  path: domains/enterprise-search/knowledge-synthesis/SKILL.md
+  version: 1.0.0
+  domain: enterprise-search
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:enterprise-search/skills/knowledge-synthesis/SKILL.md
+  license: Apache-2.0
+  tags:
+  - enterprise-search
+  deprecated: false
+  authority: primary
+  keywords: 知识综合,多源合并,去重,可信度
+- id: enterprise-search/search
+  name: 跨源检索
+  path: domains/enterprise-search/search/SKILL.md
+  version: 1.0.0
+  domain: enterprise-search
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:enterprise-search/skills/search/SKILL.md
+  license: Apache-2.0
+  tags:
+  - enterprise-search
+  deprecated: false
+  authority: primary
+  keywords: 搜索,一次查询,多系统搜索
+- id: enterprise-search/search-strategy
+  name: 检索策略
+  path: domains/enterprise-search/search-strategy/SKILL.md
+  version: 1.0.0
+  domain: enterprise-search
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:enterprise-search/skills/search-strategy/SKILL.md
+  license: Apache-2.0
+  tags:
+  - enterprise-search
+  deprecated: false
+  authority: primary
+  keywords: 查询分解,检索编排,查询改写,搜索策略
+- id: enterprise-search/source-management
+  name: 检索源管理
+  path: domains/enterprise-search/source-management/SKILL.md
+  version: 1.0.0
+  domain: enterprise-search
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:enterprise-search/skills/source-management/SKILL.md
+  license: Apache-2.0
+  tags:
+  - enterprise-search
+  deprecated: false
+  authority: primary
+  keywords: 搜索源,数据源接入,源优先级
+- id: finance/audit-support
+  name: 内审支持
+  path: domains/finance/audit-support/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/audit-support/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: sox,内控测试,审计底稿,抽样
+- id: finance/close-management
+  name: 月结流程管理
+  path: domains/finance/close-management/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/close-management/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: 月结,结账流程,结账任务,结账进度
+- id: finance/financial-statements
+  name: 财务报表
+  path: domains/finance/financial-statements/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/financial-statements/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: 利润表,资产负债表,现金流量表,三表,财务报表
+- id: finance/journal-entry
+  name: 记账凭证
+  path: domains/finance/journal-entry/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/journal-entry/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: 记账,凭证,借贷,分录,做账
+- id: finance/journal-entry-prep
+  name: 月结记账准备
+  path: domains/finance/journal-entry-prep/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/journal-entry-prep/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: 月结,凭证准备,分录明细,结账凭证
+- id: finance/reconciliation
+  name: 账目核对
+  path: domains/finance/reconciliation/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/reconciliation/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: 对账,银行对账,子账,勾稽,账实核对
+- id: finance/sox-testing
+  name: SOX 控制测试
+  path: domains/finance/sox-testing/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/sox-testing/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: sox404,控制测试,样本选择,工作底稿
+- id: finance/variance-analysis
+  name: 差异归因分析
+  path: domains/finance/variance-analysis/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/variance-analysis/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: 差异分析,波动分析,归因,瀑布图,预算差异
+- id: human-resources/comp-analysis
+  name: 薪酬对标分析
+  path: domains/human-resources/comp-analysis/SKILL.md
+  version: 1.0.0
+  domain: human-resources
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:human-resources/skills/comp-analysis/SKILL.md
+  license: Apache-2.0
+  tags:
+  - human-resources
+  deprecated: false
+  authority: primary
+  keywords: 薪酬,调薪,薪酬带,股权,人力成本,benchmark
+- id: human-resources/draft-offer
+  name: offer 拟稿
+  path: domains/human-resources/draft-offer/SKILL.md
+  version: 1.0.0
+  domain: human-resources
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:human-resources/skills/draft-offer/SKILL.md
+  license: Apache-2.0
+  tags:
+  - human-resources
+  deprecated: false
+  authority: primary
+  keywords: offer,录用通知,录用信,薪酬方案,入职通知
+- id: human-resources/interview-prep
+  name: 面试准备与评分卡
+  path: domains/human-resources/interview-prep/SKILL.md
+  version: 1.0.0
+  domain: human-resources
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:human-resources/skills/interview-prep/SKILL.md
+  license: Apache-2.0
+  tags:
+  - human-resources
+  deprecated: false
+  authority: primary
+  keywords: 面试,面试题,评分卡,结构化面试,能力模型
+- id: human-resources/onboarding
+  name: 入职引导
+  path: domains/human-resources/onboarding/SKILL.md
+  version: 1.0.0
+  domain: human-resources
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:human-resources/skills/onboarding/SKILL.md
+  license: Apache-2.0
+  tags:
+  - human-resources
+  deprecated: false
+  authority: primary
+  keywords: 入职,新人,试用期,第一周,入职清单
+- id: human-resources/org-planning
+  name: 组织与编制规划
+  path: domains/human-resources/org-planning/SKILL.md
+  version: 1.0.0
+  domain: human-resources
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:human-resources/skills/org-planning/SKILL.md
+  license: Apache-2.0
+  tags:
+  - human-resources
+  deprecated: false
+  authority: primary
+  keywords: 组织架构,编制,人员规划,团队结构,扩编
+- id: human-resources/people-report
+  name: 人力数据报告
+  path: domains/human-resources/people-report/SKILL.md
+  version: 1.0.0
+  domain: human-resources
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:human-resources/skills/people-report/SKILL.md
+  license: Apache-2.0
+  tags:
+  - human-resources
+  deprecated: false
+  authority: primary
+  keywords: 人员报告,离职率,员工结构,组织健康,人头统计
+- id: human-resources/performance-review
+  name: 绩效评估
+  path: domains/human-resources/performance-review/SKILL.md
+  version: 1.0.0
+  domain: human-resources
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:human-resources/skills/performance-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - human-resources
+  deprecated: false
+  authority: primary
+  keywords: 绩效,考核,绩效面谈,自评,校准会
+- id: human-resources/policy-lookup
+  name: 公司政策查询
+  path: domains/human-resources/policy-lookup/SKILL.md
+  version: 1.0.0
+  domain: human-resources
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:human-resources/skills/policy-lookup/SKILL.md
+  license: Apache-2.0
+  tags:
+  - human-resources
+  deprecated: false
+  authority: primary
+  keywords: 制度,政策,假期,报销政策,远程办公,员工手册
+- id: human-resources/recruiting-pipeline
+  name: 招聘管道管理
+  path: domains/human-resources/recruiting-pipeline/SKILL.md
+  version: 1.0.0
+  domain: human-resources
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:human-resources/skills/recruiting-pipeline/SKILL.md
+  license: Apache-2.0
+  tags:
+  - human-resources
+  deprecated: false
+  authority: primary
+  keywords: 招聘,候选人,简历,人才,招聘漏斗,候选人管道
+- id: hyperframes/hyperframes
+  name: HyperFrames 动效引擎
+  path: domains/hyperframes/hyperframes/SKILL.md
+  version: 1.0.0
+  domain: hyperframes
+  description: Create video compositions, animations, title cards, overlays, captions, voiceovers, audio-reactive
+    visuals, and scene transitions in HyperFrames HTML. Use when asked to build any HTML-based video content,
+    add captions or subtitles synced to audio, generate text-to-speech narration, create audio-reactive
+    animation (beat sync, glow, pulse driven by music), add animated text highlighting (marker sweeps,
+    hand-drawn circles, burst lines, scribble, sketchout), or add transitions between scenes (crossfades,
+    wipes, reveals, shader transitions). Covers composition authoring, timing, media, and the full video
+    production workflow. For dev-loop CLI commands (init, lint, inspect, preview, render) see the hyperframes-cli
+    skill; for asset preprocessing commands (tts, transcribe, remove-background) see the hyperframes-media
+    skill.
+  origin: heygen-com/hyperframes
+  license: Apache-2.0
+  tags:
+  - hyperframes
+  deprecated: false
+  authority: primary
+  keywords: hyperframes,动效,网页动画,转场,动效视频,动画引擎
+- id: hyperframes/hyperframes-cli
+  name: HyperFrames 命令行
+  path: domains/hyperframes/hyperframes-cli/SKILL.md
+  version: 1.0.0
+  domain: hyperframes
+  description: HyperFrames CLI dev loop — `npx hyperframes` for scaffolding (init), validation (lint,
+    inspect), preview, render, and environment troubleshooting (doctor, browser, info, upgrade). Use when
+    running any of these commands or troubleshooting the HyperFrames build/render environment. For asset
+    preprocessing commands (`tts`, `transcribe`, `remove-background`), invoke the `hyperframes-media`
+    skill instead.
+  origin: heygen-com/hyperframes
+  license: Apache-2.0
+  tags:
+  - hyperframes
+  deprecated: false
+  authority: primary
+  keywords: hyperframes cli,命令行,渲染,build,导出视频
+- id: hyperframes/hyperframes-helper
+  name: HyperFrames 辅助工具
+  path: domains/hyperframes/hyperframes-helper/SKILL.md
+  version: 1.0.0
+  domain: hyperframes
+  description: Build agent-friendly motion-graphics videos with Hyperframes (HTML-to-MP4). Three levels
+    of effort — Level 1 website-to-video for quick conversions, Level 2 storyboards for guided design
+    iteration, Level 3 fully custom guided-video productions with cut/storyboard/motion-graphics workflow.
+    Triggers on "hyperframes", "html to mp4", "render with hyperframes", "motion graphics for [recording]",
+    "storyboard a video", "/hyperframes-helper".
+  origin: heygen-com/hyperframes
+  license: Apache-2.0
+  tags:
+  - hyperframes
+  deprecated: false
+  authority: primary
+  keywords: hyperframes,辅助,调试,安装,排查
+- id: hyperframes/hyperframes-registry
+  name: 动效注册表
+  path: domains/hyperframes/hyperframes-registry/SKILL.md
+  version: 1.0.0
+  domain: hyperframes
+  description: Install and wire registry blocks and components into HyperFrames compositions. Use when
+    running hyperframes add, installing a block or component, wiring an installed item into index.html,
+    or working with hyperframes.json. Covers the add command, install locations, block sub-composition
+    wiring, component snippet merging, and registry discovery.
+  origin: heygen-com/hyperframes
+  license: Apache-2.0
+  tags:
+  - hyperframes
+  deprecated: false
+  authority: primary
+  keywords: registry,注册表,动效库,预设
+- id: hyperframes/website-to-hyperframes
+  name: 网页转 HyperFrames 视频
+  path: domains/hyperframes/website-to-hyperframes/SKILL.md
+  version: 1.0.0
+  domain: hyperframes
+  description: '|'
+  origin: heygen-com/hyperframes
+  license: Apache-2.0
+  tags:
+  - hyperframes
+  deprecated: false
+  authority: primary
+  keywords: 网页转视频,网站转动效,录屏,promo视频,网站做成视频
+- id: legal/brief
+  name: 法务简报
+  path: domains/legal/brief/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/brief/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 法律简报,案情摘要,专题研究,事件法律分析
+- id: legal/compliance-check
+  name: 合规检查
+  path: domains/legal/compliance-check/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/compliance-check/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 合规,监管,法规适用,合规校验
+- id: legal/legal-response
+  name: 法务标准回复
+  path: domains/legal/legal-response/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/legal-response/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 法律问询回复,模板回复,法务答疑
+- id: legal/legal-risk-assessment
+  name: 法律风险评估
+  path: domains/legal/legal-risk-assessment/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/legal-risk-assessment/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 风险分级,严重度,法律风险,升级标准
+- id: legal/meeting-briefing
+  name: 法务会议准备
+  path: domains/legal/meeting-briefing/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/meeting-briefing/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 法务会前准备,法律会议,行动项
+- id: legal/review-contract
+  name: 合同审查
+  path: domains/legal/review-contract/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/review-contract/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 合同审核,合同条款,红线,谈判手册,偏离项
+- id: legal/signature-request
+  name: 签署发起
+  path: domains/legal/signature-request/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/signature-request/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 电子签,签署,签约,盖章,签字流程
+- id: legal/triage-nda
+  name: NDA 三色分级
+  path: domains/legal/triage-nda/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/triage-nda/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 保密协议,nda,分级,快速判断,保密协议审查
+- id: legal/vendor-check
+  name: 供应商合同状态
+  path: domains/legal/vendor-check/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/vendor-check/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 供应商,合作方合同,协议台账,尽调
+- id: local-tooling/local-ocr
+  name: 本地离线 OCR 识文
+  path: domains/local-tooling/local-ocr/SKILL.md
+  version: 1.0.0
+  domain: local-tooling
+  description: Extract text from local images (PNG, JPEG) with precise coordinates, confidence scores,
+    and stable error handling using the light-ocr CLI. Use when needing to read small/dense text in screenshots,
+    receipts, labels, forms, or documents that a multimodal model may misread; when exact text plus bounding
+    box coordinates are needed for field extraction, redaction, counting, or layout analysis; or when
+    deterministic offline OCR is required without network or API calls.
+  origin: local (light-ocr wrapper)
+  license: Apache-2.0
+  tags:
+  - local-tooling
+  deprecated: false
+  authority: primary
+  keywords: ocr,截图识文,离线识别,图片转文字,发票识别,文字提取
+- id: local-tooling/skill-tuner
+  name: Skill 调优评测
+  path: domains/local-tooling/skill-tuner/SKILL.md
+  version: 1.0.0
+  domain: local-tooling
+  description: 调整、优化、重写其他 Skill 时必须使用的元 Skill。当任务涉及修改任何 SKILL.md（新增规则、改写措辞、删除内容、全文重写）时触发。目的是让 skill 的演进由失败案例驱动、以最小改动进行、经回归验证后才保留，防止越改越差。
+  origin: local
+  license: 未声明
+  tags:
+  - local-tooling
+  deprecated: false
+  authority: primary
+  keywords: skill调优,优化skill,技能测试,skill评分,技能评测
+- id: marketing/brand-review
+  name: 品牌一致性检查
+  path: domains/marketing/brand-review/SKILL.md
+  version: 1.0.0
+  domain: marketing
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:marketing/skills/brand-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - marketing
+  deprecated: false
+  authority: primary
+  keywords: 品牌,品牌调性,口吻,style guide,文案审校
+- id: marketing/campaign-plan
+  name: 营销活动方案
+  path: domains/marketing/campaign-plan/SKILL.md
+  version: 1.0.0
+  domain: marketing
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:marketing/skills/campaign-plan/SKILL.md
+  license: Apache-2.0
+  tags:
+  - marketing
+  deprecated: false
+  authority: primary
+  keywords: 活动策划,投放方案,营销方案,campaign,活动日历
+- id: marketing/email-sequence
+  name: 邮件序列
+  path: domains/marketing/email-sequence/SKILL.md
+  version: 1.0.0
+  domain: marketing
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:marketing/skills/email-sequence/SKILL.md
+  license: Apache-2.0
+  tags:
+  - marketing
+  deprecated: false
+  authority: primary
+  keywords: 邮件营销,EDM,培育序列,邮件自动化,召回邮件
+- id: operations/capacity-plan
+  name: 容量规划
+  path: domains/operations/capacity-plan/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/capacity-plan/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 产能,资源规划,负载预测,利用率
+- id: operations/change-request
+  name: 变更申请
+  path: domains/operations/change-request/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/change-request/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 变更管理,影响分析,回滚方案,变更单
+- id: operations/compliance-tracking
+  name: 合规跟踪
+  path: domains/operations/compliance-tracking/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/compliance-tracking/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 合规要求,审计准备,合规台账
+- id: operations/process-doc
+  name: 流程文档化
+  path: domains/operations/process-doc/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/process-doc/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 流程图,sop,raci,流程梳理,操作手册
+- id: operations/process-optimization
+  name: 流程优化
+  path: domains/operations/process-optimization/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/process-optimization/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 瓶颈,提效,流程改进,价值流
+- id: operations/risk-assessment
+  name: 运营风险评估
+  path: domains/operations/risk-assessment/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/risk-assessment/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 运营风险,风险识别,缓解措施
+- id: operations/runbook
+  name: 运行手册
+  path: domains/operations/runbook/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/runbook/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: runbook,操作手册,值守手册,应急手册
+- id: operations/status-report
+  name: 运营状态报告
+  path: domains/operations/status-report/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/status-report/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 运营周报,kpi,风险与行动项
+- id: operations/vendor-review
+  name: 供应商评估
+  path: domains/operations/vendor-review/SKILL.md
+  version: 1.0.0
+  domain: operations
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:operations/skills/vendor-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - operations
+  deprecated: false
+  authority: primary
+  keywords: 供应商评估,成本分析,供应商风险,推荐结论
+- id: pdf-viewer/view-pdf
+  name: PDF 交互查看
+  path: domains/pdf-viewer/view-pdf/SKILL.md
+  version: 1.0.0
+  domain: pdf-viewer
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:pdf-viewer/skills/view-pdf/SKILL.md
+  license: Apache-2.0
+  tags:
+  - pdf-viewer
+  deprecated: false
+  authority: primary
+  keywords: pdf,批注,填表,签名,标注pdf
+- id: product-management/metrics-review
+  name: 产品指标复盘
+  path: domains/product-management/metrics-review/SKILL.md
+  version: 1.0.0
+  domain: product-management
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:product-management/skills/metrics-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - product-management
+  deprecated: false
+  authority: primary
+  keywords: 指标,数据复盘,留存,转化,北极星指标,效果分析
+- id: product-management/roadmap-update
+  name: 路线图维护
+  path: domains/product-management/roadmap-update/SKILL.md
+  version: 1.0.0
+  domain: product-management
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:product-management/skills/roadmap-update/SKILL.md
+  license: Apache-2.0
+  tags:
+  - product-management
+  deprecated: false
+  authority: primary
+  keywords: 路线图,roadmap,排期,优先级,版本规划,迭代规划
+- id: product-management/stakeholder-update
+  name: 干系人同步
+  path: domains/product-management/stakeholder-update/SKILL.md
+  version: 1.0.0
+  domain: product-management
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:product-management/skills/stakeholder-update/SKILL.md
+  license: Apache-2.0
+  tags:
+  - product-management
+  deprecated: false
+  authority: primary
+  keywords: 周报,汇报,向上汇报,同步进展,干系人,状态同步
+- id: productivity/memory-management
+  name: 双层记忆
+  path: domains/productivity/memory-management/SKILL.md
+  version: 1.0.0
+  domain: productivity
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:productivity/skills/memory-management/SKILL.md
+  license: Apache-2.0
+  tags:
+  - productivity
+  deprecated: false
+  authority: primary
+  keywords: 记忆,长期记忆,偏好记忆,工作记忆,上下文
+- id: productivity/start
+  name: 启动生产力系统
+  path: domains/productivity/start/SKILL.md
+  version: 1.0.0
+  domain: productivity
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:productivity/skills/start/SKILL.md
+  license: Apache-2.0
+  tags:
+  - productivity
+  deprecated: false
+  authority: primary
+  keywords: 初始化,首次启动,引导配置,工作初始化
+- id: productivity/task-management
+  name: 任务管理
+  path: domains/productivity/task-management/SKILL.md
+  version: 1.0.0
+  domain: productivity
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:productivity/skills/task-management/SKILL.md
+  license: Apache-2.0
+  tags:
+  - productivity
+  deprecated: false
+  authority: primary
+  keywords: 待办,todo,任务清单,任务追踪
+- id: productivity/update
+  name: 同步任务与记忆
+  path: domains/productivity/update/SKILL.md
+  version: 1.0.0
+  domain: productivity
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:productivity/skills/update/SKILL.md
+  license: Apache-2.0
+  tags:
+  - productivity
+  deprecated: false
+  authority: primary
+  keywords: 同步,刷新记忆,更新状态
+- id: sales/account-context
+  name: 客户全景
+  path: domains/sales/account-context/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/account-context/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户档案,360视图,客户历史,往来记录
+- id: sales/account-plan
+  name: 客户战略计划
+  path: domains/sales/account-plan/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/account-plan/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 大客户计划,客户经营,覆盖策略,干系人覆盖
+- id: sales/account-research
+  name: 目标公司调研
+  path: domains/sales/account-research/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/account-research/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户调研,目标公司,背景调查,甲方背景
+- id: sales/account-tiering
+  name: 客户分层
+  path: domains/sales/account-tiering/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/account-tiering/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户分级,ICP打分,客户优先级,名单排序
+- id: sales/call-prep
+  name: 通话准备
+  path: domains/sales/call-prep/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/call-prep/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 通话前准备,会前简报,会议准备,客户背景
+- id: sales/call-summary
+  name: 通话纪要
+  path: domains/sales/call-summary/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/call-summary/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 通话总结,会议纪要,跟进邮件,通话笔记
+- id: sales/close-plan
+  name: 成交方案
+  path: domains/sales/close-plan/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/close-plan/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 成交计划,行动计划,ROI论证,关闭计划
+- id: sales/competitive-intelligence
+  name: 竞争情报
+  path: domains/sales/competitive-intelligence/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/competitive-intelligence/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 竞对,竞争对手分析,赢单丢单模式,竞争格局
+- id: sales/create-an-asset
+  name: 客户材料制作
+  path: domains/sales/create-an-asset/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/create-an-asset/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户材料,单页页,deck,提案材料,客户方案
+- id: sales/crm-hygiene-check
+  name: CRM 数据体检
+  path: domains/sales/crm-hygiene-check/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/crm-hygiene-check/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: crm检查,字段缺失,阶段错乱,数据卫生
+- id: sales/customer-health
+  name: 客户健康度
+  path: domains/sales/customer-health/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/customer-health/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户风险,续约风险,qbr,客户活跃度
+- id: sales/customer-voice
+  name: 客户原声
+  path: domains/sales/customer-voice/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/customer-voice/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户声音,客户反馈,原话引用,客户评价
+- id: sales/daily-briefing
+  name: 晨间简报
+  path: domains/sales/daily-briefing/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/daily-briefing/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 今日会议,每日简报,晨会,待跟进客户
+- id: sales/deal-advance-gap
+  name: 商机推进缺口
+  path: domains/sales/deal-advance-gap/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/deal-advance-gap/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 还差什么,推进条件,下一阶段,缺口检查
+- id: sales/deal-review
+  name: 商机深度复盘
+  path: domains/sales/deal-review/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/deal-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 商机复盘,单子体检,赢单风险,推进卡点
+- id: sales/deal-signals
+  name: 商机异动监控
+  path: domains/sales/deal-signals/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/deal-signals/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 商机预警,单子停滞,冠军换人,续约窗口,风险信号
+- id: sales/deal-slip-scenario
+  name: 丢单影响模拟
+  path: domains/sales/deal-slip-scenario/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/deal-slip-scenario/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 丢单影响,配额缺口,业绩影响,情景推演
+- id: sales/draft-outreach
+  name: 外联邮件起草
+  path: domains/sales/draft-outreach/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/draft-outreach/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 外联,开发信,触达邮件,跟进邮件
+- id: sales/end-of-day
+  name: 收尾复盘
+  path: domains/sales/end-of-day/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/end-of-day/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 下班收尾,当日总结,承诺追踪
+- id: sales/expansion-whitespace
+  name: 增购空间挖掘
+  path: domains/sales/expansion-whitespace/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/expansion-whitespace/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 增购,交叉销售,扩容机会,空白市场
+- id: sales/forecast
+  name: 业绩预测
+  path: domains/sales/forecast/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/forecast/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 预测,commit,销售预测,管道预测,1v1
+- id: sales/handle-objection
+  name: 异议处理
+  path: domains/sales/handle-objection/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/handle-objection/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 客户异议,反对意见,竞争威胁,异议应对
+- id: sales/inbox-sweep
+  name: 邮件批量处理
+  path: domains/sales/inbox-sweep/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/inbox-sweep/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 批量邮件,未读邮件,邮件分类,邮件批处理
+- id: sales/log-activity
+  name: 活动回填 CRM
+  path: domains/sales/log-activity/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/log-activity/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 补录,活动记录,写入crm,通话记录
+- id: sales/pipeline-review
+  name: 管道健康度
+  path: domains/sales/pipeline-review/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/pipeline-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 销售管道,漏斗,转化率,管道覆盖,阶段健康
+- id: sales/renewal-radar
+  name: 续约雷达
+  path: domains/sales/renewal-radar/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/renewal-radar/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 续约,续费,到期提醒,续约机会
+- id: sales/rep-context
+  name: 销售一对一准备
+  path: domains/sales/rep-context/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/rep-context/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 销售1v1,组长的辅导,销售汇报,个人管道
+- id: sales/route-lead
+  name: 线索分配
+  path: domains/sales/route-lead/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/route-lead/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 线索分配,归属,转交,交接
+- id: sales/sales-lead-triage
+  name: 线索分级排序
+  path: domains/sales/sales-lead-triage/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/lead-triage/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 线索打分,线索优先级,ICP,线索质量,分级
+- id: sales/schedule-meeting
+  name: 约会安排
+  path: domains/sales/schedule-meeting/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/schedule-meeting/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 约会议,日历,发起会议,安排会议
+- id: sales/setup
+  name: 销售首次配置
+  path: domains/sales/setup/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/setup/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 销售初始化,连接工具,首次运行,配置向导
+- id: sales/stakeholder-map
+  name: 决策链地图
+  path: domains/sales/stakeholder-map/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/stakeholder-map/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 决策人,影响力,关键人物,干系人地图,联系人角色
+- id: sales/team-pipeline
+  name: 团队管道汇总
+  path: domains/sales/team-pipeline/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/team-pipeline/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 团队管道,销售团队,组长视图,辅导
+- id: sales/update-opportunity
+  name: 商机更新
+  path: domains/sales/update-opportunity/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/update-opportunity/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 商机阶段,更新商机,赢单概率,预计成交日
+- id: sales/weekly-wrap
+  name: 周度小结
+  path: domains/sales/weekly-wrap/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/weekly-wrap/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 周报,本周总结,下周计划
+- id: sales/win-loss-review
+  name: 赢单丢单复盘
+  path: domains/sales/win-loss-review/SKILL.md
+  version: 1.0.0
+  domain: sales
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:sales/skills/win-loss-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - sales
+  deprecated: false
+  authority: primary
+  keywords: 赢单分析,丢单分析,赢单复盘,输单原因
+- id: small-business/ad-manager
+  name: 广告投放管理
+  path: domains/small-business/ad-manager/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/ad-manager/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 广告,投放,adwords,广告优化
+- id: small-business/ap-processor
+  name: 应付账款处理
+  path: domains/small-business/ap-processor/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/ap-processor/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 账单处理,供应商对账,应付流程
+- id: small-business/brand-style
+  name: 品牌风格设定
+  path: domains/small-business/brand-style/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/brand-style/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 品牌风格,视觉偏好,色调,排版偏好
+- id: small-business/build-agent
+  name: 把手工活变成技能
+  path: domains/small-business/build-agent/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/build-agent/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 做成技能,自动化流程,沉淀流程,自建技能
+- id: small-business/build-connector
+  name: 给工具接连接器
+  path: domains/small-business/build-connector/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/build-connector/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 连接器,接入工具,接口对接
+- id: small-business/business-pulse
+  name: 经营快照
+  path: domains/small-business/business-pulse/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/business-pulse/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 经营快照,一页纸经营,业务概览,经营状况
+- id: small-business/call-list
+  name: 今日呼叫清单
+  path: domains/small-business/call-list/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/call-list/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 打电话清单,今日外呼
+- id: small-business/canva-creator
+  name: 海报物料生成
+  path: domains/small-business/canva-creator/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/canva-creator/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: canva,配图,物料,营销图
+- id: small-business/cash-flow-snapshot
+  name: 现金流快照
+  path: domains/small-business/cash-flow-snapshot/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/cash-flow-snapshot/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 现金流,资金状况,应收应付,账期
+- id: small-business/close-month
+  name: 正式结账
+  path: domains/small-business/close-month/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/close-month/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 结账,关账,月度结账
+- id: small-business/content-strategy
+  name: 内容策略
+  path: domains/small-business/content-strategy/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/content-strategy/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 内容规划,爆款分析,内容打法
+- id: small-business/contract-review
+  name: 小微企业合同审查
+  path: domains/small-business/contract-review/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/contract-review/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 合同审查,msa,供应商合同,简易合同
+- id: small-business/crm-autopilot
+  name: CRM 自动化
+  path: domains/small-business/crm-autopilot/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/crm-autopilot/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: crm,客户记录,自动录入
+- id: small-business/grant-rfp-writer
+  name: 投标书撰写
+  path: domains/small-business/grant-rfp-writer/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/grant-rfp-writer/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 投标,标书,基金申请,rfp
+- id: small-business/grow-pipeline
+  name: 管道增长
+  path: domains/small-business/grow-pipeline/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/grow-pipeline/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 漏斗增长,拓客,填充管道
+- id: small-business/growth-pulse
+  name: 增长体检
+  path: domains/small-business/growth-pulse/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/growth-pulse/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 增长有效性,拉新效果
+- id: small-business/hiring-screener
+  name: 简历筛选
+  path: domains/small-business/hiring-screener/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/hiring-screener/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 简历筛选,候选人打分,招聘筛选
+- id: small-business/inbox-manager
+  name: 收件箱管理
+  path: domains/small-business/inbox-manager/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/inbox-manager/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 收件箱,邮件处理,待办筛选
+- id: small-business/inventory-planner
+  name: 补货计划
+  path: domains/small-business/inventory-planner/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/inventory-planner/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 库存,补货,订货,库存规划
+- id: small-business/invoice-chase
+  name: 催收发票
+  path: domains/small-business/invoice-chase/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/invoice-chase/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 催发票,逾期发票,催款
+- id: small-business/job-post-builder
+  name: 招聘包制作
+  path: domains/small-business/job-post-builder/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/job-post-builder/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 招聘启事,jd,面试评分表,offer信
+- id: small-business/lead-finder
+  name: 找潜在客户
+  path: domains/small-business/lead-finder/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/lead-finder/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 找客户,潜客,目标客户,拓客
+- id: small-business/marketing-monday
+  name: 周一增长简报
+  path: domains/small-business/marketing-monday/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/marketing-monday/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 周一增长简报,营销周报
+- id: small-business/monday-brief
+  name: 周一经营简报
+  path: domains/small-business/monday-brief/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/monday-brief/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 周一简报,经营简报
+- id: small-business/month-end-prep
+  name: 月结准备
+  path: domains/small-business/month-end-prep/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/month-end-prep/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 月结准备,对账准备,账目核对,结账前
+- id: small-business/outreach-composer
+  name: 外联话术
+  path: domains/small-business/outreach-composer/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/outreach-composer/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 外联文案,开发信文案,像本人写的
+- id: small-business/pay-the-bills
+  name: 付款处理
+  path: domains/small-business/pay-the-bills/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/pay-the-bills/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 付账单,付款,账单处理,应付账款
+- id: small-business/payroll-prep
+  name: 工资准备
+  path: domains/small-business/payroll-prep/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/payroll-prep/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 工资准备,工时表,发薪核对
+- id: small-business/plan-payroll
+  name: 发薪规划
+  path: domains/small-business/plan-payroll/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/plan-payroll/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 发薪计划,工资发放,薪资规划
+- id: small-business/proposal-builder
+  name: 方案书制作
+  path: domains/small-business/proposal-builder/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/proposal-builder/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 方案书,提案,报价方案,标书
+- id: small-business/reactivate
+  name: 客户唤醒
+  path: domains/small-business/reactivate/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/reactivate/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 唤醒客户,回购,流失客户
+- id: small-business/report-builder
+  name: 报表定义
+  path: domains/small-business/report-builder/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/report-builder/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 报表,定期报表,指标定义
+- id: small-business/report-pack
+  name: 报表包交付
+  path: domains/small-business/report-pack/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/report-pack/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 报表包,定期交付,报表组合
+- id: small-business/restock
+  name: 补货决策
+  path: domains/small-business/restock/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/restock/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 补货,进货,补货下单
+- id: small-business/review-reputation
+  name: 口碑监测
+  path: domains/small-business/review-reputation/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/review-reputation/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 评价监测,口碑,差评,客户反馈监控
+- id: small-business/seo-ai-visibility
+  name: 搜索与AI可见性
+  path: domains/small-business/seo-ai-visibility/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/seo-ai-visibility/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: ai搜索,被ai引用,seo可见度
+- id: small-business/smb-lead-triage
+  name: 线索打分排序
+  path: domains/small-business/smb-lead-triage/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/lead-triage/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 线索打分,线索排序,hubspot线索
+- id: small-business/smb-onboard
+  name: 新员工培训
+  path: domains/small-business/smb-onboard/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/smb-onboard/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 培训,带新人,员工上手
+- id: small-business/smb-router
+  name: 小企业总入口
+  path: domains/small-business/smb-router/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/smb-router/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 小企业,总入口,路由,开始
+- id: small-business/social-content-engine
+  name: 社媒内容流水线
+  path: domains/small-business/social-content-engine/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/social-content-engine/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 社交媒体,内容日历,发帖计划
+- id: small-business/speed-to-lead
+  name: 线索不漏接
+  path: domains/small-business/speed-to-lead/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/speed-to-lead/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 响应速度,线索响应,别漏线索
+- id: small-business/tax-prep
+  name: 报税材料准备
+  path: domains/small-business/tax-prep/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/tax-prep/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 报税,税务材料,纳税准备
+- id: small-business/tax-season-organizer
+  name: 报税季整理
+  path: domains/small-business/tax-season-organizer/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/tax-season-organizer/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 报税季,年度报税,税务整理
+- id: small-business/ticket-deflector
+  name: 工单自动应答
+  path: domains/small-business/ticket-deflector/SKILL.md
+  version: 1.0.0
+  domain: small-business
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:small-business/skills/ticket-deflector/SKILL.md
+  license: Apache-2.0
+  tags:
+  - small-business
+  deprecated: false
+  authority: primary
+  keywords: 工单自动处理,退款查询,订单状态,自动应答,工单拦截
+- id: understand/understand
+  name: 语义理解引擎
+  path: domains/understand/understand/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Analyze a codebase to produce an interactive knowledge graph for understanding architecture,
+    components, and relationships
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: understand,理解,语义分析,读懂
+- id: understand/understand-chat
+  name: 对话式理解
+  path: domains/understand/understand-chat/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Use when you need to ask questions about a codebase or understand code using a knowledge
+    graph
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: 对话,chat,提问,问答理解
+- id: understand/understand-dashboard
+  name: 理解看板
+  path: domains/understand/understand-dashboard/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Launch the interactive web dashboard to visualize a codebase's knowledge graph
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: 仪表盘,dashboard,概览,总览
+- id: understand/understand-diff
+  name: 差异理解
+  path: domains/understand/understand-diff/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Use when you need to analyze git diffs or pull requests to understand what changed, affected
+    components, and risks
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: diff,差异,变更对比,改了哪里
+- id: understand/understand-domain
+  name: 领域语义建模
+  path: domains/understand/understand-domain/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Extract business domain knowledge from a codebase and generate an interactive domain flow
+    graph. Works standalone (lightweight scan) or derives from an existing /understand knowledge graph.
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: 领域,domain,领域模型,业务语义
+- id: understand/understand-explain
+  name: 通俗解释生成
+  path: domains/understand/understand-explain/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Use when you need a deep-dive explanation of a specific file, function, or module in the
+    codebase
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: 解释,explain,通俗解释,讲明白
+- id: understand/understand-knowledge
+  name: 知识结构化理解
+  path: domains/understand/understand-knowledge/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Analyze a Karpathy-pattern LLM wiki knowledge base and generate an interactive knowledge
+    graph with entity extraction, implicit relationships, and topic clustering.
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: 知识,knowledge,知识图谱,知识抽取

@@ -1,0 +1,108 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: understand
+label: 代码理解
+updated: '2026-10-31'
+authority: process
+plugin_priority: false
+count:
+  skills: 7
+skills:
+- id: understand/understand
+  name: 语义理解引擎
+  path: domains/understand/understand/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Analyze a codebase to produce an interactive knowledge graph for understanding architecture,
+    components, and relationships
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: understand,理解,语义分析,读懂
+- id: understand/understand-chat
+  name: 对话式理解
+  path: domains/understand/understand-chat/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Use when you need to ask questions about a codebase or understand code using a knowledge
+    graph
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: 对话,chat,提问,问答理解
+- id: understand/understand-dashboard
+  name: 理解看板
+  path: domains/understand/understand-dashboard/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Launch the interactive web dashboard to visualize a codebase's knowledge graph
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: 仪表盘,dashboard,概览,总览
+- id: understand/understand-diff
+  name: 差异理解
+  path: domains/understand/understand-diff/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Use when you need to analyze git diffs or pull requests to understand what changed, affected
+    components, and risks
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: diff,差异,变更对比,改了哪里
+- id: understand/understand-domain
+  name: 领域语义建模
+  path: domains/understand/understand-domain/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Extract business domain knowledge from a codebase and generate an interactive domain flow
+    graph. Works standalone (lightweight scan) or derives from an existing /understand knowledge graph.
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: 领域,domain,领域模型,业务语义
+- id: understand/understand-explain
+  name: 通俗解释生成
+  path: domains/understand/understand-explain/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Use when you need a deep-dive explanation of a specific file, function, or module in the
+    codebase
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: 解释,explain,通俗解释,讲明白
+- id: understand/understand-knowledge
+  name: 知识结构化理解
+  path: domains/understand/understand-knowledge/SKILL.md
+  version: 1.0.0
+  domain: understand
+  description: Analyze a Karpathy-pattern LLM wiki knowledge base and generate an interactive knowledge
+    graph with entity extraction, implicit relationships, and topic clustering.
+  origin: local
+  license: 未声明
+  tags:
+  - understand
+  deprecated: false
+  authority: primary
+  keywords: 知识,knowledge,知识图谱,知识抽取

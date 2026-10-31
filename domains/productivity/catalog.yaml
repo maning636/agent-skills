@@ -1,0 +1,63 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: productivity
+label: 个人生产力
+updated: '2026-10-31'
+authority: process
+plugin_priority: false
+count:
+  skills: 4
+skills:
+- id: productivity/memory-management
+  name: 双层记忆
+  path: domains/productivity/memory-management/SKILL.md
+  version: 1.0.0
+  domain: productivity
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:productivity/skills/memory-management/SKILL.md
+  license: Apache-2.0
+  tags:
+  - productivity
+  deprecated: false
+  authority: primary
+  keywords: 记忆,长期记忆,偏好记忆,工作记忆,上下文
+- id: productivity/start
+  name: 启动生产力系统
+  path: domains/productivity/start/SKILL.md
+  version: 1.0.0
+  domain: productivity
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:productivity/skills/start/SKILL.md
+  license: Apache-2.0
+  tags:
+  - productivity
+  deprecated: false
+  authority: primary
+  keywords: 初始化,首次启动,引导配置,工作初始化
+- id: productivity/task-management
+  name: 任务管理
+  path: domains/productivity/task-management/SKILL.md
+  version: 1.0.0
+  domain: productivity
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:productivity/skills/task-management/SKILL.md
+  license: Apache-2.0
+  tags:
+  - productivity
+  deprecated: false
+  authority: primary
+  keywords: 待办,todo,任务清单,任务追踪
+- id: productivity/update
+  name: 同步任务与记忆
+  path: domains/productivity/update/SKILL.md
+  version: 1.0.0
+  domain: productivity
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:productivity/skills/update/SKILL.md
+  license: Apache-2.0
+  tags:
+  - productivity
+  deprecated: false
+  authority: primary
+  keywords: 同步,刷新记忆,更新状态

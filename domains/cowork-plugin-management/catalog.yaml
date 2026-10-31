@@ -1,0 +1,40 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: cowork-plugin-management
+label: 插件 / 技能工程
+updated: '2026-10-31'
+authority: process
+plugin_priority: true
+count:
+  skills: 2
+skills:
+- id: cowork-plugin-management/cowork-plugin-customizer
+  name: 定制组织插件
+  path: domains/cowork-plugin-management/cowork-plugin-customizer/SKILL.md
+  version: 1.0.0
+  domain: cowork-plugin-management
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:cowork-plugin-management/skills/cowork-plugin-customizer/SKILL.md
+  license: Apache-2.0
+  tags:
+  - cowork-plugin-management
+  deprecated: false
+  authority: primary
+  keywords: 定制插件,组织适配,改插件,接mcp
+- id: cowork-plugin-management/create-cowork-plugin
+  name: 从零建插件
+  path: domains/cowork-plugin-management/create-cowork-plugin/SKILL.md
+  version: 1.0.0
+  domain: cowork-plugin-management
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:cowork-plugin-management/skills/create-cowork-plugin/SKILL.md
+  license: Apache-2.0
+  tags:
+  - cowork-plugin-management
+  - process
+  - cowork
+  deprecated: false
+  authority: primary
+  keywords: 创建插件,新建插件,插件脚手架
+plugin_overlap: cowork 平台侧插件开发（Claude Code 侧的 plugin-dev 不冲突）

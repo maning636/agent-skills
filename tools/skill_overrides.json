@@ -1,0 +1,31 @@
+{
+  "_comment": "Per-skill overrides that cannot be derived from frontmatter. `authority`: primary = 我们权威 / fallback = 插件缺失才用 / superseded = 已被取代. `superseded_by` points at the plugin skill that takes over.",
+  "skills": {
+    "engineering/debug": {
+      "authority": "fallback",
+      "superseded_by": "plugin:superpowers/systematic-debugging",
+      "tags": ["engineering", "process", "debug"]
+    },
+    "engineering/standup": {
+      "authority": "primary",
+      "tags": ["engineering", "process", "standup"]
+    },
+    "agent-toolkit/skill-tuner": {
+      "authority": "fallback",
+      "superseded_by": "plugin:superpowers/writing-skills",
+      "tags": ["agent-toolkit", "process", "skill-tuning"]
+    },
+    "cowork-plugin-management/create-cowork-plugin": {
+      "authority": "primary",
+      "tags": ["cowork-plugin-management", "process", "cowork"],
+      "note": "AionUi/Cowork 平台侧插件开发，与 plugin-dev（Claude Code 侧）不冲突"
+    }
+  },
+  "domains": {
+    "engineering": {
+      "authority": "process",
+      "plugin_priority": true,
+      "plugin_overlap": "debug"
+    }
+  }
+}

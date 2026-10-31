@@ -1,0 +1,115 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: finance
+label: 财务
+updated: '2026-10-31'
+authority: domain
+plugin_priority: false
+count:
+  skills: 8
+skills:
+- id: finance/audit-support
+  name: 内审支持
+  path: domains/finance/audit-support/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/audit-support/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: sox,内控测试,审计底稿,抽样
+- id: finance/close-management
+  name: 月结流程管理
+  path: domains/finance/close-management/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/close-management/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: 月结,结账流程,结账任务,结账进度
+- id: finance/financial-statements
+  name: 财务报表
+  path: domains/finance/financial-statements/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/financial-statements/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: 利润表,资产负债表,现金流量表,三表,财务报表
+- id: finance/journal-entry
+  name: 记账凭证
+  path: domains/finance/journal-entry/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/journal-entry/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: 记账,凭证,借贷,分录,做账
+- id: finance/journal-entry-prep
+  name: 月结记账准备
+  path: domains/finance/journal-entry-prep/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/journal-entry-prep/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: 月结,凭证准备,分录明细,结账凭证
+- id: finance/reconciliation
+  name: 账目核对
+  path: domains/finance/reconciliation/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/reconciliation/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: 对账,银行对账,子账,勾稽,账实核对
+- id: finance/sox-testing
+  name: SOX 控制测试
+  path: domains/finance/sox-testing/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/sox-testing/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: sox404,控制测试,样本选择,工作底稿
+- id: finance/variance-analysis
+  name: 差异归因分析
+  path: domains/finance/variance-analysis/SKILL.md
+  version: 1.0.0
+  domain: finance
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:finance/skills/variance-analysis/SKILL.md
+  license: Apache-2.0
+  tags:
+  - finance
+  deprecated: false
+  authority: primary
+  keywords: 差异分析,波动分析,归因,瀑布图,预算差异

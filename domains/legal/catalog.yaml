@@ -1,0 +1,128 @@
+version: 1
+kind: skills
+library: agent-skills
+domain: legal
+label: 法务 / 合规
+updated: '2026-10-31'
+authority: domain
+plugin_priority: false
+count:
+  skills: 9
+skills:
+- id: legal/brief
+  name: 法务简报
+  path: domains/legal/brief/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/brief/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 法律简报,案情摘要,专题研究,事件法律分析
+- id: legal/compliance-check
+  name: 合规检查
+  path: domains/legal/compliance-check/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/compliance-check/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 合规,监管,法规适用,合规校验
+- id: legal/legal-response
+  name: 法务标准回复
+  path: domains/legal/legal-response/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/legal-response/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 法律问询回复,模板回复,法务答疑
+- id: legal/legal-risk-assessment
+  name: 法律风险评估
+  path: domains/legal/legal-risk-assessment/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/legal-risk-assessment/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 风险分级,严重度,法律风险,升级标准
+- id: legal/meeting-briefing
+  name: 法务会议准备
+  path: domains/legal/meeting-briefing/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/meeting-briefing/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 法务会前准备,法律会议,行动项
+- id: legal/review-contract
+  name: 合同审查
+  path: domains/legal/review-contract/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/review-contract/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 合同审核,合同条款,红线,谈判手册,偏离项
+- id: legal/signature-request
+  name: 签署发起
+  path: domains/legal/signature-request/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/signature-request/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 电子签,签署,签约,盖章,签字流程
+- id: legal/triage-nda
+  name: NDA 三色分级
+  path: domains/legal/triage-nda/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/triage-nda/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 保密协议,nda,分级,快速判断,保密协议审查
+- id: legal/vendor-check
+  name: 供应商合同状态
+  path: domains/legal/vendor-check/SKILL.md
+  version: 1.0.0
+  domain: legal
+  description: '>-'
+  origin: anthropics/knowledge-work-plugins@2574e29:legal/skills/vendor-check/SKILL.md
+  license: Apache-2.0
+  tags:
+  - legal
+  deprecated: false
+  authority: primary
+  keywords: 供应商,合作方合同,协议台账,尽调
